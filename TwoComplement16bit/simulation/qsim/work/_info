@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Computer Architecture/ergasia 1/TwoComplement16bit/simulation/qsim
+Etwocomplement16bit
+Z0 w1774459618
+Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z4 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+Z8 dC:/Quartus projects/ergasia 1/TwoComplement16bit/simulation/qsim
+Z9 8TwoComplement16bit.vho
+Z10 FTwoComplement16bit.vho
+l0
+L37
+VO[[k>CDT6eSW`@QFZ[HRD3
+!s100 2RBh^N=kNAdY@<;0]O7bz0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1774459618
+!i10b 1
+Z13 !s108 1774459618.000000
+Z14 !s90 -work|work|TwoComplement16bit.vho|
+Z15 !s107 TwoComplement16bit.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 18 twocomplement16bit 0 22 O[[k>CDT6eSW`@QFZ[HRD3
+l149
+L81
+VGU@=;l_eP;1k4Gda769b>1
+!s100 J5`Pfd37OP^gneR64L7n`2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Etwocomplement16bit_vhd_vec_tst
+Z18 w1774459617
+R5
+R6
+R8
+Z19 8Waveform1.vwf.vht
+Z20 FWaveform1.vwf.vht
+l0
+L32
+Vojo<H6dMDVQm[cIO6_bQK3
+!s100 L]eV^aUa?FR7FXHc@GzRX1
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform1.vwf.vht|
+Z22 !s107 Waveform1.vwf.vht|
+!i113 1
+R16
+R17
+Atwocomplement16bit_arch
+R5
+R6
+Z23 DEx4 work 30 twocomplement16bit_vhd_vec_tst 0 22 ojo<H6dMDVQm[cIO6_bQK3
+l47
+L34
+V:8S=MYaI]XBI=Q;lk0P_V0
+!s100 9=IIlj;ECEc4;IH06:NkS2
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

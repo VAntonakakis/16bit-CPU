@@ -1,0 +1,36 @@
+|MyXor2
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyXor2|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyXor2|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyXor2|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyXor2|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyXor2|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

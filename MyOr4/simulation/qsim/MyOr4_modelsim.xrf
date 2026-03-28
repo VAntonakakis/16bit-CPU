@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, F:/Computer Architecture/ergasia 1/MyOr4/MyOr4.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, F:/Computer Architecture/ergasia 1/MyOr4/db/MyOr4.cbx.xml
+design_name = MyOr4
+instance = comp, \Q~output\, Q~output, MyOr4, 1
+instance = comp, \B~input\, B~input, MyOr4, 1
+instance = comp, \C~input\, C~input, MyOr4, 1
+instance = comp, \D~input\, D~input, MyOr4, 1
+instance = comp, \A~input\, A~input, MyOr4, 1
+instance = comp, \Q~0\, Q~0, MyOr4, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, MyOr4, 1

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, F:/Computer Architecture/ergasia 1/MyAnd2/MyAnd2.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, F:/Computer Architecture/ergasia 1/MyAnd2/db/MyAnd2.cbx.xml
+design_name = MyAnd2
+instance = comp, \Q~output\, Q~output, MyAnd2, 1
+instance = comp, \B~input\, B~input, MyAnd2, 1
+instance = comp, \A~input\, A~input, MyAnd2, 1
+instance = comp, \Q~0\, Q~0, MyAnd2, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, MyAnd2, 1

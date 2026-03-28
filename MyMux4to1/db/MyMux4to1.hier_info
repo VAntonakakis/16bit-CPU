@@ -1,0 +1,60 @@
+|MyMux4to1
+s1 => MyNot:v0.A
+s1 => MyAnd3:v3.B
+s1 => MyAnd3:v5.B
+s2 => MyNot:v1.A
+s2 => MyAnd3:v4.C
+s2 => MyAnd3:v5.C
+A => MyAnd3:v2.A
+B => MyAnd3:v3.A
+C => MyAnd3:v4.A
+D => MyAnd3:v5.A
+Q <= MyOr4:v6.Q
+
+
+|MyMux4to1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyAnd3:v2
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyAnd3:v3
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyAnd3:v4
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyAnd3:v5
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyMux4to1|MyOr4:v6
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+D => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

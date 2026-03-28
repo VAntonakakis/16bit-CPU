@@ -1,0 +1,1669 @@
+|MyFullAdder16bit
+A[0] => MyFullAdder1bit:v0.A
+A[1] => MyFullAdder1bit:v1.A
+A[2] => MyFullAdder1bit:v2.A
+A[3] => MyFullAdder1bit:v3.A
+A[4] => MyFullAdder1bit:v4.A
+A[5] => MyFullAdder1bit:v5.A
+A[6] => MyFullAdder1bit:v6.A
+A[7] => MyFullAdder1bit:v7.A
+A[8] => MyFullAdder1bit:v8.A
+A[9] => MyFullAdder1bit:v9.A
+A[10] => MyFullAdder1bit:v10.A
+A[11] => MyFullAdder1bit:v11.A
+A[12] => MyFullAdder1bit:v12.A
+A[13] => MyFullAdder1bit:v13.A
+A[14] => MyFullAdder1bit:v14.A
+A[15] => MyFullAdder1bit:v15.A
+B[0] => MyFullAdder1bit:v0.B
+B[1] => MyFullAdder1bit:v1.B
+B[2] => MyFullAdder1bit:v2.B
+B[3] => MyFullAdder1bit:v3.B
+B[4] => MyFullAdder1bit:v4.B
+B[5] => MyFullAdder1bit:v5.B
+B[6] => MyFullAdder1bit:v6.B
+B[7] => MyFullAdder1bit:v7.B
+B[8] => MyFullAdder1bit:v8.B
+B[9] => MyFullAdder1bit:v9.B
+B[10] => MyFullAdder1bit:v10.B
+B[11] => MyFullAdder1bit:v11.B
+B[12] => MyFullAdder1bit:v12.B
+B[13] => MyFullAdder1bit:v13.B
+B[14] => MyFullAdder1bit:v14.B
+B[15] => MyFullAdder1bit:v15.B
+Cin => MyFullAdder1bit:v0.Cin
+Sum[0] << MyFullAdder1bit:v0.sum
+Sum[1] << MyFullAdder1bit:v1.sum
+Sum[2] << MyFullAdder1bit:v2.sum
+Sum[3] << MyFullAdder1bit:v3.sum
+Sum[4] << MyFullAdder1bit:v4.sum
+Sum[5] << MyFullAdder1bit:v5.sum
+Sum[6] << MyFullAdder1bit:v6.sum
+Sum[7] << MyFullAdder1bit:v7.sum
+Sum[8] << MyFullAdder1bit:v8.sum
+Sum[9] << MyFullAdder1bit:v9.sum
+Sum[10] << MyFullAdder1bit:v10.sum
+Sum[11] << MyFullAdder1bit:v11.sum
+Sum[12] << MyFullAdder1bit:v12.sum
+Sum[13] << MyFullAdder1bit:v13.sum
+Sum[14] << MyFullAdder1bit:v14.sum
+Sum[15] << MyFullAdder1bit:v15.sum
+Cout << MyFullAdder1bit:v15.Cout
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v0|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v1|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v2|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v3|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v4|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v5|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v6|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v7|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v8|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v9|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v10|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v11|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v12|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v13|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v14|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum <= MyXor2:v3.Q
+Cout <= MyOr2:v5.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder16bit|MyFullAdder1bit:v15|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

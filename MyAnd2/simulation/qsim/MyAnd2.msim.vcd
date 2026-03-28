@@ -1,0 +1,88 @@
+$comment
+	File created using the following command:
+		vcd file MyAnd2.msim.vcd -direction
+$end
+$date
+	Tue Mar 24 20:55:34 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module myand2_vhd_vec_tst $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 # Q $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var wire 1 ' devoe $end
+$var wire 1 ( devclrn $end
+$var wire 1 ) devpor $end
+$var wire 1 * ww_devoe $end
+$var wire 1 + ww_devclrn $end
+$var wire 1 , ww_devpor $end
+$var wire 1 - ww_A $end
+$var wire 1 . ww_B $end
+$var wire 1 / ww_Q $end
+$var wire 1 0 \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 1 \B~input_o\ $end
+$var wire 1 2 \A~input_o\ $end
+$var wire 1 3 \Q~0_combout\ $end
+$var wire 1 4 \ALT_INV_B~input_o\ $end
+$var wire 1 5 \ALT_INV_A~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+0-
+0.
+0/
+x0
+01
+02
+03
+14
+15
+$end
+#250000
+1"
+1.
+11
+04
+#500000
+0"
+1!
+0.
+1-
+12
+01
+14
+05
+#750000
+1"
+1.
+11
+04
+13
+1/
+1#
+#1000000

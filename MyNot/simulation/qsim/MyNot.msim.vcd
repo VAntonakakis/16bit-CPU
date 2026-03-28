@@ -1,0 +1,63 @@
+$comment
+	File created using the following command:
+		vcd file MyNot.msim.vcd -direction
+$end
+$date
+	Tue Mar 24 20:52:23 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mynot_vhd_vec_tst $end
+$var wire 1 ! A $end
+$var wire 1 " Q $end
+
+$scope module i1 $end
+$var wire 1 # gnd $end
+$var wire 1 $ vcc $end
+$var wire 1 % unknown $end
+$var wire 1 & devoe $end
+$var wire 1 ' devclrn $end
+$var wire 1 ( devpor $end
+$var wire 1 ) ww_devoe $end
+$var wire 1 * ww_devclrn $end
+$var wire 1 + ww_devpor $end
+$var wire 1 , ww_A $end
+$var wire 1 - ww_Q $end
+$var wire 1 . \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 / \A~input_o\ $end
+$var wire 1 0 \ALT_INV_A~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+x%
+1&
+1'
+1(
+1)
+1*
+1+
+0,
+1-
+x.
+0/
+10
+$end
+#500000
+1!
+1,
+1/
+00
+0-
+0"
+#1000000

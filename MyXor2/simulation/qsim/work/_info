@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Computer Architecture/ergasia 1/MyXor2/simulation/qsim
+Emyxor2
+Z1 w1774379506
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+R0
+Z9 8MyXor2.vho
+Z10 FMyXor2.vho
+l0
+L37
+V0hDF6Q2dlUC@1UjPHRFO^1
+!s100 >ObEROD^:EaZBW1inVCf13
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1774379506
+!i10b 1
+Z13 !s108 1774379506.000000
+Z14 !s90 -work|work|MyXor2.vho|
+Z15 !s107 MyXor2.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 6 myxor2 0 22 0hDF6Q2dlUC@1UjPHRFO^1
+l71
+L51
+VDUJ@877REgg4_7ilM4?;J3
+!s100 hoAjS1i4geZMH<9S<Vd:30
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Emyxor2_vhd_vec_tst
+Z18 w1774379505
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32
+V9W3]WS4LlW1YP=?liHQ3d0
+!s100 ^;MzbEY3gIZiaQ]L<K>Qd0
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Amyxor2_arch
+R6
+R7
+DEx4 work 18 myxor2_vhd_vec_tst 0 22 9W3]WS4LlW1YP=?liHQ3d0
+l47
+L34
+VNQOD>Bol1Z]`M;lGblMPH3
+!s100 N8ZMhYmTG9LDz:^YfXAcW0
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

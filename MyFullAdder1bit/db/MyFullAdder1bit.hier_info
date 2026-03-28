@@ -1,0 +1,101 @@
+|MyFullAdder1bit
+A => MyXor2:v1.A
+A => MyAnd2:v2.A
+B => MyXor2:v1.B
+B => MyAnd2:v2.B
+Cin => MyXor2:v3.A
+Cin => MyAnd2:v4.A
+sum << MyXor2:v3.Q
+Cout << MyOr2:v5.Q
+
+
+|MyFullAdder1bit|MyXor2:v1
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder1bit|MyXor2:v1|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v1|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v1|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v1|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v1|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v3
+A => MyNot:v0.A
+A => MyAnd2:v2.A
+B => MyNot:v1.A
+B => MyAnd2:v3.B
+Q <= MyOr2:v4.Q
+
+
+|MyFullAdder1bit|MyXor2:v3|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v3|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v3|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v3|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyXor2:v3|MyOr2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyFullAdder1bit|MyOr2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

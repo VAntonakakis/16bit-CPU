@@ -1,0 +1,7 @@
+|MyAnd3
+A => Q.IN0
+B => Q.IN1
+C => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Computer Architecture/ergasia 1/MyFullAdder16bit/simulation/qsim
+Emyfulladder16bit
+Z1 w1774459402
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+Z9 dC:/Quartus projects/ergasia 1/MyFullAdder16bit/simulation/qsim
+Z10 8MyFullAdder16bit.vho
+Z11 FMyFullAdder16bit.vho
+l0
+L37
+VdVbIAf0FFH[l1T5WTdXk?2
+!s100 aW3F_BgUREY35INBXgN@91
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1774459404
+!i10b 1
+Z14 !s108 1774459404.000000
+Z15 !s90 -work|work|MyFullAdder16bit.vho|
+Z16 !s107 MyFullAdder16bit.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 16 myfulladder16bit 0 22 dVbIAf0FFH[l1T5WTdXk?2
+l222
+L100
+VBYoAdoQ7g?jg6@l_3BR4F1
+!s100 j3n^ROYAm3Nl^T;5h[4;=2
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Emyfulladder16bit_vhd_vec_tst
+Z19 w1774459401
+R6
+R7
+R9
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
+l0
+L32
+VDn=UV>ef58Ik:<ISZ8AfA0
+!s100 SjW44@X9jXNHREg;jM7_D0
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform1.vwf.vht|
+Z23 !s107 Waveform1.vwf.vht|
+!i113 1
+R17
+R18
+Amyfulladder16bit_arch
+R6
+R7
+Z24 DEx4 work 28 myfulladder16bit_vhd_vec_tst 0 22 Dn=UV>ef58Ik:<ISZ8AfA0
+l51
+L34
+V3h9:8Qh==oE<V<[E21=R>2
+!s100 0FFN13YLa>NX2Qf?>na760
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
