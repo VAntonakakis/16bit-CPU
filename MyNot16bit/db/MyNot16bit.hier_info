@@ -1,0 +1,115 @@
+|MyNot16bit
+A[0] => MyNot:v0.A
+A[1] => MyNot:v1.A
+A[2] => MyNot:v2.A
+A[3] => MyNot:v3.A
+A[4] => MyNot:v4.A
+A[5] => MyNot:v5.A
+A[6] => MyNot:v6.A
+A[7] => MyNot:v7.A
+A[8] => MyNot:v8.A
+A[9] => MyNot:v9.A
+A[10] => MyNot:v10.A
+A[11] => MyNot:v11.A
+A[12] => MyNot:v12.A
+A[13] => MyNot:v13.A
+A[14] => MyNot:v14.A
+A[15] => MyNot:v15.A
+Q[0] <= MyNot:v0.Q
+Q[1] <= MyNot:v1.Q
+Q[2] <= MyNot:v2.Q
+Q[3] <= MyNot:v3.Q
+Q[4] <= MyNot:v4.Q
+Q[5] <= MyNot:v5.Q
+Q[6] <= MyNot:v6.Q
+Q[7] <= MyNot:v7.Q
+Q[8] <= MyNot:v8.Q
+Q[9] <= MyNot:v9.Q
+Q[10] <= MyNot:v10.Q
+Q[11] <= MyNot:v11.Q
+Q[12] <= MyNot:v12.Q
+Q[13] <= MyNot:v13.Q
+Q[14] <= MyNot:v14.Q
+Q[15] <= MyNot:v15.Q
+
+
+|MyNot16bit|MyNot:v0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v2
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v3
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v4
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v5
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v6
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v7
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v8
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v9
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v10
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v11
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v12
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v13
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v14
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNot16bit|MyNot:v15
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
