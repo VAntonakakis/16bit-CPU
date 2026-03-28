@@ -1,115 +1,150 @@
 |TwoComplement16bit
-R[0] => MyNot:v0.A
-R[1] => MyNot:v1.A
-R[2] => MyNot:v2.A
-R[3] => MyNot:v3.A
-R[4] => MyNot:v4.A
-R[5] => MyNot:v5.A
-R[6] => MyNot:v6.A
-R[7] => MyNot:v7.A
-R[8] => MyNot:v8.A
-R[9] => MyNot:v9.A
-R[10] => MyNot:v10.A
-R[11] => MyNot:v11.A
-R[12] => MyNot:v12.A
-R[13] => MyNot:v13.A
-R[14] => MyNot:v14.A
-R[15] => MyNot:v15.A
-N[0] << MyFullAdder16bit:v16.Sum[0]
-N[1] << MyFullAdder16bit:v16.Sum[1]
-N[2] << MyFullAdder16bit:v16.Sum[2]
-N[3] << MyFullAdder16bit:v16.Sum[3]
-N[4] << MyFullAdder16bit:v16.Sum[4]
-N[5] << MyFullAdder16bit:v16.Sum[5]
-N[6] << MyFullAdder16bit:v16.Sum[6]
-N[7] << MyFullAdder16bit:v16.Sum[7]
-N[8] << MyFullAdder16bit:v16.Sum[8]
-N[9] << MyFullAdder16bit:v16.Sum[9]
-N[10] << MyFullAdder16bit:v16.Sum[10]
-N[11] << MyFullAdder16bit:v16.Sum[11]
-N[12] << MyFullAdder16bit:v16.Sum[12]
-N[13] << MyFullAdder16bit:v16.Sum[13]
-N[14] << MyFullAdder16bit:v16.Sum[14]
-N[15] << MyFullAdder16bit:v16.Sum[15]
-Overflow << MyFullAdder16bit:v16.Cout
+A[0] => MyNot16bit:v0.A[0]
+A[1] => MyNot16bit:v0.A[1]
+A[2] => MyNot16bit:v0.A[2]
+A[3] => MyNot16bit:v0.A[3]
+A[4] => MyNot16bit:v0.A[4]
+A[5] => MyNot16bit:v0.A[5]
+A[6] => MyNot16bit:v0.A[6]
+A[7] => MyNot16bit:v0.A[7]
+A[8] => MyNot16bit:v0.A[8]
+A[9] => MyNot16bit:v0.A[9]
+A[10] => MyNot16bit:v0.A[10]
+A[11] => MyNot16bit:v0.A[11]
+A[12] => MyNot16bit:v0.A[12]
+A[13] => MyNot16bit:v0.A[13]
+A[14] => MyNot16bit:v0.A[14]
+A[15] => MyNot16bit:v0.A[15]
+Q[0] <= MyFullAdder16bit:v16.Sum[0]
+Q[1] <= MyFullAdder16bit:v16.Sum[1]
+Q[2] <= MyFullAdder16bit:v16.Sum[2]
+Q[3] <= MyFullAdder16bit:v16.Sum[3]
+Q[4] <= MyFullAdder16bit:v16.Sum[4]
+Q[5] <= MyFullAdder16bit:v16.Sum[5]
+Q[6] <= MyFullAdder16bit:v16.Sum[6]
+Q[7] <= MyFullAdder16bit:v16.Sum[7]
+Q[8] <= MyFullAdder16bit:v16.Sum[8]
+Q[9] <= MyFullAdder16bit:v16.Sum[9]
+Q[10] <= MyFullAdder16bit:v16.Sum[10]
+Q[11] <= MyFullAdder16bit:v16.Sum[11]
+Q[12] <= MyFullAdder16bit:v16.Sum[12]
+Q[13] <= MyFullAdder16bit:v16.Sum[13]
+Q[14] <= MyFullAdder16bit:v16.Sum[14]
+Q[15] <= MyFullAdder16bit:v16.Sum[15]
+Overflow <= MyFullAdder16bit:v16.Cout
 
 
-|TwoComplement16bit|MyNot:v0
+|TwoComplement16bit|MyNot16bit:v0
+A[0] => MyNot:v0.A
+A[1] => MyNot:v1.A
+A[2] => MyNot:v2.A
+A[3] => MyNot:v3.A
+A[4] => MyNot:v4.A
+A[5] => MyNot:v5.A
+A[6] => MyNot:v6.A
+A[7] => MyNot:v7.A
+A[8] => MyNot:v8.A
+A[9] => MyNot:v9.A
+A[10] => MyNot:v10.A
+A[11] => MyNot:v11.A
+A[12] => MyNot:v12.A
+A[13] => MyNot:v13.A
+A[14] => MyNot:v14.A
+A[15] => MyNot:v15.A
+Q[0] <= MyNot:v0.Q
+Q[1] <= MyNot:v1.Q
+Q[2] <= MyNot:v2.Q
+Q[3] <= MyNot:v3.Q
+Q[4] <= MyNot:v4.Q
+Q[5] <= MyNot:v5.Q
+Q[6] <= MyNot:v6.Q
+Q[7] <= MyNot:v7.Q
+Q[8] <= MyNot:v8.Q
+Q[9] <= MyNot:v9.Q
+Q[10] <= MyNot:v10.Q
+Q[11] <= MyNot:v11.Q
+Q[12] <= MyNot:v12.Q
+Q[13] <= MyNot:v13.Q
+Q[14] <= MyNot:v14.Q
+Q[15] <= MyNot:v15.Q
+
+
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v0
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v1
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v1
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v2
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v2
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v3
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v3
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v4
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v4
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v5
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v5
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v6
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v6
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v7
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v7
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v8
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v8
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v9
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v9
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v10
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v10
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v11
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v11
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v12
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v12
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v13
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v13
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v14
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v14
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TwoComplement16bit|MyNot:v15
+|TwoComplement16bit|MyNot16bit:v0|MyNot:v15
 A => Q.DATAIN
 Q <= A.DB_MAX_OUTPUT_PORT_TYPE
 

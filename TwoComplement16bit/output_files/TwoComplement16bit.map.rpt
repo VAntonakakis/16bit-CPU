@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TwoComplement16bit
-Sat Mar 28 17:48:31 2026
+Sat Mar 28 18:12:47 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Mar 28 17:48:31 2026       ;
+; Analysis & Synthesis Status     ; Successful - Sat Mar 28 18:12:47 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; TwoComplement16bit                          ;
 ; Top-level Entity Name           ; TwoComplement16bit                          ;
@@ -172,6 +172,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path         ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
 +------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; ../MyNot16bit/MyNot16bit.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd                 ;         ;
 ; ../MyXor2/MyXor2.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd                         ;         ;
 ; ../MyOr2/MyOr2.vhd                       ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd                           ;         ;
 ; ../MyAnd2/MyAnd2.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd                         ;         ;
@@ -202,7 +203,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; R[0]~input ;
+; Maximum fan-out node                        ; A[0]~input ;
 ; Maximum fan-out                             ; 7          ;
 ; Total fan-out                               ; 128        ;
 ; Average fan-out                             ; 1.52       ;
@@ -328,10 +329,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Mar 28 17:48:25 2026
+    Info: Processing started: Sat Mar 28 18:12:41 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TwoComplement16bit -c TwoComplement16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot16bit/mynot16bit.vhd
+    Info (12022): Found design unit 1: MyNot16bit-StructMyNot16bit File: C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd Line: 9
+    Info (12023): Found entity 1: MyNot16bit File: C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myxor2/myxor2.vhd
     Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 10
     Info (12023): Found entity 1: MyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 4
@@ -354,8 +358,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file twocomp
     Info (12022): Found design unit 1: TwoComplement16bit-StructTwoComplement16bit File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 10
     Info (12023): Found entity 1: TwoComplement16bit File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 4
 Info (12127): Elaborating entity "TwoComplement16bit" for the top level hierarchy
-Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v0" File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 30
-Info (12128): Elaborating entity "MyFullAdder16bit" for hierarchy "MyFullAdder16bit:v16" File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 46
+Info (12128): Elaborating entity "MyNot16bit" for hierarchy "MyNot16bit:v0" File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 31
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot16bit:v0|MyNot:v0" File: C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd Line: 16
+Info (12128): Elaborating entity "MyFullAdder16bit" for hierarchy "MyFullAdder16bit:v16" File: C:/Quartus projects/ergasia 1/TwoComplement16bit/TwoComplement16bit.vhd Line: 32
 Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyFullAdder16bit:v16|MyFullAdder1bit:v0" File: C:/Quartus projects/ergasia 1/MyFullAdder16bit/MyFullAdder16bit.vhd Line: 25
 Info (12128): Elaborating entity "MyXor2" for hierarchy "MyFullAdder16bit:v16|MyFullAdder1bit:v0|MyXor2:v1" File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
 Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyFullAdder16bit:v16|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v2" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 34
@@ -368,9 +373,9 @@ Info (21057): Implemented 51 device resources after synthesis - the final resour
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 18 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Sat Mar 28 17:48:31 2026
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Sat Mar 28 18:12:47 2026
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 

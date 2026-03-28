@@ -9,7 +9,7 @@ z2
 cModel Technology
 dF:/Computer Architecture/ergasia 1/TwoComplement16bit/simulation/qsim
 Etwocomplement16bit
-Z0 w1774459618
+Z0 w1774714511
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -22,13 +22,13 @@ Z9 8TwoComplement16bit.vho
 Z10 FTwoComplement16bit.vho
 l0
 L37
-VO[[k>CDT6eSW`@QFZ[HRD3
-!s100 2RBh^N=kNAdY@<;0]O7bz0
+VB0Ro<k>MK3@0Tl8=2]W>:1
+!s100 F:>Ek5PkPOT=17XlB2LgS1
 Z11 OV;C;10.5b;63
 32
-Z12 !s110 1774459618
+Z12 !s110 1774714511
 !i10b 1
-Z13 !s108 1774459618.000000
+Z13 !s108 1774714511.000000
 Z14 !s90 -work|work|TwoComplement16bit.vho|
 Z15 !s107 TwoComplement16bit.vho|
 !i113 1
@@ -42,11 +42,11 @@ R4
 R5
 R6
 R7
-DEx4 work 18 twocomplement16bit 0 22 O[[k>CDT6eSW`@QFZ[HRD3
+DEx4 work 18 twocomplement16bit 0 22 B0Ro<k>MK3@0Tl8=2]W>:1
 l149
 L81
-VGU@=;l_eP;1k4Gda769b>1
-!s100 J5`Pfd37OP^gneR64L7n`2
+V8R9;EMn@G=^I=M>YfnzTW1
+!s100 5IOQgOD:^Rb[VLa@iegBG1
 R11
 32
 R12
@@ -58,12 +58,12 @@ R15
 R16
 R17
 Etwocomplement16bit_vhd_vec_tst
-Z18 w1774459617
+Z18 w1774714510
 R5
 R6
 R8
-Z19 8Waveform1.vwf.vht
-Z20 FWaveform1.vwf.vht
+Z19 8Waveform2.vwf.vht
+Z20 FWaveform2.vwf.vht
 l0
 L32
 Vojo<H6dMDVQm[cIO6_bQK3
@@ -73,8 +73,8 @@ R11
 R12
 !i10b 1
 R13
-Z21 !s90 -work|work|Waveform1.vwf.vht|
-Z22 !s107 Waveform1.vwf.vht|
+Z21 !s90 -work|work|Waveform2.vwf.vht|
+Z22 !s107 Waveform2.vwf.vht|
 !i113 1
 R16
 R17
@@ -84,8 +84,8 @@ R6
 Z23 DEx4 work 30 twocomplement16bit_vhd_vec_tst 0 22 ojo<H6dMDVQm[cIO6_bQK3
 l47
 L34
-V:8S=MYaI]XBI=Q;lk0P_V0
-!s100 9=IIlj;ECEc4;IH06:NkS2
+VNBJ^QWGI1L3:^CTdg83BF0
+!s100 zUlgZ]HVkVL^i:YX>6m7[1
 R11
 32
 R12

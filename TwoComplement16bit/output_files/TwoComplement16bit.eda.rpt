@@ -1,5 +1,5 @@
 EDA Netlist Writer report for TwoComplement16bit
-Wed Mar 25 19:26:58 2026
+Sat Mar 28 18:15:11 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 25 19:26:58 2026 ;
+; EDA Netlist Writer Status ; Successful - Sat Mar 28 18:15:11 2026 ;
 ; Revision Name             ; TwoComplement16bit                    ;
 ; Top-level Entity Name     ; TwoComplement16bit                    ;
 ; Family                    ; Cyclone V                             ;
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Mar 25 19:26:57 2026
+    Info: Processing started: Sat Mar 28 18:15:10 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/TwoComplement16bit/simulation/qsim/" TwoComplement16bit -c TwoComplement16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file TwoComplement16bit.vho in folder "C:/Quartus projects/ergasia 1/TwoComplement16bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Wed Mar 25 19:26:58 2026
+    Info: Processing ended: Sat Mar 28 18:15:11 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

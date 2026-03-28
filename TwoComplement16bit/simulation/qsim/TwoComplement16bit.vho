@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "03/25/2026 19:26:58"
+-- DATE "03/28/2026 18:15:11"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -36,46 +36,46 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	TwoComplement16bit IS
     PORT (
-	R : IN std_logic_vector(15 DOWNTO 0);
-	N : BUFFER std_logic_vector(15 DOWNTO 0);
-	Overflow : BUFFER std_logic
+	A : IN std_logic_vector(15 DOWNTO 0);
+	Q : OUT std_logic_vector(15 DOWNTO 0);
+	Overflow : OUT std_logic
 	);
 END TwoComplement16bit;
 
 -- Design Ports Information
--- N[0]	=>  Location: PIN_M22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[1]	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[2]	=>  Location: PIN_L22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[3]	=>  Location: PIN_N19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[4]	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[5]	=>  Location: PIN_N20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[6]	=>  Location: PIN_K17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[7]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[8]	=>  Location: PIN_L17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[9]	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[10]	=>  Location: PIN_M20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[11]	=>  Location: PIN_R15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[12]	=>  Location: PIN_T22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[13]	=>  Location: PIN_T17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[14]	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- N[15]	=>  Location: PIN_R17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[0]	=>  Location: PIN_M22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[1]	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[2]	=>  Location: PIN_L22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[3]	=>  Location: PIN_N19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[4]	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[5]	=>  Location: PIN_N20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[6]	=>  Location: PIN_K17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[7]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[8]	=>  Location: PIN_L17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[9]	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[10]	=>  Location: PIN_M20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[11]	=>  Location: PIN_R15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[12]	=>  Location: PIN_T22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[13]	=>  Location: PIN_T17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[14]	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- Q[15]	=>  Location: PIN_R17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- Overflow	=>  Location: PIN_P22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[0]	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[1]	=>  Location: PIN_K21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[2]	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[3]	=>  Location: PIN_P16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[4]	=>  Location: PIN_P18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[5]	=>  Location: PIN_L19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[6]	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[7]	=>  Location: PIN_P19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[8]	=>  Location: PIN_P17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[9]	=>  Location: PIN_K22,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[10]	=>  Location: PIN_R21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[11]	=>  Location: PIN_T18,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[12]	=>  Location: PIN_T19,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[13]	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[14]	=>  Location: PIN_U20,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- R[15]	=>  Location: PIN_R22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[0]	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[1]	=>  Location: PIN_K21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[2]	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[3]	=>  Location: PIN_P16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[4]	=>  Location: PIN_P18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[5]	=>  Location: PIN_L19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[6]	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[7]	=>  Location: PIN_P19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[8]	=>  Location: PIN_P17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[9]	=>  Location: PIN_K22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[10]	=>  Location: PIN_R21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[11]	=>  Location: PIN_T18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[12]	=>  Location: PIN_T19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[13]	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[14]	=>  Location: PIN_U20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- A[15]	=>  Location: PIN_R22,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF TwoComplement16bit IS
@@ -88,94 +88,94 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_R : std_logic_vector(15 DOWNTO 0);
-SIGNAL ww_N : std_logic_vector(15 DOWNTO 0);
+SIGNAL ww_A : std_logic_vector(15 DOWNTO 0);
+SIGNAL ww_Q : std_logic_vector(15 DOWNTO 0);
 SIGNAL ww_Overflow : std_logic;
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
-SIGNAL \R[0]~input_o\ : std_logic;
-SIGNAL \R[1]~input_o\ : std_logic;
+SIGNAL \A[0]~input_o\ : std_logic;
+SIGNAL \A[1]~input_o\ : std_logic;
 SIGNAL \v16|v1|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[2]~input_o\ : std_logic;
+SIGNAL \A[2]~input_o\ : std_logic;
 SIGNAL \v16|v2|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[3]~input_o\ : std_logic;
+SIGNAL \A[3]~input_o\ : std_logic;
 SIGNAL \v16|v3|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[4]~input_o\ : std_logic;
+SIGNAL \A[4]~input_o\ : std_logic;
 SIGNAL \v16|v4|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[5]~input_o\ : std_logic;
+SIGNAL \A[5]~input_o\ : std_logic;
 SIGNAL \v16|v5|v3|v4|Q~0_combout\ : std_logic;
 SIGNAL \v16|v5|v4|Q~combout\ : std_logic;
-SIGNAL \R[6]~input_o\ : std_logic;
+SIGNAL \A[6]~input_o\ : std_logic;
 SIGNAL \v16|v6|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[7]~input_o\ : std_logic;
+SIGNAL \A[7]~input_o\ : std_logic;
 SIGNAL \v16|v7|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[8]~input_o\ : std_logic;
+SIGNAL \A[8]~input_o\ : std_logic;
 SIGNAL \v16|v8|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[9]~input_o\ : std_logic;
+SIGNAL \A[9]~input_o\ : std_logic;
 SIGNAL \v16|v9|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[10]~input_o\ : std_logic;
+SIGNAL \A[10]~input_o\ : std_logic;
 SIGNAL \v16|v10|v3|v4|Q~0_combout\ : std_logic;
 SIGNAL \v16|v10|v4|Q~combout\ : std_logic;
-SIGNAL \R[11]~input_o\ : std_logic;
+SIGNAL \A[11]~input_o\ : std_logic;
 SIGNAL \v16|v11|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[12]~input_o\ : std_logic;
+SIGNAL \A[12]~input_o\ : std_logic;
 SIGNAL \v16|v12|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[13]~input_o\ : std_logic;
+SIGNAL \A[13]~input_o\ : std_logic;
 SIGNAL \v16|v13|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[14]~input_o\ : std_logic;
+SIGNAL \A[14]~input_o\ : std_logic;
 SIGNAL \v16|v14|v3|v4|Q~0_combout\ : std_logic;
-SIGNAL \R[15]~input_o\ : std_logic;
+SIGNAL \A[15]~input_o\ : std_logic;
 SIGNAL \v16|v15|v3|v4|Q~0_combout\ : std_logic;
 SIGNAL \v16|v15|v4|Q~combout\ : std_logic;
-SIGNAL \ALT_INV_R[15]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[14]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[13]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[12]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[11]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[10]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[9]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[8]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[7]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[6]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[5]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[4]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[3]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[2]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[15]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[14]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[13]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[12]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[11]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[10]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[9]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[8]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[7]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[6]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[4]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[3]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[2]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_A[0]~input_o\ : std_logic;
 SIGNAL \v16|v15|v4|ALT_INV_Q~combout\ : std_logic;
 SIGNAL \v16|v10|v4|ALT_INV_Q~combout\ : std_logic;
 SIGNAL \v16|v5|v4|ALT_INV_Q~combout\ : std_logic;
 
 BEGIN
 
-ww_R <= R;
-N <= ww_N;
+ww_A <= A;
+Q <= ww_Q;
 Overflow <= ww_Overflow;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_R[15]~input_o\ <= NOT \R[15]~input_o\;
-\ALT_INV_R[14]~input_o\ <= NOT \R[14]~input_o\;
-\ALT_INV_R[13]~input_o\ <= NOT \R[13]~input_o\;
-\ALT_INV_R[12]~input_o\ <= NOT \R[12]~input_o\;
-\ALT_INV_R[11]~input_o\ <= NOT \R[11]~input_o\;
-\ALT_INV_R[10]~input_o\ <= NOT \R[10]~input_o\;
-\ALT_INV_R[9]~input_o\ <= NOT \R[9]~input_o\;
-\ALT_INV_R[8]~input_o\ <= NOT \R[8]~input_o\;
-\ALT_INV_R[7]~input_o\ <= NOT \R[7]~input_o\;
-\ALT_INV_R[6]~input_o\ <= NOT \R[6]~input_o\;
-\ALT_INV_R[5]~input_o\ <= NOT \R[5]~input_o\;
-\ALT_INV_R[4]~input_o\ <= NOT \R[4]~input_o\;
-\ALT_INV_R[3]~input_o\ <= NOT \R[3]~input_o\;
-\ALT_INV_R[2]~input_o\ <= NOT \R[2]~input_o\;
-\ALT_INV_R[1]~input_o\ <= NOT \R[1]~input_o\;
-\ALT_INV_R[0]~input_o\ <= NOT \R[0]~input_o\;
+\ALT_INV_A[15]~input_o\ <= NOT \A[15]~input_o\;
+\ALT_INV_A[14]~input_o\ <= NOT \A[14]~input_o\;
+\ALT_INV_A[13]~input_o\ <= NOT \A[13]~input_o\;
+\ALT_INV_A[12]~input_o\ <= NOT \A[12]~input_o\;
+\ALT_INV_A[11]~input_o\ <= NOT \A[11]~input_o\;
+\ALT_INV_A[10]~input_o\ <= NOT \A[10]~input_o\;
+\ALT_INV_A[9]~input_o\ <= NOT \A[9]~input_o\;
+\ALT_INV_A[8]~input_o\ <= NOT \A[8]~input_o\;
+\ALT_INV_A[7]~input_o\ <= NOT \A[7]~input_o\;
+\ALT_INV_A[6]~input_o\ <= NOT \A[6]~input_o\;
+\ALT_INV_A[5]~input_o\ <= NOT \A[5]~input_o\;
+\ALT_INV_A[4]~input_o\ <= NOT \A[4]~input_o\;
+\ALT_INV_A[3]~input_o\ <= NOT \A[3]~input_o\;
+\ALT_INV_A[2]~input_o\ <= NOT \A[2]~input_o\;
+\ALT_INV_A[1]~input_o\ <= NOT \A[1]~input_o\;
+\ALT_INV_A[0]~input_o\ <= NOT \A[0]~input_o\;
 \v16|v15|v4|ALT_INV_Q~combout\ <= NOT \v16|v15|v4|Q~combout\;
 \v16|v10|v4|ALT_INV_Q~combout\ <= NOT \v16|v10|v4|Q~combout\;
 \v16|v5|v4|ALT_INV_Q~combout\ <= NOT \v16|v5|v4|Q~combout\;
 
 -- Location: IOOBUF_X89_Y36_N39
-\N[0]~output\ : cyclonev_io_obuf
+\Q[0]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -183,12 +183,12 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \R[0]~input_o\,
+	i => \A[0]~input_o\,
 	devoe => ww_devoe,
-	o => ww_N(0));
+	o => ww_Q(0));
 
 -- Location: IOOBUF_X89_Y38_N22
-\N[1]~output\ : cyclonev_io_obuf
+\Q[1]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -198,10 +198,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v1|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(1));
+	o => ww_Q(1));
 
 -- Location: IOOBUF_X89_Y36_N56
-\N[2]~output\ : cyclonev_io_obuf
+\Q[2]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -211,10 +211,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v2|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(2));
+	o => ww_Q(2));
 
 -- Location: IOOBUF_X89_Y36_N5
-\N[3]~output\ : cyclonev_io_obuf
+\Q[3]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -224,10 +224,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v3|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(3));
+	o => ww_Q(3));
 
 -- Location: IOOBUF_X89_Y8_N5
-\N[4]~output\ : cyclonev_io_obuf
+\Q[4]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -237,10 +237,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v4|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(4));
+	o => ww_Q(4));
 
 -- Location: IOOBUF_X89_Y35_N79
-\N[5]~output\ : cyclonev_io_obuf
+\Q[5]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -250,10 +250,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v5|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(5));
+	o => ww_Q(5));
 
 -- Location: IOOBUF_X89_Y37_N5
-\N[6]~output\ : cyclonev_io_obuf
+\Q[6]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -263,10 +263,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v6|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(6));
+	o => ww_Q(6));
 
 -- Location: IOOBUF_X89_Y35_N96
-\N[7]~output\ : cyclonev_io_obuf
+\Q[7]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -276,10 +276,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v7|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(7));
+	o => ww_Q(7));
 
 -- Location: IOOBUF_X89_Y37_N22
-\N[8]~output\ : cyclonev_io_obuf
+\Q[8]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -289,10 +289,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v8|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(8));
+	o => ww_Q(8));
 
 -- Location: IOOBUF_X89_Y37_N56
-\N[9]~output\ : cyclonev_io_obuf
+\Q[9]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -302,10 +302,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v9|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(9));
+	o => ww_Q(9));
 
 -- Location: IOOBUF_X89_Y37_N39
-\N[10]~output\ : cyclonev_io_obuf
+\Q[10]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -315,10 +315,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v10|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(10));
+	o => ww_Q(10));
 
 -- Location: IOOBUF_X89_Y6_N22
-\N[11]~output\ : cyclonev_io_obuf
+\Q[11]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -328,10 +328,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v11|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(11));
+	o => ww_Q(11));
 
 -- Location: IOOBUF_X89_Y6_N39
-\N[12]~output\ : cyclonev_io_obuf
+\Q[12]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -341,10 +341,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v12|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(12));
+	o => ww_Q(12));
 
 -- Location: IOOBUF_X89_Y4_N62
-\N[13]~output\ : cyclonev_io_obuf
+\Q[13]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -354,10 +354,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v13|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(13));
+	o => ww_Q(13));
 
 -- Location: IOOBUF_X89_Y4_N96
-\N[14]~output\ : cyclonev_io_obuf
+\Q[14]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -367,10 +367,10 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v14|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(14));
+	o => ww_Q(14));
 
 -- Location: IOOBUF_X89_Y8_N22
-\N[15]~output\ : cyclonev_io_obuf
+\Q[15]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -380,7 +380,7 @@ GENERIC MAP (
 PORT MAP (
 	i => \v16|v15|v3|v4|Q~0_combout\,
 	devoe => ww_devoe,
-	o => ww_N(15));
+	o => ww_Q(15));
 
 -- Location: IOOBUF_X89_Y8_N56
 \Overflow~output\ : cyclonev_io_obuf
@@ -396,31 +396,31 @@ PORT MAP (
 	o => ww_Overflow);
 
 -- Location: IOIBUF_X89_Y36_N21
-\R[0]~input\ : cyclonev_io_ibuf
+\A[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(0),
-	o => \R[0]~input_o\);
+	i => ww_A(0),
+	o => \A[0]~input_o\);
 
 -- Location: IOIBUF_X89_Y38_N38
-\R[1]~input\ : cyclonev_io_ibuf
+\A[1]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(1),
-	o => \R[1]~input_o\);
+	i => ww_A(1),
+	o => \A[1]~input_o\);
 
 -- Location: LABCELL_X88_Y38_N33
 \v16|v1|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v1|v3|v4|Q~0_combout\ = ( \R[1]~input_o\ & ( !\R[0]~input_o\ ) ) # ( !\R[1]~input_o\ & ( \R[0]~input_o\ ) )
+-- \v16|v1|v3|v4|Q~0_combout\ = ( \A[1]~input_o\ & ( !\A[0]~input_o\ ) ) # ( !\A[1]~input_o\ & ( \A[0]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -429,25 +429,25 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[0]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	dataa => \ALT_INV_A[0]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v1|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y35_N44
-\R[2]~input\ : cyclonev_io_ibuf
+\A[2]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(2),
-	o => \R[2]~input_o\);
+	i => ww_A(2),
+	o => \A[2]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N33
 \v16|v2|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v2|v3|v4|Q~0_combout\ = ( !\R[2]~input_o\ & ( \R[1]~input_o\ ) ) # ( \R[2]~input_o\ & ( !\R[1]~input_o\ & ( !\R[0]~input_o\ ) ) ) # ( !\R[2]~input_o\ & ( !\R[1]~input_o\ & ( \R[0]~input_o\ ) ) )
+-- \v16|v2|v3|v4|Q~0_combout\ = ( !\A[2]~input_o\ & ( \A[1]~input_o\ ) ) # ( \A[2]~input_o\ & ( !\A[1]~input_o\ & ( !\A[0]~input_o\ ) ) ) # ( !\A[2]~input_o\ & ( !\A[1]~input_o\ & ( \A[0]~input_o\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -456,26 +456,26 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datac => \ALT_INV_R[0]~input_o\,
-	datae => \ALT_INV_R[2]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	datac => \ALT_INV_A[0]~input_o\,
+	datae => \ALT_INV_A[2]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v2|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y9_N4
-\R[3]~input\ : cyclonev_io_ibuf
+\A[3]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(3),
-	o => \R[3]~input_o\);
+	i => ww_A(3),
+	o => \A[3]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N6
 \v16|v3|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v3|v3|v4|Q~0_combout\ = ( !\R[3]~input_o\ & ( \R[1]~input_o\ ) ) # ( \R[3]~input_o\ & ( !\R[1]~input_o\ & ( (!\R[2]~input_o\ & !\R[0]~input_o\) ) ) ) # ( !\R[3]~input_o\ & ( !\R[1]~input_o\ & ( (\R[0]~input_o\) # (\R[2]~input_o\) ) ) )
+-- \v16|v3|v3|v4|Q~0_combout\ = ( !\A[3]~input_o\ & ( \A[1]~input_o\ ) ) # ( \A[3]~input_o\ & ( !\A[1]~input_o\ & ( (!\A[2]~input_o\ & !\A[0]~input_o\) ) ) ) # ( !\A[3]~input_o\ & ( !\A[1]~input_o\ & ( (\A[0]~input_o\) # (\A[2]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -484,28 +484,28 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_R[2]~input_o\,
-	datad => \ALT_INV_R[0]~input_o\,
-	datae => \ALT_INV_R[3]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	datab => \ALT_INV_A[2]~input_o\,
+	datad => \ALT_INV_A[0]~input_o\,
+	datae => \ALT_INV_A[3]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v3|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y9_N55
-\R[4]~input\ : cyclonev_io_ibuf
+\A[4]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(4),
-	o => \R[4]~input_o\);
+	i => ww_A(4),
+	o => \A[4]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N15
 \v16|v4|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v4|v3|v4|Q~0_combout\ = ( \R[3]~input_o\ & ( \R[1]~input_o\ & ( !\R[4]~input_o\ ) ) ) # ( !\R[3]~input_o\ & ( \R[1]~input_o\ & ( !\R[4]~input_o\ ) ) ) # ( \R[3]~input_o\ & ( !\R[1]~input_o\ & ( !\R[4]~input_o\ ) ) ) # ( !\R[3]~input_o\ & ( 
--- !\R[1]~input_o\ & ( !\R[4]~input_o\ $ (((!\R[0]~input_o\ & !\R[2]~input_o\))) ) ) )
+-- \v16|v4|v3|v4|Q~0_combout\ = ( \A[3]~input_o\ & ( \A[1]~input_o\ & ( !\A[4]~input_o\ ) ) ) # ( !\A[3]~input_o\ & ( \A[1]~input_o\ & ( !\A[4]~input_o\ ) ) ) # ( \A[3]~input_o\ & ( !\A[1]~input_o\ & ( !\A[4]~input_o\ ) ) ) # ( !\A[3]~input_o\ & ( 
+-- !\A[1]~input_o\ & ( !\A[4]~input_o\ $ (((!\A[0]~input_o\ & !\A[2]~input_o\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -514,29 +514,29 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[4]~input_o\,
-	datab => \ALT_INV_R[0]~input_o\,
-	datac => \ALT_INV_R[2]~input_o\,
-	datae => \ALT_INV_R[3]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	dataa => \ALT_INV_A[4]~input_o\,
+	datab => \ALT_INV_A[0]~input_o\,
+	datac => \ALT_INV_A[2]~input_o\,
+	datae => \ALT_INV_A[3]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v4|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y38_N4
-\R[5]~input\ : cyclonev_io_ibuf
+\A[5]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(5),
-	o => \R[5]~input_o\);
+	i => ww_A(5),
+	o => \A[5]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N18
 \v16|v5|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v5|v3|v4|Q~0_combout\ = ( \R[3]~input_o\ & ( \R[1]~input_o\ & ( !\R[5]~input_o\ ) ) ) # ( !\R[3]~input_o\ & ( \R[1]~input_o\ & ( !\R[5]~input_o\ ) ) ) # ( \R[3]~input_o\ & ( !\R[1]~input_o\ & ( !\R[5]~input_o\ ) ) ) # ( !\R[3]~input_o\ & ( 
--- !\R[1]~input_o\ & ( !\R[5]~input_o\ $ (((!\R[2]~input_o\ & (!\R[4]~input_o\ & !\R[0]~input_o\)))) ) ) )
+-- \v16|v5|v3|v4|Q~0_combout\ = ( \A[3]~input_o\ & ( \A[1]~input_o\ & ( !\A[5]~input_o\ ) ) ) # ( !\A[3]~input_o\ & ( \A[1]~input_o\ & ( !\A[5]~input_o\ ) ) ) # ( \A[3]~input_o\ & ( !\A[1]~input_o\ & ( !\A[5]~input_o\ ) ) ) # ( !\A[3]~input_o\ & ( 
+-- !\A[1]~input_o\ & ( !\A[5]~input_o\ $ (((!\A[2]~input_o\ & (!\A[4]~input_o\ & !\A[0]~input_o\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -545,18 +545,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[5]~input_o\,
-	datab => \ALT_INV_R[2]~input_o\,
-	datac => \ALT_INV_R[4]~input_o\,
-	datad => \ALT_INV_R[0]~input_o\,
-	datae => \ALT_INV_R[3]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	dataa => \ALT_INV_A[5]~input_o\,
+	datab => \ALT_INV_A[2]~input_o\,
+	datac => \ALT_INV_A[4]~input_o\,
+	datad => \ALT_INV_A[0]~input_o\,
+	datae => \ALT_INV_A[3]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v5|v3|v4|Q~0_combout\);
 
 -- Location: LABCELL_X88_Y35_N24
 \v16|v5|v4|Q\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v5|v4|Q~combout\ = ( !\R[3]~input_o\ & ( !\R[1]~input_o\ & ( (!\R[5]~input_o\ & (!\R[2]~input_o\ & (!\R[4]~input_o\ & !\R[0]~input_o\))) ) ) )
+-- \v16|v5|v4|Q~combout\ = ( !\A[3]~input_o\ & ( !\A[1]~input_o\ & ( (!\A[5]~input_o\ & (!\A[2]~input_o\ & (!\A[4]~input_o\ & !\A[0]~input_o\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -565,29 +565,29 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[5]~input_o\,
-	datab => \ALT_INV_R[2]~input_o\,
-	datac => \ALT_INV_R[4]~input_o\,
-	datad => \ALT_INV_R[0]~input_o\,
-	datae => \ALT_INV_R[3]~input_o\,
-	dataf => \ALT_INV_R[1]~input_o\,
+	dataa => \ALT_INV_A[5]~input_o\,
+	datab => \ALT_INV_A[2]~input_o\,
+	datac => \ALT_INV_A[4]~input_o\,
+	datad => \ALT_INV_A[0]~input_o\,
+	datae => \ALT_INV_A[3]~input_o\,
+	dataf => \ALT_INV_A[1]~input_o\,
 	combout => \v16|v5|v4|Q~combout\);
 
 -- Location: IOIBUF_X89_Y35_N61
-\R[6]~input\ : cyclonev_io_ibuf
+\A[6]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(6),
-	o => \R[6]~input_o\);
+	i => ww_A(6),
+	o => \A[6]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N3
 \v16|v6|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v6|v3|v4|Q~0_combout\ = ( \R[6]~input_o\ & ( \v16|v5|v4|Q~combout\ ) ) # ( !\R[6]~input_o\ & ( !\v16|v5|v4|Q~combout\ ) )
+-- \v16|v6|v3|v4|Q~0_combout\ = ( \A[6]~input_o\ & ( \v16|v5|v4|Q~combout\ ) ) # ( !\A[6]~input_o\ & ( !\v16|v5|v4|Q~combout\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -597,24 +597,24 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datac => \v16|v5|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[6]~input_o\,
+	dataf => \ALT_INV_A[6]~input_o\,
 	combout => \v16|v6|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y9_N38
-\R[7]~input\ : cyclonev_io_ibuf
+\A[7]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(7),
-	o => \R[7]~input_o\);
+	i => ww_A(7),
+	o => \A[7]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N36
 \v16|v7|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v7|v3|v4|Q~0_combout\ = ( \R[6]~input_o\ & ( !\R[7]~input_o\ ) ) # ( !\R[6]~input_o\ & ( !\R[7]~input_o\ $ (\v16|v5|v4|Q~combout\) ) )
+-- \v16|v7|v3|v4|Q~0_combout\ = ( \A[6]~input_o\ & ( !\A[7]~input_o\ ) ) # ( !\A[6]~input_o\ & ( !\A[7]~input_o\ $ (\v16|v5|v4|Q~combout\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -623,26 +623,26 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_R[7]~input_o\,
+	datab => \ALT_INV_A[7]~input_o\,
 	datac => \v16|v5|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[6]~input_o\,
+	dataf => \ALT_INV_A[6]~input_o\,
 	combout => \v16|v7|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y9_N21
-\R[8]~input\ : cyclonev_io_ibuf
+\A[8]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(8),
-	o => \R[8]~input_o\);
+	i => ww_A(8),
+	o => \A[8]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N39
 \v16|v8|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v8|v3|v4|Q~0_combout\ = ( \R[8]~input_o\ & ( (!\R[6]~input_o\ & (!\R[7]~input_o\ & \v16|v5|v4|Q~combout\)) ) ) # ( !\R[8]~input_o\ & ( ((!\v16|v5|v4|Q~combout\) # (\R[7]~input_o\)) # (\R[6]~input_o\) ) )
+-- \v16|v8|v3|v4|Q~0_combout\ = ( \A[8]~input_o\ & ( (!\A[6]~input_o\ & (!\A[7]~input_o\ & \v16|v5|v4|Q~combout\)) ) ) # ( !\A[8]~input_o\ & ( ((!\v16|v5|v4|Q~combout\) # (\A[7]~input_o\)) # (\A[6]~input_o\) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -651,27 +651,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[6]~input_o\,
-	datab => \ALT_INV_R[7]~input_o\,
+	dataa => \ALT_INV_A[6]~input_o\,
+	datab => \ALT_INV_A[7]~input_o\,
 	datac => \v16|v5|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[8]~input_o\,
+	dataf => \ALT_INV_A[8]~input_o\,
 	combout => \v16|v8|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y38_N55
-\R[9]~input\ : cyclonev_io_ibuf
+\A[9]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(9),
-	o => \R[9]~input_o\);
+	i => ww_A(9),
+	o => \A[9]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N0
 \v16|v9|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v9|v3|v4|Q~0_combout\ = ( \R[7]~input_o\ & ( !\R[9]~input_o\ ) ) # ( !\R[7]~input_o\ & ( !\R[9]~input_o\ $ (((!\R[6]~input_o\ & (\v16|v5|v4|Q~combout\ & !\R[8]~input_o\)))) ) )
+-- \v16|v9|v3|v4|Q~0_combout\ = ( \A[7]~input_o\ & ( !\A[9]~input_o\ ) ) # ( !\A[7]~input_o\ & ( !\A[9]~input_o\ $ (((!\A[6]~input_o\ & (\v16|v5|v4|Q~combout\ & !\A[8]~input_o\)))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -680,29 +680,29 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[6]~input_o\,
+	dataa => \ALT_INV_A[6]~input_o\,
 	datab => \v16|v5|v4|ALT_INV_Q~combout\,
-	datac => \ALT_INV_R[8]~input_o\,
-	datad => \ALT_INV_R[9]~input_o\,
-	dataf => \ALT_INV_R[7]~input_o\,
+	datac => \ALT_INV_A[8]~input_o\,
+	datad => \ALT_INV_A[9]~input_o\,
+	dataf => \ALT_INV_A[7]~input_o\,
 	combout => \v16|v9|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y8_N38
-\R[10]~input\ : cyclonev_io_ibuf
+\A[10]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(10),
-	o => \R[10]~input_o\);
+	i => ww_A(10),
+	o => \A[10]~input_o\);
 
 -- Location: LABCELL_X88_Y35_N42
 \v16|v10|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v10|v3|v4|Q~0_combout\ = ( !\R[10]~input_o\ & ( \R[9]~input_o\ ) ) # ( \R[10]~input_o\ & ( !\R[9]~input_o\ & ( (!\R[8]~input_o\ & (!\R[7]~input_o\ & (!\R[6]~input_o\ & \v16|v5|v4|Q~combout\))) ) ) ) # ( !\R[10]~input_o\ & ( !\R[9]~input_o\ & ( 
--- (((!\v16|v5|v4|Q~combout\) # (\R[6]~input_o\)) # (\R[7]~input_o\)) # (\R[8]~input_o\) ) ) )
+-- \v16|v10|v3|v4|Q~0_combout\ = ( !\A[10]~input_o\ & ( \A[9]~input_o\ ) ) # ( \A[10]~input_o\ & ( !\A[9]~input_o\ & ( (!\A[8]~input_o\ & (!\A[7]~input_o\ & (!\A[6]~input_o\ & \v16|v5|v4|Q~combout\))) ) ) ) # ( !\A[10]~input_o\ & ( !\A[9]~input_o\ & ( 
+-- (((!\v16|v5|v4|Q~combout\) # (\A[6]~input_o\)) # (\A[7]~input_o\)) # (\A[8]~input_o\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -711,18 +711,18 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[8]~input_o\,
-	datab => \ALT_INV_R[7]~input_o\,
-	datac => \ALT_INV_R[6]~input_o\,
+	dataa => \ALT_INV_A[8]~input_o\,
+	datab => \ALT_INV_A[7]~input_o\,
+	datac => \ALT_INV_A[6]~input_o\,
 	datad => \v16|v5|v4|ALT_INV_Q~combout\,
-	datae => \ALT_INV_R[10]~input_o\,
-	dataf => \ALT_INV_R[9]~input_o\,
+	datae => \ALT_INV_A[10]~input_o\,
+	dataf => \ALT_INV_A[9]~input_o\,
 	combout => \v16|v10|v3|v4|Q~0_combout\);
 
 -- Location: LABCELL_X88_Y35_N48
 \v16|v10|v4|Q\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v10|v4|Q~combout\ = ( !\R[10]~input_o\ & ( !\R[9]~input_o\ & ( (!\R[8]~input_o\ & (!\R[7]~input_o\ & (!\R[6]~input_o\ & \v16|v5|v4|Q~combout\))) ) ) )
+-- \v16|v10|v4|Q~combout\ = ( !\A[10]~input_o\ & ( !\A[9]~input_o\ & ( (!\A[8]~input_o\ & (!\A[7]~input_o\ & (!\A[6]~input_o\ & \v16|v5|v4|Q~combout\))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -731,29 +731,29 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[8]~input_o\,
-	datab => \ALT_INV_R[7]~input_o\,
-	datac => \ALT_INV_R[6]~input_o\,
+	dataa => \ALT_INV_A[8]~input_o\,
+	datab => \ALT_INV_A[7]~input_o\,
+	datac => \ALT_INV_A[6]~input_o\,
 	datad => \v16|v5|v4|ALT_INV_Q~combout\,
-	datae => \ALT_INV_R[10]~input_o\,
-	dataf => \ALT_INV_R[9]~input_o\,
+	datae => \ALT_INV_A[10]~input_o\,
+	dataf => \ALT_INV_A[9]~input_o\,
 	combout => \v16|v10|v4|Q~combout\);
 
 -- Location: IOIBUF_X89_Y4_N44
-\R[11]~input\ : cyclonev_io_ibuf
+\A[11]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(11),
-	o => \R[11]~input_o\);
+	i => ww_A(11),
+	o => \A[11]~input_o\);
 
 -- Location: LABCELL_X88_Y6_N0
 \v16|v11|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v11|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( \R[11]~input_o\ ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[11]~input_o\ ) )
+-- \v16|v11|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( \A[11]~input_o\ ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[11]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -763,24 +763,24 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[11]~input_o\,
+	dataf => \ALT_INV_A[11]~input_o\,
 	combout => \v16|v11|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y4_N78
-\R[12]~input\ : cyclonev_io_ibuf
+\A[12]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(12),
-	o => \R[12]~input_o\);
+	i => ww_A(12),
+	o => \A[12]~input_o\);
 
 -- Location: LABCELL_X88_Y6_N39
 \v16|v12|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v12|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\R[11]~input_o\ $ (!\R[12]~input_o\) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[12]~input_o\ ) )
+-- \v16|v12|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\A[11]~input_o\ $ (!\A[12]~input_o\) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[12]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -789,26 +789,26 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[11]~input_o\,
-	datac => \ALT_INV_R[12]~input_o\,
+	dataa => \ALT_INV_A[11]~input_o\,
+	datac => \ALT_INV_A[12]~input_o\,
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
 	combout => \v16|v12|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y6_N4
-\R[13]~input\ : cyclonev_io_ibuf
+\A[13]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(13),
-	o => \R[13]~input_o\);
+	i => ww_A(13),
+	o => \A[13]~input_o\);
 
 -- Location: LABCELL_X88_Y6_N42
 \v16|v13|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v13|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\R[13]~input_o\ $ (((!\R[12]~input_o\ & !\R[11]~input_o\))) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[13]~input_o\ ) )
+-- \v16|v13|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\A[13]~input_o\ $ (((!\A[12]~input_o\ & !\A[11]~input_o\))) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[13]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -817,27 +817,27 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	datab => \ALT_INV_R[12]~input_o\,
-	datac => \ALT_INV_R[11]~input_o\,
-	datad => \ALT_INV_R[13]~input_o\,
+	datab => \ALT_INV_A[12]~input_o\,
+	datac => \ALT_INV_A[11]~input_o\,
+	datad => \ALT_INV_A[13]~input_o\,
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
 	combout => \v16|v13|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X72_Y0_N35
-\R[14]~input\ : cyclonev_io_ibuf
+\A[14]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(14),
-	o => \R[14]~input_o\);
+	i => ww_A(14),
+	o => \A[14]~input_o\);
 
 -- Location: LABCELL_X88_Y6_N48
 \v16|v14|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v14|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ $ (((!\R[11]~input_o\ & (!\R[12]~input_o\ & !\R[13]~input_o\)))) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ ) )
+-- \v16|v14|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ $ (((!\A[11]~input_o\ & (!\A[12]~input_o\ & !\A[13]~input_o\)))) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -846,29 +846,29 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[11]~input_o\,
-	datab => \ALT_INV_R[12]~input_o\,
-	datac => \ALT_INV_R[14]~input_o\,
-	datad => \ALT_INV_R[13]~input_o\,
+	dataa => \ALT_INV_A[11]~input_o\,
+	datab => \ALT_INV_A[12]~input_o\,
+	datac => \ALT_INV_A[14]~input_o\,
+	datad => \ALT_INV_A[13]~input_o\,
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
 	combout => \v16|v14|v3|v4|Q~0_combout\);
 
 -- Location: IOIBUF_X89_Y6_N55
-\R[15]~input\ : cyclonev_io_ibuf
+\A[15]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_R(15),
-	o => \R[15]~input_o\);
+	i => ww_A(15),
+	o => \A[15]~input_o\);
 
 -- Location: LABCELL_X88_Y6_N54
 \v16|v15|v3|v4|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v15|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( \R[14]~input_o\ & ( !\R[15]~input_o\ ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( \R[14]~input_o\ & ( !\R[15]~input_o\ ) ) ) # ( \v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ & ( !\R[15]~input_o\ $ 
--- (((!\R[11]~input_o\ & (!\R[12]~input_o\ & !\R[13]~input_o\)))) ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ & ( !\R[15]~input_o\ ) ) )
+-- \v16|v15|v3|v4|Q~0_combout\ = ( \v16|v10|v4|Q~combout\ & ( \A[14]~input_o\ & ( !\A[15]~input_o\ ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( \A[14]~input_o\ & ( !\A[15]~input_o\ ) ) ) # ( \v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ & ( !\A[15]~input_o\ $ 
+-- (((!\A[11]~input_o\ & (!\A[12]~input_o\ & !\A[13]~input_o\)))) ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ & ( !\A[15]~input_o\ ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -877,19 +877,19 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[11]~input_o\,
-	datab => \ALT_INV_R[12]~input_o\,
-	datac => \ALT_INV_R[15]~input_o\,
-	datad => \ALT_INV_R[13]~input_o\,
+	dataa => \ALT_INV_A[11]~input_o\,
+	datab => \ALT_INV_A[12]~input_o\,
+	datac => \ALT_INV_A[15]~input_o\,
+	datad => \ALT_INV_A[13]~input_o\,
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[14]~input_o\,
+	dataf => \ALT_INV_A[14]~input_o\,
 	combout => \v16|v15|v3|v4|Q~0_combout\);
 
 -- Location: LABCELL_X88_Y6_N30
 \v16|v15|v4|Q\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v16|v15|v4|Q~combout\ = ( \v16|v10|v4|Q~combout\ & ( \R[14]~input_o\ ) ) # ( !\v16|v10|v4|Q~combout\ & ( \R[14]~input_o\ ) ) # ( \v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ & ( (((\R[13]~input_o\) # (\R[15]~input_o\)) # (\R[12]~input_o\)) # 
--- (\R[11]~input_o\) ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\R[14]~input_o\ ) )
+-- \v16|v15|v4|Q~combout\ = ( \v16|v10|v4|Q~combout\ & ( \A[14]~input_o\ ) ) # ( !\v16|v10|v4|Q~combout\ & ( \A[14]~input_o\ ) ) # ( \v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ & ( (((\A[13]~input_o\) # (\A[15]~input_o\)) # (\A[12]~input_o\)) # 
+-- (\A[11]~input_o\) ) ) ) # ( !\v16|v10|v4|Q~combout\ & ( !\A[14]~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -898,12 +898,12 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
-	dataa => \ALT_INV_R[11]~input_o\,
-	datab => \ALT_INV_R[12]~input_o\,
-	datac => \ALT_INV_R[15]~input_o\,
-	datad => \ALT_INV_R[13]~input_o\,
+	dataa => \ALT_INV_A[11]~input_o\,
+	datab => \ALT_INV_A[12]~input_o\,
+	datac => \ALT_INV_A[15]~input_o\,
+	datad => \ALT_INV_A[13]~input_o\,
 	datae => \v16|v10|v4|ALT_INV_Q~combout\,
-	dataf => \ALT_INV_R[14]~input_o\,
+	dataf => \ALT_INV_A[14]~input_o\,
 	combout => \v16|v15|v4|Q~combout\);
 
 -- Location: LABCELL_X66_Y1_N0
