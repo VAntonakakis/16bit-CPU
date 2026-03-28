@@ -21,7 +21,7 @@ component MyFullAdder16bit is port(
 	Cout : out std_logic);
 end component;
 
-signal C, B, A : std_logic_vector (15 downto 0);
+signal B, A : std_logic_vector (15 downto 0);
 signal Cin : std_logic;
 begin
 

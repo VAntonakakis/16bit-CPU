@@ -1,0 +1,147 @@
+|MyAnd16bit
+A[0] => MyAnd2:v0.A
+A[1] => MyAnd2:v1.A
+A[2] => MyAnd2:v2.A
+A[3] => MyAnd2:v3.A
+A[4] => MyAnd2:v4.A
+A[5] => MyAnd2:v5.A
+A[6] => MyAnd2:v6.A
+A[7] => MyAnd2:v7.A
+A[8] => MyAnd2:v8.A
+A[9] => MyAnd2:v9.A
+A[10] => MyAnd2:v10.A
+A[11] => MyAnd2:v11.A
+A[12] => MyAnd2:v12.A
+A[13] => MyAnd2:v13.A
+A[14] => MyAnd2:v14.A
+A[15] => MyAnd2:v15.A
+B[0] => MyAnd2:v0.B
+B[1] => MyAnd2:v1.B
+B[2] => MyAnd2:v2.B
+B[3] => MyAnd2:v3.B
+B[4] => MyAnd2:v4.B
+B[5] => MyAnd2:v5.B
+B[6] => MyAnd2:v6.B
+B[7] => MyAnd2:v7.B
+B[8] => MyAnd2:v8.B
+B[9] => MyAnd2:v9.B
+B[10] => MyAnd2:v10.B
+B[11] => MyAnd2:v11.B
+B[12] => MyAnd2:v12.B
+B[13] => MyAnd2:v13.B
+B[14] => MyAnd2:v14.B
+B[15] => MyAnd2:v15.B
+Q[0] <= MyAnd2:v0.Q
+Q[1] <= MyAnd2:v1.Q
+Q[2] <= MyAnd2:v2.Q
+Q[3] <= MyAnd2:v3.Q
+Q[4] <= MyAnd2:v4.Q
+Q[5] <= MyAnd2:v5.Q
+Q[6] <= MyAnd2:v6.Q
+Q[7] <= MyAnd2:v7.Q
+Q[8] <= MyAnd2:v8.Q
+Q[9] <= MyAnd2:v9.Q
+Q[10] <= MyAnd2:v10.Q
+Q[11] <= MyAnd2:v11.Q
+Q[12] <= MyAnd2:v12.Q
+Q[13] <= MyAnd2:v13.Q
+Q[14] <= MyAnd2:v14.Q
+Q[15] <= MyAnd2:v15.Q
+
+
+|MyAnd16bit|MyAnd2:v0
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v1
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v2
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v6
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v7
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v8
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v9
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v10
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v11
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v12
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v13
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v14
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyAnd16bit|MyAnd2:v15
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
