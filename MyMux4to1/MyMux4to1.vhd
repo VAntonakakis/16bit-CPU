@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity MyMux4to1 is port(
-	S : in std_logic_vector (0 to 1);
+	S : in std_logic_vector (1 downto 0);
 	A : in std_logic;
 	B : in std_logic;
 	C : in std_logic;

@@ -1,7 +1,7 @@
 |MyMux4to1
+S[0] => MyMux2to1:v3.S
 S[1] => MyMux2to1:V0.S
 S[1] => MyMux2to1:V1.S
-S[0] => MyMux2to1:v3.S
 A => MyMux2to1:V0.A
 B => MyMux2to1:V0.B
 C => MyMux2to1:V1.A

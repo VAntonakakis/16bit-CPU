@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/29/2026 12:11:43"
+-- Generated on "03/29/2026 12:28:30"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyMux4to1
 -- 
@@ -39,7 +39,7 @@ SIGNAL B : STD_LOGIC;
 SIGNAL C : STD_LOGIC;
 SIGNAL D : STD_LOGIC;
 SIGNAL Q : STD_LOGIC;
-SIGNAL S : STD_LOGIC_VECTOR(0 TO 1);
+SIGNAL S : STD_LOGIC_VECTOR(1 DOWNTO 0);
 COMPONENT MyMux4to1
 	PORT (
 	A : IN STD_LOGIC;
@@ -47,7 +47,7 @@ COMPONENT MyMux4to1
 	C : IN STD_LOGIC;
 	D : IN STD_LOGIC;
 	Q : OUT STD_LOGIC;
-	S : IN STD_LOGIC_VECTOR(0 TO 1)
+	S : IN STD_LOGIC_VECTOR(1 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
@@ -72,27 +72,43 @@ END PROCESS t_prcs_A;
 -- B
 t_prcs_B: PROCESS
 BEGIN
+LOOP
+	B <= '0';
+	WAIT FOR 5000 ps;
 	B <= '1';
-WAIT;
+	WAIT FOR 5000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_B;
 
 -- C
 t_prcs_C: PROCESS
 BEGIN
-	C <= '1';
+	FOR i IN 1 TO 33
+	LOOP
+		C <= '0';
+		WAIT FOR 15000 ps;
+		C <= '1';
+		WAIT FOR 15000 ps;
+	END LOOP;
+	C <= '0';
 WAIT;
 END PROCESS t_prcs_C;
 
 -- D
 t_prcs_D: PROCESS
 BEGIN
-LOOP
+	FOR i IN 1 TO 58
+	LOOP
+		D <= '0';
+		WAIT FOR 8500 ps;
+		D <= '1';
+		WAIT FOR 8500 ps;
+	END LOOP;
 	D <= '0';
-	WAIT FOR 500000 ps;
+	WAIT FOR 8500 ps;
 	D <= '1';
-	WAIT FOR 500000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_D;
 -- S[1]
 t_prcs_S_1: PROCESS

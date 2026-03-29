@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "03/29/2026 12:11:44"
+-- DATE "03/29/2026 12:28:31"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -36,7 +36,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	MyMux4to1 IS
     PORT (
-	S : IN std_logic_vector(0 TO 1);
+	S : IN std_logic_vector(1 DOWNTO 0);
 	A : IN std_logic;
 	B : IN std_logic;
 	C : IN std_logic;
@@ -65,7 +65,7 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_S : std_logic_vector(0 TO 1);
+SIGNAL ww_S : std_logic_vector(1 DOWNTO 0);
 SIGNAL ww_A : std_logic;
 SIGNAL ww_B : std_logic;
 SIGNAL ww_C : std_logic;
@@ -83,8 +83,8 @@ SIGNAL \ALT_INV_A~input_o\ : std_logic;
 SIGNAL \ALT_INV_B~input_o\ : std_logic;
 SIGNAL \ALT_INV_C~input_o\ : std_logic;
 SIGNAL \ALT_INV_D~input_o\ : std_logic;
-SIGNAL \ALT_INV_S[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_S[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_S[1]~input_o\ : std_logic;
 
 BEGIN
 
@@ -101,8 +101,8 @@ ww_devpor <= devpor;
 \ALT_INV_B~input_o\ <= NOT \B~input_o\;
 \ALT_INV_C~input_o\ <= NOT \C~input_o\;
 \ALT_INV_D~input_o\ <= NOT \D~input_o\;
-\ALT_INV_S[1]~input_o\ <= NOT \S[1]~input_o\;
 \ALT_INV_S[0]~input_o\ <= NOT \S[0]~input_o\;
+\ALT_INV_S[1]~input_o\ <= NOT \S[1]~input_o\;
 
 -- Location: IOOBUF_X89_Y37_N39
 \Q~output\ : cyclonev_io_obuf

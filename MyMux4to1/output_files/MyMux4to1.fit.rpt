@@ -1,5 +1,5 @@
 Fitter report for MyMux4to1
-Sun Mar 29 12:09:57 2026
+Sun Mar 29 12:27:17 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Mar 29 12:09:57 2026       ;
+; Fitter Status                   ; Successful - Sun Mar 29 12:27:17 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyMux4to1                                   ;
 ; Top-level Entity Name           ; MyMux4to1                                   ;
@@ -1146,7 +1146,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1154,10 +1154,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Quartus projects/ergasia 1/MyMux4to1/output_files/MyMux4to1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 7950 megabytes
-    Info: Processing ended: Sun Mar 29 12:09:57 2026
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:02:33
+    Info: Peak virtual memory: 7947 megabytes
+    Info: Processing ended: Sun Mar 29 12:27:18 2026
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:02:29
 
 
 +----------------------------+
