@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyGreaterEqual16bit is port (
+	A : in std_logic_vector (15 downto 0);
+	Q : out std_logic);
+end MyGreaterEqual16bit;
+
+architecture StructMyGreaterEqual16bit of MyGreaterEqual16bit is
+component MyAnd2 is port(
+	A : in std_logic;
+	B : in std_logic;
+	Q : out std_logic);
+end component;
+
+signal s1 : std_logic;
+
+begin
+s1 <= '1';
+v0 = MyAnd2 port map(s1, A(0), Q);
+
+end StructMyGreaterEqual16bit;
