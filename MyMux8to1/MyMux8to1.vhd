@@ -26,4 +26,14 @@ Signal P1, P2, P3, P4, P5, P6 : std_logic;
 
 begin
 
-V0
+V0 : MyMux2to1 port map(S(0), A, B, P1);
+V1 : MyMux2to1 port map(S(0), C, D, P2);
+V2 : MyMux2to1 port map(S(0), E, F, P3);
+V3 : MyMux2to1 port map(S(0), G, H, P4);
+V4 : MyMux2to1 port map(S(1), p1, p2, p5);
+V5 : MyMux2to1 port map(S(1), p3, p4, p6);
+v6 : MyMux2to1 port map(S(2), p5, p6, Q);
+
+end StructuralMyMux8to1;
+
+
