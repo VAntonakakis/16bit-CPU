@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim
+Emymux8to1_16bit
+Z1 w1774781399
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+R0
+Z9 8MyMux8to1_16bit.vho
+Z10 FMyMux8to1_16bit.vho
+l0
+L37
+V7RB3?YZ@EcaOzKW0<IIFa1
+!s100 8N=_nPkcDXY9[VTgO_;@Q1
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1774781400
+!i10b 1
+Z13 !s108 1774781399.000000
+Z14 !s90 -work|work|MyMux8to1_16bit.vho|
+Z15 !s107 MyMux8to1_16bit.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 15 mymux8to1_16bit 0 22 7RB3?YZ@EcaOzKW0<IIFa1
+l566
+L202
+VeDb53Pi5SQTE^^DJGDIh[2
+!s100 A`AP1gRAno7QLXDDMPEkh2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Emymux8to1_16bit_vhd_vec_tst
+Z18 w1774781398
+R6
+R7
+R0
+Z19 8Waveform.vwf.vht
+Z20 FWaveform.vwf.vht
+l0
+L32
+VIbcoj_O8H=fFghkZLcLob2
+!s100 c36@3WWEG:C2@1:Qdzd:32
+R11
+32
+R12
+!i10b 1
+Z21 !s108 1774781400.000000
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R16
+R17
+Amymux8to1_16bit_arch
+R6
+R7
+Z24 DEx4 work 27 mymux8to1_16bit_vhd_vec_tst 0 22 Ibcoj_O8H=fFghkZLcLob2
+l61
+L34
+VX6<;>N<[1Fi1Cz;1kVObf1
+!s100 F?moK4O2WCQeYG?X]L>Bo1
+R11
+32
+R12
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R16
+R17
