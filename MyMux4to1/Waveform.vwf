@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux4to1 -c MyMux4to1 --vector_source="F:/Computer Architecture/ergasia 1/MyMux4to1/Waveform.vwf" --testbench_file="F:/Computer Architecture/ergasia 1/MyMux4to1/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux4to1 -c MyMux4to1 --vector_source="F:/Computer Architecture/ergasia 1/MyMux4to1/Waveform.vwf" --testbench_file="F:/Computer Architecture/ergasia 1/MyMux4to1/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="F:/Computer Architecture/ergasia 1/MyMux4to1/simulation/qsim/" MyMux4to1 -c MyMux4to1</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="F:/Computer Architecture/ergasia 1/MyMux4to1/simulation/qsim/" MyMux4to1 -c MyMux4to1</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux4to1 -c MyMux4to1 --vector_source="C:/Quartus projects/ergasia 1/MyMux4to1/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyMux4to1/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux4to1 -c MyMux4to1 --vector_source="C:/Quartus projects/ergasia 1/MyMux4to1/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyMux4to1/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyMux4to1/simulation/qsim/" MyMux4to1 -c MyMux4to1</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyMux4to1/simulation/qsim/" MyMux4to1 -c MyMux4to1</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work MyMux4to1.vho
@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -106,14 +108,34 @@ SIGNAL("C")
 	PARENT = "";
 }
 
-SIGNAL("D")
+SIGNAL("S")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 2;
+	LSB_INDEX = 0;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("S[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "S";
+}
+
+SIGNAL("S[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "S";
 }
 
 SIGNAL("Q")
@@ -126,17 +148,7 @@ SIGNAL("Q")
 	PARENT = "";
 }
 
-SIGNAL("s1")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("s2")
+SIGNAL("D")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -151,12 +163,7 @@ TRANSITION_LIST("A")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 500.0;
-			LEVEL 1 FOR 500.0;
-		}
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -165,12 +172,7 @@ TRANSITION_LIST("B")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 0 FOR 250.0;
-			LEVEL 1 FOR 250.0;
-		}
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -179,26 +181,25 @@ TRANSITION_LIST("C")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 4;
-			LEVEL 0 FOR 125.0;
-			LEVEL 1 FOR 125.0;
-		}
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("D")
+TRANSITION_LIST("S[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 8;
-			LEVEL 0 FOR 62.5;
-			LEVEL 1 FOR 62.5;
-		}
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("S[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -211,21 +212,17 @@ TRANSITION_LIST("Q")
 	}
 }
 
-TRANSITION_LIST("s1")
+TRANSITION_LIST("D")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("s2")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 500.0;
+			LEVEL 1 FOR 500.0;
+		}
 	}
 }
 
@@ -267,20 +264,32 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "s1";
+	CHANNEL = "S";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
+	CHILDREN = 5, 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "s2";
+	CHANNEL = "S[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
-	TREE_LEVEL = 0;
+	TREE_LEVEL = 1;
+	PARENT = 4;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "S[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 1;
+	PARENT = 4;
 }
 
 DISPLAY_LINE
@@ -288,7 +297,7 @@ DISPLAY_LINE
 	CHANNEL = "Q";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 6;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 0;
 }
 

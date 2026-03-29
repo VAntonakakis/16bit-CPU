@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "03/25/2026 10:18:09"
+-- DATE "03/29/2026 12:11:44"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -36,8 +36,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY 	MyMux4to1 IS
     PORT (
-	s1 : IN std_logic;
-	s2 : IN std_logic;
+	S : IN std_logic_vector(0 TO 1);
 	A : IN std_logic;
 	B : IN std_logic;
 	C : IN std_logic;
@@ -52,8 +51,8 @@ END MyMux4to1;
 -- B	=>  Location: PIN_N16,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- C	=>  Location: PIN_N20,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- D	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- s1	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- s2	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- S[1]	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- S[0]	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF MyMux4to1 IS
@@ -66,8 +65,7 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_s1 : std_logic;
-SIGNAL ww_s2 : std_logic;
+SIGNAL ww_S : std_logic_vector(0 TO 1);
 SIGNAL ww_A : std_logic;
 SIGNAL ww_B : std_logic;
 SIGNAL ww_C : std_logic;
@@ -76,22 +74,21 @@ SIGNAL ww_Q : std_logic;
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \D~input_o\ : std_logic;
 SIGNAL \C~input_o\ : std_logic;
-SIGNAL \s1~input_o\ : std_logic;
-SIGNAL \s2~input_o\ : std_logic;
+SIGNAL \S[1]~input_o\ : std_logic;
+SIGNAL \S[0]~input_o\ : std_logic;
 SIGNAL \A~input_o\ : std_logic;
 SIGNAL \B~input_o\ : std_logic;
-SIGNAL \v6|Q~0_combout\ : std_logic;
-SIGNAL \ALT_INV_s2~input_o\ : std_logic;
-SIGNAL \ALT_INV_s1~input_o\ : std_logic;
-SIGNAL \ALT_INV_D~input_o\ : std_logic;
-SIGNAL \ALT_INV_C~input_o\ : std_logic;
-SIGNAL \ALT_INV_B~input_o\ : std_logic;
+SIGNAL \v3|v3|Q~0_combout\ : std_logic;
 SIGNAL \ALT_INV_A~input_o\ : std_logic;
+SIGNAL \ALT_INV_B~input_o\ : std_logic;
+SIGNAL \ALT_INV_C~input_o\ : std_logic;
+SIGNAL \ALT_INV_D~input_o\ : std_logic;
+SIGNAL \ALT_INV_S[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_S[0]~input_o\ : std_logic;
 
 BEGIN
 
-ww_s1 <= s1;
-ww_s2 <= s2;
+ww_S <= S;
 ww_A <= A;
 ww_B <= B;
 ww_C <= C;
@@ -100,12 +97,12 @@ Q <= ww_Q;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_s2~input_o\ <= NOT \s2~input_o\;
-\ALT_INV_s1~input_o\ <= NOT \s1~input_o\;
-\ALT_INV_D~input_o\ <= NOT \D~input_o\;
-\ALT_INV_C~input_o\ <= NOT \C~input_o\;
-\ALT_INV_B~input_o\ <= NOT \B~input_o\;
 \ALT_INV_A~input_o\ <= NOT \A~input_o\;
+\ALT_INV_B~input_o\ <= NOT \B~input_o\;
+\ALT_INV_C~input_o\ <= NOT \C~input_o\;
+\ALT_INV_D~input_o\ <= NOT \D~input_o\;
+\ALT_INV_S[1]~input_o\ <= NOT \S[1]~input_o\;
+\ALT_INV_S[0]~input_o\ <= NOT \S[0]~input_o\;
 
 -- Location: IOOBUF_X89_Y37_N39
 \Q~output\ : cyclonev_io_obuf
@@ -116,7 +113,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \v6|Q~0_combout\,
+	i => \v3|v3|Q~0_combout\,
 	devoe => ww_devoe,
 	o => ww_Q);
 
@@ -143,26 +140,26 @@ PORT MAP (
 	o => \C~input_o\);
 
 -- Location: IOIBUF_X89_Y35_N95
-\s1~input\ : cyclonev_io_ibuf
+\S[1]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_s1,
-	o => \s1~input_o\);
+	i => ww_S(1),
+	o => \S[1]~input_o\);
 
 -- Location: IOIBUF_X89_Y36_N21
-\s2~input\ : cyclonev_io_ibuf
+\S[0]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
 PORT MAP (
-	i => ww_s2,
-	o => \s2~input_o\);
+	i => ww_S(0),
+	o => \S[0]~input_o\);
 
 -- Location: IOIBUF_X89_Y37_N55
 \A~input\ : cyclonev_io_ibuf
@@ -187,11 +184,11 @@ PORT MAP (
 	o => \B~input_o\);
 
 -- Location: LABCELL_X88_Y35_N0
-\v6|Q~0\ : cyclonev_lcell_comb
+\v3|v3|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v6|Q~0_combout\ = ( \A~input_o\ & ( \B~input_o\ & ( (!\s2~input_o\) # ((!\s1~input_o\ & ((\C~input_o\))) # (\s1~input_o\ & (\D~input_o\))) ) ) ) # ( !\A~input_o\ & ( \B~input_o\ & ( (!\s1~input_o\ & (((\C~input_o\ & \s2~input_o\)))) # (\s1~input_o\ & 
--- (((!\s2~input_o\)) # (\D~input_o\))) ) ) ) # ( \A~input_o\ & ( !\B~input_o\ & ( (!\s1~input_o\ & (((!\s2~input_o\) # (\C~input_o\)))) # (\s1~input_o\ & (\D~input_o\ & ((\s2~input_o\)))) ) ) ) # ( !\A~input_o\ & ( !\B~input_o\ & ( (\s2~input_o\ & 
--- ((!\s1~input_o\ & ((\C~input_o\))) # (\s1~input_o\ & (\D~input_o\)))) ) ) )
+-- \v3|v3|Q~0_combout\ = ( \A~input_o\ & ( \B~input_o\ & ( (!\S[0]~input_o\) # ((!\S[1]~input_o\ & ((\C~input_o\))) # (\S[1]~input_o\ & (\D~input_o\))) ) ) ) # ( !\A~input_o\ & ( \B~input_o\ & ( (!\S[1]~input_o\ & (((\C~input_o\ & \S[0]~input_o\)))) # 
+-- (\S[1]~input_o\ & (((!\S[0]~input_o\)) # (\D~input_o\))) ) ) ) # ( \A~input_o\ & ( !\B~input_o\ & ( (!\S[1]~input_o\ & (((!\S[0]~input_o\) # (\C~input_o\)))) # (\S[1]~input_o\ & (\D~input_o\ & ((\S[0]~input_o\)))) ) ) ) # ( !\A~input_o\ & ( !\B~input_o\ & 
+-- ( (\S[0]~input_o\ & ((!\S[1]~input_o\ & ((\C~input_o\))) # (\S[1]~input_o\ & (\D~input_o\)))) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -202,11 +199,11 @@ GENERIC MAP (
 PORT MAP (
 	dataa => \ALT_INV_D~input_o\,
 	datab => \ALT_INV_C~input_o\,
-	datac => \ALT_INV_s1~input_o\,
-	datad => \ALT_INV_s2~input_o\,
+	datac => \ALT_INV_S[1]~input_o\,
+	datad => \ALT_INV_S[0]~input_o\,
 	datae => \ALT_INV_A~input_o\,
 	dataf => \ALT_INV_B~input_o\,
-	combout => \v6|Q~0_combout\);
+	combout => \v3|v3|Q~0_combout\);
 
 -- Location: MLABCELL_X28_Y4_N0
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb

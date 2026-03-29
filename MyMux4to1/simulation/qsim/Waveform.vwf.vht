@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/25/2026 10:18:08"
+-- Generated on "03/29/2026 12:11:43"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyMux4to1
 -- 
@@ -39,8 +39,7 @@ SIGNAL B : STD_LOGIC;
 SIGNAL C : STD_LOGIC;
 SIGNAL D : STD_LOGIC;
 SIGNAL Q : STD_LOGIC;
-SIGNAL s1 : STD_LOGIC;
-SIGNAL s2 : STD_LOGIC;
+SIGNAL S : STD_LOGIC_VECTOR(0 TO 1);
 COMPONENT MyMux4to1
 	PORT (
 	A : IN STD_LOGIC;
@@ -48,8 +47,7 @@ COMPONENT MyMux4to1
 	C : IN STD_LOGIC;
 	D : IN STD_LOGIC;
 	Q : OUT STD_LOGIC;
-	s1 : IN STD_LOGIC;
-	s2 : IN STD_LOGIC
+	S : IN STD_LOGIC_VECTOR(0 TO 1)
 	);
 END COMPONENT;
 BEGIN
@@ -61,44 +59,28 @@ BEGIN
 	C => C,
 	D => D,
 	Q => Q,
-	s1 => s1,
-	s2 => s2
+	S => S
 	);
 
 -- A
 t_prcs_A: PROCESS
 BEGIN
-LOOP
-	A <= '0';
-	WAIT FOR 500000 ps;
 	A <= '1';
-	WAIT FOR 500000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_A;
 
 -- B
 t_prcs_B: PROCESS
 BEGIN
-LOOP
-	B <= '0';
-	WAIT FOR 250000 ps;
 	B <= '1';
-	WAIT FOR 250000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_B;
 
 -- C
 t_prcs_C: PROCESS
 BEGIN
-LOOP
-	C <= '0';
-	WAIT FOR 125000 ps;
 	C <= '1';
-	WAIT FOR 125000 ps;
-	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
-END LOOP;
+WAIT;
 END PROCESS t_prcs_C;
 
 -- D
@@ -106,24 +88,22 @@ t_prcs_D: PROCESS
 BEGIN
 LOOP
 	D <= '0';
-	WAIT FOR 62500 ps;
+	WAIT FOR 500000 ps;
 	D <= '1';
-	WAIT FOR 62500 ps;
+	WAIT FOR 500000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_D;
-
--- s1
-t_prcs_s1: PROCESS
+-- S[1]
+t_prcs_S_1: PROCESS
 BEGIN
-	s1 <= '0';
+	S(1) <= '1';
 WAIT;
-END PROCESS t_prcs_s1;
-
--- s2
-t_prcs_s2: PROCESS
+END PROCESS t_prcs_S_1;
+-- S[0]
+t_prcs_S_0: PROCESS
 BEGIN
-	s2 <= '1';
+	S(0) <= '1';
 WAIT;
-END PROCESS t_prcs_s2;
+END PROCESS t_prcs_S_0;
 END MyMux4to1_arch;

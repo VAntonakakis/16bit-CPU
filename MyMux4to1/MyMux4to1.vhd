@@ -2,8 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity MyMux4to1 is port(
-	s1 : in std_logic;
-	s2 : in std_logic;
+	S : in std_logic_vector (0 to 1);
 	A : in std_logic;
 	B : in std_logic;
 	C : in std_logic;
@@ -13,35 +12,20 @@ end MyMux4to1;
 
 architecture StructuralMyMux4to1 of MyMux4to1 is 
 
-component MyAnd3 is port(
+component MyMux2to1 is port(
+	S : in std_logic;
 	A : in std_logic;
 	B : in std_logic;
-	C : in std_logic;
 	Q : out std_logic);
 end component;
+	
 
-component MyNot is port(
-	A : in std_logic;
-	Q : out std_logic);
-end component;
-
-component MyOr4 is port(
-	A : in std_logic;
-	B : in std_logic;
-	C : in std_logic;
-	D : in std_logic;
-	Q : out std_logic);
-end component;
-
-signal s1n, s2n, p1, p2, p3, p4 : std_logic;
+signal P1, P2 : std_logic;
 begin 
 
-v0 : MyNot port map(s1, s1n);
-v1 : MyNot port map(s2, s2n);
-v2 : MyAnd3 port map(A, s1n, s2n, p1); 
-v3 : MyAnd3 port map(B, s1, s2n, p2); 
-v4 : MyAnd3 port map(C, s1n, s2, p3); 
-v5 : MyAnd3 port map(D, s1, s2, p4); 
-v6 : MyOr4 port map(p1, p2, p3, p4, Q); 
+V0 : MyMux2to1 port map(S(1), A, B, P1);
+V1 : MyMux2to1 port map(S(1), C, D, P2);
+v3 : MyMux2to1 port map(S(0), P1, P2, Q);
+
 
 end StructuralMyMux4to1;

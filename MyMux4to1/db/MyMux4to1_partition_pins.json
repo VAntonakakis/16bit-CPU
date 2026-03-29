@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "s1",
+					"name" : "S[1]",
 					"strict" : false
 				},
 				{
-					"name" : "s2",
+					"name" : "S[0]",
 					"strict" : false
 				}
 			]
