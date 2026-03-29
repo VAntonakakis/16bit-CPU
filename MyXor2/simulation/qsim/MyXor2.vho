@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "03/24/2026 21:11:46"
+-- DATE "03/29/2026 09:47:39"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -64,7 +64,7 @@ SIGNAL ww_Q : std_logic;
 SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
 SIGNAL \B~input_o\ : std_logic;
 SIGNAL \A~input_o\ : std_logic;
-SIGNAL \v4|Q~0_combout\ : std_logic;
+SIGNAL \v3|Q~0_combout\ : std_logic;
 SIGNAL \ALT_INV_B~input_o\ : std_logic;
 SIGNAL \ALT_INV_A~input_o\ : std_logic;
 
@@ -88,7 +88,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \v4|Q~0_combout\,
+	i => \v3|Q~0_combout\,
 	devoe => ww_devoe,
 	o => ww_Q);
 
@@ -115,9 +115,9 @@ PORT MAP (
 	o => \A~input_o\);
 
 -- Location: LABCELL_X88_Y8_N0
-\v4|Q~0\ : cyclonev_lcell_comb
+\v3|Q~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \v4|Q~0_combout\ = ( \A~input_o\ & ( !\B~input_o\ ) ) # ( !\A~input_o\ & ( \B~input_o\ ) )
+-- \v3|Q~0_combout\ = ( \A~input_o\ & ( !\B~input_o\ ) ) # ( !\A~input_o\ & ( \B~input_o\ ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -128,7 +128,7 @@ GENERIC MAP (
 PORT MAP (
 	datab => \ALT_INV_B~input_o\,
 	datae => \ALT_INV_A~input_o\,
-	combout => \v4|Q~0_combout\);
+	combout => \v3|Q~0_combout\);
 
 -- Location: LABCELL_X64_Y15_N3
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb

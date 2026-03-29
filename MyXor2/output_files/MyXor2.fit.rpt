@@ -1,5 +1,5 @@
 Fitter report for MyXor2
-Tue Mar 24 21:10:54 2026
+Sun Mar 29 09:45:13 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Mar 24 21:10:54 2026       ;
+; Fitter Status                   ; Successful - Sun Mar 29 09:45:13 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyXor2                                      ;
 ; Top-level Entity Name           ; MyXor2                                      ;
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in F:/Computer Architecture/ergasia 1/MyXor2/output_files/MyXor2.pin.
+The pin-out file can be found in C:/Quartus projects/ergasia 1/MyXor2/output_files/MyXor2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -917,7 +917,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; |MyXor2                    ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 3    ; 0            ; |MyXor2             ; MyXor2      ; work         ;
-;    |MyOr2:v4|              ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyXor2|MyOr2:v4    ; MyOr2       ; work         ;
+;    |MyAnd2:v3|             ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyXor2|MyAnd2:v3   ; MyAnd2      ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -933,16 +933,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+---------------------------------------------------+
-; Pad To Core Delay Chain Fanout                    ;
-+---------------------+-------------------+---------+
-; Source Pin / Fanout ; Pad To Core Index ; Setting ;
-+---------------------+-------------------+---------+
-; A                   ;                   ;         ;
-;      - MyOr2:v4|Q~0 ; 1                 ; 0       ;
-; B                   ;                   ;         ;
-;      - MyOr2:v4|Q~0 ; 1                 ; 0       ;
-+---------------------+-------------------+---------+
++----------------------------------------------------+
+; Pad To Core Delay Chain Fanout                     ;
++----------------------+-------------------+---------+
+; Source Pin / Fanout  ; Pad To Core Index ; Setting ;
++----------------------+-------------------+---------+
+; A                    ;                   ;         ;
+;      - MyAnd2:v3|Q~0 ; 1                 ; 0       ;
+; B                    ;                   ;         ;
+;      - MyAnd2:v3|Q~0 ; 1                 ; 0       ;
++----------------------+-------------------+---------+
 
 
 +------------------------------------------------------+
@@ -1116,24 +1116,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file F:/Computer Architecture/ergasia 1/MyXor2/output_files/MyXor2.fit.smsg
+Info (144001): Generated suppressed messages file C:/Quartus projects/ergasia 1/MyXor2/output_files/MyXor2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 7949 megabytes
-    Info: Processing ended: Tue Mar 24 21:10:55 2026
-    Info: Elapsed time: 00:00:30
+    Info: Peak virtual memory: 7947 megabytes
+    Info: Processing ended: Sun Mar 29 09:45:14 2026
+    Info: Elapsed time: 00:00:27
     Info: Total CPU time (on all processors): 00:02:27
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in F:/Computer Architecture/ergasia 1/MyXor2/output_files/MyXor2.fit.smsg.
+The suppressed messages can be found in C:/Quartus projects/ergasia 1/MyXor2/output_files/MyXor2.fit.smsg.
 
 

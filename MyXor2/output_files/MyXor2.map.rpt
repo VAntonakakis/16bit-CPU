@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyXor2
-Tue Mar 24 21:10:24 2026
+Sun Mar 29 09:44:46 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 24 21:10:24 2026       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 29 09:44:46 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyXor2                                      ;
 ; Top-level Entity Name           ; MyXor2                                      ;
@@ -166,43 +166,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
-; ../MyOr2/MyOr2.vhd               ; yes             ; User VHDL File  ; F:/Computer Architecture/ergasia 1/MyOr2/MyOr2.vhd   ;         ;
-; ../MyNot/MyNot.vhd               ; yes             ; User VHDL File  ; F:/Computer Architecture/ergasia 1/MyNot/MyNot.vhd   ;         ;
-; ../MyAnd2/MyAnd2.vhd             ; yes             ; User VHDL File  ; F:/Computer Architecture/ergasia 1/MyAnd2/MyAnd2.vhd ;         ;
-; MyXor2.vhd                       ; yes             ; User VHDL File  ; F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; ../MyOr2/MyOr2.vhd               ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd   ;         ;
+; ../MyNot/MyNot.vhd               ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd   ;         ;
+; ../MyAnd2/MyAnd2.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd ;         ;
+; MyXor2.vhd                       ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1            ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1            ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 0            ;
-;     -- 5 input functions                    ; 0            ;
-;     -- 4 input functions                    ; 0            ;
-;     -- <=3 input functions                  ; 1            ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 3            ;
-;                                             ;              ;
-; Total DSP Blocks                            ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; MyOr2:v4|Q~0 ;
-; Maximum fan-out                             ; 1            ;
-; Total fan-out                               ; 6            ;
-; Average fan-out                             ; 0.86         ;
-+---------------------------------------------+--------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimate of Logic utilization (ALMs needed) ; 1             ;
+;                                             ;               ;
+; Combinational ALUT usage for logic          ; 1             ;
+;     -- 7 input functions                    ; 0             ;
+;     -- 6 input functions                    ; 0             ;
+;     -- 5 input functions                    ; 0             ;
+;     -- 4 input functions                    ; 0             ;
+;     -- <=3 input functions                  ; 1             ;
+;                                             ;               ;
+; Dedicated logic registers                   ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 3             ;
+;                                             ;               ;
+; Total DSP Blocks                            ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; MyAnd2:v3|Q~0 ;
+; Maximum fan-out                             ; 1             ;
+; Total fan-out                               ; 6             ;
+; Average fan-out                             ; 0.86          ;
++---------------------------------------------+---------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; |MyXor2                    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 3    ; 0            ; |MyXor2             ; MyXor2      ; work         ;
-;    |MyOr2:v4|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyXor2|MyOr2:v4    ; MyOr2       ; work         ;
+;    |MyAnd2:v3|             ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyXor2|MyAnd2:v3   ; MyAnd2      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -261,26 +261,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Mar 24 21:10:18 2026
+    Info: Processing started: Sun Mar 29 09:44:40 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyXor2 -c MyXor2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /computer architecture/ergasia 1/myor2/myor2.vhd
-    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: F:/Computer Architecture/ergasia 1/MyOr2/MyOr2.vhd Line: 10
-    Info (12023): Found entity 1: MyOr2 File: F:/Computer Architecture/ergasia 1/MyOr2/MyOr2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /computer architecture/ergasia 1/mynot/mynot.vhd
-    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: F:/Computer Architecture/ergasia 1/MyNot/MyNot.vhd Line: 9
-    Info (12023): Found entity 1: MyNot File: F:/Computer Architecture/ergasia 1/MyNot/MyNot.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /computer architecture/ergasia 1/myand2/myand2.vhd
-    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: F:/Computer Architecture/ergasia 1/MyAnd2/MyAnd2.vhd Line: 10
-    Info (12023): Found entity 1: MyAnd2 File: F:/Computer Architecture/ergasia 1/MyAnd2/MyAnd2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor2/myor2.vhd
+    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 10
+    Info (12023): Found entity 1: MyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot/mynot.vhd
+    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 9
+    Info (12023): Found entity 1: MyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand2/myand2.vhd
+    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file myxor2.vhd
-    Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd Line: 10
-    Info (12023): Found entity 1: MyXor2 File: F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd Line: 4
+    Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 10
+    Info (12023): Found entity 1: MyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 4
 Info (12127): Elaborating entity "MyXor2" for the top level hierarchy
-Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v0" File: F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd Line: 32
-Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd2:v2" File: F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd Line: 34
-Info (12128): Elaborating entity "MyOr2" for hierarchy "MyOr2:v4" File: F:/Computer Architecture/ergasia 1/MyXor2/MyXor2.vhd Line: 36
+Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd2:v0" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 38
+Info (12128): Elaborating entity "MyOr2" for hierarchy "MyOr2:v1" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 39
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v2" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -289,8 +289,8 @@ Info (21057): Implemented 4 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Tue Mar 24 21:10:24 2026
+    Info: Peak virtual memory: 4871 megabytes
+    Info: Processing ended: Sun Mar 29 09:44:46 2026
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 

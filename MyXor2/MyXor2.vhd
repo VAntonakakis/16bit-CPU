@@ -29,9 +29,15 @@ end component;
 signal s1,s2, s3, s4 :std_logic;
 begin
 
-v0 : MyNot port map(A, s1);
-v1 : MyNot port map(B, s2);
-v2 : MyAnd2 port map(A, s2, s3);
-v3 : MyAnd2 port map(s1, B, s4);
-v4 : Myor2 port map (s3, s4, Q);
+--v0 : MyNot port map(A, s1);
+--v1 : MyNot port map(B, s2);
+--v2 : MyAnd2 port map(A, s2, s3);
+--v3 : MyAnd2 port map(s1, B, s4);
+--v4 : Myor2 port map (s3, s4, Q);
+
+v0 : MyAnd2 port map(A, B, s1);
+v1 : MyOr2 port map(A, B, s2);
+v2 : MYNot port map(s1, s3);
+v3 : MyAnd2 port map(s3, s2, Q);
+
 end StructuralMyXor2;
