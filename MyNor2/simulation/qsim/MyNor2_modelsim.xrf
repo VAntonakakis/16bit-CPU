@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyNor2/db/MyNor2.cbx.xml
+design_name = MyNor2
+instance = comp, \Q~output\, Q~output, MyNor2, 1
+instance = comp, \B~input\, B~input, MyNor2, 1
+instance = comp, \A~input\, A~input, MyNor2, 1
+instance = comp, \v0|Q\, v0|Q, MyNor2, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, MyNor2, 1

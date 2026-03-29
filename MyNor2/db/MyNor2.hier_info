@@ -1,0 +1,17 @@
+|MyNor2
+A => MyOr2:v0.A
+B => MyOr2:v0.B
+Q <= MyNot:v1.Q
+
+
+|MyNor2|MyOr2:v0
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyNor2|MyNot:v1
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
