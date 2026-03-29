@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyALU16bit is port(
+	S : in std_logic_vector (2 downto 0);
+	A : in std_logic;
+	B : in std_logic:
+	Q : out std_logic;
+	Overflow : out std_logic);
+end MyALU16bit;
+
+architecture StructuralMyALU1bit of MyALU16bit is
+component 
+	
+	
