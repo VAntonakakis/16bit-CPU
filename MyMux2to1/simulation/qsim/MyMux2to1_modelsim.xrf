@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyMux2to1/db/MyMux2to1.cbx.xml
+design_name = MyMux2to1
+instance = comp, \Q~output\, Q~output, MyMux2to1, 1
+instance = comp, \S~input\, S~input, MyMux2to1, 1
+instance = comp, \B~input\, B~input, MyMux2to1, 1
+instance = comp, \A~input\, A~input, MyMux2to1, 1
+instance = comp, \v3|Q~0\, v3|Q~0, MyMux2to1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, MyMux2to1, 1
