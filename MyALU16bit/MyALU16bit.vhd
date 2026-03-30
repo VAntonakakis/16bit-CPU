@@ -72,9 +72,26 @@ component MyMux2to1 is port(
 	Q : out std_logic);
 end component;
 
+component MyDecoder3to8 is port(
+    S : in std_logic_vector(2 downto 0);
+    Q : out std_logic_vector(7 downto 0));
+end component;
 
+component MyAnd2 is port(
+    A : in std_logic;
+    B : in std_logic;
+    Q : out std_logic);
+end component;
+
+component MyOr2 is port(
+    A : in std_logic;
+    B : in std_logic;
+    Q : out std_logic);
+end component;
+
+signal Qo : std_logic_vector (7 downto 0);
 signal p1, p2, p3, p4, p5, p6, p7, p8, BNot : std_logic_vector (15 downto 0);
-signal o1, o2, p5_1bit : std_logic;
+signal o1, o2, o3, o4, p5_1bit : std_logic;
 
 begin
 
@@ -109,7 +126,10 @@ v8 : MyNor16bit port map(A, B, p8);
 v9 : MyMux8to1_16bit port map(S, p1, p2, p3, p4, p5, p6, p7, p8, Q);
 
 --overflow
-Overflow <= o1 when S = "000" else
-				o2 when S = "001" else
-				'0';
+dec: MyDecoder3to8 port map(S, Qo);
+v10: MyAnd2 port map(Qo(0), o1, o3);
+v11: MyAnd2 port map(Qo(1), o2, o4);
+v12: MyOr2  port map(o3, o4, Overflow);
+
+
 end StructuralMyALU16bit;

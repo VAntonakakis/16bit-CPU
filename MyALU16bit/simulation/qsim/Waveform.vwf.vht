@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "03/29/2026 14:38:27"
+-- Generated on "03/30/2026 22:59:22"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyALU16bit
 -- 
@@ -43,8 +43,8 @@ COMPONENT MyALU16bit
 	PORT (
 	A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Overflow : OUT STD_LOGIC;
-	Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Overflow : BUFFER STD_LOGIC;
+	Q : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	S : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
 	);
 END COMPONENT;
@@ -109,49 +109,49 @@ END PROCESS t_prcs_A_8;
 -- A[7]
 t_prcs_A_7: PROCESS
 BEGIN
-	A(7) <= '0';
+	A(7) <= '1';
 WAIT;
 END PROCESS t_prcs_A_7;
 -- A[6]
 t_prcs_A_6: PROCESS
 BEGIN
-	A(6) <= '0';
+	A(6) <= '1';
 WAIT;
 END PROCESS t_prcs_A_6;
 -- A[5]
 t_prcs_A_5: PROCESS
 BEGIN
-	A(5) <= '0';
+	A(5) <= '1';
 WAIT;
 END PROCESS t_prcs_A_5;
 -- A[4]
 t_prcs_A_4: PROCESS
 BEGIN
-	A(4) <= '0';
+	A(4) <= '1';
 WAIT;
 END PROCESS t_prcs_A_4;
 -- A[3]
 t_prcs_A_3: PROCESS
 BEGIN
-	A(3) <= '0';
+	A(3) <= '1';
 WAIT;
 END PROCESS t_prcs_A_3;
 -- A[2]
 t_prcs_A_2: PROCESS
 BEGIN
-	A(2) <= '0';
+	A(2) <= '1';
 WAIT;
 END PROCESS t_prcs_A_2;
 -- A[1]
 t_prcs_A_1: PROCESS
 BEGIN
-	A(1) <= '0';
+	A(1) <= '1';
 WAIT;
 END PROCESS t_prcs_A_1;
 -- A[0]
 t_prcs_A_0: PROCESS
 BEGIN
-	A(0) <= '0';
+	A(0) <= '1';
 WAIT;
 END PROCESS t_prcs_A_0;
 -- B[15]
@@ -163,7 +163,7 @@ END PROCESS t_prcs_B_15;
 -- B[14]
 t_prcs_B_14: PROCESS
 BEGIN
-	B(14) <= '0';
+	B(14) <= '1';
 WAIT;
 END PROCESS t_prcs_B_14;
 -- B[13]
@@ -175,7 +175,7 @@ END PROCESS t_prcs_B_13;
 -- B[12]
 t_prcs_B_12: PROCESS
 BEGIN
-	B(12) <= '0';
+	B(12) <= '1';
 WAIT;
 END PROCESS t_prcs_B_12;
 -- B[11]
@@ -187,7 +187,7 @@ END PROCESS t_prcs_B_11;
 -- B[10]
 t_prcs_B_10: PROCESS
 BEGIN
-	B(10) <= '0';
+	B(10) <= '1';
 WAIT;
 END PROCESS t_prcs_B_10;
 -- B[9]
@@ -199,7 +199,7 @@ END PROCESS t_prcs_B_9;
 -- B[8]
 t_prcs_B_8: PROCESS
 BEGIN
-	B(8) <= '0';
+	B(8) <= '1';
 WAIT;
 END PROCESS t_prcs_B_8;
 -- B[7]
@@ -211,7 +211,7 @@ END PROCESS t_prcs_B_7;
 -- B[6]
 t_prcs_B_6: PROCESS
 BEGIN
-	B(6) <= '0';
+	B(6) <= '1';
 WAIT;
 END PROCESS t_prcs_B_6;
 -- B[5]
@@ -223,7 +223,7 @@ END PROCESS t_prcs_B_5;
 -- B[4]
 t_prcs_B_4: PROCESS
 BEGIN
-	B(4) <= '0';
+	B(4) <= '1';
 WAIT;
 END PROCESS t_prcs_B_4;
 -- B[3]
@@ -235,19 +235,19 @@ END PROCESS t_prcs_B_3;
 -- B[2]
 t_prcs_B_2: PROCESS
 BEGIN
-	B(2) <= '0';
+	B(2) <= '1';
 WAIT;
 END PROCESS t_prcs_B_2;
 -- B[1]
 t_prcs_B_1: PROCESS
 BEGIN
-	B(1) <= '1';
+	B(1) <= '0';
 WAIT;
 END PROCESS t_prcs_B_1;
 -- B[0]
 t_prcs_B_0: PROCESS
 BEGIN
-	B(0) <= '0';
+	B(0) <= '1';
 WAIT;
 END PROCESS t_prcs_B_0;
 -- S[2]
@@ -259,7 +259,7 @@ END PROCESS t_prcs_S_2;
 -- S[1]
 t_prcs_S_1: PROCESS
 BEGIN
-	S(1) <= '1';
+	S(1) <= '0';
 WAIT;
 END PROCESS t_prcs_S_1;
 -- S[0]

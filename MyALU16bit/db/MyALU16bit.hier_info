@@ -1,13 +1,10 @@
 |MyALU16bit
 S[0] => MyMux8to1_16bit:v9.S[0]
-S[0] => Equal0.IN0
-S[0] => Equal1.IN2
+S[0] => MyDecoder3to8:dec.S[0]
 S[1] => MyMux8to1_16bit:v9.S[1]
-S[1] => Equal0.IN2
-S[1] => Equal1.IN1
+S[1] => MyDecoder3to8:dec.S[1]
 S[2] => MyMux8to1_16bit:v9.S[2]
-S[2] => Equal0.IN1
-S[2] => Equal1.IN0
+S[2] => MyDecoder3to8:dec.S[2]
 A[0] => MyFullAdder16bit:v0.A[0]
 A[0] => MyFullAdder16bit:v2.A[0]
 A[0] => MyAnd16bit:v3.A[0]
@@ -232,23 +229,23 @@ B[15] => MyAnd16bit:v3.B[15]
 B[15] => MyOr16bit:v4.B[15]
 B[15] => MyXor16bit:v7.B[15]
 B[15] => MyNor16bit:v8.B[15]
-Q[0] <= MyMux8to1_16bit:v9.Q[0]
-Q[1] <= MyMux8to1_16bit:v9.Q[1]
-Q[2] <= MyMux8to1_16bit:v9.Q[2]
-Q[3] <= MyMux8to1_16bit:v9.Q[3]
-Q[4] <= MyMux8to1_16bit:v9.Q[4]
-Q[5] <= MyMux8to1_16bit:v9.Q[5]
-Q[6] <= MyMux8to1_16bit:v9.Q[6]
-Q[7] <= MyMux8to1_16bit:v9.Q[7]
-Q[8] <= MyMux8to1_16bit:v9.Q[8]
-Q[9] <= MyMux8to1_16bit:v9.Q[9]
-Q[10] <= MyMux8to1_16bit:v9.Q[10]
-Q[11] <= MyMux8to1_16bit:v9.Q[11]
-Q[12] <= MyMux8to1_16bit:v9.Q[12]
-Q[13] <= MyMux8to1_16bit:v9.Q[13]
-Q[14] <= MyMux8to1_16bit:v9.Q[14]
-Q[15] <= MyMux8to1_16bit:v9.Q[15]
-Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] << MyMux8to1_16bit:v9.Q[0]
+Q[1] << MyMux8to1_16bit:v9.Q[1]
+Q[2] << MyMux8to1_16bit:v9.Q[2]
+Q[3] << MyMux8to1_16bit:v9.Q[3]
+Q[4] << MyMux8to1_16bit:v9.Q[4]
+Q[5] << MyMux8to1_16bit:v9.Q[5]
+Q[6] << MyMux8to1_16bit:v9.Q[6]
+Q[7] << MyMux8to1_16bit:v9.Q[7]
+Q[8] << MyMux8to1_16bit:v9.Q[8]
+Q[9] << MyMux8to1_16bit:v9.Q[9]
+Q[10] << MyMux8to1_16bit:v9.Q[10]
+Q[11] << MyMux8to1_16bit:v9.Q[11]
+Q[12] << MyMux8to1_16bit:v9.Q[12]
+Q[13] << MyMux8to1_16bit:v9.Q[13]
+Q[14] << MyMux8to1_16bit:v9.Q[14]
+Q[15] << MyMux8to1_16bit:v9.Q[15]
+Overflow << MyOr2:v12.Q
 
 
 |MyALU16bit|MyFullAdder16bit:v0
@@ -8435,6 +8432,170 @@ Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec
+S[0] => MyDecoder1to2:v2.S
+S[1] => MyDecoder1to2:v1.S
+S[2] => MyDecoder1to2:v0.S
+Q[0] <= MyAnd2:v4.Q
+Q[1] <= MyAnd2:v6.Q
+Q[2] <= MyAnd2:v8.Q
+Q[3] <= MyAnd2:v10.Q
+Q[4] <= MyAnd2:v12.Q
+Q[5] <= MyAnd2:v14.Q
+Q[6] <= MyAnd2:v16.Q
+Q[7] <= MyAnd2:v18.Q
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v0
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v0|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v1
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v1|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v2
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyDecoder1to2:v2|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v6
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v7
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v8
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v9
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v10
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v11
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v12
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v13
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v14
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v15
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v16
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v17
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyDecoder3to8:dec|MyAnd2:v18
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyAnd2:v10
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyAnd2:v11
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyALU16bit|MyOr2:v12
 A => Q.IN0
 B => Q.IN1
 Q <= Q.DB_MAX_OUTPUT_PORT_TYPE

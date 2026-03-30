@@ -1,5 +1,5 @@
 Fitter report for MyALU16bit
-Sun Mar 29 14:36:13 2026
+Mon Mar 30 22:55:49 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sun Mar 29 14:36:13 2026       ;
+; Fitter Status                   ; Successful - Mon Mar 30 22:55:49 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyALU16bit                                  ;
 ; Top-level Entity Name           ; MyALU16bit                                  ;
@@ -148,17 +148,17 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
+;     Processor 5            ;   0.2%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processor 7            ;   0.2%      ;
 ;     Processors 8-16        ;   0.1%      ;
 +----------------------------+-------------+
 
@@ -378,40 +378,40 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; A[0]  ; R11   ; 3B       ; 38           ; 0            ; 0            ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[10] ; V9    ; 3B       ; 26           ; 0            ; 57           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[11] ; V13   ; 4A       ; 50           ; 0            ; 57           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[12] ; T10   ; 3B       ; 34           ; 0            ; 57           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[13] ; Y10   ; 3B       ; 34           ; 0            ; 91           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[14] ; P9    ; 3B       ; 40           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[15] ; U11   ; 3B       ; 36           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[1]  ; AA9   ; 3B       ; 32           ; 0            ; 34           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[2]  ; AB11  ; 3B       ; 38           ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[3]  ; U7    ; 3A       ; 2            ; 0            ; 91           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[4]  ; U8    ; 3A       ; 2            ; 0            ; 74           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[5]  ; T8    ; 3A       ; 6            ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[6]  ; R7    ; 3A       ; 8            ; 0            ; 51           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[10] ; R7    ; 3A       ; 8            ; 0            ; 51           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[11] ; AB8   ; 3B       ; 30           ; 0            ; 34           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[12] ; T9    ; 3B       ; 30           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[13] ; U11   ; 3B       ; 36           ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[14] ; N9    ; 3B       ; 40           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[15] ; U13   ; 4A       ; 50           ; 0            ; 40           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[1]  ; AB11  ; 3B       ; 38           ; 0            ; 34           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[2]  ; Y9    ; 3B       ; 34           ; 0            ; 74           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[3]  ; W8    ; 3A       ; 4            ; 0            ; 51           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[4]  ; M6    ; 3A       ; 8            ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[5]  ; N6    ; 3A       ; 4            ; 0            ; 0            ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[6]  ; T7    ; 3A       ; 6            ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; A[7]  ; P7    ; 3A       ; 8            ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[8]  ; AB7   ; 3B       ; 28           ; 0            ; 34           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; A[9]  ; AB5   ; 3B       ; 26           ; 0            ; 74           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[0]  ; M9    ; 3B       ; 32           ; 0            ; 0            ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[10] ; AB6   ; 3B       ; 26           ; 0            ; 91           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[11] ; R9    ; 3B       ; 34           ; 0            ; 40           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[12] ; N9    ; 3B       ; 40           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[13] ; AA12  ; 3B       ; 40           ; 0            ; 34           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[14] ; Y11   ; 3B       ; 40           ; 0            ; 51           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[15] ; M8    ; 3B       ; 32           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[1]  ; R12   ; 3B       ; 36           ; 0            ; 51           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[2]  ; AA10  ; 3B       ; 32           ; 0            ; 51           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[3]  ; R5    ; 3A       ; 2            ; 0            ; 40           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[8]  ; AB5   ; 3B       ; 26           ; 0            ; 74           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; A[9]  ; AB6   ; 3B       ; 26           ; 0            ; 91           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[0]  ; R12   ; 3B       ; 36           ; 0            ; 51           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[10] ; AA7   ; 3B       ; 28           ; 0            ; 51           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[11] ; N8    ; 3B       ; 28           ; 0            ; 0            ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[12] ; AA9   ; 3B       ; 32           ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[13] ; AA10  ; 3B       ; 32           ; 0            ; 51           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[14] ; AA8   ; 3B       ; 30           ; 0            ; 51           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[15] ; R10   ; 3B       ; 38           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[1]  ; Y10   ; 3B       ; 34           ; 0            ; 91           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[2]  ; AB10  ; 3B       ; 38           ; 0            ; 51           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[3]  ; W9    ; 3A       ; 4            ; 0            ; 34           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; B[4]  ; P6    ; 3A       ; 4            ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[5]  ; W8    ; 3A       ; 4            ; 0            ; 51           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[6]  ; V10   ; 3B       ; 26           ; 0            ; 40           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[5]  ; U8    ; 3A       ; 2            ; 0            ; 74           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[6]  ; M7    ; 3A       ; 8            ; 0            ; 0            ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; B[7]  ; V6    ; 3A       ; 6            ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[8]  ; AA7   ; 3B       ; 28           ; 0            ; 51           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; B[9]  ; P8    ; 3B       ; 28           ; 0            ; 17           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; S[0]  ; T9    ; 3B       ; 30           ; 0            ; 17           ; 18                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; S[1]  ; U10   ; 3B       ; 30           ; 0            ; 0            ; 18                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; S[2]  ; AB8   ; 3B       ; 30           ; 0            ; 34           ; 17                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[8]  ; T10   ; 3B       ; 34           ; 0            ; 57           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; B[9]  ; V9    ; 3B       ; 26           ; 0            ; 57           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; S[0]  ; M9    ; 3B       ; 32           ; 0            ; 0            ; 18                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; S[1]  ; V10   ; 3B       ; 26           ; 0            ; 40           ; 18                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; S[2]  ; M8    ; 3B       ; 32           ; 0            ; 17           ; 17                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -420,23 +420,23 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Overflow ; U12   ; 3B       ; 36           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[0]     ; AB13  ; 4A       ; 50           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[10]    ; AA8   ; 3B       ; 30           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[11]    ; Y9    ; 3B       ; 34           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Overflow ; V13   ; 4A       ; 50           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[0]     ; P9    ; 3B       ; 40           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[10]    ; P8    ; 3B       ; 28           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[11]    ; AA12  ; 3B       ; 40           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; Q[12]    ; P12   ; 3B       ; 36           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[13]    ; U13   ; 4A       ; 50           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[14]    ; AB12  ; 4A       ; 50           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[15]    ; R10   ; 3B       ; 38           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[1]     ; AB10  ; 3B       ; 38           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[2]     ; W9    ; 3A       ; 4            ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[3]     ; U6    ; 3A       ; 6            ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[4]     ; T7    ; 3A       ; 6            ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[13]    ; U10   ; 3B       ; 30           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[14]    ; U12   ; 3B       ; 36           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[15]    ; AB13  ; 4A       ; 50           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[1]     ; AB12  ; 4A       ; 50           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[2]     ; Y11   ; 3B       ; 40           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[3]     ; R5    ; 3A       ; 2            ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[4]     ; U7    ; 3A       ; 2            ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; Q[5]     ; R6    ; 3A       ; 2            ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[6]     ; M6    ; 3A       ; 8            ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[7]     ; M7    ; 3A       ; 8            ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[8]     ; N8    ; 3B       ; 28           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; Q[9]     ; N6    ; 3A       ; 4            ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[6]     ; U6    ; 3A       ; 6            ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[7]     ; T8    ; 3A       ; 6            ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[8]     ; R9    ; 3B       ; 34           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; Q[9]     ; AB7   ; 3B       ; 28           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -491,12 +491,12 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; AA4      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA5      ; 47         ; 3A       ; ^AS_DATA2, DATA2                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; AA6      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA7      ; 105        ; 3B       ; B[8]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA8      ; 108        ; 3B       ; Q[10]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA9      ; 115        ; 3B       ; A[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA10     ; 113        ; 3B       ; B[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA7      ; 105        ; 3B       ; B[10]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA8      ; 108        ; 3B       ; B[14]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA9      ; 115        ; 3B       ; B[12]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA10     ; 113        ; 3B       ; B[13]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AA12     ; 131        ; 3B       ; B[13]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA12     ; 131        ; 3B       ; Q[11]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA13     ; 139        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA14     ; 137        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 142        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -511,15 +511,15 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; AB2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 49         ; 3A       ; ^AS_DATA1, DATA1                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; AB4      ; 51         ; 3A       ; ^AS_DATA0, ASDO, DATA0          ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
-; AB5      ; 102        ; 3B       ; A[9]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB6      ; 100        ; 3B       ; B[10]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB7      ; 107        ; 3B       ; A[8]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB8      ; 110        ; 3B       ; S[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB5      ; 102        ; 3B       ; A[8]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB6      ; 100        ; 3B       ; A[9]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB7      ; 107        ; 3B       ; Q[9]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB8      ; 110        ; 3B       ; A[11]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB9      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB10     ; 124        ; 3B       ; Q[1]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB11     ; 126        ; 3B       ; A[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB12     ; 134        ; 4A       ; Q[14]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB13     ; 132        ; 4A       ; Q[0]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB10     ; 124        ; 3B       ; B[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB11     ; 126        ; 3B       ; A[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB12     ; 134        ; 4A       ; Q[1]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB13     ; 132        ; 4A       ; Q[15]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB14     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB15     ; 140        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -754,10 +754,10 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; M3       ;            ; --       ; VCCH_GXBL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M5       ; 42         ; 3A       ; #TDO                            ; output ;              ;                     ; --           ;                 ; --       ; --           ;
-; M6       ; 64         ; 3A       ; Q[6]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; M7       ; 66         ; 3A       ; Q[7]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; M8       ; 112        ; 3B       ; B[15]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; M9       ; 114        ; 3B       ; B[0]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M6       ; 64         ; 3A       ; A[4]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M7       ; 66         ; 3A       ; B[6]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M8       ; 112        ; 3B       ; S[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; M9       ; 114        ; 3B       ; S[0]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; M10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; M12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -776,10 +776,10 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N4       ;            ; --       ; VCCE_GXBL                       ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N6       ; 58         ; 3A       ; Q[9]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N6       ; 58         ; 3A       ; A[5]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; N7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N8       ; 106        ; 3B       ; Q[8]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; N9       ; 130        ; 3B       ; B[12]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N8       ; 106        ; 3B       ; B[11]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; N9       ; 130        ; 3B       ; A[14]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; N10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -800,8 +800,8 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; P5       ; 44         ; 3A       ; #TMS                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P6       ; 56         ; 3A       ; B[4]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P7       ; 67         ; 3A       ; A[7]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; P8       ; 104        ; 3B       ; B[9]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; P9       ; 128        ; 3B       ; A[14]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P8       ; 104        ; 3B       ; Q[10]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P9       ; 128        ; 3B       ; Q[0]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 123        ; 3B       ; Q[12]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
@@ -819,14 +819,14 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; R2       ; 30         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R4       ; 43         ; 3A       ; ^nCSO, DATA4                    ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
-; R5       ; 54         ; 3A       ; B[3]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R5       ; 54         ; 3A       ; Q[3]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R6       ; 52         ; 3A       ; Q[5]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; R7       ; 65         ; 3A       ; A[6]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R7       ; 65         ; 3A       ; A[10]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R8       ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; R9       ; 119        ; 3B       ; B[11]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; R10      ; 125        ; 3B       ; Q[15]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R9       ; 119        ; 3B       ; Q[8]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R10      ; 125        ; 3B       ; B[15]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R11      ; 127        ; 3B       ; A[0]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; R12      ; 121        ; 3B       ; B[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R12      ; 121        ; 3B       ; B[0]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; R14      ; 170        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R15      ; 219        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -843,10 +843,10 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; T4       ; 45         ; 3A       ; ^AS_DATA3, DATA3                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
 ; T5       ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T6       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T7       ; 60         ; 3A       ; Q[4]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T8       ; 62         ; 3A       ; A[5]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T9       ; 109        ; 3B       ; S[0]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T10      ; 117        ; 3B       ; A[12]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T7       ; 60         ; 3A       ; A[6]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T8       ; 62         ; 3A       ; Q[7]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T9       ; 109        ; 3B       ; A[12]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T10      ; 117        ; 3B       ; B[8]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T12      ; 136        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T13      ; 138        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -864,14 +864,14 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; U3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; U4       ; 41         ; B0L      ; GND                             ;        ;              ;                     ; Row I/O      ;                 ; --       ; --           ;
 ; U5       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; U6       ; 61         ; 3A       ; Q[3]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U7       ; 53         ; 3A       ; A[3]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U8       ; 55         ; 3A       ; A[4]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U6       ; 61         ; 3A       ; Q[6]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U7       ; 53         ; 3A       ; Q[4]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U8       ; 55         ; 3A       ; B[5]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; U9       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; U10      ; 111        ; 3B       ; S[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U11      ; 120        ; 3B       ; A[15]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U12      ; 122        ; 3B       ; Overflow                        ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U13      ; 135        ; 4A       ; Q[13]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U10      ; 111        ; 3B       ; Q[13]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U11      ; 120        ; 3B       ; A[13]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U12      ; 122        ; 3B       ; Q[14]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U13      ; 135        ; 4A       ; A[15]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U15      ; 154        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U16      ; 176        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -889,11 +889,11 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; V6       ; 63         ; 3A       ; B[7]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V8       ;            ; --       ; VCCPGM                          ; power  ;              ; 1.8V/2.5V/3.0V/3.3V ; --           ;                 ; --       ; --           ;
-; V9       ; 101        ; 3B       ; A[10]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V10      ; 103        ; 3B       ; B[6]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V9       ; 101        ; 3B       ; B[9]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V10      ; 103        ; 3B       ; S[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V11      ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V13      ; 133        ; 4A       ; A[11]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V13      ; 133        ; 4A       ; Overflow                        ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V14      ; 144        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V15      ; 146        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V16      ; 160        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -910,8 +910,8 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; W5       ; 48         ; 3A       ; #TDI                            ; input  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W6       ;            ; 3A       ; VCCPD3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W7       ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W8       ; 57         ; 3A       ; B[5]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; W9       ; 59         ; 3A       ; Q[2]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W8       ; 57         ; 3A       ; A[3]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W9       ; 59         ; 3A       ; B[3]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; W10      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W11      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W12      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -933,9 +933,9 @@ The pin-out file can be found in C:/Quartus projects/ergasia 1/MyALU16bit/output
 ; Y6       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y7       ;            ; 3A       ; VREFB3AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y8       ;            ; 3A       ; VCCIO3A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; Y9       ; 118        ; 3B       ; Q[11]                           ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y10      ; 116        ; 3B       ; A[13]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y11      ; 129        ; 3B       ; B[14]                           ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y9       ; 118        ; 3B       ; A[2]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y10      ; 116        ; 3B       ; B[1]                            ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y11      ; 129        ; 3B       ; Q[2]                            ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; Y12      ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y14      ; 141        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -1068,16 +1068,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node  ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name      ; Library Name ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
-; |MyALU16bit                 ; 42.5 (1.5)           ; 42.5 (1.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (2)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 52   ; 0            ; |MyALU16bit                                                              ; MyALU16bit       ; work         ;
+; |MyALU16bit                 ; 42.5 (0.5)           ; 42.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 57 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 52   ; 0            ; |MyALU16bit                                                              ; MyALU16bit       ; work         ;
 ;    |MyFullAdder16bit:v0|    ; 12.5 (0.0)           ; 12.5 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (0)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0                                          ; MyFullAdder16bit ; work         ;
 ;       |MyFullAdder1bit:v1|  ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v1                       ; MyFullAdder1bit  ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v1|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v10| ; 3.0 (0.0)            ; 3.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10                      ; MyFullAdder1bit  ; work         ;
+;       |MyFullAdder1bit:v10| ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10                      ; MyFullAdder1bit  ; work         ;
 ;          |MyAnd2:v4|        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4            ; MyAnd2           ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyOr2:v5             ; MyOr2            ; work         ;
-;          |MyXor2:v1|        ; 1.5 (0.0)            ; 1.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1            ; MyXor2           ; work         ;
+;          |MyXor2:v1|        ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1            ; MyXor2           ; work         ;
 ;             |MyAnd2:v3|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v3  ; MyAnd2           ; work         ;
-;             |MyOr2:v1|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v1   ; MyOr2            ; work         ;
 ;       |MyFullAdder1bit:v11| ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v11                      ; MyFullAdder1bit  ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5             ; MyOr2            ; work         ;
 ;       |MyFullAdder1bit:v12| ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v12                      ; MyFullAdder1bit  ; work         ;
@@ -1092,11 +1091,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v3|MyOr2:v5              ; MyOr2            ; work         ;
 ;       |MyFullAdder1bit:v4|  ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v4                       ; MyFullAdder1bit  ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v4|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v5|  ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5                       ; MyFullAdder1bit  ; work         ;
+;       |MyFullAdder1bit:v5|  ; 3.0 (0.0)            ; 3.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 5 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5                       ; MyFullAdder1bit  ; work         ;
 ;          |MyAnd2:v4|        ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyAnd2:v4             ; MyAnd2           ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyOr2:v5              ; MyOr2            ; work         ;
-;          |MyXor2:v1|        ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1             ; MyXor2           ; work         ;
+;          |MyXor2:v1|        ; 1.5 (0.0)            ; 1.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1             ; MyXor2           ; work         ;
 ;             |MyAnd2:v3|     ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v3   ; MyAnd2           ; work         ;
+;             |MyOr2:v1|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1    ; MyOr2            ; work         ;
 ;       |MyFullAdder1bit:v6|  ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v6                       ; MyFullAdder1bit  ; work         ;
 ;          |MyOr2:v5|         ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5              ; MyOr2            ; work         ;
 ;       |MyFullAdder1bit:v7|  ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v7                       ; MyFullAdder1bit  ; work         ;
@@ -1158,8 +1158,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |MyOr2:v7|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7  ; MyOr2            ; work         ;
 ;             |MyOr2:v8|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8  ; MyOr2            ; work         ;
 ;             |MyOr2:v9|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9  ; MyOr2            ; work         ;
-;    |MyOr16bit:v4|           ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyOr16bit:v4                                                 ; MyOr16bit        ; work         ;
-;       |MyOr2:v5|            ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyOr16bit:v4|MyOr2:v5                                        ; MyOr2            ; work         ;
+;    |MyOr2:v12|              ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyOr2:v12                                                    ; MyOr2            ; work         ;
+;    |MyXor16bit:v7|          ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7                                                ; MyXor16bit       ; work         ;
+;       |MyXor2:v10|          ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7|MyXor2:v10                                     ; MyXor2           ; work         ;
+;          |MyOr2:v1|         ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7|MyXor2:v10|MyOr2:v1                            ; MyOr2            ; work         ;
 +-----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1191,36 +1193,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; A[0]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; S[1]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[0]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[15]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[1]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[1]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[15]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[1]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[1]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[2]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[2]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[2]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[3]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[3]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[4]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[4]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[5]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[5]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[6]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[6]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[7]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[6]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[6]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[7]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[7]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[8]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[8]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[9]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[8]     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[9]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[9]     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[10]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A[10]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[11]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[11]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[12]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[12]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[11]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[11]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[12]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[12]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[13]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[13]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[13]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B[14]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; A[14]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B[15]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; A[14]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B[15]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +----------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1230,7 +1232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                     ; Pad To Core Index ; Setting ;
 +-------------------------------------------------------------------------+-------------------+---------+
 ; S[2]                                                                    ;                   ;         ;
-;      - Overflow~0                                                       ; 0                 ; 0       ;
+;      - MyOr2:v12|Q~0                                                    ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 0                 ; 0       ;
@@ -1248,7 +1250,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v0|Q~0  ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1|Q~0  ; 0                 ; 0       ;
 ; S[0]                                                                    ;                   ;         ;
-;      - Overflow~0                                                       ; 1                 ; 0       ;
+;      - MyOr2:v12|Q~0                                                    ; 1                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 1                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 1                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 1                 ; 0       ;
@@ -1274,7 +1276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ; S[1]                                                                    ;                   ;         ;
-;      - Overflow~0                                                       ; 0                 ; 0       ;
+;      - MyOr2:v12|Q~0                                                    ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 0                 ; 0       ;
@@ -1300,31 +1302,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ; A[15]                                                                   ;                   ;         ;
-;      - Overflow~0                                                       ; 1                 ; 0       ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 1                 ; 0       ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v0|Q~0  ; 1                 ; 0       ;
+;      - MyOr2:v12|Q~0                                                    ; 0                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 0                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v0|Q~0  ; 0                 ; 0       ;
 ; B[1]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v1|Q~0  ; 1                 ; 0       ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v1|MyOr2:v5|Q~0              ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v1|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
-; A[1]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v1|Q~0  ; 0                 ; 0       ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1|Q~0  ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v1|MyOr2:v5|Q~0              ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v1|MyOr2:v5|Q                ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 0                 ; 0       ;
+; A[1]                                                                    ;                   ;         ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v1|Q~0  ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1|Q~0  ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v1|MyOr2:v5|Q~0              ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v1|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ; B[2]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
 ; A[2]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2|Q~0  ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5|Q                ; 0                 ; 0       ;
 ; B[3]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v3|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v3|MyOr2:v5|Q                ; 1                 ; 0       ;
@@ -1352,29 +1354,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[5]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v5|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v3|Q~0   ; 1                 ; 0       ;
-;      - MyOr16bit:v4|MyOr2:v5|Q~0                                        ; 1                 ; 0       ;
-;      - MyOr16bit:v4|MyOr2:v5|Q~1                                        ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1|Q~0    ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1|Q~1    ; 1                 ; 0       ;
 ; A[5]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v5|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v3|Q~0   ; 1                 ; 0       ;
-;      - MyOr16bit:v4|MyOr2:v5|Q~0                                        ; 1                 ; 0       ;
-;      - MyOr16bit:v4|MyOr2:v5|Q~1                                        ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1|Q~0    ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1|Q~1    ; 1                 ; 0       ;
 ; B[6]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6|Q~0  ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
 ; A[6]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6|Q~0  ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
 ; B[7]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7|Q~0  ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 0                 ; 0       ;
 ; A[7]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5|Q                ; 1                 ; 0       ;
@@ -1388,19 +1390,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
 ; A[8]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v8|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v8|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
-; B[9]                                                                    ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9|Q~0  ; 0                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8|Q~0  ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v8|MyOr2:v5|Q                ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v8|MyOr2:v5|Q                ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 0                 ; 0       ;
+; B[9]                                                                    ;                   ;         ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9|Q~0  ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4|Q              ; 1                 ; 0       ;
 ; A[9]                                                                    ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9|Q~0  ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v9|MyOr2:v5|Q                ; 1                 ; 0       ;
@@ -1410,33 +1412,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[10]                                                                   ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v10|Q~0 ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v3|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v1|Q~0   ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v1|Q~1   ; 1                 ; 0       ;
+;      - MyXor16bit:v7|MyXor2:v10|MyOr2:v1|Q~0                            ; 1                 ; 0       ;
+;      - MyXor16bit:v7|MyXor2:v10|MyOr2:v1|Q~1                            ; 1                 ; 0       ;
 ; A[10]                                                                   ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v10|Q~0 ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v3|Q~0  ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v1|Q~0   ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyOr2:v1|Q~1   ; 1                 ; 0       ;
+;      - MyXor16bit:v7|MyXor2:v10|MyOr2:v1|Q~0                            ; 1                 ; 0       ;
+;      - MyXor16bit:v7|MyXor2:v10|MyOr2:v1|Q~1                            ; 1                 ; 0       ;
 ; B[11]                                                                   ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11|Q~0 ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11|Q~0 ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
 ; A[11]                                                                   ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11|Q~0 ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11|Q~0 ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
 ; B[12]                                                                   ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12|Q~0 ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
-; A[12]                                                                   ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12|Q~0 ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 0                 ; 0       ;
+; A[12]                                                                   ;                   ;         ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12|Q~0 ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5|Q               ; 1                 ; 0       ;
 ; B[13]                                                                   ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v13|MyOr2:v5|Q               ; 0                 ; 0       ;
@@ -1444,22 +1446,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
 ; A[13]                                                                   ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v13|MyOr2:v5|Q               ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v13|MyOr2:v5|Q               ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13|Q~0 ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v13|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v13|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
 ; B[14]                                                                   ;                   ;         ;
 ;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
 ;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
 ; A[14]                                                                   ;                   ;         ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
-;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 0                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14|Q~0 ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
+;      - MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5|Q               ; 1                 ; 0       ;
 ; B[15]                                                                   ;                   ;         ;
-;      - Overflow~0                                                       ; 0                 ; 0       ;
-;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 0                 ; 0       ;
+;      - MyOr2:v12|Q~0                                                    ; 1                 ; 0       ;
+;      - MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15|Q~0 ; 1                 ; 0       ;
 +-------------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1471,19 +1473,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Block interconnects          ; 96 / 374,484 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 16,664 ( 0 % )     ;
 ; C2 interconnects             ; 44 / 155,012 ( < 1 % ) ;
-; C4 interconnects             ; 9 / 72,600 ( < 1 % )   ;
+; C4 interconnects             ; 8 / 72,600 ( < 1 % )   ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )         ;
-; Direct links                 ; 5 / 374,484 ( < 1 % )  ;
+; Direct links                 ; 9 / 374,484 ( < 1 % )  ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )         ;
-; Local interconnects          ; 21 / 112,960 ( < 1 % ) ;
+; Local interconnects          ; 18 / 112,960 ( < 1 % ) ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 13 / 15,868 ( < 1 % )  ;
-; R14/C12 interconnect drivers ; 13 / 27,256 ( < 1 % )  ;
-; R3 interconnects             ; 52 / 169,296 ( < 1 % ) ;
-; R6 interconnects             ; 66 / 330,800 ( < 1 % ) ;
+; R14 interconnects            ; 10 / 15,868 ( < 1 % )  ;
+; R14/C12 interconnect drivers ; 10 / 27,256 ( < 1 % )  ;
+; R3 interconnects             ; 46 / 169,296 ( < 1 % ) ;
+; R6 interconnects             ; 75 / 330,800 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 480 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 20,834 ( 0 % )     ;
 +------------------------------+------------------------+
@@ -1684,7 +1686,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.24 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1692,10 +1694,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/Quartus projects/ergasia 1/MyALU16bit/output_files/MyALU16bit.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 7971 megabytes
-    Info: Processing ended: Sun Mar 29 14:36:14 2026
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:03:22
+    Info: Peak virtual memory: 7972 megabytes
+    Info: Processing ended: Mon Mar 30 22:55:49 2026
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:03:11
 
 
 +----------------------------+

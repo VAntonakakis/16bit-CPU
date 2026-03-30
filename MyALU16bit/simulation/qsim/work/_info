@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Quartus projects/ergasia 1/MyALU16bit/simulation/qsim
 Emyalu16bit
-Z1 w1774784308
+Z1 w1774900763
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -22,13 +22,13 @@ Z9 8MyALU16bit.vho
 Z10 FMyALU16bit.vho
 l0
 L37
-V2RcHoJGg9OZ06fLLW7g;:1
-!s100 c8TEhV]8OfO625dX7kjWA1
+V17@dZg:4glWj=j0iIma8I0
+!s100 mgeQSJ^z7nKA5ckOaME:K2
 Z11 OV;C;10.5b;63
 32
-Z12 !s110 1774784309
+Z12 !s110 1774900763
 !i10b 1
-Z13 !s108 1774784309.000000
+Z13 !s108 1774900763.000000
 Z14 !s90 -work|work|MyALU16bit.vho|
 Z15 !s107 MyALU16bit.vho|
 !i113 1
@@ -42,11 +42,11 @@ R5
 R6
 R7
 R8
-DEx4 work 10 myalu16bit 0 22 2RcHoJGg9OZ06fLLW7g;:1
+DEx4 work 10 myalu16bit 0 22 17@dZg:4glWj=j0iIma8I0
 l284
 L102
-V1=E7?gJI`n_@L`LRhCei]1
-!s100 1Gm2YTA_hKEOf0Smj8G3h0
+VBj>cLmZNebCfhcQ209Zjk2
+!s100 hTeA@<c^o9zoo^Td:UKT70
 R11
 32
 R12
@@ -58,7 +58,7 @@ R15
 R16
 R17
 Emyalu16bit_vhd_vec_tst
-Z18 w1774784307
+Z18 w1774900762
 R6
 R7
 R0
@@ -84,8 +84,8 @@ R7
 Z23 DEx4 work 22 myalu16bit_vhd_vec_tst 0 22 XRhRzg9^eTmX<[WE6gT8T3
 l51
 L34
-V_Qb=TK[OcmM65N_09RV303
-!s100 6CDL01fIiYXObFSW6kM_]0
+V?PMTIZE1n9aGHK>z_H0[00
+!s100 kj^5;l06S6HVVIQb1RA5d3
 R11
 32
 R12
