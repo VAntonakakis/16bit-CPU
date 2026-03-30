@@ -1,0 +1,12 @@
+|MyDecoder1to2
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder1to2|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
