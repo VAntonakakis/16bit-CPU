@@ -1,5 +1,5 @@
 Flow report for MyMux8to1_16bit
-Sun Mar 29 13:52:02 2026
+Mon Mar 30 18:14:27 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Mar 29 13:51:57 2026       ;
+; Flow Status                     ; Successful - Mon Mar 30 18:14:27 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyMux8to1_16bit                             ;
 ; Top-level Entity Name           ; MyMux8to1_16bit                             ;
@@ -100,7 +100,9 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; 00:00:49     ; 1.0                     ; 8029 MB             ; 00:05:27                           ;
 ; Assembler            ; 00:00:05     ; 1.0                     ; 4851 MB             ; 00:00:06                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.3                     ; 5355 MB             ; 00:00:05                           ;
-; Total                ; 00:01:04     ; --                      ; --                  ; 00:05:53                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4737 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4745 MB             ; 00:00:01                           ;
+; Total                ; 00:01:06     ; --                      ; --                  ; 00:05:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,6 +115,8 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; VaggelisPC       ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; VaggelisPC       ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; VaggelisPC       ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; VaggelisPC       ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; VaggelisPC       ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -123,6 +127,8 @@ quartus_map --read_settings_files=on --write_settings_files=off MyMux8to1_16bit 
 quartus_fit --read_settings_files=off --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit
 quartus_asm --read_settings_files=off --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit
 quartus_sta MyMux8to1_16bit -c MyMux8to1_16bit
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit --vector_source="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/" MyMux8to1_16bit -c MyMux8to1_16bit
 
 
 

@@ -6,6 +6,7 @@ source_file = 1, C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd
 source_file = 1, C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd
 source_file = 1, C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd
 source_file = 1, C:/Quartus projects/ergasia 1/MyMux8to1_16bit/MyMux8to1_16bit.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/MyMux8to1_16bit/Waveform.vwf
 source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
