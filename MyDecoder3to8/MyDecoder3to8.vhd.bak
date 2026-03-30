@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyDecoder3to8 is port(
+    S : in std_logic_vector(2 downto 0);
+    D : out std_logic_vector(7 downto 0));
+end MyDecoder3to8;
+
+architecture StructuralMyDecoder3to8 of MyDecoder3to8 is
+component MyNot is port(
+    A : in std_logic;
+    Q : out std_logic);
+end component;
+
+component MyAnd3 is port(
+    A : in std_logic;
+    B : in std_logic;
+    C : in std_logic;
+    Q : out std_logic);
+end component;
+
+signal S0n, S1n, S2n : std_logic;
+
+begin
+
+U0: MyNot port map(S(0), S0n);
+U1: MyNot port map(S(1), S1n);
+U2: MyNot port map(S(2), S2n);
+
+
+-- 000 = 00000001
+U3: MyAnd3 port map(S2n, S1n, S0n, D(0));
+
+-- 001 = 00000010
+U4: MyAnd3 port map(S2n, S1n, S(0), D(1));
+
+-- 010 = 00000100
+U5: MyAnd3 port map(S2n, S(1), S0n, D(2));
+
+-- 011 = 00001000
+U6: MyAnd3 port map(S2n, S(1), S(0), D(3));
+
+-- 100 = 00010000
+U7: MyAnd3 port map(S(2), S1n, S0n, D(4));
+
+-- 101 = 00100000
+U8: MyAnd3 port map(S(2), S1n, S(0), D(5));
+
+-- 110 = 01000000
+U9: MyAnd3 port map(S(2), S(1), S0n, D(6));
+
+-- 111 = 10000000
+U10: MyAnd3 port map(S(2), S(1), S(0), D(7));
+
+end StructuralMyDecoder3to8;

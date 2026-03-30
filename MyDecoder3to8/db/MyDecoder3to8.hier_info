@@ -1,0 +1,146 @@
+|MyDecoder3to8
+S[0] => MyDecoder1to2:v2.S
+S[1] => MyDecoder1to2:v1.S
+S[2] => MyDecoder1to2:v0.S
+Q[0] <= MyAnd2:v4.Q
+Q[1] <= MyAnd2:v6.Q
+Q[2] <= MyAnd2:v8.Q
+Q[3] <= MyAnd2:v10.Q
+Q[4] <= MyAnd2:v12.Q
+Q[5] <= MyAnd2:v14.Q
+Q[6] <= MyAnd2:v16.Q
+Q[7] <= MyAnd2:v18.Q
+
+
+|MyDecoder3to8|MyDecoder1to2:v0
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyDecoder1to2:v0|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyDecoder1to2:v1
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyDecoder1to2:v1|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyDecoder1to2:v2
+S => MyNot:V0.A
+S => Q2.DATAIN
+Q1 <= MyNot:V0.Q
+Q2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyDecoder1to2:v2|MyNot:V0
+A => Q.DATAIN
+Q <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v3
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v4
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v5
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v6
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v7
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v8
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v9
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v10
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v11
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v12
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v13
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v14
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v15
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v16
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v17
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyDecoder3to8|MyAnd2:v18
+A => Q.IN0
+B => Q.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
