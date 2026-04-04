@@ -1,0 +1,52 @@
+|MyShiftRegister4bit
+Input => flipflopR_1:v0.I
+Clock => flipflopR_1:v0.C
+Clock => flipflopR_1:v1.C
+Clock => flipflopR_1:v2.C
+Clock => flipflopR_1:v3.C
+Enable => flipflopR_1:v0.E
+Enable => flipflopR_1:v1.E
+Enable => flipflopR_1:v2.E
+Enable => flipflopR_1:v3.E
+Reset_n => flipflopR_1:v0.R
+Reset_n => flipflopR_1:v1.R
+Reset_n => flipflopR_1:v2.R
+Reset_n => flipflopR_1:v3.R
+Output[0] <= flipflopR_1:v0.O
+Output[1] <= flipflopR_1:v1.O
+Output[2] <= flipflopR_1:v2.O
+Output[3] <= flipflopR_1:v3.O
+
+
+|MyShiftRegister4bit|flipflopR_1:v0
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyShiftRegister4bit|flipflopR_1:v1
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyShiftRegister4bit|flipflopR_1:v2
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyShiftRegister4bit|flipflopR_1:v3
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,211 @@
+|MyRegister16bit
+Input[0] => flipflopR_1:gen_register:0:vff.I
+Input[1] => flipflopR_1:gen_register:1:vff.I
+Input[2] => flipflopR_1:gen_register:2:vff.I
+Input[3] => flipflopR_1:gen_register:3:vff.I
+Input[4] => flipflopR_1:gen_register:4:vff.I
+Input[5] => flipflopR_1:gen_register:5:vff.I
+Input[6] => flipflopR_1:gen_register:6:vff.I
+Input[7] => flipflopR_1:gen_register:7:vff.I
+Input[8] => flipflopR_1:gen_register:8:vff.I
+Input[9] => flipflopR_1:gen_register:9:vff.I
+Input[10] => flipflopR_1:gen_register:10:vff.I
+Input[11] => flipflopR_1:gen_register:11:vff.I
+Input[12] => flipflopR_1:gen_register:12:vff.I
+Input[13] => flipflopR_1:gen_register:13:vff.I
+Input[14] => flipflopR_1:gen_register:14:vff.I
+Input[15] => flipflopR_1:gen_register:15:vff.I
+Clock => flipflopR_1:gen_register:0:vff.C
+Clock => flipflopR_1:gen_register:1:vff.C
+Clock => flipflopR_1:gen_register:2:vff.C
+Clock => flipflopR_1:gen_register:3:vff.C
+Clock => flipflopR_1:gen_register:4:vff.C
+Clock => flipflopR_1:gen_register:5:vff.C
+Clock => flipflopR_1:gen_register:6:vff.C
+Clock => flipflopR_1:gen_register:7:vff.C
+Clock => flipflopR_1:gen_register:8:vff.C
+Clock => flipflopR_1:gen_register:9:vff.C
+Clock => flipflopR_1:gen_register:10:vff.C
+Clock => flipflopR_1:gen_register:11:vff.C
+Clock => flipflopR_1:gen_register:12:vff.C
+Clock => flipflopR_1:gen_register:13:vff.C
+Clock => flipflopR_1:gen_register:14:vff.C
+Clock => flipflopR_1:gen_register:15:vff.C
+Enable => flipflopR_1:gen_register:0:vff.E
+Enable => flipflopR_1:gen_register:1:vff.E
+Enable => flipflopR_1:gen_register:2:vff.E
+Enable => flipflopR_1:gen_register:3:vff.E
+Enable => flipflopR_1:gen_register:4:vff.E
+Enable => flipflopR_1:gen_register:5:vff.E
+Enable => flipflopR_1:gen_register:6:vff.E
+Enable => flipflopR_1:gen_register:7:vff.E
+Enable => flipflopR_1:gen_register:8:vff.E
+Enable => flipflopR_1:gen_register:9:vff.E
+Enable => flipflopR_1:gen_register:10:vff.E
+Enable => flipflopR_1:gen_register:11:vff.E
+Enable => flipflopR_1:gen_register:12:vff.E
+Enable => flipflopR_1:gen_register:13:vff.E
+Enable => flipflopR_1:gen_register:14:vff.E
+Enable => flipflopR_1:gen_register:15:vff.E
+Reset_n => flipflopR_1:gen_register:0:vff.R
+Reset_n => flipflopR_1:gen_register:1:vff.R
+Reset_n => flipflopR_1:gen_register:2:vff.R
+Reset_n => flipflopR_1:gen_register:3:vff.R
+Reset_n => flipflopR_1:gen_register:4:vff.R
+Reset_n => flipflopR_1:gen_register:5:vff.R
+Reset_n => flipflopR_1:gen_register:6:vff.R
+Reset_n => flipflopR_1:gen_register:7:vff.R
+Reset_n => flipflopR_1:gen_register:8:vff.R
+Reset_n => flipflopR_1:gen_register:9:vff.R
+Reset_n => flipflopR_1:gen_register:10:vff.R
+Reset_n => flipflopR_1:gen_register:11:vff.R
+Reset_n => flipflopR_1:gen_register:12:vff.R
+Reset_n => flipflopR_1:gen_register:13:vff.R
+Reset_n => flipflopR_1:gen_register:14:vff.R
+Reset_n => flipflopR_1:gen_register:15:vff.R
+Output[0] << flipflopR_1:gen_register:0:vff.O
+Output[1] << flipflopR_1:gen_register:1:vff.O
+Output[2] << flipflopR_1:gen_register:2:vff.O
+Output[3] << flipflopR_1:gen_register:3:vff.O
+Output[4] << flipflopR_1:gen_register:4:vff.O
+Output[5] << flipflopR_1:gen_register:5:vff.O
+Output[6] << flipflopR_1:gen_register:6:vff.O
+Output[7] << flipflopR_1:gen_register:7:vff.O
+Output[8] << flipflopR_1:gen_register:8:vff.O
+Output[9] << flipflopR_1:gen_register:9:vff.O
+Output[10] << flipflopR_1:gen_register:10:vff.O
+Output[11] << flipflopR_1:gen_register:11:vff.O
+Output[12] << flipflopR_1:gen_register:12:vff.O
+Output[13] << flipflopR_1:gen_register:13:vff.O
+Output[14] << flipflopR_1:gen_register:14:vff.O
+Output[15] << flipflopR_1:gen_register:15:vff.O
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:0:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:1:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:2:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:3:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:4:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:5:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:6:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:7:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:8:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:9:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:10:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:11:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:12:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:13:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:14:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MyRegister16bit|flipflopR_1:\gen_register:15:vff
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
