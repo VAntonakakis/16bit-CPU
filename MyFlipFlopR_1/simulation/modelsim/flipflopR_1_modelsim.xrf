@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Aimilios/Documents/quartus/flipflopR_1/flipflopR_1.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Aimilios/Documents/quartus/flipflopR_1/db/flipflopR_1.cbx.xml
+design_name = flipflopR_1
+instance = comp, \C~I\, C, flipflopR_1, 1
+instance = comp, \E~I\, E, flipflopR_1, 1
+instance = comp, \I~I\, I, flipflopR_1, 1
+instance = comp, \R~I\, R, flipflopR_1, 1
+instance = comp, \O~reg0\, O~reg0, flipflopR_1, 1
+instance = comp, \O~I\, O, flipflopR_1, 1
