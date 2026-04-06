@@ -10,126 +10,68 @@ entity MyALU16bit is port(
 end MyALU16bit;
 
 architecture StructuralMyALU16bit of MyALU16bit is
-component MyFullAdder16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	Cin : in std_logic;
-	Sum : out std_logic_vector (15 downto 0);
-	Cout : out std_logic);
-end component;
-
-component MyAnd16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
-end component;
-
-component MyOr16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
-end component;
-
-component MyGreaterEqual16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	Q : out std_logic);
-end component;
-
-component MyNot16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
-end component;
-
-component MyXor16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
-end component;
-
-component MyNor16bit is port(
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
-end component;
-
-component MyMux8to1_16bit is port(
+component MyALU1bit is port(
+	A : in std_logic;
+	B : in std_logic;
 	S : in std_logic_vector (2 downto 0);
-	A : in std_logic_vector (15 downto 0);
-	B : in std_logic_vector (15 downto 0);
-	C : in std_logic_vector (15 downto 0);
-	D : in std_logic_vector (15 downto 0);
-	E : in std_logic_vector (15 downto 0);
-	F : in std_logic_vector (15 downto 0);
-	G : in std_logic_vector (15 downto 0);
-	H : in std_logic_vector (15 downto 0);
-	Q : out std_logic_vector (15 downto 0));
+	Cin : in std_logic;
+	Q : out std_logic;
+	Overflow : out std_logic);
 end component;
 
-component MyMux2to1 is port(
-	S : in std_logic;
+component MyDecoder3to8 is port(
+	S : in std_logic_vector(2 downto 0);
+	Q : out std_logic_vector(7 downto 0));
+end component;
+
+component MyAnd2 is port(
 	A : in std_logic;
 	B : in std_logic;
 	Q : out std_logic);
 end component;
 
-component MyDecoder3to8 is port(
-    S : in std_logic_vector(2 downto 0);
-    Q : out std_logic_vector(7 downto 0));
-end component;
-
-component MyAnd2 is port(
-    A : in std_logic;
-    B : in std_logic;
-    Q : out std_logic);
-end component;
-
 component MyOr2 is port(
-    A : in std_logic;
-    B : in std_logic;
-    Q : out std_logic);
+	A : in std_logic;
+	B : in std_logic;
+	Q : out std_logic);
 end component;
 
+component MyXor2 is port(
+	A : in std_logic;
+	B : in std_logic;
+	Q : out std_logic);
+end component;
+	
+signal carry : std_logic_vector (15 downto 0);
 signal Qo : std_logic_vector (7 downto 0);
-signal p1, p2, p3, p4, p5, p6, p7, p8, BNot : std_logic_vector (15 downto 0);
-signal o1, o2, o3, o4, p5_1bit : std_logic;
+signal cout1, cout2, Cout3, Cin0 : std_logic;
 
 begin
-
---add
-v0 : MyFullAdder16bit port map(A, B, '0', p1, o1);
-
---sub
-V1 : MyNot16bit port map(B, BNot);
-v2 : MyFullAdder16bit port map(A, BNot, '1', p2, o2);
-
---and
-v3 : MyAnd16bit port map(A, B, p3);
-
---or
-v4 : MyOr16bit port map(A, B, p4);
-
---geq
-v5 : MyGreaterEqual16bit port map(A, p5_1bit);
-p5(15 downto 1) <= (others => '0');
-p5(0) <= p5_1bit;
-
---not
-v6 : MyNot16bit port map(A, p6);
-
---xor
-v7 : MyXor16bit port map(A, B, p7);
-
---nor
-v8 : MyNor16bit port map(A, B, p8);
-
---mux 8 to 1
-v9 : MyMux8to1_16bit port map(S, p1, p2, p3, p4, p5, p6, p7, p8, Q);
+Cin0 <= '1' when S = "001" else '0';
+V0 : MyALU1bit port map(A(0), B(0), S, Cin0, Q(0), carry(0));
+V1 : MyALU1bit port map(A(1), B(1), S, carry(0), Q(1), carry(1));
+V2 : MyALU1bit port map(A(2), B(2), S, carry(1), Q(2), carry(2));
+V3 : MyALU1bit port map(A(3), B(3), S, carry(2), Q(3), carry(3));
+V4 : MyALU1bit port map(A(4), B(4), S, carry(3), Q(4), carry(4));
+V5 : MyALU1bit port map(A(5), B(5), S, carry(4), Q(5), carry(5));
+V6 : MyALU1bit port map(A(6), B(6), S, carry(5), Q(6), carry(6));
+V7 : MyALU1bit port map(A(7), B(7), S, carry(6), Q(7), carry(7));
+V8 : MyALU1bit port map(A(8), B(8), S, carry(7), Q(8), carry(8));
+V9 : MyALU1bit port map(A(9), B(9), S, carry(8), Q(9), carry(9));
+V10 : MyALU1bit port map(A(10), B(10), S, carry(9), Q(10), carry(10));
+V11 : MyALU1bit port map(A(11), B(11), S, carry(10), Q(11), carry(11));
+V12 : MyALU1bit port map(A(12), B(12), S, carry(11), Q(12), carry(12));
+V13 : MyALU1bit port map(A(13), B(13), S, carry(12), Q(13), carry(13));
+V14 : MyALU1bit port map(A(14), B(14), S, carry(13), Q(14), carry(14));
+V15 : MyALU1bit port map(A(15), B(15), S, carry(14), Q(15), carry(15));
 
 --overflow
 dec: MyDecoder3to8 port map(S, Qo);
-v10: MyAnd2 port map(Qo(0), o1, o3);
-v11: MyAnd2 port map(Qo(1), o2, o4);
-v12: MyOr2  port map(o3, o4, Overflow);
-
+--v16: MyAnd2 port map(Qo(0), Carry(15), Cout1);
+--v17: MyAnd2 port map(Qo(1), Carry(15), Cout2);
+--v18: MyOr2  port map(Cout1, Cout2, Overflow);
+V16 : MyOr2 port map(Qo(0), Qo(1), Cout2);
+V17 : MyXor2 port map(carry(14), carry(15), Cout3);
+V18 : MyAnd2 port map(Cout2, Cout3, Overflow);
 
 end StructuralMyALU16bit;
