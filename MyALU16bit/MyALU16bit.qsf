@@ -52,6 +52,9 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ../MyOr16bit/MyOr16bit.vhd
+set_global_assignment -name VHDL_FILE ../MyAnd16bit/MyAnd16bit.vhd
+set_global_assignment -name VHDL_FILE ../MyMux2to1_16bit/MyMux2to1_16bit.vhd
 set_global_assignment -name VHDL_FILE ../MyMux2to1/MyMux2to1.vhd
 set_global_assignment -name VHDL_FILE ../MyGreaterEqual1bit/MyGreaterEqual1bit.vhd
 set_global_assignment -name VHDL_FILE ../MyMux8to1/MyMux8to1.vhd

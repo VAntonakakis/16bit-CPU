@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/06/2026 10:54:58"
+-- Generated on "04/06/2026 13:44:58"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyALU16bit
 -- 
@@ -43,8 +43,8 @@ COMPONENT MyALU16bit
 	PORT (
 	A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Overflow : BUFFER STD_LOGIC;
-	Q : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Overflow : OUT STD_LOGIC;
+	Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	S : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
 	);
 END COMPONENT;
@@ -61,49 +61,49 @@ BEGIN
 -- A[15]
 t_prcs_A_15: PROCESS
 BEGIN
-	A(15) <= '1';
+	A(15) <= '0';
 WAIT;
 END PROCESS t_prcs_A_15;
 -- A[14]
 t_prcs_A_14: PROCESS
 BEGIN
-	A(14) <= '1';
+	A(14) <= '0';
 WAIT;
 END PROCESS t_prcs_A_14;
 -- A[13]
 t_prcs_A_13: PROCESS
 BEGIN
-	A(13) <= '1';
+	A(13) <= '0';
 WAIT;
 END PROCESS t_prcs_A_13;
 -- A[12]
 t_prcs_A_12: PROCESS
 BEGIN
-	A(12) <= '1';
+	A(12) <= '0';
 WAIT;
 END PROCESS t_prcs_A_12;
 -- A[11]
 t_prcs_A_11: PROCESS
 BEGIN
-	A(11) <= '1';
+	A(11) <= '0';
 WAIT;
 END PROCESS t_prcs_A_11;
 -- A[10]
 t_prcs_A_10: PROCESS
 BEGIN
-	A(10) <= '1';
+	A(10) <= '0';
 WAIT;
 END PROCESS t_prcs_A_10;
 -- A[9]
 t_prcs_A_9: PROCESS
 BEGIN
-	A(9) <= '1';
+	A(9) <= '0';
 WAIT;
 END PROCESS t_prcs_A_9;
 -- A[8]
 t_prcs_A_8: PROCESS
 BEGIN
-	A(8) <= '1';
+	A(8) <= '0';
 WAIT;
 END PROCESS t_prcs_A_8;
 -- A[7]
