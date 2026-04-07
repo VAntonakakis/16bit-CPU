@@ -1,0 +1,142 @@
+$comment
+	File created using the following command:
+		vcd file immExtension.msim.vcd -direction
+$end
+$date
+	Sun Apr 05 13:04:00 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module immextension_vhd_vec_tst $end
+$var wire 1 ! I [5] $end
+$var wire 1 " I [4] $end
+$var wire 1 # I [3] $end
+$var wire 1 $ I [2] $end
+$var wire 1 % I [1] $end
+$var wire 1 & I [0] $end
+$var wire 1 ' O [15] $end
+$var wire 1 ( O [14] $end
+$var wire 1 ) O [13] $end
+$var wire 1 * O [12] $end
+$var wire 1 + O [11] $end
+$var wire 1 , O [10] $end
+$var wire 1 - O [9] $end
+$var wire 1 . O [8] $end
+$var wire 1 / O [7] $end
+$var wire 1 0 O [6] $end
+$var wire 1 1 O [5] $end
+$var wire 1 2 O [4] $end
+$var wire 1 3 O [3] $end
+$var wire 1 4 O [2] $end
+$var wire 1 5 O [1] $end
+$var wire 1 6 O [0] $end
+
+$scope module i1 $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 9 unknown $end
+$var wire 1 : devoe $end
+$var wire 1 ; devclrn $end
+$var wire 1 < devpor $end
+$var wire 1 = ww_devoe $end
+$var wire 1 > ww_devclrn $end
+$var wire 1 ? ww_devpor $end
+$var wire 1 @ ww_I [5] $end
+$var wire 1 A ww_I [4] $end
+$var wire 1 B ww_I [3] $end
+$var wire 1 C ww_I [2] $end
+$var wire 1 D ww_I [1] $end
+$var wire 1 E ww_I [0] $end
+$var wire 1 F ww_O [15] $end
+$var wire 1 G ww_O [14] $end
+$var wire 1 H ww_O [13] $end
+$var wire 1 I ww_O [12] $end
+$var wire 1 J ww_O [11] $end
+$var wire 1 K ww_O [10] $end
+$var wire 1 L ww_O [9] $end
+$var wire 1 M ww_O [8] $end
+$var wire 1 N ww_O [7] $end
+$var wire 1 O ww_O [6] $end
+$var wire 1 P ww_O [5] $end
+$var wire 1 Q ww_O [4] $end
+$var wire 1 R ww_O [3] $end
+$var wire 1 S ww_O [2] $end
+$var wire 1 T ww_O [1] $end
+$var wire 1 U ww_O [0] $end
+$var wire 1 V \I~combout\ [5] $end
+$var wire 1 W \I~combout\ [4] $end
+$var wire 1 X \I~combout\ [3] $end
+$var wire 1 Y \I~combout\ [2] $end
+$var wire 1 Z \I~combout\ [1] $end
+$var wire 1 [ \I~combout\ [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+07
+18
+x9
+1:
+1;
+1<
+1=
+1>
+1?
+0!
+0"
+0#
+1$
+0%
+0&
+0@
+0A
+0B
+1C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+0V
+0W
+0X
+1Y
+0Z
+0[
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+14
+05
+06
+$end
+#480000

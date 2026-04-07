@@ -1,0 +1,98 @@
+$comment
+	File created using the following command:
+		vcd file flipflopR_1.msim.vcd -direction
+$end
+$date
+	Fri Apr 03 22:06:10 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module flipflopr_1_vhd_vec_tst $end
+$var wire 1 ! C $end
+$var wire 1 " E $end
+$var wire 1 # I $end
+$var wire 1 $ O $end
+$var wire 1 % R $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var wire 1 ) devoe $end
+$var wire 1 * devclrn $end
+$var wire 1 + devpor $end
+$var wire 1 , ww_devoe $end
+$var wire 1 - ww_devclrn $end
+$var wire 1 . ww_devpor $end
+$var wire 1 / ww_R $end
+$var wire 1 0 ww_I $end
+$var wire 1 1 ww_C $end
+$var wire 1 2 ww_E $end
+$var wire 1 3 ww_O $end
+$var wire 1 4 \C~combout\ $end
+$var wire 1 5 \E~combout\ $end
+$var wire 1 6 \I~combout\ $end
+$var wire 1 7 \R~combout\ $end
+$var wire 1 8 \O~reg0_regout\ $end
+$var wire 1 9 \ALT_INV_R~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+1#
+0$
+0%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+1-
+1.
+0/
+10
+01
+12
+03
+04
+15
+16
+07
+08
+19
+$end
+#30000
+1%
+1/
+17
+09
+#90000
+1!
+11
+14
+18
+13
+1$
+#180000
+0%
+0/
+07
+19
+08
+03
+0$
+#220000
+0!
+01
+04
+#480000

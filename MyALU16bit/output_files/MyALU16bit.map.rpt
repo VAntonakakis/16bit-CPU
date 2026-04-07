@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyALU16bit
-Mon Mar 30 22:55:10 2026
+Mon Apr 06 13:40:25 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -14,13 +14,12 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "MyDecoder3to8:dec"
- 10. Port Connectivity Checks: "MyMux8to1_16bit:v9"
- 11. Port Connectivity Checks: "MyFullAdder16bit:v2"
- 12. Port Connectivity Checks: "MyFullAdder16bit:v0"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "MyMux2to1_16bit:V21"
+ 10. Port Connectivity Checks: "MyALU1bit:V0|MyDecoder3to8:dec"
+ 11. Port Connectivity Checks: "MyMux2to1:V05"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -47,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 30 22:55:10 2026       ;
+; Analysis & Synthesis Status     ; Successful - Mon Apr 06 13:40:25 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyALU16bit                                  ;
 ; Top-level Entity Name           ; MyALU16bit                                  ;
@@ -170,30 +169,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path               ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; ../MyDecoder1to2/MyDecoder1to2.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd             ;         ;
-; ../MyDecoder3to8/MyDecoder3to8.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd             ;         ;
-; ../MyNot/MyNot.vhd                             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd                             ;         ;
-; ../MyFullAdder1bit/MyFullAdder1bit.vhd         ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd         ;         ;
-; ../MyOr2/MyOr2.vhd                             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd                             ;         ;
-; ../MyAnd2/MyAnd2.vhd                           ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd                           ;         ;
-; ../MyNor2/MyNor2.vhd                           ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd                           ;         ;
-; ../MyXor2/MyXor2.vhd                           ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd                           ;         ;
-; ../MyMux2to1_16bit/MyMux2to1_16bit.vhd         ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd         ;         ;
-; ../MyXor16bit/MyXor16bit.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor16bit/MyXor16bit.vhd                   ;         ;
-; ../MyOr16bit/MyOr16bit.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd                     ;         ;
-; ../MyNot16bit/MyNot16bit.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd                   ;         ;
-; ../MyNor16bit/MyNor16bit.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNor16bit/MyNor16bit.vhd                   ;         ;
-; ../MyMux8to1_16bit/MyMux8to1_16bit.vhd         ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux8to1_16bit/MyMux8to1_16bit.vhd         ;         ;
-; ../MyGreaterEqual16bit/MyGreaterEqual16bit.vhd ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyGreaterEqual16bit/MyGreaterEqual16bit.vhd ;         ;
-; ../MyFullAdder16bit/MyFullAdder16bit.vhd       ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyFullAdder16bit/MyFullAdder16bit.vhd       ;         ;
-; ../MyAnd16bit/MyAnd16bit.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd                   ;         ;
-; MyALU16bit.vhd                                 ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd                   ;         ;
-+------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; ../MyOr16bit/MyOr16bit.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd             ;         ;
+; ../MyAnd16bit/MyAnd16bit.vhd           ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd           ;         ;
+; ../MyMux2to1_16bit/MyMux2to1_16bit.vhd ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd ;         ;
+; ../MyMux2to1/MyMux2to1.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd             ;         ;
+; ../MyMux8to1/MyMux8to1.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd             ;         ;
+; ../MyFullAdder1bit/MyFullAdder1bit.vhd ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd ;         ;
+; ../MyNor2/MyNor2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd                   ;         ;
+; ../MyXor2/MyXor2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd                   ;         ;
+; ../MyDecoder1to2/MyDecoder1to2.vhd     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd     ;         ;
+; ../MyNot/MyNot.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd                     ;         ;
+; ../MyOr2/MyOr2.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd                     ;         ;
+; ../MyDecoder3to8/MyDecoder3to8.vhd     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd     ;         ;
+; ../MyAnd2/MyAnd2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd                   ;         ;
+; ../MyALU1bit/MyALU1bit.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd             ;         ;
+; MyALU16bit.vhd                         ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd           ;         ;
++----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -201,14 +197,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 42         ;
+; Estimate of Logic utilization (ALMs needed) ; 43         ;
 ;                                             ;            ;
-; Combinational ALUT usage for logic          ; 56         ;
-;     -- 7 input functions                    ; 15         ;
-;     -- 6 input functions                    ; 13         ;
-;     -- 5 input functions                    ; 4          ;
-;     -- 4 input functions                    ; 4          ;
-;     -- <=3 input functions                  ; 20         ;
+; Combinational ALUT usage for logic          ; 62         ;
+;     -- 7 input functions                    ; 0          ;
+;     -- 6 input functions                    ; 23         ;
+;     -- 5 input functions                    ; 10         ;
+;     -- 4 input functions                    ; 3          ;
+;     -- <=3 input functions                  ; 26         ;
 ;                                             ;            ;
 ; Dedicated logic registers                   ; 0          ;
 ;                                             ;            ;
@@ -217,112 +213,77 @@ https://fpgasoftware.intel.com/eula.
 ; Total DSP Blocks                            ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; S[0]~input ;
-; Maximum fan-out                             ; 18         ;
-; Total fan-out                               ; 338        ;
-; Average fan-out                             ; 2.11       ;
+; Maximum fan-out                             ; 45         ;
+; Total fan-out                               ; 345        ;
+; Average fan-out                             ; 2.08       ;
 +---------------------------------------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name      ; Library Name ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
-; |MyALU16bit                 ; 56 (0)              ; 0 (0)                     ; 0                 ; 0          ; 52   ; 0            ; |MyALU16bit                                                              ; MyALU16bit       ; work         ;
-;    |MyFullAdder16bit:v0|    ; 20 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0                                          ; MyFullAdder16bit ; work         ;
-;       |MyFullAdder1bit:v10| ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10                      ; MyFullAdder1bit  ; work         ;
-;          |MyAnd2:v4|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyAnd2:v4            ; MyAnd2           ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyOr2:v5             ; MyOr2            ; work         ;
-;          |MyXor2:v1|        ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1            ; MyXor2           ; work         ;
-;             |MyAnd2:v3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v10|MyXor2:v1|MyAnd2:v3  ; MyAnd2           ; work         ;
-;       |MyFullAdder1bit:v11| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v11                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v11|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v12| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v12                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v12|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v13| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v13                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v13|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v14| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v14                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v14|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v1|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v1                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v1|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v2|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v2                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v2|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v3|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v3                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v3|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v4|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v4                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v4|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v5|  ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5                       ; MyFullAdder1bit  ; work         ;
-;          |MyAnd2:v4|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyAnd2:v4             ; MyAnd2           ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyOr2:v5              ; MyOr2            ; work         ;
-;          |MyXor2:v1|        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1             ; MyXor2           ; work         ;
-;             |MyAnd2:v3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyAnd2:v3   ; MyAnd2           ; work         ;
-;             |MyOr2:v1|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v5|MyXor2:v1|MyOr2:v1    ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v6|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v6                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v6|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v7|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v7                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v7|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v8|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v8                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v8|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v9                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v0|MyFullAdder1bit:v9|MyOr2:v5              ; MyOr2            ; work         ;
-;    |MyFullAdder16bit:v2|    ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2                                          ; MyFullAdder16bit ; work         ;
-;       |MyFullAdder1bit:v10| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v10                      ; MyFullAdder1bit  ; work         ;
-;          |MyAnd2:v4|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyAnd2:v4            ; MyAnd2           ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v10|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v11| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v11                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v11|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v12| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v12                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v12|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v13| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v13                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v13|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v14| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v14                      ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v14|MyOr2:v5             ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v1|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v1                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v1|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v2|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v2                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v2|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v3|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v3                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v3|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v4|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v4                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v4|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v5|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v5                       ; MyFullAdder1bit  ; work         ;
-;          |MyAnd2:v4|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v5|MyAnd2:v4             ; MyAnd2           ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v5|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v6|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v6                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v6|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v7|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v7                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v7|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v8|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v8                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v8|MyOr2:v5              ; MyOr2            ; work         ;
-;       |MyFullAdder1bit:v9|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v9                       ; MyFullAdder1bit  ; work         ;
-;          |MyOr2:v5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyFullAdder16bit:v2|MyFullAdder1bit:v9|MyOr2:v5              ; MyOr2            ; work         ;
-;    |MyMux8to1_16bit:v9|     ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9                                           ; MyMux8to1_16bit  ; work         ;
-;       |MyMux2to1_16bit:V4|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:V4                        ; MyMux2to1_16bit  ; work         ;
-;          |MyOr16bit:v3|     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3           ; MyOr16bit        ; work         ;
-;             |MyOr2:v0|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v0  ; MyOr2            ; work         ;
-;             |MyOr2:v1|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:V4|MyOr16bit:v3|MyOr2:v1  ; MyOr2            ; work         ;
-;       |MyMux2to1_16bit:v6|  ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6                        ; MyMux2to1_16bit  ; work         ;
-;          |MyOr16bit:v3|     ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3           ; MyOr16bit        ; work         ;
-;             |MyOr2:v10|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v10 ; MyOr2            ; work         ;
-;             |MyOr2:v11|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11 ; MyOr2            ; work         ;
-;             |MyOr2:v12|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12 ; MyOr2            ; work         ;
-;             |MyOr2:v13|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13 ; MyOr2            ; work         ;
-;             |MyOr2:v14|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14 ; MyOr2            ; work         ;
-;             |MyOr2:v15|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15 ; MyOr2            ; work         ;
-;             |MyOr2:v1|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1  ; MyOr2            ; work         ;
-;             |MyOr2:v2|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2  ; MyOr2            ; work         ;
-;             |MyOr2:v3|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v3  ; MyOr2            ; work         ;
-;             |MyOr2:v4|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v4  ; MyOr2            ; work         ;
-;             |MyOr2:v5|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v5  ; MyOr2            ; work         ;
-;             |MyOr2:v6|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6  ; MyOr2            ; work         ;
-;             |MyOr2:v7|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7  ; MyOr2            ; work         ;
-;             |MyOr2:v8|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8  ; MyOr2            ; work         ;
-;             |MyOr2:v9|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux8to1_16bit:v9|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9  ; MyOr2            ; work         ;
-;    |MyOr2:v12|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyOr2:v12                                                    ; MyOr2            ; work         ;
-;    |MyXor16bit:v7|          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7                                                ; MyXor16bit       ; work         ;
-;       |MyXor2:v10|          ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7|MyXor2:v10                                     ; MyXor2           ; work         ;
-;          |MyOr2:v1|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor16bit:v7|MyXor2:v10|MyOr2:v1                            ; MyOr2            ; work         ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
+; |MyALU16bit                ; 62 (0)              ; 0 (0)                     ; 0                 ; 0          ; 52   ; 0            ; |MyALU16bit                                                  ; MyALU16bit      ; work         ;
+;    |MyALU1bit:V0|          ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V0                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V0|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V10|         ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V10                                    ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V10|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V11|         ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V11                                    ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V11|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V12|         ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V12                                    ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V12|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V13|         ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V13                                    ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V13|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V14|         ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14                                    ; MyALU1bit       ; work         ;
+;       |MyFullAdder1bit:v0| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyFullAdder1bit:v0                 ; MyFullAdder1bit ; work         ;
+;          |MyOr2:v5|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyFullAdder1bit:v0|MyOr2:v5        ; MyOr2           ; work         ;
+;       |MyFullAdder1bit:v2| ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyFullAdder1bit:v2                 ; MyFullAdder1bit ; work         ;
+;          |MyOr2:v5|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyFullAdder1bit:v2|MyOr2:v5        ; MyOr2           ; work         ;
+;       |MyMux8to1:v9|       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyMux8to1:v9                       ; MyMux8to1       ; work         ;
+;          |MyMux2to1:V4|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyMux8to1:v9|MyMux2to1:V4          ; MyMux2to1       ; work         ;
+;             |MyOr2:v3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyMux8to1:v9|MyMux2to1:V4|MyOr2:v3 ; MyOr2           ; work         ;
+;       |MyOr2:v12|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V1|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V1                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V1|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V2|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V2                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V2|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V3|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V3                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V3|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V4|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V4                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V4|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V5|          ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V5                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V5|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V6|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V6                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V6|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V7|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V7                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V7|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V8|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V8                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V8|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyALU1bit:V9|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V9                                     ; MyALU1bit       ; work         ;
+;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V9|MyOr2:v12                           ; MyOr2           ; work         ;
+;    |MyMux2to1_16bit:V21|   ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21                              ; MyMux2to1_16bit ; work         ;
+;       |MyAnd16bit:v1|      ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1                ; MyAnd16bit      ; work         ;
+;          |MyAnd2:v10|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v10     ; MyAnd2          ; work         ;
+;          |MyAnd2:v11|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v11     ; MyAnd2          ; work         ;
+;          |MyAnd2:v12|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v12     ; MyAnd2          ; work         ;
+;          |MyAnd2:v13|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v13     ; MyAnd2          ; work         ;
+;          |MyAnd2:v14|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v14     ; MyAnd2          ; work         ;
+;          |MyAnd2:v15|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v15     ; MyAnd2          ; work         ;
+;          |MyAnd2:v1|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v1      ; MyAnd2          ; work         ;
+;          |MyAnd2:v2|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v2      ; MyAnd2          ; work         ;
+;          |MyAnd2:v3|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v3      ; MyAnd2          ; work         ;
+;          |MyAnd2:v4|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v4      ; MyAnd2          ; work         ;
+;          |MyAnd2:v5|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v5      ; MyAnd2          ; work         ;
+;          |MyAnd2:v6|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v6      ; MyAnd2          ; work         ;
+;          |MyAnd2:v7|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v7      ; MyAnd2          ; work         ;
+;          |MyAnd2:v8|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v8      ; MyAnd2          ; work         ;
+;          |MyAnd2:v9|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v9      ; MyAnd2          ; work         ;
+;       |MyOr16bit:v3|       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyOr16bit:v3                 ; MyOr16bit       ; work         ;
+;          |MyOr2:v0|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyOr16bit:v3|MyOr2:v0        ; MyOr2           ; work         ;
+;    |MyXor2:v22|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor2:v22                                       ; MyXor2          ; work         ;
+;       |MyAnd2:v3|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor2:v22|MyAnd2:v3                             ; MyAnd2          ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -341,8 +302,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-------------------------------------------------+
+; Port Connectivity Checks: "MyMux2to1_16bit:V21" ;
++----------+-------+----------+-------------------+
+; Port     ; Type  ; Severity ; Details           ;
++----------+-------+----------+-------------------+
+; b[15..1] ; Input ; Info     ; Stuck at GND      ;
++----------+-------+----------+-------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "MyDecoder3to8:dec"                                                                     ;
+; Port Connectivity Checks: "MyALU1bit:V0|MyDecoder3to8:dec"                                                        ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -350,31 +320,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------+
-; Port Connectivity Checks: "MyMux8to1_16bit:v9" ;
-+----------+-------+----------+------------------+
-; Port     ; Type  ; Severity ; Details          ;
-+----------+-------+----------+------------------+
-; e[15..1] ; Input ; Info     ; Stuck at GND     ;
-+----------+-------+----------+------------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "MyFullAdder16bit:v2" ;
-+------+-------+----------+-----------------------+
-; Port ; Type  ; Severity ; Details               ;
-+------+-------+----------+-----------------------+
-; cin  ; Input ; Info     ; Stuck at VCC          ;
-+------+-------+----------+-----------------------+
-
-
-+-------------------------------------------------+
-; Port Connectivity Checks: "MyFullAdder16bit:v0" ;
-+------+-------+----------+-----------------------+
-; Port ; Type  ; Severity ; Details               ;
-+------+-------+----------+-----------------------+
-; cin  ; Input ; Info     ; Stuck at GND          ;
-+------+-------+----------+-----------------------+
++-------------------------------------------+
+; Port Connectivity Checks: "MyMux2to1:V05" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; a    ; Input ; Info     ; Stuck at GND    ;
+; b    ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
 
 
 +-----------------------------------------------------+
@@ -382,19 +335,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 56                          ;
-;     extend            ; 15                          ;
-;         7 data inputs ; 15                          ;
-;     normal            ; 41                          ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 4                           ;
-;         6 data inputs ; 13                          ;
+; arriav_lcell_comb     ; 63                          ;
+;     normal            ; 63                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 24                          ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 10                          ;
+;         6 data inputs ; 23                          ;
 ; boundary_port         ; 52                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.89                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 7.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -413,93 +365,82 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar 30 22:55:03 2026
+    Info: Processing started: Mon Apr 06 13:40:18 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyALU16bit -c MyALU16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder1to2/mydecoder1to2.vhd
-    Info (12022): Found design unit 1: MyDecoder1to2-StructuralMyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 10
-    Info (12023): Found entity 1: MyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder3to8/mydecoder3to8.vhd
-    Info (12022): Found design unit 1: MyDecoder3to8-StructuralMyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 9
-    Info (12023): Found entity 1: MyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot/mynot.vhd
-    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 9
-    Info (12023): Found entity 1: MyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor16bit/myor16bit.vhd
+    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand16bit/myand16bit.vhd
+    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux2to1_16bit/mymux2to1_16bit.vhd
+    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux2to1/mymux2to1.vhd
+    Info (12022): Found design unit 1: MyMux2to1-StructuralMyMux2to1 File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1 File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 4
+Warning (12019): Can't analyze file -- file ../MyGreaterEqual1bit/MyGreaterEqual1bit.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux8to1/mymux8to1.vhd
+    Info (12022): Found design unit 1: MyMux8to1-StructuralMyMux8to1 File: C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd Line: 17
+    Info (12023): Found entity 1: MyMux8to1 File: C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myfulladder1bit/myfulladder1bit.vhd
     Info (12022): Found design unit 1: MyFullAdder1bit-StructuralOfMyFullAdder1bit File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 12
     Info (12023): Found entity 1: MyFullAdder1bit File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor2/myor2.vhd
-    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 10
-    Info (12023): Found entity 1: MyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand2/myand2.vhd
-    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 10
-    Info (12023): Found entity 1: MyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynor2/mynor2.vhd
     Info (12022): Found design unit 1: MyNor2-StructuralMyNor2 File: C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd Line: 10
     Info (12023): Found entity 1: MyNor2 File: C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myxor2/myxor2.vhd
     Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 10
     Info (12023): Found entity 1: MyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux2to1_16bit/mymux2to1_16bit.vhd
-    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
-    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myxor16bit/myxor16bit.vhd
-    Info (12022): Found design unit 1: MyXor16bit-StructuralMyXor16bit File: C:/Quartus projects/ergasia 1/MyXor16bit/MyXor16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyXor16bit File: C:/Quartus projects/ergasia 1/MyXor16bit/MyXor16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor16bit/myor16bit.vhd
-    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot16bit/mynot16bit.vhd
-    Info (12022): Found design unit 1: MyNot16bit-StructMyNot16bit File: C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd Line: 9
-    Info (12023): Found entity 1: MyNot16bit File: C:/Quartus projects/ergasia 1/MyNot16bit/MyNot16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynor16bit/mynor16bit.vhd
-    Info (12022): Found design unit 1: MyNor16bit-StructuralMyNor16bit File: C:/Quartus projects/ergasia 1/MyNor16bit/MyNor16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyNor16bit File: C:/Quartus projects/ergasia 1/MyNor16bit/MyNor16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux8to1_16bit/mymux8to1_16bit.vhd
-    Info (12022): Found design unit 1: MyMux8to1_16bit-StructuralMyMux8to1_16bit File: C:/Quartus projects/ergasia 1/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 17
-    Info (12023): Found entity 1: MyMux8to1_16bit File: C:/Quartus projects/ergasia 1/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mygreaterequal16bit/mygreaterequal16bit.vhd
-    Info (12022): Found design unit 1: MyGreaterEqual16bit-StructMyGreaterEqual16bit File: C:/Quartus projects/ergasia 1/MyGreaterEqual16bit/MyGreaterEqual16bit.vhd Line: 9
-    Info (12023): Found entity 1: MyGreaterEqual16bit File: C:/Quartus projects/ergasia 1/MyGreaterEqual16bit/MyGreaterEqual16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myfulladder16bit/myfulladder16bit.vhd
-    Info (12022): Found design unit 1: MyFullAdder16bit-StructuralMyFullAdder16bit File: C:/Quartus projects/ergasia 1/MyFullAdder16bit/MyFullAdder16bit.vhd Line: 12
-    Info (12023): Found entity 1: MyFullAdder16bit File: C:/Quartus projects/ergasia 1/MyFullAdder16bit/MyFullAdder16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand16bit/myand16bit.vhd
-    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder1to2/mydecoder1to2.vhd
+    Info (12022): Found design unit 1: MyDecoder1to2-StructuralMyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 10
+    Info (12023): Found entity 1: MyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot/mynot.vhd
+    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 9
+    Info (12023): Found entity 1: MyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor2/myor2.vhd
+    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 10
+    Info (12023): Found entity 1: MyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder3to8/mydecoder3to8.vhd
+    Info (12022): Found design unit 1: MyDecoder3to8-StructuralMyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 9
+    Info (12023): Found entity 1: MyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand2/myand2.vhd
+    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myalu1bit/myalu1bit.vhd
+    Info (12022): Found design unit 1: MyALU1bit-StructuralMyALU1bit File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 13
+    Info (12023): Found entity 1: MyALU1bit File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file myalu16bit.vhd
     Info (12022): Found design unit 1: MyALU16bit-StructuralMyALU16bit File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 12
     Info (12023): Found entity 1: MyALU16bit File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 4
 Info (12127): Elaborating entity "MyALU16bit" for the top level hierarchy
-Info (12128): Elaborating entity "MyFullAdder16bit" for hierarchy "MyFullAdder16bit:v0" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 99
-Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyFullAdder16bit:v0|MyFullAdder1bit:v0" File: C:/Quartus projects/ergasia 1/MyFullAdder16bit/MyFullAdder16bit.vhd Line: 25
-Info (12128): Elaborating entity "MyXor2" for hierarchy "MyFullAdder16bit:v0|MyFullAdder1bit:v0|MyXor2:v1" File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
-Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyFullAdder16bit:v0|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v0" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 38
-Info (12128): Elaborating entity "MyOr2" for hierarchy "MyFullAdder16bit:v0|MyFullAdder1bit:v0|MyXor2:v1|MyOr2:v1" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 39
-Info (12128): Elaborating entity "MyNot" for hierarchy "MyFullAdder16bit:v0|MyFullAdder1bit:v0|MyXor2:v1|MyNot:v2" File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 40
-Info (12128): Elaborating entity "MyNot16bit" for hierarchy "MyNot16bit:V1" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 102
-Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyAnd16bit:v3" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 106
-Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyOr16bit:v4" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 109
-Info (12128): Elaborating entity "MyGreaterEqual16bit" for hierarchy "MyGreaterEqual16bit:v5" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 112
-Info (12128): Elaborating entity "MyXor16bit" for hierarchy "MyXor16bit:v7" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 120
-Info (12128): Elaborating entity "MyNor16bit" for hierarchy "MyNor16bit:v8" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 123
-Info (12128): Elaborating entity "MyNor2" for hierarchy "MyNor16bit:v8|MyNor2:v0" File: C:/Quartus projects/ergasia 1/MyNor16bit/MyNor16bit.vhd Line: 19
-Info (12128): Elaborating entity "MyMux8to1_16bit" for hierarchy "MyMux8to1_16bit:v9" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 126
-Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux8to1_16bit:v9|MyMux2to1_16bit:V0" File: C:/Quartus projects/ergasia 1/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 29
-Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyDecoder3to8:dec" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 129
-Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyDecoder3to8:dec|MyDecoder1to2:v0" File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v01" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 72
+Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd2:v03" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 74
+Info (12128): Elaborating entity "MyMux2to1" for hierarchy "MyMux2to1:V05" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 78
+Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux2to1:V05|MyOr2:v3" File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 36
+Info (12128): Elaborating entity "MyALU1bit" for hierarchy "MyALU1bit:V0" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 80
+Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 81
+Info (12128): Elaborating entity "MyXor2" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0|MyXor2:v1" File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
+Info (12128): Elaborating entity "MyNor2" for hierarchy "MyALU1bit:V0|MyNor2:v8" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 114
+Info (12128): Elaborating entity "MyMux8to1" for hierarchy "MyALU1bit:V0|MyMux8to1:v9" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 117
+Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 120
+Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec|MyDecoder1to2:v0" File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
+Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux2to1_16bit:V21" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 105
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyMux2to1_16bit:V21|MyAnd16bit:v1" File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 38
+Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux2to1_16bit:V21|MyOr16bit:v3" File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 108 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 114 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 17 output pins
-    Info (21061): Implemented 56 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Mon Mar 30 22:55:10 2026
+    Info (21061): Implemented 62 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4878 megabytes
+    Info: Processing ended: Mon Apr 06 13:40:25 2026
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:16
 
 

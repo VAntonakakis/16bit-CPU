@@ -1,0 +1,8 @@
+|flipflopF_1
+R => O~reg0.ACLR
+I => O~reg0.DATAIN
+C => O~reg0.CLK
+E => O~reg0.ENA
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
