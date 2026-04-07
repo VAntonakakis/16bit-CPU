@@ -1,0 +1,707 @@
+Analysis & Synthesis report for MyRegisterFile
+Sun Apr 05 01:07:35 2026
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: MyRegister16bit:reg1
+ 11. Parameter Settings for User Entity Instance: MyRegister16bit:reg2
+ 12. Parameter Settings for User Entity Instance: MyRegister16bit:reg3
+ 13. Parameter Settings for User Entity Instance: MyRegister16bit:reg4
+ 14. Parameter Settings for User Entity Instance: MyRegister16bit:reg5
+ 15. Parameter Settings for User Entity Instance: MyRegister16bit:reg6
+ 16. Parameter Settings for User Entity Instance: MyRegister16bit:reg7
+ 17. Port Connectivity Checks: "MyRegister16bit:reg7"
+ 18. Port Connectivity Checks: "MyRegister16bit:reg6"
+ 19. Port Connectivity Checks: "MyRegister16bit:reg5"
+ 20. Port Connectivity Checks: "MyRegister16bit:reg4"
+ 21. Port Connectivity Checks: "MyRegister16bit:reg3"
+ 22. Port Connectivity Checks: "MyRegister16bit:reg2"
+ 23. Port Connectivity Checks: "MyRegister16bit:reg1"
+ 24. Port Connectivity Checks: "MyPseudoRegisterZero:reg0|MyAnd16bit:v0"
+ 25. Port Connectivity Checks: "MyPseudoRegisterZero:reg0"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Apr 05 01:07:35 2026       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                   ; MyRegisterFile                              ;
+; Top-level Entity Name           ; MyRegisterFile                              ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 112                                         ;
+; Total pins                      ; 186                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; MyRegisterFile     ; MyRegisterFile     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++----------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                     ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; ../MyOr2/MyOr2.vhd                                                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd                               ;         ;
+; ../MyPseudoRegisterZero/MyPseudoRegisterZero.vhd                     ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd ;         ;
+; ../MyOr16bit/MyOr16bit.vhd                                           ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd                       ;         ;
+; ../MyMux8to1_16bit/MyMux8to1_16bit.vhd                               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd           ;         ;
+; ../MyMux2to1_16bit/MyMux2to1_16bit.vhd                               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd           ;         ;
+; ../MyNot/MyNot.vhd                                                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd                               ;         ;
+; ../MyDecoder1to2/MyDecoder1to2.vhd                                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd               ;         ;
+; ../MyDecoder3to8/MyDecoder3to8.vhd                                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd               ;         ;
+; ../MyAnd2/MyAnd2.vhd                                                 ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd                             ;         ;
+; ../MyAnd16bit/MyAnd16bit.vhd                                         ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd                     ;         ;
+; ../../../Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd ; yes             ; User VHDL File  ; C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd                ;         ;
+; ../MyRegister16bit/MyRegister16bit.vhd                               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd           ;         ;
+; MyRegisterFile.vhd                                                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd             ;         ;
++----------------------------------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 106         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 71          ;
+;     -- 7 input functions                    ; 32          ;
+;     -- 6 input functions                    ; 32          ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 7           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 112         ;
+;                                             ;             ;
+; I/O pins                                    ; 186         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 112         ;
+; Total fan-out                               ; 1103        ;
+; Average fan-out                             ; 1.99        ;
++---------------------------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                 ; Entity Name     ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
+; |MyRegisterFile                          ; 71 (0)              ; 112 (0)                   ; 0                 ; 0          ; 186  ; 0            ; |MyRegisterFile                                                                     ; MyRegisterFile  ; work         ;
+;    |MyDecoder3to8:v0|                    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0                                                    ; MyDecoder3to8   ; work         ;
+;       |MyAnd2:v10|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v10                                         ; MyAnd2          ; work         ;
+;       |MyAnd2:v12|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v12                                         ; MyAnd2          ; work         ;
+;       |MyAnd2:v14|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v14                                         ; MyAnd2          ; work         ;
+;       |MyAnd2:v16|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v16                                         ; MyAnd2          ; work         ;
+;       |MyAnd2:v18|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v18                                         ; MyAnd2          ; work         ;
+;       |MyAnd2:v6|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v6                                          ; MyAnd2          ; work         ;
+;       |MyAnd2:v8|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyDecoder3to8:v0|MyAnd2:v8                                          ; MyAnd2          ; work         ;
+;    |MyMux8to1_16bit:read_mux1|           ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1                                           ; MyMux8to1_16bit ; work         ;
+;       |MyMux2to1_16bit:v6|               ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6                        ; MyMux2to1_16bit ; work         ;
+;          |MyOr16bit:v3|                  ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3           ; MyOr16bit       ; work         ;
+;             |MyOr2:v0|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v0  ; MyOr2           ; work         ;
+;             |MyOr2:v10|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v10 ; MyOr2           ; work         ;
+;             |MyOr2:v11|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11 ; MyOr2           ; work         ;
+;             |MyOr2:v12|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12 ; MyOr2           ; work         ;
+;             |MyOr2:v13|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13 ; MyOr2           ; work         ;
+;             |MyOr2:v14|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14 ; MyOr2           ; work         ;
+;             |MyOr2:v15|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15 ; MyOr2           ; work         ;
+;             |MyOr2:v1|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1  ; MyOr2           ; work         ;
+;             |MyOr2:v2|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2  ; MyOr2           ; work         ;
+;             |MyOr2:v3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v3  ; MyOr2           ; work         ;
+;             |MyOr2:v4|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v4  ; MyOr2           ; work         ;
+;             |MyOr2:v5|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v5  ; MyOr2           ; work         ;
+;             |MyOr2:v6|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6  ; MyOr2           ; work         ;
+;             |MyOr2:v7|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7  ; MyOr2           ; work         ;
+;             |MyOr2:v8|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8  ; MyOr2           ; work         ;
+;             |MyOr2:v9|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9  ; MyOr2           ; work         ;
+;    |MyMux8to1_16bit:read_mux2|           ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2                                           ; MyMux8to1_16bit ; work         ;
+;       |MyMux2to1_16bit:v6|               ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6                        ; MyMux2to1_16bit ; work         ;
+;          |MyOr16bit:v3|                  ; 32 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3           ; MyOr16bit       ; work         ;
+;             |MyOr2:v0|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v0  ; MyOr2           ; work         ;
+;             |MyOr2:v10|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v10 ; MyOr2           ; work         ;
+;             |MyOr2:v11|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v11 ; MyOr2           ; work         ;
+;             |MyOr2:v12|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v12 ; MyOr2           ; work         ;
+;             |MyOr2:v13|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v13 ; MyOr2           ; work         ;
+;             |MyOr2:v14|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v14 ; MyOr2           ; work         ;
+;             |MyOr2:v15|                  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v15 ; MyOr2           ; work         ;
+;             |MyOr2:v1|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v1  ; MyOr2           ; work         ;
+;             |MyOr2:v2|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v2  ; MyOr2           ; work         ;
+;             |MyOr2:v3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v3  ; MyOr2           ; work         ;
+;             |MyOr2:v4|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v4  ; MyOr2           ; work         ;
+;             |MyOr2:v5|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v5  ; MyOr2           ; work         ;
+;             |MyOr2:v6|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v6  ; MyOr2           ; work         ;
+;             |MyOr2:v7|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v7  ; MyOr2           ; work         ;
+;             |MyOr2:v8|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v8  ; MyOr2           ; work         ;
+;             |MyOr2:v9|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v9  ; MyOr2           ; work         ;
+;    |MyRegister16bit:reg1|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg1|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg2|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg2|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg3|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg3|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg4|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg4|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg5|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg5|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg6|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg6|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
+;    |MyRegister16bit:reg7|                ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7                                                ; MyRegister16bit ; work         ;
+;       |flipflopR_1:\gen_register:0:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:0:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:10:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:10:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:11:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:11:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:12:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:12:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:13:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:13:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:14:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:14:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:15:vff| ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:15:vff               ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:1:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:1:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:2:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:2:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:3:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:3:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:4:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:4:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:5:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:5:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:6:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:6:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:7:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:7:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:8:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:8:vff                ; flipflopR_1     ; work         ;
+;       |flipflopR_1:\gen_register:9:vff|  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |MyRegisterFile|MyRegister16bit:reg7|flipflopR_1:\gen_register:9:vff                ; flipflopR_1     ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 112   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 112   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MyRegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v0|Q ;
+; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MyRegisterFile|MyMux8to1_16bit:read_mux2|MyMux2to1_16bit:v6|MyOr16bit:v3|MyOr2:v0|Q ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg1 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg2 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg3 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg4 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg5 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg6 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MyRegister16bit:reg7 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; n              ; 16    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg7" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg6" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg5" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg4" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg3" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg2" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "MyRegister16bit:reg1" ;
++---------+-------+----------+---------------------+
+; Port    ; Type  ; Severity ; Details             ;
++---------+-------+----------+---------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC        ;
++---------+-------+----------+---------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "MyPseudoRegisterZero:reg0|MyAnd16bit:v0" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                              ;
++------+-------+----------+-------------------------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "MyPseudoRegisterZero:reg0" ;
++---------+-------+----------+--------------------------+
+; Port    ; Type  ; Severity ; Details                  ;
++---------+-------+----------+--------------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC             ;
++---------+-------+----------+--------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 112                         ;
+;     ENA               ; 112                         ;
+; arriav_lcell_comb     ; 72                          ;
+;     extend            ; 32                          ;
+;         7 data inputs ; 32                          ;
+;     normal            ; 40                          ;
+;         0 data inputs ; 1                           ;
+;         3 data inputs ; 7                           ;
+;         6 data inputs ; 32                          ;
+; boundary_port         ; 186                         ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.54                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Sun Apr 05 01:07:27 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyRegisterFile -c MyRegisterFile
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myor2/myor2.vhd
+    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 10
+    Info (12023): Found entity 1: MyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mypseudoregisterzero/mypseudoregisterzero.vhd
+    Info (12022): Found design unit 1: MyPseudoRegisterZero-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 14
+    Info (12023): Found entity 1: MyPseudoRegisterZero File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myor16bit/myor16bit.vhd
+    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyOr16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mymux8to1_16bit/mymux8to1_16bit.vhd
+    Info (12022): Found design unit 1: MyMux8to1_16bit-StructuralMyMux8to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 17
+    Info (12023): Found entity 1: MyMux8to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mymux2to1_16bit/mymux2to1_16bit.vhd
+    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mynot/mynot.vhd
+    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd Line: 9
+    Info (12023): Found entity 1: MyNot File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mydecoder1to2/mydecoder1to2.vhd
+    Info (12022): Found design unit 1: MyDecoder1to2-StructuralMyDecoder1to2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 10
+    Info (12023): Found entity 1: MyDecoder1to2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mydecoder3to8/mydecoder3to8.vhd
+    Info (12022): Found design unit 1: MyDecoder3to8-StructuralMyDecoder3to8 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 9
+    Info (12023): Found entity 1: MyDecoder3to8 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myand2/myand2.vhd
+    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myand16bit/myand16bit.vhd
+    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/user/downloads/flip-flops/flipflopr_1/flipflopr_1.vhd
+    Info (12022): Found design unit 1: flipflopR_1-behavioral File: C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd Line: 12
+    Info (12023): Found entity 1: flipflopR_1 File: C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myregister16bit/myregister16bit.vhd
+    Info (12022): Found design unit 1: MyRegister16bit-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 17
+    Info (12023): Found entity 1: MyRegister16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file myregisterfile.vhd
+    Info (12022): Found design unit 1: MyRegisterFile-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 17
+    Info (12023): Found entity 1: MyRegisterFile File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 4
+Info (12127): Elaborating entity "MyRegisterFile" for the top level hierarchy
+Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyDecoder3to8:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 70
+Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyDecoder3to8:v0|MyDecoder1to2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyDecoder3to8:v0|MyDecoder1to2:v0|MyNot:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 21
+Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyDecoder3to8:v0|MyAnd2:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 39
+Info (12128): Elaborating entity "MyPseudoRegisterZero" for hierarchy "MyPseudoRegisterZero:reg0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 76
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyPseudoRegisterZero:reg0|MyAnd16bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 30
+Info (12128): Elaborating entity "MyRegister16bit" for hierarchy "MyRegister16bit:reg1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 85
+Info (12128): Elaborating entity "flipflopR_1" for hierarchy "MyRegister16bit:reg1|flipflopR_1:\gen_register:0:vff" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 32
+Info (12128): Elaborating entity "MyMux8to1_16bit" for hierarchy "MyMux8to1_16bit:read_mux1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 169
+Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 29
+Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
+Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3|MyOr2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 18
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "OUTall[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[1]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[2]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[3]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[4]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[5]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[6]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[7]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[8]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[9]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[10]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[11]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[12]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[13]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[14]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[15]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 369 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 26 input pins
+    Info (21059): Implemented 160 output pins
+    Info (21061): Implemented 183 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Sun Apr 05 01:07:35 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
+
+
