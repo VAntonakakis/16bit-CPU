@@ -1,16 +1,16 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off immExtension -c immExtension --vector_source="C:/Users/Aimilios/Documents/quartus/immExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off immExtension -c immExtension --vector_source="C:/Users/Aimilios/Documents/quartus/immExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/" immExtension -c immExtension</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/" immExtension -c immExtension</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyImmExtension -c MyImmExtension --vector_source="C:/Users/Aimilios/Documents/quartus/MyImmExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyImmExtension -c MyImmExtension --vector_source="C:/Users/Aimilios/Documents/quartus/MyImmExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/" MyImmExtension -c MyImmExtension</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/" MyImmExtension -c MyImmExtension</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
-vcom -work work immExtension.vho
+vcom -work work MyImmExtension.vho
 vcom -work work Waveform.vwf.vht
-vsim -novopt -c -t 1ps -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.immExtension_vhd_vec_tst
-vcd file -direction immExtension.msim.vcd
-vcd add -internal immExtension_vhd_vec_tst/*
-vcd add -internal immExtension_vhd_vec_tst/i1/*
+vsim -novopt -c -t 1ps -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyImmExtension_vhd_vec_tst
+vcd file -direction MyImmExtension.msim.vcd
+vcd add -internal MyImmExtension_vhd_vec_tst/*
+vcd add -internal MyImmExtension_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -20,15 +20,16 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
-vcom -work work immExtension.vho
+vcom -work work MyImmExtension.vho
 vcom -work work Waveform.vwf.vht
-vsim -novopt -c -t 1ps -sdfmax immExtension_vhd_vec_tst/i1=immExtension_vhd.sdo -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.immExtension_vhd_vec_tst
-vcd file -direction immExtension.msim.vcd
-vcd add -internal immExtension_vhd_vec_tst/*
-vcd add -internal immExtension_vhd_vec_tst/i1/*
+vsim -novopt -c -t 1ps -sdfmax MyImmExtension_vhd_vec_tst/i1=MyImmExtension_vhd.sdo -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyImmExtension_vhd_vec_tst
+vcd file -direction MyImmExtension.msim.vcd
+vcd add -internal MyImmExtension_vhd_vec_tst/*
+vcd add -internal MyImmExtension_vhd_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/

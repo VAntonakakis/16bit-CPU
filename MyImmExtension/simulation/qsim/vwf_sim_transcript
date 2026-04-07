@@ -1,13 +1,13 @@
 Determining the location of the ModelSim executable...
 
-Using: c:/intelfpga_lite/19.1/modelsim_ase/win32aloem/
+Using: C:\intelFPGA_lite\19.1\modelsim_ase\win32aloem
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off immExtension -c immExtension --vector_source="C:/Users/Aimilios/Documents/quartus/immExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyImmExtension -c MyImmExtension --vector_source="C:/Users/Aimilios/Documents/quartus/MyImmExtension/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,15 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 05 13:03:58 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off immExtension -c immExtension --vector_source=C:/Users/Aimilios/Documents/quartus/immExtension/Waveform.vwf --testbench_file=C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Tue Apr 07 21:44:37 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyImmExtension -c MyImmExtension --vector_source=C:/Users/Aimilios/Documents/quartus/MyImmExtension/Waveform.vwf --testbench_file=C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/" immExtension -c immExtension
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/" MyImmExtension -c MyImmExtension
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,38 +53,38 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 05 13:03:58 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/ immExtension -c immExtension
+    Info: Processing started: Tue Apr 07 21:44:38 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/ MyImmExtension -c MyImmExtension
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file immExtension.vho in folder "C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MyImmExtension.vho in folder "C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4618 megabytes
-    Info: Processing ended: Sun Apr 05 13:03:59 2026
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Tue Apr 07 21:44:38 2026
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/immExtension.do generated.
+C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/MyImmExtension.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/19.1/modelsim_ase/win32aloem//vsim -c -do immExtension.do
+C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vsim -c -do MyImmExtension.do
 
 Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-# do immExtension.do
-
+# do MyImmExtension.do
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:04:00 on Apr 05,2026
-# vcom -work work immExtension.vho 
+# Start time: 21:44:39 on Apr 07,2026
+# vcom -work work MyImmExtension.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -92,51 +92,51 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package VITAL_Primitives
 # -- Loading package maxii_atom_pack
 # -- Loading package maxii_components
-# -- Compiling entity immExtension
-# -- Compiling architecture structure of immExtension
-# End time: 13:04:00 on Apr 05,2026, Elapsed time: 0:00:00
+# -- Compiling entity MyImmExtension
+# -- Compiling architecture structure of MyImmExtension
+# End time: 21:44:39 on Apr 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:04:00 on Apr 05,2026
+# Start time: 21:44:39 on Apr 07,2026
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity immExtension_vhd_vec_tst
-# -- Compiling architecture immExtension_arch of immExtension_vhd_vec_tst
-# End time: 13:04:00 on Apr 05,2026, Elapsed time: 0:00:00
+# -- Compiling entity MyImmExtension_vhd_vec_tst
+# -- Compiling architecture MyImmExtension_arch of MyImmExtension_vhd_vec_tst
+# End time: 21:44:39 on Apr 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.immExtension_vhd_vec_tst 
-# Start time: 13:04:00 on Apr 05,2026
+# vsim -novopt -c -t 1ps -L maxii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyImmExtension_vhd_vec_tst 
+# Start time: 21:44:39 on Apr 07,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.immextension_vhd_vec_tst(immextension_arch)
+# Loading work.myimmextension_vhd_vec_tst(myimmextension_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
 # Loading maxii.maxii_atom_pack(body)
 # Loading maxii.maxii_components
-# Loading work.immextension(structure)
+# Loading work.myimmextension(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading maxii.maxii_io(behave)
 # after#31
 
-# End time: 13:04:00 on Apr 05,2026, Elapsed time: 0:00:00
+# End time: 21:44:40 on Apr 07,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/Aimilios/Documents/quartus/immExtension/Waveform.vwf...
+Reading C:/Users/Aimilios/Documents/quartus/MyImmExtension/Waveform.vwf...
 
-Reading C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/immExtension.msim.vcd...
+Reading C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/MyImmExtension.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/Aimilios/Documents/quartus/immExtension/simulation/qsim/immExtension_20260405130400.sim.vwf
+Writing the resulting VWF to C:/Users/Aimilios/Documents/quartus/MyImmExtension/simulation/qsim/MyImmExtension_20260407214440.sim.vwf
 
 Finished VCD to VWF conversion.
 
