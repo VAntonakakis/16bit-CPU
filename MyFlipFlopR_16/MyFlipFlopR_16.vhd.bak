@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyFlipFlopR_16 is port(
+	R: in std_logic;
+	I: in std_logic_vector(15 downto 0);
+	C: in std_logic;
+	E: in std_logic;
+	O: out std_logic_vector(15 downto 0);
+ 
