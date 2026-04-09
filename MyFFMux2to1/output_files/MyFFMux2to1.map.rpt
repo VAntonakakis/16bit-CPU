@@ -1,0 +1,304 @@
+Analysis & Synthesis report for MyFFMux2to1
+Thu Apr 09 19:22:38 2026
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Apr 09 19:22:38 2026       ;
+; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name               ; MyFFMux2to1                                 ;
+; Top-level Entity Name       ; MyFFMux2to1                                 ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 65                                          ;
+; Total pins                  ; 36                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; MyFFMux2to1        ; MyFFMux2to1        ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++-----------------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++-----------------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; ../../repos/16bit-CPU/MyAnd2/MyAnd2.vhd                   ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd2/MyAnd2.vhd                   ;         ;
+; ../../repos/16bit-CPU/MyOr2/MyOr2.vhd                     ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr2/MyOr2.vhd                     ;         ;
+; ../../repos/16bit-CPU/MyNot/MyNot.vhd                     ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyNot/MyNot.vhd                     ;         ;
+; ../../repos/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd           ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd           ;         ;
+; ../../repos/16bit-CPU/MyOr16bit/MyOr16bit.vhd             ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr16bit/MyOr16bit.vhd             ;         ;
+; ../../repos/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd   ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd   ;         ;
+; ../../repos/16bit-CPU/MyFlipFlopR_16/MyFlipFlopR_16.vhd   ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/MyFlipFlopR_16.vhd   ;         ;
+; ../../repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd ;         ;
+; MyFFMux2to1.vhd                                           ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd                 ;         ;
++-----------------------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 65    ;
+;     -- Combinational with no register       ; 33    ;
+;     -- Register only                        ; 32    ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 16    ;
+;     -- 2 input functions                    ; 17    ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 65    ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 32    ;
+; I/O pins                                    ; 36    ;
+; Maximum fan-out node                        ; C     ;
+; Maximum fan-out                             ; 32    ;
+; Total fan-out                               ; 194   ;
+; Average fan-out                             ; 1.92  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name     ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------+--------------+
+; |MyFFMux2to1               ; 65 (0)      ; 32           ; 0          ; 36   ; 0            ; 33 (0)       ; 32 (0)            ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1                                            ; MyFFMux2to1     ; work         ;
+;    |MyFlipFlopF_16:FFF|    ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyFlipFlopF_16:FFF                         ; MyFlipFlopF_16  ; work         ;
+;    |MyFlipFlopR_16:RFF|    ; 33 (33)     ; 16           ; 0          ; 0    ; 0            ; 17 (17)      ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyFlipFlopR_16:RFF                         ; MyFlipFlopR_16  ; work         ;
+;    |MyMux2to1_16bit:MUX|   ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX                        ; MyMux2to1_16bit ; work         ;
+;       |MyOr16bit:v3|       ; 16 (0)      ; 0            ; 0          ; 0    ; 0            ; 16 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3           ; MyOr16bit       ; work         ;
+;          |MyOr2:v0|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v0  ; MyOr2           ; work         ;
+;          |MyOr2:v10|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v10 ; MyOr2           ; work         ;
+;          |MyOr2:v11|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v11 ; MyOr2           ; work         ;
+;          |MyOr2:v12|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v12 ; MyOr2           ; work         ;
+;          |MyOr2:v13|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v13 ; MyOr2           ; work         ;
+;          |MyOr2:v14|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v14 ; MyOr2           ; work         ;
+;          |MyOr2:v15|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v15 ; MyOr2           ; work         ;
+;          |MyOr2:v1|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v1  ; MyOr2           ; work         ;
+;          |MyOr2:v2|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v2  ; MyOr2           ; work         ;
+;          |MyOr2:v3|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v3  ; MyOr2           ; work         ;
+;          |MyOr2:v4|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v4  ; MyOr2           ; work         ;
+;          |MyOr2:v5|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v5  ; MyOr2           ; work         ;
+;          |MyOr2:v6|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v6  ; MyOr2           ; work         ;
+;          |MyOr2:v7|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v7  ; MyOr2           ; work         ;
+;          |MyOr2:v8|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v8  ; MyOr2           ; work         ;
+;          |MyOr2:v9|        ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |MyFFMux2to1|MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v9  ; MyOr2           ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |MyFFMux2to1|MyFlipFlopR_16:RFF|O[8] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Apr 09 19:22:31 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyFFMux2to1 -c MyFFMux2to1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myand2/myand2.vhd
+    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd2 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myor2/myor2.vhd
+    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr2/MyOr2.vhd Line: 10
+    Info (12023): Found entity 1: MyOr2 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr2/MyOr2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/mynot/mynot.vhd
+    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyNot/MyNot.vhd Line: 9
+    Info (12023): Found entity 1: MyNot File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myand16bit/myand16bit.vhd
+    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myor16bit/myor16bit.vhd
+    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyOr16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myflipflopf_16/myflipflopf_16.vhd
+    Info (12022): Found design unit 1: MyFlipFlopF_16-behavioral File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 12
+    Info (12023): Found entity 1: MyFlipFlopF_16 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/myflipflopr_16/myflipflopr_16.vhd
+    Info (12022): Found design unit 1: MyFlipFlopR_16-behavioral File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/MyFlipFlopR_16.vhd Line: 12
+    Info (12023): Found entity 1: MyFlipFlopR_16 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/MyFlipFlopR_16.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aimilios/documents/repos/16bit-cpu/mymux2to1_16bit/mymux2to1_16bit.vhd
+    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file myffmux2to1.vhd
+    Info (12022): Found design unit 1: MyFFMux2to1-structural File: C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd Line: 13
+    Info (12023): Found entity 1: MyFFMux2to1 File: C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd Line: 4
+Info (12127): Elaborating entity "MyFFMux2to1" for the top level hierarchy
+Info (12128): Elaborating entity "MyFlipFlopR_16" for hierarchy "MyFlipFlopR_16:RFF" File: C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd Line: 42
+Info (12128): Elaborating entity "MyFlipFlopF_16" for hierarchy "MyFlipFlopF_16:FFF" File: C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd Line: 43
+Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux2to1_16bit:MUX" File: C:/Users/Aimilios/Documents/quartus/MyFFMux2to1/MyFFMux2to1.vhd Line: 44
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyMux2to1_16bit:MUX|MyNot:v0" File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 37
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyMux2to1_16bit:MUX|MyAnd16bit:v1" File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 38
+Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyMux2to1_16bit:MUX|MyAnd16bit:v1|MyAnd2:v0" File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 18
+Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux2to1_16bit:MUX|MyOr16bit:v3" File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
+Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux2to1_16bit:MUX|MyOr16bit:v3|MyOr2:v0" File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 18
+Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 20 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 65 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Thu Apr 09 19:22:38 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:16
+
+
