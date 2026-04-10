@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MyMux2to1_16bit is port(
+    R : in std_logic;
+    I : in std_logic_vector (15 downto 0);
+    C : in std_logic;
+	 E : in std_logic;
+    O : out std_logic_vector (15 downto 0));
+end MyMux2to1_16bit;
+
+architecture structural of MyMux2to1_16bit is
+
+component MyFlipFlopF_16 is port(
+	R : in std_logic;
+	I : in std_logic_vector(15 downto 0);
+	C : in std_logic;
+	E : in std_logic;
+	O : out std_logic_vector(15 downto 0));
+end component;
+
+component MyFlipFlopR_16 is port(
+	R : in std_logic;
+	I : in std_logic_vector(15 downto 0);
+	C : in std_logic;
+	E : in std_logic;
+	O : out std_logic_vector(15 downto 0));
+end component;
+
+component MyMux2to1_16bit is port(
+    A : in std_logic_vector (15 downto 0);
+    B : in std_logic_vector (15 downto 0);
+    S : in std_logic;
+    Q : out std_logic_vector (15 downto 0));
+end component;
+
+signal FFR, FFF : std_logic_vector(15 downto 0);
+

@@ -19,9 +19,9 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/05/2026 13:03:58"
+-- Generated on "04/07/2026 21:44:38"
                                                              
--- Vhdl Test Bench(with test vectors) for design  :          immExtension
+-- Vhdl Test Bench(with test vectors) for design  :          MyImmExtension
 -- 
 -- Simulation tool : 3rd Party
 -- 
@@ -29,21 +29,21 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY immExtension_vhd_vec_tst IS
-END immExtension_vhd_vec_tst;
-ARCHITECTURE immExtension_arch OF immExtension_vhd_vec_tst IS
+ENTITY MyImmExtension_vhd_vec_tst IS
+END MyImmExtension_vhd_vec_tst;
+ARCHITECTURE MyImmExtension_arch OF MyImmExtension_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL I : STD_LOGIC_VECTOR(5 DOWNTO 0);
 SIGNAL O : STD_LOGIC_VECTOR(15 DOWNTO 0);
-COMPONENT immExtension
+COMPONENT MyImmExtension
 	PORT (
 	I : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
-	O : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	O : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN
-	i1 : immExtension
+	i1 : MyImmExtension
 	PORT MAP (
 -- list connections between master ports and signals
 	I => I,
@@ -85,4 +85,4 @@ BEGIN
 	I(0) <= '0';
 WAIT;
 END PROCESS t_prcs_I_0;
-END immExtension_arch;
+END MyImmExtension_arch;
