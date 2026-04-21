@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "04/04/2026 17:59:02"
+-- DATE "04/17/2026 18:11:50"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -40,7 +40,7 @@ ENTITY 	MyPseudoRegisterZero IS
 	Clock : IN std_logic;
 	Enable : IN std_logic;
 	Reset_n : IN std_logic;
-	Output : OUT std_logic_vector(15 DOWNTO 0)
+	Output : BUFFER std_logic_vector(15 DOWNTO 0)
 	);
 END MyPseudoRegisterZero;
 

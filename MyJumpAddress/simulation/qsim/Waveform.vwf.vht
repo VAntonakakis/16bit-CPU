@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/09/2026 12:53:33"
+-- Generated on "04/19/2026 13:16:36"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyJumpAddress
 -- 
@@ -39,7 +39,7 @@ SIGNAL instrP2AD : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL jumpAD : STD_LOGIC_VECTOR(11 DOWNTO 0);
 COMPONENT MyJumpAddress
 	PORT (
-	EjumpAD : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	EjumpAD : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	instrP2AD : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	jumpAD : IN STD_LOGIC_VECTOR(11 DOWNTO 0)
 	);
@@ -56,7 +56,11 @@ BEGIN
 t_prcs_jumpAD_11: PROCESS
 BEGIN
 	jumpAD(11) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 480000 ps;
+	jumpAD(11) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(11) <= '0';
+	WAIT FOR 160000 ps;
 	jumpAD(11) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_11;
@@ -64,7 +68,7 @@ END PROCESS t_prcs_jumpAD_11;
 t_prcs_jumpAD_10: PROCESS
 BEGIN
 	jumpAD(10) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 640000 ps;
 	jumpAD(10) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_10;
@@ -72,47 +76,69 @@ END PROCESS t_prcs_jumpAD_10;
 t_prcs_jumpAD_9: PROCESS
 BEGIN
 	jumpAD(9) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 320000 ps;
 	jumpAD(9) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(9) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_9;
 -- jumpAD[8]
 t_prcs_jumpAD_8: PROCESS
 BEGIN
-	jumpAD(8) <= '0';
-	WAIT FOR 600000 ps;
 	jumpAD(8) <= '1';
+	WAIT FOR 640000 ps;
+	jumpAD(8) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_8;
 -- jumpAD[7]
 t_prcs_jumpAD_7: PROCESS
 BEGIN
 	jumpAD(7) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 160000 ps;
+	jumpAD(7) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(7) <= '0';
+	WAIT FOR 160000 ps;
+	jumpAD(7) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(7) <= '0';
+	WAIT FOR 160000 ps;
 	jumpAD(7) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_7;
 -- jumpAD[6]
 t_prcs_jumpAD_6: PROCESS
 BEGIN
+	jumpAD(6) <= '1';
+	WAIT FOR 160000 ps;
 	jumpAD(6) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 160000 ps;
+	jumpAD(6) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(6) <= '0';
+	WAIT FOR 160000 ps;
 	jumpAD(6) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_6;
 -- jumpAD[5]
 t_prcs_jumpAD_5: PROCESS
 BEGIN
-	jumpAD(5) <= '0';
-	WAIT FOR 600000 ps;
 	jumpAD(5) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(5) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_5;
 -- jumpAD[4]
 t_prcs_jumpAD_4: PROCESS
 BEGIN
+	jumpAD(4) <= '1';
+	WAIT FOR 160000 ps;
 	jumpAD(4) <= '0';
-	WAIT FOR 600000 ps;
+	WAIT FOR 160000 ps;
+	jumpAD(4) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(4) <= '0';
+	WAIT FOR 320000 ps;
 	jumpAD(4) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_4;
@@ -120,23 +146,29 @@ END PROCESS t_prcs_jumpAD_4;
 t_prcs_jumpAD_3: PROCESS
 BEGIN
 	jumpAD(3) <= '0';
-	WAIT FOR 400000 ps;
+	WAIT FOR 160000 ps;
 	jumpAD(3) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(3) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_3;
 -- jumpAD[2]
 t_prcs_jumpAD_2: PROCESS
 BEGIN
-	jumpAD(2) <= '0';
-	WAIT FOR 400000 ps;
 	jumpAD(2) <= '1';
+	WAIT FOR 480000 ps;
+	jumpAD(2) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_2;
 -- jumpAD[1]
 t_prcs_jumpAD_1: PROCESS
 BEGIN
 	jumpAD(1) <= '0';
-	WAIT FOR 200000 ps;
+	WAIT FOR 320000 ps;
+	jumpAD(1) <= '1';
+	WAIT FOR 160000 ps;
+	jumpAD(1) <= '0';
+	WAIT FOR 160000 ps;
 	jumpAD(1) <= '1';
 WAIT;
 END PROCESS t_prcs_jumpAD_1;
@@ -144,11 +176,11 @@ END PROCESS t_prcs_jumpAD_1;
 t_prcs_jumpAD_0: PROCESS
 BEGIN
 	jumpAD(0) <= '1';
-	WAIT FOR 200000 ps;
+	WAIT FOR 160000 ps;
 	jumpAD(0) <= '0';
-	WAIT FOR 200000 ps;
+	WAIT FOR 160000 ps;
 	jumpAD(0) <= '1';
-	WAIT FOR 400000 ps;
+	WAIT FOR 320000 ps;
 	jumpAD(0) <= '0';
 WAIT;
 END PROCESS t_prcs_jumpAD_0;
@@ -156,11 +188,19 @@ END PROCESS t_prcs_jumpAD_0;
 t_prcs_instrP2AD_15: PROCESS
 BEGIN
 	instrP2AD(15) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(15) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(15) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_15;
 -- instrP2AD[14]
 t_prcs_instrP2AD_14: PROCESS
 BEGIN
+	instrP2AD(14) <= '0';
+	WAIT FOR 320000 ps;
+	instrP2AD(14) <= '1';
+	WAIT FOR 480000 ps;
 	instrP2AD(14) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_14;
@@ -168,11 +208,21 @@ END PROCESS t_prcs_instrP2AD_14;
 t_prcs_instrP2AD_13: PROCESS
 BEGIN
 	instrP2AD(13) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(13) <= '1';
+	WAIT FOR 320000 ps;
+	instrP2AD(13) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(13) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_13;
 -- instrP2AD[12]
 t_prcs_instrP2AD_12: PROCESS
 BEGIN
+	instrP2AD(12) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(12) <= '1';
+	WAIT FOR 320000 ps;
 	instrP2AD(12) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_12;
@@ -180,23 +230,47 @@ END PROCESS t_prcs_instrP2AD_12;
 t_prcs_instrP2AD_11: PROCESS
 BEGIN
 	instrP2AD(11) <= '0';
+	WAIT FOR 320000 ps;
+	instrP2AD(11) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(11) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(11) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(11) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_11;
 -- instrP2AD[10]
 t_prcs_instrP2AD_10: PROCESS
 BEGIN
+	instrP2AD(10) <= '1';
+	WAIT FOR 320000 ps;
+	instrP2AD(10) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(10) <= '1';
+	WAIT FOR 320000 ps;
 	instrP2AD(10) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_10;
 -- instrP2AD[9]
 t_prcs_instrP2AD_9: PROCESS
 BEGIN
+	instrP2AD(9) <= '1';
+	WAIT FOR 160000 ps;
 	instrP2AD(9) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(9) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(9) <= '0';
+	WAIT FOR 320000 ps;
+	instrP2AD(9) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_9;
 -- instrP2AD[8]
 t_prcs_instrP2AD_8: PROCESS
 BEGIN
+	instrP2AD(8) <= '1';
+	WAIT FOR 320000 ps;
 	instrP2AD(8) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_8;
@@ -204,11 +278,27 @@ END PROCESS t_prcs_instrP2AD_8;
 t_prcs_instrP2AD_7: PROCESS
 BEGIN
 	instrP2AD(7) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(7) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(7) <= '0';
+	WAIT FOR 320000 ps;
+	instrP2AD(7) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_7;
 -- instrP2AD[6]
 t_prcs_instrP2AD_6: PROCESS
 BEGIN
+	instrP2AD(6) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(6) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(6) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(6) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(6) <= '1';
+	WAIT FOR 160000 ps;
 	instrP2AD(6) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_6;
@@ -216,23 +306,31 @@ END PROCESS t_prcs_instrP2AD_6;
 t_prcs_instrP2AD_5: PROCESS
 BEGIN
 	instrP2AD(5) <= '0';
+	WAIT FOR 320000 ps;
+	instrP2AD(5) <= '1';
+	WAIT FOR 320000 ps;
+	instrP2AD(5) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(5) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_5;
 -- instrP2AD[4]
 t_prcs_instrP2AD_4: PROCESS
 BEGIN
 	instrP2AD(4) <= '0';
-	WAIT FOR 400000 ps;
+	WAIT FOR 800000 ps;
 	instrP2AD(4) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_4;
 -- instrP2AD[3]
 t_prcs_instrP2AD_3: PROCESS
 BEGIN
-	instrP2AD(3) <= '0';
-	WAIT FOR 200000 ps;
 	instrP2AD(3) <= '1';
-	WAIT FOR 200000 ps;
+	WAIT FOR 160000 ps;
+	instrP2AD(3) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(3) <= '1';
+	WAIT FOR 160000 ps;
 	instrP2AD(3) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_3;
@@ -240,13 +338,23 @@ END PROCESS t_prcs_instrP2AD_3;
 t_prcs_instrP2AD_2: PROCESS
 BEGIN
 	instrP2AD(2) <= '1';
-	WAIT FOR 200000 ps;
+	WAIT FOR 160000 ps;
+	instrP2AD(2) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(2) <= '1';
+	WAIT FOR 320000 ps;
 	instrP2AD(2) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_2;
 -- instrP2AD[1]
 t_prcs_instrP2AD_1: PROCESS
 BEGIN
+	instrP2AD(1) <= '1';
+	WAIT FOR 160000 ps;
+	instrP2AD(1) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(1) <= '1';
+	WAIT FOR 480000 ps;
 	instrP2AD(1) <= '0';
 WAIT;
 END PROCESS t_prcs_instrP2AD_1;
@@ -254,6 +362,12 @@ END PROCESS t_prcs_instrP2AD_1;
 t_prcs_instrP2AD_0: PROCESS
 BEGIN
 	instrP2AD(0) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(0) <= '1';
+	WAIT FOR 320000 ps;
+	instrP2AD(0) <= '0';
+	WAIT FOR 160000 ps;
+	instrP2AD(0) <= '1';
 WAIT;
 END PROCESS t_prcs_instrP2AD_0;
 END MyJumpAddress_arch;

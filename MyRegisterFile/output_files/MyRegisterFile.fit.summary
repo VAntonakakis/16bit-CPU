@@ -1,20 +1,18 @@
-Fitter Status : Successful - Sun Apr 05 01:08:10 2026
+Fitter Status : Successful - Mon Apr 20 21:42:46 2026
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : MyRegisterFile
 Top-level Entity Name : MyRegisterFile
-Family : Cyclone V
-Device : 5CGXFC7C7F23C8
+Family : MAX 10
+Device : 10M08DAF484C8G
 Timing Models : Final
-Logic utilization (in ALMs) : 78 / 56,480 ( < 1 % )
+Total logic elements : 181 / 8,064 ( 2 % )
+    Total combinational functions : 172 / 8,064 ( 2 % )
+    Dedicated logic registers : 112 / 8,064 ( 1 % )
 Total registers : 112
-Total pins : 186 / 268 ( 69 % )
+Total pins : 186 / 250 ( 74 % )
 Total virtual pins : 0
-Total block memory bits : 0 / 7,024,640 ( 0 % )
-Total RAM Blocks : 0 / 686 ( 0 % )
-Total DSP Blocks : 0 / 156 ( 0 % )
-Total HSSI RX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
-Total HSSI TX PCSs : 0 / 6 ( 0 % )
-Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
-Total PLLs : 0 / 13 ( 0 % )
-Total DLLs : 0 / 4 ( 0 % )
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

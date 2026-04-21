@@ -20,10 +20,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "Input",
-					"strict" : false
-				},
-				{
 					"name" : "Clock",
 					"strict" : false
 				},
@@ -33,6 +29,10 @@
 				},
 				{
 					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Input",
 					"strict" : false
 				}
 			]

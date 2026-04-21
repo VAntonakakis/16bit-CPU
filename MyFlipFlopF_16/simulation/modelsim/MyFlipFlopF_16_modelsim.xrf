@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Aimilios/Documents/quartus/MyFlipFlopF_16/MyFlipFlopF_16.vhd
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/Aimilios/Documents/quartus/MyFlipFlopF_16/db/MyFlipFlopF_16.cbx.xml
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_16/db/MyFlipFlopF_16.cbx.xml
 design_name = MyFlipFlopF_16
 instance = comp, \C~I\, C, MyFlipFlopF_16, 1
 instance = comp, \I[0]~I\, I[0], MyFlipFlopF_16, 1

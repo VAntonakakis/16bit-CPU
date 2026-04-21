@@ -63,9 +63,9 @@ begin
             O => q4
         );
 	 	  
-	 Output(0) <= q1;
-    Output(1) <= q2;
-    Output(2) <= q3;
-    Output(3) <= q4;
+	 Output(3) <= q1;
+	 Output(2) <= q2;
+    Output(1) <= q3;
+    Output(0) <= q4;
 
 end Structural;

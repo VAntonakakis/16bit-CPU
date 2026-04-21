@@ -8,6 +8,7 @@ source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder16bit/MyFullAdder16b
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyExtend12to16/MyExtend12to16.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/db/MyJumpAddress.cmp.rdb
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd

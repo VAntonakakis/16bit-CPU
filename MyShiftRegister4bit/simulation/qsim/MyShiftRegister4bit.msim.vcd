@@ -3,7 +3,7 @@ $comment
 		vcd file MyShiftRegister4bit.msim.vcd -direction
 $end
 $date
-	Sat Apr 04 23:07:27 2026
+	Tue Apr 21 19:17:51 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -54,10 +54,10 @@ $var wire 1 D \v2|O~feeder_combout\ $end
 $var wire 1 E \v2|O~q\ $end
 $var wire 1 F \v3|O~feeder_combout\ $end
 $var wire 1 G \v3|O~q\ $end
-$var wire 1 H \v1|ALT_INV_O~q\ $end
-$var wire 1 I \v0|ALT_INV_O~q\ $end
-$var wire 1 J \v2|ALT_INV_O~q\ $end
-$var wire 1 K \ALT_INV_Input~input_o\ $end
+$var wire 1 H \ALT_INV_Input~input_o\ $end
+$var wire 1 I \v2|ALT_INV_O~q\ $end
+$var wire 1 J \v1|ALT_INV_O~q\ $end
+$var wire 1 K \v0|ALT_INV_O~q\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -94,10 +94,10 @@ x:
 0E
 0F
 0G
-1H
+0H
 1I
 1J
-0K
+1K
 06
 07
 08
@@ -116,10 +116,10 @@ $end
 1;
 1<
 1A
-0I
+0K
 1B
-19
-1'
+16
+1$
 #100000
 0!
 0#
@@ -128,7 +128,7 @@ $end
 0=
 0;
 0<
-1K
+1H
 0>
 #150000
 1!
@@ -137,14 +137,14 @@ $end
 1<
 0A
 1C
-0H
-1I
+0J
+1K
 0B
 1D
-18
-09
-0'
-1&
+17
+06
+1%
+0$
 #200000
 0!
 1#
@@ -153,7 +153,7 @@ $end
 1=
 0;
 0<
-0K
+0H
 1>
 #250000
 1!
@@ -163,18 +163,18 @@ $end
 1A
 0C
 1E
-0J
-1H
 0I
+1J
+0K
 1B
 0D
 1F
-17
-08
-19
-1'
-0&
-1%
+18
+07
+16
+1&
+0%
+1$
 #300000
 0!
 03
@@ -188,16 +188,16 @@ $end
 1C
 0E
 1G
-1J
-0H
+1I
+0J
 1D
 0F
-16
-07
-18
-1&
-0%
-1$
+19
+08
+17
+1'
+0&
+1%
 #400000
 0!
 03
@@ -210,12 +210,12 @@ $end
 1<
 1E
 0G
-0J
+0I
 1F
-06
-17
-1%
-0$
+09
+18
+0'
+1&
 #500000
 0!
 0#
@@ -224,7 +224,7 @@ $end
 0=
 0;
 0<
-1K
+1H
 0>
 #550000
 1!
@@ -233,12 +233,12 @@ $end
 1<
 0A
 1G
-1I
+1K
 0B
-16
-09
-0'
-1$
+19
+06
+1'
+0$
 #600000
 0!
 03
@@ -250,10 +250,10 @@ $end
 1;
 1<
 0C
-1H
+1J
 0D
-08
-0&
+07
+0%
 #700000
 0!
 03
@@ -265,8 +265,8 @@ $end
 1;
 1<
 0E
-1J
+1I
 0F
-07
-0%
+08
+0&
 #800000

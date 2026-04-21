@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform1.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/Waveform1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,8 +26,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Apr 04 17:59:01 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Fri Apr 17 18:11:48 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform1.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/Waveform1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,14 +53,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Apr 04 17:59:02 2026
+    Info: Processing started: Fri Apr 17 18:11:49 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/ MyPseudoRegisterZero -c MyPseudoRegisterZero
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file MyPseudoRegisterZero.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4747 megabytes
-    Info: Processing ended: Sat Apr 04 17:59:02 2026
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Apr 17 18:11:50 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -81,12 +81,13 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 
 # do MyPseudoRegisterZero.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:04 on Apr 04,2026
+# Start time: 18:11:51 on Apr 17,2026
 # vcom -work work MyPseudoRegisterZero.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_lnsim_components
@@ -96,22 +97,22 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cyclonev_components
 # -- Compiling entity MyPseudoRegisterZero
 # -- Compiling architecture structure of MyPseudoRegisterZero
-# End time: 17:59:04 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 18:11:51 on Apr 17,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:59:04 on Apr 04,2026
-# vcom -work work Waveform.vwf.vht 
+# Start time: 18:11:51 on Apr 17,2026
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyPseudoRegisterZero_vhd_vec_tst
 # -- Compiling architecture MyPseudoRegisterZero_arch of MyPseudoRegisterZero_vhd_vec_tst
-# End time: 17:59:04 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 18:11:51 on Apr 17,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyPseudoRegisterZero_vhd_vec_tst 
-# Start time: 17:59:04 on Apr 04,2026
+# Start time: 18:11:51 on Apr 17,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -128,20 +129,20 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # after#32
 
-# End time: 17:59:04 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 18:11:51 on Apr 17,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform.vwf...
+Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform1.vwf...
 
 Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/MyPseudoRegisterZero.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/MyPseudoRegisterZero_20260404175904.sim.vwf
+Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/simulation/qsim/MyPseudoRegisterZero_20260417181152.sim.vwf
 
 Finished VCD to VWF conversion.
 

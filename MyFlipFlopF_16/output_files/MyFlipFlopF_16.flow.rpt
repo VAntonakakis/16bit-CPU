@@ -1,5 +1,5 @@
 Flow report for MyFlipFlopF_16
-Wed Apr 08 20:02:41 2026
+Sun Apr 19 13:25:17 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Wed Apr 08 20:02:41 2026       ;
+; Flow Status           ; Successful - Sun Apr 19 13:25:17 2026       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; MyFlipFlopF_16                              ;
 ; Top-level Entity Name ; MyFlipFlopF_16                              ;
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/08/2026 20:02:26 ;
+; Start date & time ; 04/19/2026 13:25:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MyFlipFlopF_16      ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                 ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
 +---------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID           ; 211267916159713.177566774606176 ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID           ; 176914188673568.177659430112280 ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST ; Off                             ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,26 +88,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4762 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:01     ; 1.0                     ; 5326 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4662 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:00     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4620 MB             ; 00:00:01                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:23                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4782 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:01     ; 1.0                     ; 5357 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4690 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4706 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4642 MB             ; 00:00:01                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-B62USAS  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-B62USAS  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-B62USAS  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-B62USAS  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-B62USAS  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter               ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler            ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------

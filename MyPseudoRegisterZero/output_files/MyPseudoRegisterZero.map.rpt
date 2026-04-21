@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyPseudoRegisterZero
-Sat Apr 04 17:49:44 2026
+Sun Apr 19 13:42:38 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 04 17:49:44 2026       ;
+; Analysis & Synthesis Status     ; Successful - Sun Apr 19 13:42:38 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyPseudoRegisterZero                        ;
 ; Top-level Entity Name           ; MyPseudoRegisterZero                        ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 17:49:36 2026
+    Info: Processing started: Sun Apr 19 13:42:30 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -328,9 +328,9 @@ Info (21057): Implemented 35 device resources after synthesis - the final resour
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 16 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4875 megabytes
-    Info: Processing ended: Sat Apr 04 17:49:44 2026
+    Info: Peak virtual memory: 4879 megabytes
+    Info: Processing ended: Sun Apr 19 13:42:38 2026
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
 
 

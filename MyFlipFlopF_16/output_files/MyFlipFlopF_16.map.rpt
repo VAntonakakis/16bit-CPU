@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyFlipFlopF_16
-Wed Apr 08 20:02:34 2026
+Sun Apr 19 13:25:10 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Apr 08 20:02:34 2026       ;
+; Analysis & Synthesis Status ; Successful - Sun Apr 19 13:25:10 2026       ;
 ; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; MyFlipFlopF_16                              ;
 ; Top-level Entity Name       ; MyFlipFlopF_16                              ;
@@ -140,13 +140,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; MyFlipFlopF_16.vhd               ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/quartus/MyFlipFlopF_16/MyFlipFlopF_16.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; MyFlipFlopF_16.vhd               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -223,22 +223,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Apr 08 20:02:26 2026
+    Info: Processing started: Sun Apr 19 13:25:01 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyFlipFlopF_16 -c MyFlipFlopF_16
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file myflipflopf_16.vhd
-    Info (12022): Found design unit 1: MyFlipFlopF_16-behavioral File: C:/Users/Aimilios/Documents/quartus/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 12
-    Info (12023): Found entity 1: MyFlipFlopF_16 File: C:/Users/Aimilios/Documents/quartus/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 4
+    Info (12022): Found design unit 1: MyFlipFlopF_16-behavioral File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 12
+    Info (12023): Found entity 1: MyFlipFlopF_16 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_16/MyFlipFlopF_16.vhd Line: 4
 Info (12127): Elaborating entity "MyFlipFlopF_16" for the top level hierarchy
 Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 17 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Wed Apr 08 20:02:34 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Sun Apr 19 13:25:10 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 

@@ -12,10 +12,10 @@ Reset_n => flipflopR_1:v0.R
 Reset_n => flipflopR_1:v1.R
 Reset_n => flipflopR_1:v2.R
 Reset_n => flipflopR_1:v3.R
-Output[0] <= flipflopR_1:v0.O
-Output[1] <= flipflopR_1:v1.O
-Output[2] <= flipflopR_1:v2.O
-Output[3] <= flipflopR_1:v3.O
+Output[0] <= flipflopR_1:v3.O
+Output[1] <= flipflopR_1:v2.O
+Output[2] <= flipflopR_1:v1.O
+Output[3] <= flipflopR_1:v0.O
 
 
 |MyShiftRegister4bit|flipflopR_1:v0

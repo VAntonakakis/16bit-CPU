@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyShiftRegister4bit
-Sat Apr 04 20:55:55 2026
+Tue Apr 21 19:16:28 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 04 20:55:55 2026       ;
+; Analysis & Synthesis Status     ; Successful - Tue Apr 21 19:16:28 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyShiftRegister4bit                         ;
 ; Top-level Entity Name           ; MyShiftRegister4bit                         ;
@@ -262,7 +262,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Apr 04 20:55:47 2026
+    Info: Processing started: Tue Apr 21 19:16:14 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyShiftRegister4bit -c MyShiftRegister4bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -282,9 +282,9 @@ Info (21057): Implemented 12 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4880 megabytes
-    Info: Processing ended: Sat Apr 04 20:55:55 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Tue Apr 21 19:16:28 2026
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:25
 
 

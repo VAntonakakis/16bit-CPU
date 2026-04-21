@@ -1,6 +1,7 @@
 # do MyJumpAddress.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:45 on Apr 09,2026
+# Start time: 13:16:39 on Apr 19,2026
 # vcom -work work MyJumpAddress.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,34 +13,19 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity MyJumpAddress
 # -- Compiling architecture structure of MyJumpAddress
-# End time: 12:53:46 on Apr 09,2026, Elapsed time: 0:00:01
+# End time: 13:16:39 on Apr 19,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:53:46 on Apr 09,2026
+# Start time: 13:16:39 on Apr 19,2026
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyJumpAddress_vhd_vec_tst
 # -- Compiling architecture MyJumpAddress_arch of MyJumpAddress_vhd_vec_tst
-# End time: 12:53:46 on Apr 09,2026, Elapsed time: 0:00:00
+# End time: 13:16:39 on Apr 19,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyJumpAddress_vhd_vec_tst 
-# Start time: 12:53:49 on Apr 09,2026
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.myjumpaddress_vhd_vec_tst(myjumpaddress_arch)
-# Loading altera_lnsim.altera_lnsim_components
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_components
-# Loading work.myjumpaddress(structure)
-# Loading ieee.std_logic_arith(body)
-# Loading cyclonev.cyclonev_io_obuf(arch)
-# Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# after#30
-# End time: 12:53:49 on Apr 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# ** Error (suppressible): (vsim-SDF-3196) Failed to find SDF file "MyJumpAddress_vhd.sdo".
+# vsim -novopt -c -t 1ps -sdfmax MyJumpAddress_vhd_vec_tst/i1=MyJumpAddress_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyJumpAddress_vhd_vec_tst 
+# Error loading design
+# Errors: 1, Warnings: 0
