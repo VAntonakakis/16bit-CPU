@@ -1,5 +1,5 @@
 Fitter report for MyFlipFlopR_16
-Wed Apr 08 18:08:39 2026
+Wed Apr 22 16:59:37 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Wed Apr 08 18:08:39 2026       ;
+; Fitter Status         ; Successful - Wed Apr 22 16:59:37 2026       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; MyFlipFlopR_16                              ;
 ; Top-level Entity Name ; MyFlipFlopR_16                              ;
@@ -137,7 +137,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Aimilios/Documents/quartus/MyFlipFlopR_16/output_files/MyFlipFlopR_16.pin.
+The pin-out file can be found in C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/output_files/MyFlipFlopR_16.pin.
 
 
 +------------------------------------------------------------------+
@@ -626,7 +626,7 @@ Info (332111): Found 1 clocks
     Info (332111): ======== ============
     Info (332111):    1.000            C
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "C" to use Global clock in PIN 14 File: C:/Users/Aimilios/Documents/quartus/MyFlipFlopR_16/MyFlipFlopR_16.vhd Line: 7
+Info (186215): Automatically promoted signal "C" to use Global clock in PIN 14 File: C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/MyFlipFlopR_16.vhd Line: 7
 Info (186079): Completed Auto Global Promotion Operation
 Info (176234): Starting register packing
 Info (186468): Started processing fast register assignments
@@ -653,20 +653,20 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/Aimilios/Documents/quartus/MyFlipFlopR_16/output_files/MyFlipFlopR_16.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/output_files/MyFlipFlopR_16.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 5326 megabytes
-    Info: Processing ended: Wed Apr 08 18:08:40 2026
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Wed Apr 22 16:59:37 2026
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Aimilios/Documents/quartus/MyFlipFlopR_16/output_files/MyFlipFlopR_16.fit.smsg.
+The suppressed messages can be found in C:/Users/Aimilios/Documents/repos/16bit-CPU/MyFlipFlopR_16/output_files/MyFlipFlopR_16.fit.smsg.
 
 

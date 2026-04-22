@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "04/19/2026 13:25:17"
+-- DATE "04/22/2026 17:01:37"
 
 -- 
 -- Device: Altera EPM240T100C3 Package TQFP100
@@ -38,7 +38,7 @@ ENTITY 	MyFlipFlopF_16 IS
 	I : IN std_logic_vector(15 DOWNTO 0);
 	C : IN std_logic;
 	E : IN std_logic;
-	O : BUFFER std_logic_vector(15 DOWNTO 0)
+	O : OUT std_logic_vector(15 DOWNTO 0)
 	);
 END MyFlipFlopF_16;
 

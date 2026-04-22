@@ -13,7 +13,7 @@ architecture behavioral of MyFlipFlopF_16 is
 begin
 	process(C)
 	begin
-		if falling_edge(C) then
+		if C'event and C='0' then
 			if R = '0' then
 				O(15) <= '0';
             O(14) <= '0';

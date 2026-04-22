@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "04/08/2026 18:08:46"
+-- DATE "04/22/2026 16:59:41"
 
 -- 
 -- Device: Altera EPM240T100C3 Package TQFP100
@@ -81,6 +81,7 @@ SIGNAL \O[13]~reg0_regout\ : std_logic;
 SIGNAL \O[14]~reg0_regout\ : std_logic;
 SIGNAL \O[15]~reg0_regout\ : std_logic;
 SIGNAL \I~combout\ : std_logic_vector(15 DOWNTO 0);
+SIGNAL \ALT_INV_C~combout\ : std_logic;
 
 BEGIN
 
@@ -92,6 +93,7 @@ O <= ww_O;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\ALT_INV_C~combout\ <= NOT \C~combout\;
 
 -- Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \C~I\ : maxii_io
@@ -161,7 +163,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N5
 \O[0]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[0]~reg0_regout\ = DFFEAS(((\I~combout\(0) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[0]~reg0_regout\ = DFFEAS(((\I~combout\(0) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -173,7 +175,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(0),
 	datad => \R~combout\,
 	aclr => GND,
@@ -196,7 +198,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N5
 \O[1]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[1]~reg0_regout\ = DFFEAS(((\I~combout\(1) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[1]~reg0_regout\ = DFFEAS(((\I~combout\(1) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -208,7 +210,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(1),
 	datad => \R~combout\,
 	aclr => GND,
@@ -231,7 +233,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N9
 \O[2]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[2]~reg0_regout\ = DFFEAS(((\I~combout\(2) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[2]~reg0_regout\ = DFFEAS(((\I~combout\(2) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -243,7 +245,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(2),
 	datad => \R~combout\,
 	aclr => GND,
@@ -266,7 +268,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N6
 \O[3]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[3]~reg0_regout\ = DFFEAS(((\R~combout\ & (\I~combout\(3)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[3]~reg0_regout\ = DFFEAS(((\R~combout\ & (\I~combout\(3)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -278,7 +280,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \R~combout\,
 	datac => \I~combout\(3),
 	aclr => GND,
@@ -301,7 +303,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N0
 \O[4]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[4]~reg0_regout\ = DFFEAS(((\I~combout\(4) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[4]~reg0_regout\ = DFFEAS(((\I~combout\(4) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -313,7 +315,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(4),
 	datad => \R~combout\,
 	aclr => GND,
@@ -336,7 +338,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N9
 \O[5]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[5]~reg0_regout\ = DFFEAS(((\I~combout\(5) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[5]~reg0_regout\ = DFFEAS(((\I~combout\(5) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -348,7 +350,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(5),
 	datad => \R~combout\,
 	aclr => GND,
@@ -371,7 +373,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N3
 \O[6]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[6]~reg0_regout\ = DFFEAS((\I~combout\(6) & (((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[6]~reg0_regout\ = DFFEAS((\I~combout\(6) & (((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -383,7 +385,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	dataa => \I~combout\(6),
 	datad => \R~combout\,
 	aclr => GND,
@@ -406,7 +408,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N7
 \O[7]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[7]~reg0_regout\ = DFFEAS((\I~combout\(7) & (((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[7]~reg0_regout\ = DFFEAS((\I~combout\(7) & (((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -418,7 +420,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	dataa => \I~combout\(7),
 	datad => \R~combout\,
 	aclr => GND,
@@ -441,7 +443,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N8
 \O[8]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[8]~reg0_regout\ = DFFEAS((\I~combout\(8) & (((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[8]~reg0_regout\ = DFFEAS((\I~combout\(8) & (((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -453,7 +455,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	dataa => \I~combout\(8),
 	datad => \R~combout\,
 	aclr => GND,
@@ -476,7 +478,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N4
 \O[9]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[9]~reg0_regout\ = DFFEAS((((\I~combout\(9) & \R~combout\))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[9]~reg0_regout\ = DFFEAS((((\I~combout\(9) & \R~combout\))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -488,7 +490,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datac => \I~combout\(9),
 	datad => \R~combout\,
 	aclr => GND,
@@ -511,7 +513,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N4
 \O[10]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[10]~reg0_regout\ = DFFEAS(((\R~combout\ & ((\I~combout\(10))))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[10]~reg0_regout\ = DFFEAS(((\R~combout\ & ((\I~combout\(10))))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -523,7 +525,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \R~combout\,
 	datad => \I~combout\(10),
 	aclr => GND,
@@ -546,7 +548,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N1
 \O[11]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[11]~reg0_regout\ = DFFEAS((\I~combout\(11) & (((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[11]~reg0_regout\ = DFFEAS((\I~combout\(11) & (((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -558,7 +560,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	dataa => \I~combout\(11),
 	datad => \R~combout\,
 	aclr => GND,
@@ -581,7 +583,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N7
 \O[12]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[12]~reg0_regout\ = DFFEAS((((\I~combout\(12) & \R~combout\))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[12]~reg0_regout\ = DFFEAS((((\I~combout\(12) & \R~combout\))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -593,7 +595,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datac => \I~combout\(12),
 	datad => \R~combout\,
 	aclr => GND,
@@ -616,7 +618,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N8
 \O[13]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[13]~reg0_regout\ = DFFEAS(((\I~combout\(13) & ((\R~combout\)))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[13]~reg0_regout\ = DFFEAS(((\I~combout\(13) & ((\R~combout\)))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -628,7 +630,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \I~combout\(13),
 	datad => \R~combout\,
 	aclr => GND,
@@ -651,7 +653,7 @@ PORT MAP (
 -- Location: LC_X6_Y4_N2
 \O[14]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[14]~reg0_regout\ = DFFEAS((((\I~combout\(14) & \R~combout\))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[14]~reg0_regout\ = DFFEAS((((\I~combout\(14) & \R~combout\))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -663,7 +665,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datac => \I~combout\(14),
 	datad => \R~combout\,
 	aclr => GND,
@@ -686,7 +688,7 @@ PORT MAP (
 -- Location: LC_X5_Y1_N2
 \O[15]~reg0\ : maxii_lcell
 -- Equation(s):
--- \O[15]~reg0_regout\ = DFFEAS(((\R~combout\ & ((\I~combout\(15))))), GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
+-- \O[15]~reg0_regout\ = DFFEAS(((\R~combout\ & ((\I~combout\(15))))), !GLOBAL(\C~combout\), VCC, , \O[0]~1_combout\, , , , )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -698,7 +700,7 @@ GENERIC MAP (
 	synch_mode => "off")
 -- pragma translate_on
 PORT MAP (
-	clk => \C~combout\,
+	clk => \ALT_INV_C~combout\,
 	datab => \R~combout\,
 	datad => \I~combout\(15),
 	aclr => GND,
