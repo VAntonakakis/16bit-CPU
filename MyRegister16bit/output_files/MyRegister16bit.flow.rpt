@@ -1,5 +1,5 @@
 Flow report for MyRegister16bit
-Wed Apr 22 14:16:52 2026
+Wed Apr 22 17:44:33 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 22 14:16:52 2026       ;
+; Flow Status                     ; Successful - Wed Apr 22 17:44:33 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyRegister16bit                             ;
 ; Top-level Entity Name           ; MyRegister16bit                             ;
@@ -102,7 +102,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5231 MB             ; 00:00:06                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4749 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
-; Total                ; 00:01:15     ; --                      ; --                  ; 00:01:35                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4749 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
+; Total                ; 00:01:17     ; --                      ; --                  ; 00:01:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +119,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -127,6 +131,8 @@ quartus_map --read_settings_files=on --write_settings_files=off MyRegister16bit 
 quartus_fit --read_settings_files=off --write_settings_files=off MyRegister16bit -c MyRegister16bit
 quartus_asm --read_settings_files=off --write_settings_files=off MyRegister16bit -c MyRegister16bit
 quartus_sta MyRegister16bit -c MyRegister16bit
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegister16bit -c MyRegister16bit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/ MyRegister16bit -c MyRegister16bit
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegister16bit -c MyRegister16bit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/ MyRegister16bit -c MyRegister16bit
 

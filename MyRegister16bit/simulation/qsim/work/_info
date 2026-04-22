@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim
 Emyregister16bit
-Z1 w1776856612
+Z1 w1776869073
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -28,9 +28,9 @@ V^e:N;6F:mmM85P[U<IRfC0
 !s100 1ni?>1:DEbd5i>433XWl]1
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1776856616
+Z14 !s110 1776869075
 !i10b 1
-Z15 !s108 1776856615.000000
+Z15 !s108 1776869074.000000
 Z16 !s90 -work|work|MyRegister16bit.vho|
 Z17 !s107 MyRegister16bit.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Emyregister16bit_vhd_vec_tst
-Z20 w1776856611
+Z20 w1776869071
 R8
 R9
 R0
@@ -76,7 +76,7 @@ R13
 32
 R14
 !i10b 1
-Z23 !s108 1776856616.000000
+Z23 !s108 1776869075.000000
 Z24 !s90 -work|work|Waveform.vwf.vht|
 Z25 !s107 Waveform.vwf.vht|
 !i113 1
@@ -88,8 +88,8 @@ R9
 Z26 DEx4 work 27 myregister16bit_vhd_vec_tst 0 22 ZYG:f]Re>bm4LPdLbXgZh3
 l51
 L34
-VJF]bg:K4_mKg]@zjWE7FC1
-!s100 gDjL38N^0QY8B^AWKV`PM1
+Z27 VJF]bg:K4_mKg]@zjWE7FC1
+Z28 !s100 gDjL38N^0QY8B^AWKV`PM1
 R13
 32
 R14

@@ -1,5 +1,5 @@
 Flow report for MyJumpAddress
-Wed Apr 22 14:33:37 2026
+Wed Apr 22 17:41:49 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 22 14:33:36 2026       ;
+; Flow Status                     ; Successful - Wed Apr 22 17:41:49 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyJumpAddress                               ;
 ; Top-level Entity Name           ; MyJumpAddress                               ;
@@ -102,7 +102,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5219 MB             ; 00:00:05                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4741 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
-; Total                ; 00:01:10     ; --                      ; --                  ; 00:01:59                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4747 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4748 MB             ; 00:00:01                           ;
+; Total                ; 00:01:12     ; --                      ; --                  ; 00:02:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,6 +119,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -127,6 +131,8 @@ quartus_map --read_settings_files=on --write_settings_files=off MyJumpAddress -c
 quartus_fit --read_settings_files=off --write_settings_files=off MyJumpAddress -c MyJumpAddress
 quartus_asm --read_settings_files=off --write_settings_files=off MyJumpAddress -c MyJumpAddress
 quartus_sta MyJumpAddress -c MyJumpAddress
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyJumpAddress -c MyJumpAddress --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/ MyJumpAddress -c MyJumpAddress
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyJumpAddress -c MyJumpAddress --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/ MyJumpAddress -c MyJumpAddress
 
