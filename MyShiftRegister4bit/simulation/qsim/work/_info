@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyShiftRegister4bit/simulation/qsim
 Emyshiftregister4bit
-Z1 w1776788269
+Z1 w1776861535
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -28,9 +28,9 @@ VI<3IP<D`0UbAVOciJNL[<3
 !s100 <iPbY;M7dz0iG;WV?XN7M2
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1776788271
+Z14 !s110 1776861538
 !i10b 1
-Z15 !s108 1776788271.000000
+Z15 !s108 1776861537.000000
 Z16 !s90 -work|work|MyShiftRegister4bit.vho|
 Z17 !s107 MyShiftRegister4bit.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Emyshiftregister4bit_vhd_vec_tst
-Z20 w1776788268
+Z20 w1776861534
 R8
 R9
 R0
@@ -76,27 +76,27 @@ R13
 32
 R14
 !i10b 1
-R15
-Z23 !s90 -work|work|Waveform.vwf.vht|
-Z24 !s107 Waveform.vwf.vht|
+Z23 !s108 1776861538.000000
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
 !i113 1
 R18
 R19
 Amyshiftregister4bit_arch
 R8
 R9
-Z25 DEx4 work 31 myshiftregister4bit_vhd_vec_tst 0 22 3]@3=oI_7^NBT91TJbAzB0
+Z26 DEx4 work 31 myshiftregister4bit_vhd_vec_tst 0 22 3]@3=oI_7^NBT91TJbAzB0
 l51
 L34
-Z26 V4<@PX41ahW>8LG9c`DE1f3
-Z27 !s100 HeW6mI;e9XobeJcRKc]5X1
+Z27 V4<@PX41ahW>8LG9c`DE1f3
+Z28 !s100 HeW6mI;e9XobeJcRKc]5X1
 R13
 32
 R14
 !i10b 1
-R15
 R23
 R24
+R25
 !i113 1
 R18
 R19

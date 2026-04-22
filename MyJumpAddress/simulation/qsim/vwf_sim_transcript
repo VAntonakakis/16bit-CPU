@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 19 13:16:17 2026
+    Info: Processing started: Wed Apr 22 14:33:34 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyJumpAddress -c MyJumpAddress --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sun Apr 19 13:16:19 2026
+    Info: Processing started: Wed Apr 22 14:33:36 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/ MyJumpAddress -c MyJumpAddress
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file MyJumpAddress.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Sun Apr 19 13:16:20 2026
+    Info: Processing ended: Wed Apr 22 14:33:37 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -83,13 +83,13 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # do MyJumpAddress.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:16:23 on Apr 19,2026
+# Start time: 14:33:38 on Apr 22,2026
 # vcom -work work MyJumpAddress.vho 
-# -- Loading package STANDARD
 
+# -- Loading package STANDARD
 # -- Loading package TEXTIO
+
 # -- Loading package std_logic_1164
 # -- Loading package altera_lnsim_components
 # -- Loading package VITAL_Timing
@@ -98,22 +98,22 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cyclonev_components
 # -- Compiling entity MyJumpAddress
 # -- Compiling architecture structure of MyJumpAddress
-
-# End time: 13:16:23 on Apr 19,2026, Elapsed time: 0:00:00
+# End time: 14:33:38 on Apr 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:16:24 on Apr 19,2026
+# Start time: 14:33:38 on Apr 22,2026
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyJumpAddress_vhd_vec_tst
 # -- Compiling architecture MyJumpAddress_arch of MyJumpAddress_vhd_vec_tst
-# End time: 13:16:24 on Apr 19,2026, Elapsed time: 0:00:00
+# End time: 14:33:38 on Apr 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyJumpAddress_vhd_vec_tst 
-# Start time: 13:16:25 on Apr 19,2026
+# Start time: 14:33:38 on Apr 22,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -130,9 +130,10 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # ** Warning: Design size of 10071 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+
 # after#32
 
-# End time: 13:16:25 on Apr 19,2026, Elapsed time: 0:00:00
+# End time: 14:33:39 on Apr 22,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -145,7 +146,7 @@ Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/MyJumpAddr
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/MyJumpAddress_20260419131626.sim.vwf
+Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/simulation/qsim/MyJumpAddress_20260422143339.sim.vwf
 
 Finished VCD to VWF conversion.
 

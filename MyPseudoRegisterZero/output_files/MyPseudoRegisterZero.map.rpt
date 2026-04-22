@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyPseudoRegisterZero
-Sun Apr 19 13:42:38 2026
+Wed Apr 22 14:22:15 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 19 13:42:38 2026       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 22 14:22:15 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyPseudoRegisterZero                        ;
 ; Top-level Entity Name           ; MyPseudoRegisterZero                        ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Apr 19 13:42:30 2026
+    Info: Processing started: Wed Apr 22 14:22:06 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyPseudoRegisterZero -c MyPseudoRegisterZero
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -280,57 +280,57 @@ Info (12021): Found 2 design units, including 1 entities, in source file /ergasi
     Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 10
     Info (12023): Found entity 1: MyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mypseudoregisterzero.vhd
-    Info (12022): Found design unit 1: MyPseudoRegisterZero-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 14
+    Info (12022): Found design unit 1: MyPseudoRegisterZero-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 13
     Info (12023): Found entity 1: MyPseudoRegisterZero File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 4
 Info (12127): Elaborating entity "MyPseudoRegisterZero" for the top level hierarchy
-Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyAnd16bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 30
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyAnd16bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 24
 Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd16bit:v0|MyAnd2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Output[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[1]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[2]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[3]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[4]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[5]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[6]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[7]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[8]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[9]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[10]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[11]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[12]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[13]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[14]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
-    Warning (13410): Pin "Output[15]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 10
+    Warning (13410): Pin "Output[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[1]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[2]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[3]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[4]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[5]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[6]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[7]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[8]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[9]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[10]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[11]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[12]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[13]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[14]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (13410): Pin "Output[15]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 19 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Input[0]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[1]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[2]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[3]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[4]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[5]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[6]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[7]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[8]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[9]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[10]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[11]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[12]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[13]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[14]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Input[15]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
-    Warning (15610): No output dependent on input pin "Clock" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 7
-    Warning (15610): No output dependent on input pin "Enable" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 8
-    Warning (15610): No output dependent on input pin "Reset_n" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 9
+    Warning (15610): No output dependent on input pin "Input[0]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[1]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[2]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[3]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[4]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[5]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[6]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[7]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[8]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[9]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[10]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[11]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[12]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[13]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[14]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Input[15]" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 5
+    Warning (15610): No output dependent on input pin "Clock" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 6
+    Warning (15610): No output dependent on input pin "Enable" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 7
+    Warning (15610): No output dependent on input pin "Reset_n" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 8
 Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 19 input pins
     Info (21059): Implemented 16 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4879 megabytes
-    Info: Processing ended: Sun Apr 19 13:42:38 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Wed Apr 22 14:22:15 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
 
 

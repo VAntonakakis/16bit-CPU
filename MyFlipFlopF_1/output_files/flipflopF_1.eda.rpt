@@ -1,5 +1,5 @@
 EDA Netlist Writer report for flipflopF_1
-Fri Apr 03 22:04:50 2026
+Wed Apr 22 15:52:25 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Apr 03 22:04:49 2026 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 22 15:52:25 2026 ;
 ; Revision Name             ; flipflopF_1                           ;
 ; Top-level Entity Name     ; flipflopF_1                           ;
 ; Family                    ; MAX II                                ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                       ;
-+----------------------------------------------------------------------------------+
-; Generated Files                                                                  ;
-+----------------------------------------------------------------------------------+
-; C:/Users/Aimilios/Documents/quartus/flipflopF_1/simulation/qsim//flipflopF_1.vho ;
-+----------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Simulation Generated Files                                                        ;
++-----------------------------------------------------------------------------------+
+; Generated Files                                                                   ;
++-----------------------------------------------------------------------------------+
+; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_1/simulation/modelsim/flipflopF_1.vho ;
++-----------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,27 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Copyright (C) 2019  Intel Corporation. All rights reserved.
-    Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and any partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Intel Program License 
-    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel FPGA IP License Agreement, or other applicable license
-    Info: agreement, including, without limitation, that your use is for
-    Info: the sole purpose of programming logic devices manufactured by
-    Info: Intel and sold by Intel or its authorized distributors.  Please
-    Info: refer to the applicable agreement for further details, at
-    Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri Apr 03 22:04:49 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/Aimilios/Documents/quartus/flipflopF_1/simulation/qsim/ flipflopF_1 -c flipflopF_1
+    Info: Processing started: Wed Apr 22 15:52:24 2026
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off flipflopF_1 -c flipflopF_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file flipflopF_1.vho in folder "C:/Users/Aimilios/Documents/quartus/flipflopF_1/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file flipflopF_1.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFlipFlopF_1/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4619 megabytes
-    Info: Processing ended: Fri Apr 03 22:04:50 2026
+    Info: Peak virtual memory: 4642 megabytes
+    Info: Processing ended: Wed Apr 22 15:52:25 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

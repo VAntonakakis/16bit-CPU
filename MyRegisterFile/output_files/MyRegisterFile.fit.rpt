@@ -1,5 +1,5 @@
 Fitter report for MyRegisterFile
-Mon Apr 20 21:42:46 2026
+Wed Apr 22 14:53:58 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 20 21:42:46 2026       ;
+; Fitter Status                      ; Successful - Wed Apr 22 14:53:58 2026       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; MyRegisterFile                              ;
 ; Top-level Entity Name              ; MyRegisterFile                              ;
@@ -157,7 +157,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.3%      ;
+;     Processors 2-4         ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -2671,7 +2671,7 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node Clock~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L20n, DIFFOUT_L20n, High_Speed)) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 6
+Info (176353): Automatically promoted node Clock~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L20n, DIFFOUT_L20n, High_Speed)) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 5
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -2690,7 +2690,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  42 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -2709,13 +2709,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/output_files/MyRegisterFile.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5593 megabytes
-    Info: Processing ended: Mon Apr 20 21:42:46 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 5596 megabytes
+    Info: Processing ended: Wed Apr 22 14:53:58 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:12
 
 
 +----------------------------+

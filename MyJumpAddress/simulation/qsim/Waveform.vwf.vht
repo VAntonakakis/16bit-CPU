@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/19/2026 13:16:36"
+-- Generated on "04/22/2026 14:33:35"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyJumpAddress
 -- 
@@ -39,7 +39,7 @@ SIGNAL instrP2AD : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL jumpAD : STD_LOGIC_VECTOR(11 DOWNTO 0);
 COMPONENT MyJumpAddress
 	PORT (
-	EjumpAD : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	EjumpAD : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	instrP2AD : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	jumpAD : IN STD_LOGIC_VECTOR(11 DOWNTO 0)
 	);

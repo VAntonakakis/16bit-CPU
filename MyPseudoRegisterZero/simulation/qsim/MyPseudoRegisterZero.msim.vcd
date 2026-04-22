@@ -3,7 +3,7 @@ $comment
 		vcd file MyPseudoRegisterZero.msim.vcd -direction
 $end
 $date
-	Fri Apr 17 18:11:51 2026
+	Wed Apr 22 14:38:35 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -170,22 +170,6 @@ x%!
 10
 11
 02
-03
-04
-05
-06
-07
-08
-09
-0:
-0;
-0<
-0=
-0>
-0?
-0@
-0A
-0B
 1M
 1N
 1O
@@ -218,6 +202,22 @@ x%!
 0m
 0n
 0o
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
 $end
 #40000
 0"

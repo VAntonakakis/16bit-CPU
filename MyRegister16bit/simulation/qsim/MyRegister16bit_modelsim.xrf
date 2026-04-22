@@ -1,6 +1,7 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd

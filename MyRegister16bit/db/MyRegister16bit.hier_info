@@ -63,22 +63,22 @@ Reset_n => flipflopR_1:gen_register:12:vff.R
 Reset_n => flipflopR_1:gen_register:13:vff.R
 Reset_n => flipflopR_1:gen_register:14:vff.R
 Reset_n => flipflopR_1:gen_register:15:vff.R
-Output[0] << flipflopR_1:gen_register:0:vff.O
-Output[1] << flipflopR_1:gen_register:1:vff.O
-Output[2] << flipflopR_1:gen_register:2:vff.O
-Output[3] << flipflopR_1:gen_register:3:vff.O
-Output[4] << flipflopR_1:gen_register:4:vff.O
-Output[5] << flipflopR_1:gen_register:5:vff.O
-Output[6] << flipflopR_1:gen_register:6:vff.O
-Output[7] << flipflopR_1:gen_register:7:vff.O
-Output[8] << flipflopR_1:gen_register:8:vff.O
-Output[9] << flipflopR_1:gen_register:9:vff.O
-Output[10] << flipflopR_1:gen_register:10:vff.O
-Output[11] << flipflopR_1:gen_register:11:vff.O
-Output[12] << flipflopR_1:gen_register:12:vff.O
-Output[13] << flipflopR_1:gen_register:13:vff.O
-Output[14] << flipflopR_1:gen_register:14:vff.O
-Output[15] << flipflopR_1:gen_register:15:vff.O
+Output[0] <= flipflopR_1:gen_register:0:vff.O
+Output[1] <= flipflopR_1:gen_register:1:vff.O
+Output[2] <= flipflopR_1:gen_register:2:vff.O
+Output[3] <= flipflopR_1:gen_register:3:vff.O
+Output[4] <= flipflopR_1:gen_register:4:vff.O
+Output[5] <= flipflopR_1:gen_register:5:vff.O
+Output[6] <= flipflopR_1:gen_register:6:vff.O
+Output[7] <= flipflopR_1:gen_register:7:vff.O
+Output[8] <= flipflopR_1:gen_register:8:vff.O
+Output[9] <= flipflopR_1:gen_register:9:vff.O
+Output[10] <= flipflopR_1:gen_register:10:vff.O
+Output[11] <= flipflopR_1:gen_register:11:vff.O
+Output[12] <= flipflopR_1:gen_register:12:vff.O
+Output[13] <= flipflopR_1:gen_register:13:vff.O
+Output[14] <= flipflopR_1:gen_register:14:vff.O
+Output[15] <= flipflopR_1:gen_register:15:vff.O
 
 
 |MyRegister16bit|flipflopR_1:\gen_register:0:vff

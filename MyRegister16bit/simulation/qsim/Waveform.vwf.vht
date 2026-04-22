@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/04/2026 20:19:37"
+-- Generated on "04/22/2026 14:16:51"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyRegister16bit
 -- 
@@ -44,7 +44,7 @@ COMPONENT MyRegister16bit
 	Clock : IN STD_LOGIC;
 	Enable : IN STD_LOGIC;
 	Input : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	Output : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	Output : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	Reset_n : IN STD_LOGIC
 	);
 END COMPONENT;

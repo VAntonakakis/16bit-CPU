@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "04/04/2026 20:19:38"
+-- DATE "04/22/2026 14:16:52"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -42,7 +42,7 @@ ENTITY 	MyRegister16bit IS
 	Clock : IN std_logic;
 	Enable : IN std_logic;
 	Reset_n : IN std_logic;
-	Output : BUFFER std_logic_vector(15 DOWNTO 0)
+	Output : OUT std_logic_vector(15 DOWNTO 0)
 	);
 END MyRegister16bit;
 

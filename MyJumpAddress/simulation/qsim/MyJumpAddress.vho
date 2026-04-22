@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "04/19/2026 13:16:37"
+-- DATE "04/22/2026 14:33:36"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -38,7 +38,7 @@ ENTITY 	MyJumpAddress IS
     PORT (
 	jumpAD : IN std_logic_vector(11 DOWNTO 0);
 	instrP2AD : IN std_logic_vector(15 DOWNTO 0);
-	EjumpAD : BUFFER std_logic_vector(15 DOWNTO 0)
+	EjumpAD : OUT std_logic_vector(15 DOWNTO 0)
 	);
 END MyJumpAddress;
 

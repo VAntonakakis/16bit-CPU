@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/simulation/qsim
 Ehard_block
-Z1 w1776710608
+Z1 w1776858959
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 hIbO9BBYYWGW_8lVV<F893
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ Vhj[i;a0dD85B`o1JPT^cg2
 !s100 3A]XnMhF<;9mKUe5mn3aM1
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1776710610
+Z11 !s110 1776858960
 !i10b 1
-Z12 !s108 1776710610.000000
+Z12 !s108 1776858960.000000
 Z13 !s90 -work|work|MyRegisterFile.vho|
 Z14 !s107 MyRegisterFile.vho|
 !i113 1
@@ -107,41 +107,41 @@ R14
 R15
 R16
 Emyregisterfile_vhd_vec_tst
-R1
+Z19 w1776858958
 R5
 R6
 R0
-Z19 8Waveform1.vwf.vht
-Z20 FWaveform1.vwf.vht
+Z20 8Waveform1.vwf.vht
+Z21 FWaveform1.vwf.vht
 l0
 L32
 V_D@c0zW;_A4MS59aM<A;z2
 !s100 Yz]QRD7ZAH0DOTRich>_k3
 R10
 32
-R11
+Z22 !s110 1776858961
 !i10b 1
-R12
-Z21 !s90 -work|work|Waveform1.vwf.vht|
-Z22 !s107 Waveform1.vwf.vht|
+Z23 !s108 1776858961.000000
+Z24 !s90 -work|work|Waveform1.vwf.vht|
+Z25 !s107 Waveform1.vwf.vht|
 !i113 1
 R15
 R16
 Amyregisterfile_arch
 R5
 R6
-Z23 DEx4 work 26 myregisterfile_vhd_vec_tst 0 22 _D@c0zW;_A4MS59aM<A;z2
+Z26 DEx4 work 26 myregisterfile_vhd_vec_tst 0 22 _D@c0zW;_A4MS59aM<A;z2
 l57
 L34
-Z24 VW1C]BHD`XI`<kn8_5XfXG0
-Z25 !s100 _^YzN07X`zzzlUG=onPM:0
+Z27 VW1C]BHD`XI`<kn8_5XfXG0
+Z28 !s100 _^YzN07X`zzzlUG=onPM:0
 R10
 32
-R11
-!i10b 1
-R12
-R21
 R22
+!i10b 1
+R23
+R24
+R25
 !i113 1
 R15
 R16

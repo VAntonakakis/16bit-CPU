@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Apr 04 20:19:36 2026
+    Info: Processing started: Wed Apr 22 14:16:50 2026
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegister16bit -c MyRegister16bit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/Waveform.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Sat Apr 04 20:19:37 2026
+    Info: Processing started: Wed Apr 22 14:16:51 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/ MyRegister16bit -c MyRegister16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file MyRegister16bit.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Sat Apr 04 20:19:38 2026
+    Info: Processing ended: Wed Apr 22 14:16:52 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -82,11 +82,12 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # do MyRegister16bit.do
 
+# ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:19:40 on Apr 04,2026
+# Start time: 14:16:55 on Apr 22,2026
 # vcom -work work MyRegister16bit.vho 
 # -- Loading package STANDARD
-
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -94,26 +95,27 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package dffeas_pack
 # -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
+
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
 # -- Compiling entity MyRegister16bit
 # -- Compiling architecture structure of MyRegister16bit
-# End time: 20:19:40 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 14:16:56 on Apr 22,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:19:40 on Apr 04,2026
+# Start time: 14:16:56 on Apr 22,2026
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyRegister16bit_vhd_vec_tst
 # -- Compiling architecture MyRegister16bit_arch of MyRegister16bit_vhd_vec_tst
-# End time: 20:19:40 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 14:16:56 on Apr 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyRegister16bit_vhd_vec_tst 
-# Start time: 20:19:40 on Apr 04,2026
+# Start time: 14:16:57 on Apr 22,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -132,9 +134,9 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_clkena(behavior)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# after#32
+# after#34
 
-# End time: 20:19:40 on Apr 04,2026, Elapsed time: 0:00:00
+# End time: 14:16:57 on Apr 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -147,7 +149,7 @@ Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/MyRegist
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/MyRegister16bit_20260404201941.sim.vwf
+Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/simulation/qsim/MyRegister16bit_20260422141658.sim.vwf
 
 Finished VCD to VWF conversion.
 

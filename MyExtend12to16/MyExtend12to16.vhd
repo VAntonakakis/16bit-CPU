@@ -1,12 +1,11 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity MyExtend12to16 is
-    port (
-        Input  : in  std_logic_vector(11 downto 0);
-        Output : out std_logic_vector(15 downto 0)
-    );
+entity MyExtend12to16 is port (
+   Input  : in  std_logic_vector(11 downto 0);
+   Output : out std_logic_vector(15 downto 0));
 end MyExtend12to16;
+
 
 architecture Structural of MyExtend12to16 is
 begin
@@ -22,7 +21,6 @@ begin
     Output(9)  <= Input(9);
     Output(10) <= Input(10);
     Output(11) <= Input(11);
-
     Output(12) <= Input(11);
     Output(13) <= Input(11);
     Output(14) <= Input(11);

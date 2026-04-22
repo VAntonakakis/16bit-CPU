@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyRegisterFile
-Mon Apr 20 21:42:36 2026
+Wed Apr 22 14:53:46 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 20 21:42:36 2026       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 22 14:53:46 2026       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; MyRegisterFile                              ;
 ; Top-level Entity Name              ; MyRegisterFile                              ;
@@ -656,7 +656,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Apr 20 21:42:27 2026
+    Info: Processing started: Wed Apr 22 14:53:35 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyRegisterFile -c MyRegisterFile
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -664,7 +664,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file /ergasi
     Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 10
     Info (12023): Found entity 1: MyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mypseudoregisterzero/mypseudoregisterzero.vhd
-    Info (12022): Found design unit 1: MyPseudoRegisterZero-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 14
+    Info (12022): Found design unit 1: MyPseudoRegisterZero-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 13
     Info (12023): Found entity 1: MyPseudoRegisterZero File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myor16bit/myor16bit.vhd
     Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 10
@@ -694,41 +694,41 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 1: flipflopR_1-behavioral File: C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd Line: 12
     Info (12023): Found entity 1: flipflopR_1 File: C:/Users/user/Downloads/flip-flops/flipflopR_1/flipflopR_1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myregister16bit/myregister16bit.vhd
-    Info (12022): Found design unit 1: MyRegister16bit-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 17
+    Info (12022): Found design unit 1: MyRegister16bit-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 12
     Info (12023): Found entity 1: MyRegister16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file myregisterfile.vhd
-    Info (12022): Found design unit 1: MyRegisterFile-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 17
+    Info (12022): Found design unit 1: MyRegisterFile-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 16
     Info (12023): Found entity 1: MyRegisterFile File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 4
 Info (12127): Elaborating entity "MyRegisterFile" for the top level hierarchy
-Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyDecoder3to8:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 70
+Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyDecoder3to8:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 58
 Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyDecoder3to8:v0|MyDecoder1to2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
 Info (12128): Elaborating entity "MyNot" for hierarchy "MyDecoder3to8:v0|MyDecoder1to2:v0|MyNot:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 21
 Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyDecoder3to8:v0|MyAnd2:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 39
-Info (12128): Elaborating entity "MyPseudoRegisterZero" for hierarchy "MyPseudoRegisterZero:reg0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 76
-Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyPseudoRegisterZero:reg0|MyAnd16bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 30
-Info (12128): Elaborating entity "MyRegister16bit" for hierarchy "MyRegister16bit:reg1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 85
-Info (12128): Elaborating entity "flipflopR_1" for hierarchy "MyRegister16bit:reg1|flipflopR_1:\gen_register:0:vff" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 32
-Info (12128): Elaborating entity "MyMux8to1_16bit" for hierarchy "MyMux8to1_16bit:read_mux1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 169
+Info (12128): Elaborating entity "MyPseudoRegisterZero" for hierarchy "MyPseudoRegisterZero:reg0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 60
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyPseudoRegisterZero:reg0|MyAnd16bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd Line: 24
+Info (12128): Elaborating entity "MyRegister16bit" for hierarchy "MyRegister16bit:reg1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 61
+Info (12128): Elaborating entity "flipflopR_1" for hierarchy "MyRegister16bit:reg1|flipflopR_1:\gen_register:0:vff" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 23
+Info (12128): Elaborating entity "MyMux8to1_16bit" for hierarchy "MyMux8to1_16bit:read_mux1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 69
 Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 29
 Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
 Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3|MyOr2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 18
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "OUTall[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[1]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[2]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[3]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[4]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[5]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[6]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[7]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[8]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[9]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[10]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[11]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[12]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[13]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[14]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
-    Warning (13410): Pin "OUTall[15]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 13
+    Warning (13410): Pin "OUTall[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[1]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[2]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[3]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[4]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[5]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[6]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[7]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[8]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[9]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[10]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[11]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[12]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[13]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[14]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
+    Warning (13410): Pin "OUTall[15]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -737,9 +737,9 @@ Info (21057): Implemented 469 device resources after synthesis - the final resou
     Info (21059): Implemented 160 output pins
     Info (21061): Implemented 283 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Mon Apr 20 21:42:36 2026
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Wed Apr 22 14:53:46 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 

@@ -3,6 +3,7 @@ source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/MyPseudoRegisterZero.vhd
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform.vwf
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyPseudoRegisterZero/Waveform1.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd

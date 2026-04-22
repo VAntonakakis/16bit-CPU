@@ -15,7 +15,7 @@ begin
 	begin
 		if (R = '0') then
 			O <= '0';
-		elsif falling_edge(C) then
+		elsif (c'event and c='0')  then
 			if (E = '1') then
 				O <= I;
 			end if;

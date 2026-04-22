@@ -1,5 +1,5 @@
 Flow report for MyShiftRegister4bit
-Tue Apr 21 19:17:49 2026
+Wed Apr 22 15:38:55 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Apr 21 19:17:49 2026       ;
+; Flow Status                     ; Successful - Wed Apr 22 15:38:55 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyShiftRegister4bit                         ;
 ; Top-level Entity Name           ; MyShiftRegister4bit                         ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/21/2026 19:16:15 ;
+; Start date & time ; 04/22/2026 15:35:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MyShiftRegister4bit ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176914188673568.177678817512848        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176914188673568.177686134212944        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -96,13 +96,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4873 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:37     ; 1.0                     ; 6707 MB             ; 00:00:56                           ;
-; Assembler            ; 00:00:16     ; 1.0                     ; 4865 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5181 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4741 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
-; Total                ; 00:01:13     ; --                      ; --                  ; 00:01:35                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4873 MB             ; 00:00:16                           ;
+; Fitter               ; 00:00:23     ; 1.0                     ; 6705 MB             ; 00:00:43                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4865 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 5174 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4741 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
+; Total                ; 00:00:39     ; --                      ; --                  ; 00:01:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

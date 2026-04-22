@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyJumpAddress
-Sun Apr 19 13:14:49 2026
+Wed Apr 22 14:31:42 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 19 13:14:49 2026       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 22 14:31:42 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyJumpAddress                               ;
 ; Top-level Entity Name           ; MyJumpAddress                               ;
@@ -349,7 +349,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun Apr 19 13:14:37 2026
+    Info: Processing started: Wed Apr 22 14:31:31 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyJumpAddress -c MyJumpAddress
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -375,12 +375,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file /ergasi
     Info (12022): Found design unit 1: MyExtend12to16-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyExtend12to16/MyExtend12to16.vhd Line: 11
     Info (12023): Found entity 1: MyExtend12to16 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyExtend12to16/MyExtend12to16.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file myjumpaddress.vhd
-    Info (12022): Found design unit 1: MyJumpAddress-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 12
+    Info (12022): Found design unit 1: MyJumpAddress-Structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 10
     Info (12023): Found entity 1: MyJumpAddress File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 4
 Info (12127): Elaborating entity "MyJumpAddress" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at MyJumpAddress.vhd(33): object "dummyCout" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 33
-Info (12128): Elaborating entity "MyExtend12to16" for hierarchy "MyExtend12to16:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 37
-Info (12128): Elaborating entity "MyFullAdder16bit" for hierarchy "MyFullAdder16bit:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 60
+Warning (10036): Verilog HDL or VHDL warning at MyJumpAddress.vhd(26): object "dummyCout" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 26
+Info (12128): Elaborating entity "MyExtend12to16" for hierarchy "MyExtend12to16:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 29
+Info (12128): Elaborating entity "MyFullAdder16bit" for hierarchy "MyFullAdder16bit:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyJumpAddress/MyJumpAddress.vhd Line: 47
 Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyFullAdder16bit:v1|MyFullAdder1bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder16bit/MyFullAdder16bit.vhd Line: 25
 Info (12128): Elaborating entity "MyXor2" for hierarchy "MyFullAdder16bit:v1|MyFullAdder1bit:v0|MyXor2:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
 Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyFullAdder16bit:v1|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyXor2/MyXor2.vhd Line: 38
@@ -394,9 +394,9 @@ Info (21057): Implemented 70 device resources after synthesis - the final resour
     Info (21059): Implemented 16 output pins
     Info (21061): Implemented 26 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Sun Apr 19 13:14:49 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4876 megabytes
+    Info: Processing ended: Wed Apr 22 14:31:42 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
 
 
