@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "03/30/2026 22:47:22"
+-- DATE "04/29/2026 15:07:13"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -37,7 +37,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	MyDecoder3to8 IS
     PORT (
 	S : IN std_logic_vector(2 DOWNTO 0);
-	Q : OUT std_logic_vector(7 DOWNTO 0)
+	Q : BUFFER std_logic_vector(7 DOWNTO 0)
 	);
 END MyDecoder3to8;
 
@@ -79,10 +79,10 @@ SIGNAL \v12|Q~0_combout\ : std_logic;
 SIGNAL \v14|Q~0_combout\ : std_logic;
 SIGNAL \v16|Q~0_combout\ : std_logic;
 SIGNAL \v18|Q~0_combout\ : std_logic;
-SIGNAL \ALT_INV_S[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_S[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_S[2]~input_o\ : std_logic;
 SIGNAL \v4|ALT_INV_Q~combout\ : std_logic;
+SIGNAL \ALT_INV_S[2]~input_o\ : std_logic;
+SIGNAL \ALT_INV_S[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_S[1]~input_o\ : std_logic;
 
 BEGIN
 
@@ -91,10 +91,10 @@ Q <= ww_Q;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_S[1]~input_o\ <= NOT \S[1]~input_o\;
-\ALT_INV_S[0]~input_o\ <= NOT \S[0]~input_o\;
-\ALT_INV_S[2]~input_o\ <= NOT \S[2]~input_o\;
 \v4|ALT_INV_Q~combout\ <= NOT \v4|Q~combout\;
+\ALT_INV_S[2]~input_o\ <= NOT \S[2]~input_o\;
+\ALT_INV_S[0]~input_o\ <= NOT \S[0]~input_o\;
+\ALT_INV_S[1]~input_o\ <= NOT \S[1]~input_o\;
 
 -- Location: IOOBUF_X89_Y37_N22
 \Q[0]~output\ : cyclonev_io_obuf

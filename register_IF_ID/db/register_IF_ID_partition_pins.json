@@ -1,0 +1,277 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "outPC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[9]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[14]",
+					"strict" : false
+				},
+				{
+					"name" : "outInstruction[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_ENABLE",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_Flush",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[14]",
+					"strict" : false
+				},
+				{
+					"name" : "inInstruction[15]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "inPC[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

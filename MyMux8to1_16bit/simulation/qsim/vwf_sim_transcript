@@ -1,13 +1,13 @@
 Determining the location of the ModelSim executable...
 
-Using: d:/quartus/modelsim_ase/win32aloem/
+Using: c:/intelfpga_lite/19.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit --vector_source="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/Waveform1.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/Waveform1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,15 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Mar 30 18:14:25 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit --vector_source="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/Waveform.vwf.vht"
+    Info: Processing started: Wed Apr 29 15:03:55 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyMux8to1_16bit -c MyMux8to1_16bit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/Waveform1.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/Waveform1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/" MyMux8to1_16bit -c MyMux8to1_16bit
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/" MyMux8to1_16bit -c MyMux8to1_16bit
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Mar 30 18:14:26 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/" MyMux8to1_16bit -c MyMux8to1_16bit
+    Info: Processing started: Wed Apr 29 15:03:57 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/ MyMux8to1_16bit -c MyMux8to1_16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file MyMux8to1_16bit.vho in folder "C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MyMux8to1_16bit.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4745 megabytes
-    Info: Processing ended: Mon Mar 30 18:14:27 2026
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Wed Apr 29 15:03:58 2026
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,51 +67,52 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit.do generated.
+C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-d:/quartus/modelsim_ase/win32aloem//vsim -c -do MyMux8to1_16bit.do
+c:/intelfpga_lite/19.1/modelsim_ase/win32aloem//vsim -c -do MyMux8to1_16bit.do
 
-Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
+Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
 
 # do MyMux8to1_16bit.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:14:28 on Mar 30,2026
+# Start time: 15:03:59 on Apr 29,2026
 # vcom -work work MyMux8to1_16bit.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package altera_lnsim_components
-
 # -- Loading package VITAL_Timing
 # -- Loading package VITAL_Primitives
 # -- Loading package cyclonev_atom_pack
 # -- Loading package cyclonev_components
+
 # -- Compiling entity MyMux8to1_16bit
 # -- Compiling architecture structure of MyMux8to1_16bit
-# End time: 18:14:28 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 15:03:59 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:14:28 on Mar 30,2026
-# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD
 
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:03:59 on Apr 29,2026
+# vcom -work work Waveform1.vwf.vht 
+# -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyMux8to1_16bit_vhd_vec_tst
 # -- Compiling architecture MyMux8to1_16bit_arch of MyMux8to1_16bit_vhd_vec_tst
-# End time: 18:14:28 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 15:04:00 on Apr 29,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyMux8to1_16bit_vhd_vec_tst 
-# Start time: 18:14:28 on Mar 30,2026
+# Start time: 15:04:00 on Apr 29,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -126,24 +127,24 @@ Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# ** Warning: Design size of 21487 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 21469 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # after#32
 
-# End time: 18:14:28 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 15:04:00 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Quartus projects/ergasia 1/MyMux8to1_16bit/Waveform.vwf...
+Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/Waveform1.vwf...
 
-Reading C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit.msim.vcd...
+Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Quartus projects/ergasia 1/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit_20260330181428.sim.vwf
+Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/simulation/qsim/MyMux8to1_16bit_20260429150401.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -1,5 +1,5 @@
 Assembler report for MyDecoder3to8
-Mon Mar 30 22:45:05 2026
+Wed Apr 29 15:05:03 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Quartus projects/ergasia 1/MyDecoder3to8/output_files/MyDecoder3to8.sof
+  5. Assembler Device Options: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/output_files/MyDecoder3to8.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Mar 30 22:45:05 2026 ;
+; Assembler Status      ; Successful - Wed Apr 29 15:05:02 2026 ;
 ; Revision Name         ; MyDecoder3to8                         ;
 ; Top-level Entity Name ; MyDecoder3to8                         ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+----------------------------------------------------------------------------+
-; Assembler Generated Files                                                  ;
-+----------------------------------------------------------------------------+
-; File Name                                                                  ;
-+----------------------------------------------------------------------------+
-; C:/Quartus projects/ergasia 1/MyDecoder3to8/output_files/MyDecoder3to8.sof ;
-+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Assembler Generated Files                                                    ;
++------------------------------------------------------------------------------+
+; File Name                                                                    ;
++------------------------------------------------------------------------------+
+; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/output_files/MyDecoder3to8.sof ;
++------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Quartus projects/ergasia 1/MyDecoder3to8/output_files/MyDecoder3to8.sof ;
-+----------------+-------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                             ;
-+----------------+-------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00EC4FEE                                                                          ;
-; Checksum       ; 0x00EC4FEE                                                                          ;
-+----------------+-------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/output_files/MyDecoder3to8.sof ;
++----------------+---------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                               ;
++----------------+---------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00EC4FEE                                                                            ;
+; Checksum       ; 0x00EC4FEE                                                                            ;
++----------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Mar 30 22:45:00 2026
+    Info: Processing started: Wed Apr 29 15:04:56 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MyDecoder3to8 -c MyDecoder3to8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Mon Mar 30 22:45:05 2026
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4867 megabytes
+    Info: Processing ended: Wed Apr 29 15:05:03 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 

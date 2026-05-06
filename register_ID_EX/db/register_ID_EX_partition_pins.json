@@ -1,0 +1,661 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "isEOR_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "wasJumpOut_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isJump_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isJR_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isBranch_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isR_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isMFPC_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isLW_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isSW_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isReadDigit_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "isPrintDigit_IDEX",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc_IDEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg_IDEX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_IDEX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[12]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[13]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[14]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16_IDEX[15]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[1]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[3]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[4]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[5]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[6]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[7]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[8]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[9]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[10]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr_IDEX[11]",
+					"strict" : false
+				},
+				{
+					"name" : "isEOR",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "wasJumpOut",
+					"strict" : false
+				},
+				{
+					"name" : "isJump",
+					"strict" : false
+				},
+				{
+					"name" : "isJR",
+					"strict" : false
+				},
+				{
+					"name" : "isBranch",
+					"strict" : false
+				},
+				{
+					"name" : "isR",
+					"strict" : false
+				},
+				{
+					"name" : "isMFPC",
+					"strict" : false
+				},
+				{
+					"name" : "isLW",
+					"strict" : false
+				},
+				{
+					"name" : "isSW",
+					"strict" : false
+				},
+				{
+					"name" : "isReadDigit",
+					"strict" : false
+				},
+				{
+					"name" : "isPrintDigit",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUFunc[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R1Reg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[0]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[1]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[2]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[3]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[4]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[5]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[6]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[7]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[8]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[9]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[10]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[11]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[12]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[13]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[14]",
+					"strict" : false
+				},
+				{
+					"name" : "immediate16[15]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[8]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[9]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[10]",
+					"strict" : false
+				},
+				{
+					"name" : "jumpShortAddr[11]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

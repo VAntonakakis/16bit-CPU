@@ -1,6 +1,7 @@
 # do MyDecoder3to8.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:47:23 on Mar 30,2026
+# Start time: 15:07:14 on Apr 29,2026
 # vcom -work work MyDecoder3to8.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,20 +13,20 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity MyDecoder3to8
 # -- Compiling architecture structure of MyDecoder3to8
-# End time: 22:47:23 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 15:07:15 on Apr 29,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:47:23 on Mar 30,2026
-# vcom -work work Waveform.vwf.vht 
+# Start time: 15:07:15 on Apr 29,2026
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyDecoder3to8_vhd_vec_tst
 # -- Compiling architecture MyDecoder3to8_arch of MyDecoder3to8_vhd_vec_tst
-# End time: 22:47:23 on Mar 30,2026, Elapsed time: 0:00:00
+# End time: 15:07:15 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyDecoder3to8_vhd_vec_tst 
-# Start time: 22:47:23 on Mar 30,2026
+# Start time: 15:07:15 on Apr 29,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -40,6 +41,6 @@
 # Loading cyclonev.cyclonev_io_obuf(arch)
 # Loading cyclonev.cyclonev_io_ibuf(arch)
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# after#30
-# End time: 22:47:23 on Mar 30,2026, Elapsed time: 0:00:00
+# after#32
+# End time: 15:07:15 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

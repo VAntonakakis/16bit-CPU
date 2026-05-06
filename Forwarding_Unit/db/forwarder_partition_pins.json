@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ForwardA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ForwardB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_MEMWB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_MEMWB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_MEMWB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2AD[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

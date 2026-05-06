@@ -2,14 +2,14 @@
 S[0] => MyDecoder1to2:v2.S
 S[1] => MyDecoder1to2:v1.S
 S[2] => MyDecoder1to2:v0.S
-Q[0] <= MyAnd2:v4.Q
-Q[1] <= MyAnd2:v6.Q
-Q[2] <= MyAnd2:v8.Q
-Q[3] <= MyAnd2:v10.Q
-Q[4] <= MyAnd2:v12.Q
-Q[5] <= MyAnd2:v14.Q
-Q[6] <= MyAnd2:v16.Q
-Q[7] <= MyAnd2:v18.Q
+Q[0] << MyAnd2:v4.Q
+Q[1] << MyAnd2:v6.Q
+Q[2] << MyAnd2:v8.Q
+Q[3] << MyAnd2:v10.Q
+Q[4] << MyAnd2:v12.Q
+Q[5] << MyAnd2:v14.Q
+Q[6] << MyAnd2:v16.Q
+Q[7] << MyAnd2:v18.Q
 
 
 |MyDecoder3to8|MyDecoder1to2:v0

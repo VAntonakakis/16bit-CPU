@@ -1,7 +1,7 @@
 # do MyShiftRegister4bit.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:48:11 on Apr 22,2026
+# Start time: 15:10:51 on Apr 29,2026
 # vcom -work work MyShiftRegister4bit.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -15,20 +15,20 @@
 # -- Loading package cyclonev_components
 # -- Compiling entity MyShiftRegister4bit
 # -- Compiling architecture structure of MyShiftRegister4bit
-# End time: 17:48:11 on Apr 22,2026, Elapsed time: 0:00:00
+# End time: 15:10:51 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:48:11 on Apr 22,2026
-# vcom -work work Waveform.vwf.vht 
+# Start time: 15:10:51 on Apr 29,2026
+# vcom -work work Waveform1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyShiftRegister4bit_vhd_vec_tst
 # -- Compiling architecture MyShiftRegister4bit_arch of MyShiftRegister4bit_vhd_vec_tst
-# End time: 17:48:11 on Apr 22,2026, Elapsed time: 0:00:00
+# End time: 15:10:51 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyShiftRegister4bit_vhd_vec_tst 
-# Start time: 17:48:11 on Apr 22,2026
+# Start time: 15:10:52 on Apr 29,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -48,5 +48,5 @@
 # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
 # after#34
-# End time: 17:48:12 on Apr 22,2026, Elapsed time: 0:00:01
+# End time: 15:10:52 on Apr 29,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
