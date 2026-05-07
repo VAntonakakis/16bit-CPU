@@ -18,12 +18,12 @@ begin
 		
 		if (R1AD = RegAD_EXMEM) then
 			--Pick the value from the EX_MEM register
-			ForwardA <= "01";
+			ForwardA <= "10";
 		
 		---
 		elsif (R1AD = RegAD_MEMWB) then
 		   --Pick the value from the MEM_WB regiser
-			ForwardA <= "10";
+			ForwardA <= "01";
 		end if;
 			
 		--Repeat for the second address
@@ -31,7 +31,7 @@ begin
 		if (R2AD = RegAD_EXMEM) then
 			--Pick the value from the EX_MEM register
 			ForwardB <= "10";
-		elsif (R1AD = RegAD_MEMWB) then
+		elsif (R2AD = RegAD_MEMWB) then
 		   --Pick the value from the MEM_WB regiser
 			ForwardB <= "01";
 		end if;

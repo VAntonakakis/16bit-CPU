@@ -3,7 +3,7 @@ $comment
 		vcd file forwarder.msim.vcd -direction
 $end
 $date
-	Thu May 07 11:04:42 2026
+	Thu May 07 14:12:19 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -57,38 +57,40 @@ $var wire 1 G ww_ForwardA [0] $end
 $var wire 1 H ww_ForwardB [1] $end
 $var wire 1 I ww_ForwardB [0] $end
 $var wire 1 J \~QUARTUS_CREATED_GND~I_combout\ $end
-$var wire 1 K \RegAD_EXMEM[0]~input_o\ $end
-$var wire 1 L \R1AD[2]~input_o\ $end
-$var wire 1 M \RegAD_EXMEM[2]~input_o\ $end
-$var wire 1 N \R1AD[1]~input_o\ $end
-$var wire 1 O \R1AD[0]~input_o\ $end
-$var wire 1 P \RegAD_EXMEM[1]~input_o\ $end
-$var wire 1 Q \Equal0~0_combout\ $end
-$var wire 1 R \RegAD_MEMWB[0]~input_o\ $end
-$var wire 1 S \RegAD_MEMWB[1]~input_o\ $end
-$var wire 1 T \RegAD_MEMWB[2]~input_o\ $end
-$var wire 1 U \ForwardA~0_combout\ $end
+$var wire 1 K \RegAD_MEMWB[0]~input_o\ $end
+$var wire 1 L \RegAD_MEMWB[1]~input_o\ $end
+$var wire 1 M \R1AD[1]~input_o\ $end
+$var wire 1 N \R1AD[0]~input_o\ $end
+$var wire 1 O \ForwardA~0_combout\ $end
+$var wire 1 P \R1AD[2]~input_o\ $end
+$var wire 1 Q \RegAD_EXMEM[2]~input_o\ $end
+$var wire 1 R \RegAD_EXMEM[0]~input_o\ $end
+$var wire 1 S \RegAD_EXMEM[1]~input_o\ $end
+$var wire 1 T \Equal0~0_combout\ $end
+$var wire 1 U \RegAD_MEMWB[2]~input_o\ $end
 $var wire 1 V \ForwardA~1_combout\ $end
-$var wire 1 W \R2AD[0]~input_o\ $end
+$var wire 1 W \R2AD[1]~input_o\ $end
 $var wire 1 X \R2AD[2]~input_o\ $end
-$var wire 1 Y \R2AD[1]~input_o\ $end
+$var wire 1 Y \R2AD[0]~input_o\ $end
 $var wire 1 Z \Equal2~0_combout\ $end
 $var wire 1 [ \ForwardB~0_combout\ $end
-$var wire 1 \ \ALT_INV_RegAD_MEMWB[1]~input_o\ $end
-$var wire 1 ] \ALT_INV_RegAD_MEMWB[2]~input_o\ $end
-$var wire 1 ^ \ALT_INV_Equal0~0_combout\ $end
-$var wire 1 _ \ALT_INV_ForwardA~0_combout\ $end
-$var wire 1 ` \ALT_INV_Equal2~0_combout\ $end
-$var wire 1 a \ALT_INV_R1AD[0]~input_o\ $end
-$var wire 1 b \ALT_INV_R2AD[0]~input_o\ $end
-$var wire 1 c \ALT_INV_R2AD[1]~input_o\ $end
-$var wire 1 d \ALT_INV_RegAD_EXMEM[0]~input_o\ $end
-$var wire 1 e \ALT_INV_R1AD[1]~input_o\ $end
-$var wire 1 f \ALT_INV_RegAD_EXMEM[1]~input_o\ $end
-$var wire 1 g \ALT_INV_R1AD[2]~input_o\ $end
-$var wire 1 h \ALT_INV_RegAD_EXMEM[2]~input_o\ $end
-$var wire 1 i \ALT_INV_RegAD_MEMWB[0]~input_o\ $end
-$var wire 1 j \ALT_INV_R2AD[2]~input_o\ $end
+$var wire 1 \ \ForwardB~1_combout\ $end
+$var wire 1 ] \ALT_INV_RegAD_EXMEM[1]~input_o\ $end
+$var wire 1 ^ \ALT_INV_RegAD_EXMEM[2]~input_o\ $end
+$var wire 1 _ \ALT_INV_Equal0~0_combout\ $end
+$var wire 1 ` \ALT_INV_ForwardA~0_combout\ $end
+$var wire 1 a \ALT_INV_Equal2~0_combout\ $end
+$var wire 1 b \ALT_INV_ForwardB~0_combout\ $end
+$var wire 1 c \ALT_INV_RegAD_MEMWB[0]~input_o\ $end
+$var wire 1 d \ALT_INV_RegAD_MEMWB[1]~input_o\ $end
+$var wire 1 e \ALT_INV_R1AD[2]~input_o\ $end
+$var wire 1 f \ALT_INV_RegAD_MEMWB[2]~input_o\ $end
+$var wire 1 g \ALT_INV_R1AD[0]~input_o\ $end
+$var wire 1 h \ALT_INV_RegAD_EXMEM[0]~input_o\ $end
+$var wire 1 i \ALT_INV_R1AD[1]~input_o\ $end
+$var wire 1 j \ALT_INV_R2AD[1]~input_o\ $end
+$var wire 1 k \ALT_INV_R2AD[0]~input_o\ $end
+$var wire 1 l \ALT_INV_R2AD[2]~input_o\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -104,14 +106,14 @@ x3
 18
 19
 xJ
-0K
+1K
 0L
-0M
-1N
+1M
+0N
 0O
 0P
 0Q
-1R
+0R
 0S
 0T
 0U
@@ -121,21 +123,23 @@ xJ
 0Y
 0Z
 0[
-1\
+0\
 1]
 1^
 1_
 1`
 1a
 1b
-1c
+0c
 1d
-0e
+1e
 1f
 1g
 1h
 0i
-0j
+1j
+1k
+0l
 0%
 1&
 0'
@@ -172,29 +176,26 @@ $end
 #80000
 0&
 0;
-0N
-1e
-1Q
-0^
-1G
-1"
+0M
+1i
+1T
+0_
+1F
+1!
 #160000
 1'
 1<
+1N
+0g
 1O
-0a
-0Q
-1U
-0_
-1^
+0T
+1_
+0`
 1V
-1[
-0G
-0"
-1I
-1F
-1$
-1!
+0F
+0!
+1G
+1"
 #240000
 0'
 1&
@@ -203,100 +204,109 @@ $end
 1;
 0=
 0X
-1N
-0O
-1a
-0e
-1j
+1M
+0N
+1g
+0i
+1l
 1Z
-0U
-1_
-0`
+0O
+1`
+0a
 0V
-0[
 1H
 1#
-0I
-0F
-0$
-0!
+0G
+0"
 #320000
 1*
 1?
-1W
-0b
+1Y
+0k
 0Z
-1`
+1[
+0b
+1a
+1\
 0H
 0#
+1I
+1$
 #400000
 0&
 0;
-0N
-1e
-1Q
-0^
-1G
-1"
+0M
+1i
+1T
+0_
+1F
+1!
 #480000
 0*
 1'
 0?
 1<
+1N
+0Y
+1k
+0g
 1O
-0W
+0T
+1Z
+0[
 1b
 0a
-0Q
-1U
-1Z
+1_
 0`
-0_
-1^
 1V
+0\
 1H
-0G
+0F
 1#
-0"
-1F
-1!
+0!
+0I
+1G
+0$
+1"
 #560000
 0'
 0<
+0N
+1g
 0O
-1a
-1Q
-0U
-1_
-0^
+1T
+0_
+1`
 0V
-1G
-1"
-0F
-0!
+1F
+1!
+0G
+0"
 #640000
 1'
 1*
 1<
 1?
-1W
-1O
-0a
-0b
+1Y
+1N
+0g
+0k
 0Z
-0Q
-1U
-0_
-1^
-1`
-1V
 1[
-0G
+1O
+0T
+1_
+0`
+0b
+1a
+1\
+1V
+0F
 0H
-0"
+0!
 0#
+1G
 1I
-1F
+1"
 1$
-1!
 #720000

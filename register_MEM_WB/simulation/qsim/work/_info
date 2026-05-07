@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/simulation/qsim
 Eregister_mem_wb
-Z1 w1778148520
+Z1 w1778151313
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -28,9 +28,9 @@ VE73eli32A=P[0R<_>00mM1
 !s100 ]EDmh7cJjFAeWMIjz_WO[2
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1778148525
+Z14 !s110 1778151315
 !i10b 1
-Z15 !s108 1778148525.000000
+Z15 !s108 1778151315.000000
 Z16 !s90 -work|work|register_MEM_WB.vho|
 Z17 !s107 register_MEM_WB.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Eregister_mem_wb_vhd_vec_tst
-Z20 w1778148519
+Z20 w1778151312
 R8
 R9
 R0
@@ -85,11 +85,11 @@ R19
 Aregister_mem_wb_arch
 R8
 R9
-DEx4 work 27 register_mem_wb_vhd_vec_tst 0 22 @TN;Q_j1E7T`E@RZERlE43
+Z25 DEx4 work 27 register_mem_wb_vhd_vec_tst 0 22 @TN;Q_j1E7T`E@RZERlE43
 l51
 L34
-V<e9ng0`A4i3h2YB`fFJTW0
-!s100 RelYKcXT4DJ]E0Bj^dzcU1
+Z26 V<e9ng0`A4i3h2YB`fFJTW0
+Z27 !s100 RelYKcXT4DJ]E0Bj^dzcU1
 R13
 32
 R14
