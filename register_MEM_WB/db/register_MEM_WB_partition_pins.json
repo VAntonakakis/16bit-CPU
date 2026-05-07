@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "writeData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[8]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[9]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[10]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[11]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[12]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[13]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[14]",
+					"strict" : false
+				},
+				{
+					"name" : "writeData[15]",
+					"strict" : false
+				},
+				{
+					"name" : "writeAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "writeAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "writeAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "Result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
