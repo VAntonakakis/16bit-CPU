@@ -1,5 +1,5 @@
 Flow report for forwarder
-Wed May 06 15:02:12 2026
+Thu May 07 11:04:28 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 06 15:02:06 2026       ;
+; Flow Status                     ; Successful - Thu May 07 11:04:28 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; forwarder                                   ;
 ; Top-level Entity Name           ; forwarder                                   ;
@@ -98,7 +98,9 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; 00:00:37     ; 1.0                     ; 6702 MB             ; 00:00:56                           ;
 ; Assembler            ; 00:00:13     ; 1.0                     ; 4865 MB             ; 00:00:07                           ;
 ; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5171 MB             ; 00:00:05                           ;
-; Total                ; 00:01:05     ; --                      ; --                  ; 00:01:30                           ;
+; EDA Netlist Writer   ; 00:00:11     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4750 MB             ; 00:00:01                           ;
+; Total                ; 00:01:17     ; --                      ; --                  ; 00:01:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +113,8 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; Assembler            ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -121,6 +125,8 @@ quartus_map --read_settings_files=on --write_settings_files=off forwarder -c for
 quartus_fit --read_settings_files=off --write_settings_files=off forwarder -c forwarder
 quartus_asm --read_settings_files=off --write_settings_files=off forwarder -c forwarder
 quartus_sta forwarder -c forwarder
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off forwarder -c forwarder --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/ forwarder -c forwarder
 
 
 

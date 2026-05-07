@@ -1,0 +1,302 @@
+$comment
+	File created using the following command:
+		vcd file forwarder.msim.vcd -direction
+$end
+$date
+	Thu May 07 11:04:42 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module forwarder_vhd_vec_tst $end
+$var wire 1 ! ForwardA [1] $end
+$var wire 1 " ForwardA [0] $end
+$var wire 1 # ForwardB [1] $end
+$var wire 1 $ ForwardB [0] $end
+$var wire 1 % R1AD [2] $end
+$var wire 1 & R1AD [1] $end
+$var wire 1 ' R1AD [0] $end
+$var wire 1 ( R2AD [2] $end
+$var wire 1 ) R2AD [1] $end
+$var wire 1 * R2AD [0] $end
+$var wire 1 + RegAD_EXMEM [2] $end
+$var wire 1 , RegAD_EXMEM [1] $end
+$var wire 1 - RegAD_EXMEM [0] $end
+$var wire 1 . RegAD_MEMWB [2] $end
+$var wire 1 / RegAD_MEMWB [1] $end
+$var wire 1 0 RegAD_MEMWB [0] $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var wire 1 4 devoe $end
+$var wire 1 5 devclrn $end
+$var wire 1 6 devpor $end
+$var wire 1 7 ww_devoe $end
+$var wire 1 8 ww_devclrn $end
+$var wire 1 9 ww_devpor $end
+$var wire 1 : ww_R1AD [2] $end
+$var wire 1 ; ww_R1AD [1] $end
+$var wire 1 < ww_R1AD [0] $end
+$var wire 1 = ww_R2AD [2] $end
+$var wire 1 > ww_R2AD [1] $end
+$var wire 1 ? ww_R2AD [0] $end
+$var wire 1 @ ww_RegAD_EXMEM [2] $end
+$var wire 1 A ww_RegAD_EXMEM [1] $end
+$var wire 1 B ww_RegAD_EXMEM [0] $end
+$var wire 1 C ww_RegAD_MEMWB [2] $end
+$var wire 1 D ww_RegAD_MEMWB [1] $end
+$var wire 1 E ww_RegAD_MEMWB [0] $end
+$var wire 1 F ww_ForwardA [1] $end
+$var wire 1 G ww_ForwardA [0] $end
+$var wire 1 H ww_ForwardB [1] $end
+$var wire 1 I ww_ForwardB [0] $end
+$var wire 1 J \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 K \RegAD_EXMEM[0]~input_o\ $end
+$var wire 1 L \R1AD[2]~input_o\ $end
+$var wire 1 M \RegAD_EXMEM[2]~input_o\ $end
+$var wire 1 N \R1AD[1]~input_o\ $end
+$var wire 1 O \R1AD[0]~input_o\ $end
+$var wire 1 P \RegAD_EXMEM[1]~input_o\ $end
+$var wire 1 Q \Equal0~0_combout\ $end
+$var wire 1 R \RegAD_MEMWB[0]~input_o\ $end
+$var wire 1 S \RegAD_MEMWB[1]~input_o\ $end
+$var wire 1 T \RegAD_MEMWB[2]~input_o\ $end
+$var wire 1 U \ForwardA~0_combout\ $end
+$var wire 1 V \ForwardA~1_combout\ $end
+$var wire 1 W \R2AD[0]~input_o\ $end
+$var wire 1 X \R2AD[2]~input_o\ $end
+$var wire 1 Y \R2AD[1]~input_o\ $end
+$var wire 1 Z \Equal2~0_combout\ $end
+$var wire 1 [ \ForwardB~0_combout\ $end
+$var wire 1 \ \ALT_INV_RegAD_MEMWB[1]~input_o\ $end
+$var wire 1 ] \ALT_INV_RegAD_MEMWB[2]~input_o\ $end
+$var wire 1 ^ \ALT_INV_Equal0~0_combout\ $end
+$var wire 1 _ \ALT_INV_ForwardA~0_combout\ $end
+$var wire 1 ` \ALT_INV_Equal2~0_combout\ $end
+$var wire 1 a \ALT_INV_R1AD[0]~input_o\ $end
+$var wire 1 b \ALT_INV_R2AD[0]~input_o\ $end
+$var wire 1 c \ALT_INV_R2AD[1]~input_o\ $end
+$var wire 1 d \ALT_INV_RegAD_EXMEM[0]~input_o\ $end
+$var wire 1 e \ALT_INV_R1AD[1]~input_o\ $end
+$var wire 1 f \ALT_INV_RegAD_EXMEM[1]~input_o\ $end
+$var wire 1 g \ALT_INV_R1AD[2]~input_o\ $end
+$var wire 1 h \ALT_INV_RegAD_EXMEM[2]~input_o\ $end
+$var wire 1 i \ALT_INV_RegAD_MEMWB[0]~input_o\ $end
+$var wire 1 j \ALT_INV_R2AD[2]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+01
+12
+x3
+14
+15
+16
+17
+18
+19
+xJ
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+1R
+0S
+0T
+0U
+0V
+0W
+1X
+0Y
+0Z
+0[
+1\
+1]
+1^
+1_
+1`
+1a
+1b
+1c
+1d
+0e
+1f
+1g
+1h
+0i
+0j
+0%
+1&
+0'
+1(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+10
+0:
+1;
+0<
+1=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+0I
+0!
+0"
+0#
+0$
+$end
+#80000
+0&
+0;
+0N
+1e
+1Q
+0^
+1G
+1"
+#160000
+1'
+1<
+1O
+0a
+0Q
+1U
+0_
+1^
+1V
+1[
+0G
+0"
+1I
+1F
+1$
+1!
+#240000
+0'
+1&
+0(
+0<
+1;
+0=
+0X
+1N
+0O
+1a
+0e
+1j
+1Z
+0U
+1_
+0`
+0V
+0[
+1H
+1#
+0I
+0F
+0$
+0!
+#320000
+1*
+1?
+1W
+0b
+0Z
+1`
+0H
+0#
+#400000
+0&
+0;
+0N
+1e
+1Q
+0^
+1G
+1"
+#480000
+0*
+1'
+0?
+1<
+1O
+0W
+1b
+0a
+0Q
+1U
+1Z
+0`
+0_
+1^
+1V
+1H
+0G
+1#
+0"
+1F
+1!
+#560000
+0'
+0<
+0O
+1a
+1Q
+0U
+1_
+0^
+0V
+1G
+1"
+0F
+0!
+#640000
+1'
+1*
+1<
+1?
+1W
+1O
+0a
+0b
+0Z
+0Q
+1U
+0_
+1^
+1`
+1V
+1[
+0G
+0H
+0"
+0#
+1I
+1F
+1$
+1!
+#720000

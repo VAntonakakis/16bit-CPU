@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim
 Eregister_id_ex
-Z1 w1778086262
+Z1 w1778141861
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -28,9 +28,9 @@ VW2PWI>P?]I0QJYKGDQ`fP0
 !s100 =:YWfl9R`6@]A:YR4Ui[h3
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1778086263
+Z14 !s110 1778141863
 !i10b 1
-Z15 !s108 1778086263.000000
+Z15 !s108 1778141863.000000
 Z16 !s90 -work|work|register_ID_EX.vho|
 Z17 !s107 register_ID_EX.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Eregister_id_ex_vhd_vec_tst
-Z20 w1778086261
+Z20 w1778141860
 R8
 R9
 R0

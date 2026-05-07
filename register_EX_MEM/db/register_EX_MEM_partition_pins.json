@@ -1,0 +1,325 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "isLW_EXMEM",
+					"strict" : false
+				},
+				{
+					"name" : "WriteEnable_EXMEM",
+					"strict" : false
+				},
+				{
+					"name" : "ReadDigit_EXMEM",
+					"strict" : false
+				},
+				{
+					"name" : "PrintDigit_EXMEM",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg_EXMEM[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Result_EXMEM[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD_EXMEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "isLW",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "WriteEnable",
+					"strict" : false
+				},
+				{
+					"name" : "ReadDigit",
+					"strict" : false
+				},
+				{
+					"name" : "PrintDigit",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[8]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[9]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[10]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[11]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[12]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[13]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[14]",
+					"strict" : false
+				},
+				{
+					"name" : "R2Reg[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Result[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegAD[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
