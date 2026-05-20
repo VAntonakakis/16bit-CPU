@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd

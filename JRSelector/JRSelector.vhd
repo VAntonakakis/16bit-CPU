@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity JRSelector is
+    generic (
+        n : INTEGER := 16
+    );
+    port (
+        JROpcode : in std_logic_vector(1 downto 0);
+        PCP2AD   : in std_logic_vector(n-1 downto 0);
+        JumpAD   : in std_logic_vector(n-1 downto 0);
+        BranchAD : in std_logic_vector(n-1 downto 0);
+        PCout    : out std_logic_vector(n-1 downto 0)
+    );
+end entity JRSelector;
+
+architecture behavior of JRSelector is
+begin
+
+    process(JROpcode, PCP2AD, JumpAD, BranchAD)
+    begin
+        if JROpcode = "00" then
+            -- Normal execution: go to next instruction
+            PCout <= PCP2AD;
+
+        elsif JROpcode = "01" then
+            -- Jump instruction
+            PCout <= JumpAD;
+
+        elsif JROpcode = "10" then
+            -- Branch instruction
+            PCout <= BranchAD;
+
+        else
+            -- Default case: continue normally
+            PCout <= PCP2AD;
+        end if;
+    end process;
+
+end architecture behavior;

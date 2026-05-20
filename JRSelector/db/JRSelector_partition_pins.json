@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "PCout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "JROpcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "JROpcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[13]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[14]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PCP2AD[15]",
+					"strict" : false
+				},
+				{
+					"name" : "JumpAD[15]",
+					"strict" : false
+				},
+				{
+					"name" : "BranchAD[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

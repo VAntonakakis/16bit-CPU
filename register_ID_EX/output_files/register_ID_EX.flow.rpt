@@ -1,5 +1,5 @@
 Flow report for register_ID_EX
-Thu May 07 11:17:41 2026
+Fri May 08 17:11:52 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu May 07 11:17:41 2026       ;
+; Flow Status                     ; Successful - Fri May 08 17:11:52 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; register_ID_EX                              ;
 ; Top-level Entity Name           ; register_ID_EX                              ;
@@ -104,7 +104,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4751 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
-; Total                ; 00:01:14     ; --                      ; --                  ; 00:01:58                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4751 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
+; Total                ; 00:01:17     ; --                      ; --                  ; 00:02:00                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,6 +125,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -133,6 +137,8 @@ quartus_map --read_settings_files=on --write_settings_files=off register_ID_EX -
 quartus_fit --read_settings_files=off --write_settings_files=off register_ID_EX -c register_ID_EX
 quartus_asm --read_settings_files=off --write_settings_files=off register_ID_EX -c register_ID_EX
 quartus_sta register_ID_EX -c register_ID_EX
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off register_ID_EX -c register_ID_EX --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim/ register_ID_EX -c register_ID_EX
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off register_ID_EX -c register_ID_EX --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim/ register_ID_EX -c register_ID_EX
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off register_ID_EX -c register_ID_EX --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/simulation/qsim/Waveform.vwf.vht

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/simulation/qsim
 Eregister_if_id
-Z1 w1778053203
+Z1 w1778249280
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -26,9 +26,9 @@ VgM@7XVWIV2iBIXPH]cQRg0
 !s100 N2^SJ@KdU`zlX?Uf3zU^H1
 Z11 OV;C;10.5b;63
 32
-Z12 !s110 1778053213
+Z12 !s110 1778249290
 !i10b 1
-Z13 !s108 1778053213.000000
+Z13 !s108 1778249289.000000
 Z14 !s90 -work|work|register_IF_ID.vho|
 Z15 !s107 register_IF_ID.vho|
 !i113 1
@@ -58,7 +58,7 @@ R15
 R16
 R17
 Eregister_if_id_vhd_vec_tst
-Z18 w1778053202
+Z18 w1778249278
 R6
 R7
 R0
@@ -72,27 +72,27 @@ R11
 32
 R12
 !i10b 1
-R13
-Z21 !s90 -work|work|Waveform.vwf.vht|
-Z22 !s107 Waveform.vwf.vht|
+Z21 !s108 1778249290.000000
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
 !i113 1
 R16
 R17
 Aregister_if_id_arch
 R6
 R7
-DEx4 work 26 register_if_id_vhd_vec_tst 0 22 bNVa0<1d5PnYzfPJnN7kZ2
+Z24 DEx4 work 26 register_if_id_vhd_vec_tst 0 22 bNVa0<1d5PnYzfPJnN7kZ2
 l55
 L34
-VX6[`2NdOEOBYod7Xo9X@;0
-!s100 BU?DTGDSTR7TQbL33h8nK2
+Z25 VX6[`2NdOEOBYod7Xo9X@;0
+Z26 !s100 BU?DTGDSTR7TQbL33h8nK2
 R11
 32
 R12
 !i10b 1
-R13
 R21
 R22
+R23
 !i113 1
 R16
 R17
