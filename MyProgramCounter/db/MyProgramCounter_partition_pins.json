@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "currentPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "currentPC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "nextPC[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
