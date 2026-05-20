@@ -1,0 +1,69 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "isMFPC",
+					"strict" : false
+				},
+				{
+					"name" : "isJump",
+					"strict" : false
+				},
+				{
+					"name" : "isReadDigit",
+					"strict" : false
+				},
+				{
+					"name" : "isPrintDigit",
+					"strict" : false
+				},
+				{
+					"name" : "regWrite",
+					"strict" : false
+				},
+				{
+					"name" : "isRtype",
+					"strict" : false
+				},
+				{
+					"name" : "isSW",
+					"strict" : false
+				},
+				{
+					"name" : "isLW",
+					"strict" : false
+				},
+				{
+					"name" : "isBranch",
+					"strict" : false
+				},
+				{
+					"name" : "isJR",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "flush",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
