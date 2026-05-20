@@ -1,0 +1,21 @@
+|MyAluControl
+opcode[0] => Mux0.IN18
+opcode[0] => Mux1.IN18
+opcode[0] => Mux2.IN18
+opcode[1] => Mux0.IN17
+opcode[1] => Mux1.IN17
+opcode[1] => Mux2.IN17
+opcode[2] => Mux0.IN16
+opcode[2] => Mux1.IN16
+opcode[2] => Mux2.IN16
+opcode[3] => Mux0.IN15
+opcode[3] => Mux1.IN15
+opcode[3] => Mux2.IN15
+func[0] => Mux2.IN19
+func[1] => Mux1.IN19
+func[2] => Mux0.IN19
+alu_sel[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
