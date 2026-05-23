@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "endOfRunning",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

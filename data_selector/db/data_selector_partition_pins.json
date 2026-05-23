@@ -1,0 +1,241 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "regaddressout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "regaddressout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regaddressout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "out2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "WriteExternal",
+					"strict" : false
+				},
+				{
+					"name" : "RegRS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegRD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RegRS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegRD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RegRS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RegRD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUResult[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

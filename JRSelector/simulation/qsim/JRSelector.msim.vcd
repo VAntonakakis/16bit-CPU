@@ -1,0 +1,621 @@
+$comment
+	File created using the following command:
+		vcd file JRSelector.msim.vcd -direction
+$end
+$date
+	Tue May 19 20:31:10 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module jrselector_vhd_vec_tst $end
+$var wire 1 ! BranchAD [15] $end
+$var wire 1 " BranchAD [14] $end
+$var wire 1 # BranchAD [13] $end
+$var wire 1 $ BranchAD [12] $end
+$var wire 1 % BranchAD [11] $end
+$var wire 1 & BranchAD [10] $end
+$var wire 1 ' BranchAD [9] $end
+$var wire 1 ( BranchAD [8] $end
+$var wire 1 ) BranchAD [7] $end
+$var wire 1 * BranchAD [6] $end
+$var wire 1 + BranchAD [5] $end
+$var wire 1 , BranchAD [4] $end
+$var wire 1 - BranchAD [3] $end
+$var wire 1 . BranchAD [2] $end
+$var wire 1 / BranchAD [1] $end
+$var wire 1 0 BranchAD [0] $end
+$var wire 1 1 JROpcode [1] $end
+$var wire 1 2 JROpcode [0] $end
+$var wire 1 3 JumpAD [15] $end
+$var wire 1 4 JumpAD [14] $end
+$var wire 1 5 JumpAD [13] $end
+$var wire 1 6 JumpAD [12] $end
+$var wire 1 7 JumpAD [11] $end
+$var wire 1 8 JumpAD [10] $end
+$var wire 1 9 JumpAD [9] $end
+$var wire 1 : JumpAD [8] $end
+$var wire 1 ; JumpAD [7] $end
+$var wire 1 < JumpAD [6] $end
+$var wire 1 = JumpAD [5] $end
+$var wire 1 > JumpAD [4] $end
+$var wire 1 ? JumpAD [3] $end
+$var wire 1 @ JumpAD [2] $end
+$var wire 1 A JumpAD [1] $end
+$var wire 1 B JumpAD [0] $end
+$var wire 1 C PCout [15] $end
+$var wire 1 D PCout [14] $end
+$var wire 1 E PCout [13] $end
+$var wire 1 F PCout [12] $end
+$var wire 1 G PCout [11] $end
+$var wire 1 H PCout [10] $end
+$var wire 1 I PCout [9] $end
+$var wire 1 J PCout [8] $end
+$var wire 1 K PCout [7] $end
+$var wire 1 L PCout [6] $end
+$var wire 1 M PCout [5] $end
+$var wire 1 N PCout [4] $end
+$var wire 1 O PCout [3] $end
+$var wire 1 P PCout [2] $end
+$var wire 1 Q PCout [1] $end
+$var wire 1 R PCout [0] $end
+$var wire 1 S PCP2AD [15] $end
+$var wire 1 T PCP2AD [14] $end
+$var wire 1 U PCP2AD [13] $end
+$var wire 1 V PCP2AD [12] $end
+$var wire 1 W PCP2AD [11] $end
+$var wire 1 X PCP2AD [10] $end
+$var wire 1 Y PCP2AD [9] $end
+$var wire 1 Z PCP2AD [8] $end
+$var wire 1 [ PCP2AD [7] $end
+$var wire 1 \ PCP2AD [6] $end
+$var wire 1 ] PCP2AD [5] $end
+$var wire 1 ^ PCP2AD [4] $end
+$var wire 1 _ PCP2AD [3] $end
+$var wire 1 ` PCP2AD [2] $end
+$var wire 1 a PCP2AD [1] $end
+$var wire 1 b PCP2AD [0] $end
+
+$scope module i1 $end
+$var wire 1 c gnd $end
+$var wire 1 d vcc $end
+$var wire 1 e unknown $end
+$var wire 1 f devoe $end
+$var wire 1 g devclrn $end
+$var wire 1 h devpor $end
+$var wire 1 i ww_devoe $end
+$var wire 1 j ww_devclrn $end
+$var wire 1 k ww_devpor $end
+$var wire 1 l ww_JROpcode [1] $end
+$var wire 1 m ww_JROpcode [0] $end
+$var wire 1 n ww_PCP2AD [15] $end
+$var wire 1 o ww_PCP2AD [14] $end
+$var wire 1 p ww_PCP2AD [13] $end
+$var wire 1 q ww_PCP2AD [12] $end
+$var wire 1 r ww_PCP2AD [11] $end
+$var wire 1 s ww_PCP2AD [10] $end
+$var wire 1 t ww_PCP2AD [9] $end
+$var wire 1 u ww_PCP2AD [8] $end
+$var wire 1 v ww_PCP2AD [7] $end
+$var wire 1 w ww_PCP2AD [6] $end
+$var wire 1 x ww_PCP2AD [5] $end
+$var wire 1 y ww_PCP2AD [4] $end
+$var wire 1 z ww_PCP2AD [3] $end
+$var wire 1 { ww_PCP2AD [2] $end
+$var wire 1 | ww_PCP2AD [1] $end
+$var wire 1 } ww_PCP2AD [0] $end
+$var wire 1 ~ ww_JumpAD [15] $end
+$var wire 1 !! ww_JumpAD [14] $end
+$var wire 1 "! ww_JumpAD [13] $end
+$var wire 1 #! ww_JumpAD [12] $end
+$var wire 1 $! ww_JumpAD [11] $end
+$var wire 1 %! ww_JumpAD [10] $end
+$var wire 1 &! ww_JumpAD [9] $end
+$var wire 1 '! ww_JumpAD [8] $end
+$var wire 1 (! ww_JumpAD [7] $end
+$var wire 1 )! ww_JumpAD [6] $end
+$var wire 1 *! ww_JumpAD [5] $end
+$var wire 1 +! ww_JumpAD [4] $end
+$var wire 1 ,! ww_JumpAD [3] $end
+$var wire 1 -! ww_JumpAD [2] $end
+$var wire 1 .! ww_JumpAD [1] $end
+$var wire 1 /! ww_JumpAD [0] $end
+$var wire 1 0! ww_BranchAD [15] $end
+$var wire 1 1! ww_BranchAD [14] $end
+$var wire 1 2! ww_BranchAD [13] $end
+$var wire 1 3! ww_BranchAD [12] $end
+$var wire 1 4! ww_BranchAD [11] $end
+$var wire 1 5! ww_BranchAD [10] $end
+$var wire 1 6! ww_BranchAD [9] $end
+$var wire 1 7! ww_BranchAD [8] $end
+$var wire 1 8! ww_BranchAD [7] $end
+$var wire 1 9! ww_BranchAD [6] $end
+$var wire 1 :! ww_BranchAD [5] $end
+$var wire 1 ;! ww_BranchAD [4] $end
+$var wire 1 <! ww_BranchAD [3] $end
+$var wire 1 =! ww_BranchAD [2] $end
+$var wire 1 >! ww_BranchAD [1] $end
+$var wire 1 ?! ww_BranchAD [0] $end
+$var wire 1 @! ww_PCout [15] $end
+$var wire 1 A! ww_PCout [14] $end
+$var wire 1 B! ww_PCout [13] $end
+$var wire 1 C! ww_PCout [12] $end
+$var wire 1 D! ww_PCout [11] $end
+$var wire 1 E! ww_PCout [10] $end
+$var wire 1 F! ww_PCout [9] $end
+$var wire 1 G! ww_PCout [8] $end
+$var wire 1 H! ww_PCout [7] $end
+$var wire 1 I! ww_PCout [6] $end
+$var wire 1 J! ww_PCout [5] $end
+$var wire 1 K! ww_PCout [4] $end
+$var wire 1 L! ww_PCout [3] $end
+$var wire 1 M! ww_PCout [2] $end
+$var wire 1 N! ww_PCout [1] $end
+$var wire 1 O! ww_PCout [0] $end
+$var wire 1 P! \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 Q! \PCP2AD[0]~input_o\ $end
+$var wire 1 R! \BranchAD[0]~input_o\ $end
+$var wire 1 S! \JROpcode[0]~input_o\ $end
+$var wire 1 T! \JumpAD[0]~input_o\ $end
+$var wire 1 U! \JROpcode[1]~input_o\ $end
+$var wire 1 V! \PCout~0_combout\ $end
+$var wire 1 W! \JumpAD[1]~input_o\ $end
+$var wire 1 X! \PCP2AD[1]~input_o\ $end
+$var wire 1 Y! \BranchAD[1]~input_o\ $end
+$var wire 1 Z! \PCout~1_combout\ $end
+$var wire 1 [! \JumpAD[2]~input_o\ $end
+$var wire 1 \! \BranchAD[2]~input_o\ $end
+$var wire 1 ]! \PCP2AD[2]~input_o\ $end
+$var wire 1 ^! \PCout~2_combout\ $end
+$var wire 1 _! \BranchAD[3]~input_o\ $end
+$var wire 1 `! \JumpAD[3]~input_o\ $end
+$var wire 1 a! \PCP2AD[3]~input_o\ $end
+$var wire 1 b! \PCout~3_combout\ $end
+$var wire 1 c! \BranchAD[4]~input_o\ $end
+$var wire 1 d! \PCP2AD[4]~input_o\ $end
+$var wire 1 e! \JumpAD[4]~input_o\ $end
+$var wire 1 f! \PCout~4_combout\ $end
+$var wire 1 g! \BranchAD[5]~input_o\ $end
+$var wire 1 h! \JumpAD[5]~input_o\ $end
+$var wire 1 i! \PCP2AD[5]~input_o\ $end
+$var wire 1 j! \PCout~5_combout\ $end
+$var wire 1 k! \BranchAD[6]~input_o\ $end
+$var wire 1 l! \PCP2AD[6]~input_o\ $end
+$var wire 1 m! \JumpAD[6]~input_o\ $end
+$var wire 1 n! \PCout~6_combout\ $end
+$var wire 1 o! \JumpAD[7]~input_o\ $end
+$var wire 1 p! \BranchAD[7]~input_o\ $end
+$var wire 1 q! \PCP2AD[7]~input_o\ $end
+$var wire 1 r! \PCout~7_combout\ $end
+$var wire 1 s! \JumpAD[8]~input_o\ $end
+$var wire 1 t! \BranchAD[8]~input_o\ $end
+$var wire 1 u! \PCP2AD[8]~input_o\ $end
+$var wire 1 v! \PCout~8_combout\ $end
+$var wire 1 w! \BranchAD[9]~input_o\ $end
+$var wire 1 x! \PCP2AD[9]~input_o\ $end
+$var wire 1 y! \JumpAD[9]~input_o\ $end
+$var wire 1 z! \PCout~9_combout\ $end
+$var wire 1 {! \BranchAD[10]~input_o\ $end
+$var wire 1 |! \PCP2AD[10]~input_o\ $end
+$var wire 1 }! \JumpAD[10]~input_o\ $end
+$var wire 1 ~! \PCout~10_combout\ $end
+$var wire 1 !" \BranchAD[11]~input_o\ $end
+$var wire 1 "" \PCP2AD[11]~input_o\ $end
+$var wire 1 #" \JumpAD[11]~input_o\ $end
+$var wire 1 $" \PCout~11_combout\ $end
+$var wire 1 %" \PCP2AD[12]~input_o\ $end
+$var wire 1 &" \BranchAD[12]~input_o\ $end
+$var wire 1 '" \JumpAD[12]~input_o\ $end
+$var wire 1 (" \PCout~12_combout\ $end
+$var wire 1 )" \PCP2AD[13]~input_o\ $end
+$var wire 1 *" \BranchAD[13]~input_o\ $end
+$var wire 1 +" \JumpAD[13]~input_o\ $end
+$var wire 1 ," \PCout~13_combout\ $end
+$var wire 1 -" \PCP2AD[14]~input_o\ $end
+$var wire 1 ." \JumpAD[14]~input_o\ $end
+$var wire 1 /" \BranchAD[14]~input_o\ $end
+$var wire 1 0" \PCout~14_combout\ $end
+$var wire 1 1" \PCP2AD[15]~input_o\ $end
+$var wire 1 2" \JumpAD[15]~input_o\ $end
+$var wire 1 3" \BranchAD[15]~input_o\ $end
+$var wire 1 4" \PCout~15_combout\ $end
+$var wire 1 5" \ALT_INV_JumpAD[5]~input_o\ $end
+$var wire 1 6" \ALT_INV_PCP2AD[5]~input_o\ $end
+$var wire 1 7" \ALT_INV_BranchAD[4]~input_o\ $end
+$var wire 1 8" \ALT_INV_JumpAD[4]~input_o\ $end
+$var wire 1 9" \ALT_INV_PCP2AD[4]~input_o\ $end
+$var wire 1 :" \ALT_INV_BranchAD[3]~input_o\ $end
+$var wire 1 ;" \ALT_INV_JumpAD[3]~input_o\ $end
+$var wire 1 <" \ALT_INV_PCP2AD[3]~input_o\ $end
+$var wire 1 =" \ALT_INV_BranchAD[2]~input_o\ $end
+$var wire 1 >" \ALT_INV_JumpAD[2]~input_o\ $end
+$var wire 1 ?" \ALT_INV_PCP2AD[2]~input_o\ $end
+$var wire 1 @" \ALT_INV_BranchAD[1]~input_o\ $end
+$var wire 1 A" \ALT_INV_JumpAD[1]~input_o\ $end
+$var wire 1 B" \ALT_INV_PCP2AD[1]~input_o\ $end
+$var wire 1 C" \ALT_INV_BranchAD[0]~input_o\ $end
+$var wire 1 D" \ALT_INV_JumpAD[0]~input_o\ $end
+$var wire 1 E" \ALT_INV_JROpcode[1]~input_o\ $end
+$var wire 1 F" \ALT_INV_JROpcode[0]~input_o\ $end
+$var wire 1 G" \ALT_INV_PCP2AD[0]~input_o\ $end
+$var wire 1 H" \ALT_INV_BranchAD[15]~input_o\ $end
+$var wire 1 I" \ALT_INV_JumpAD[15]~input_o\ $end
+$var wire 1 J" \ALT_INV_PCP2AD[15]~input_o\ $end
+$var wire 1 K" \ALT_INV_BranchAD[14]~input_o\ $end
+$var wire 1 L" \ALT_INV_JumpAD[14]~input_o\ $end
+$var wire 1 M" \ALT_INV_PCP2AD[14]~input_o\ $end
+$var wire 1 N" \ALT_INV_BranchAD[13]~input_o\ $end
+$var wire 1 O" \ALT_INV_JumpAD[13]~input_o\ $end
+$var wire 1 P" \ALT_INV_PCP2AD[13]~input_o\ $end
+$var wire 1 Q" \ALT_INV_BranchAD[12]~input_o\ $end
+$var wire 1 R" \ALT_INV_JumpAD[12]~input_o\ $end
+$var wire 1 S" \ALT_INV_PCP2AD[12]~input_o\ $end
+$var wire 1 T" \ALT_INV_BranchAD[11]~input_o\ $end
+$var wire 1 U" \ALT_INV_JumpAD[11]~input_o\ $end
+$var wire 1 V" \ALT_INV_PCP2AD[11]~input_o\ $end
+$var wire 1 W" \ALT_INV_BranchAD[10]~input_o\ $end
+$var wire 1 X" \ALT_INV_JumpAD[10]~input_o\ $end
+$var wire 1 Y" \ALT_INV_PCP2AD[10]~input_o\ $end
+$var wire 1 Z" \ALT_INV_BranchAD[9]~input_o\ $end
+$var wire 1 [" \ALT_INV_JumpAD[9]~input_o\ $end
+$var wire 1 \" \ALT_INV_PCP2AD[9]~input_o\ $end
+$var wire 1 ]" \ALT_INV_BranchAD[8]~input_o\ $end
+$var wire 1 ^" \ALT_INV_JumpAD[8]~input_o\ $end
+$var wire 1 _" \ALT_INV_PCP2AD[8]~input_o\ $end
+$var wire 1 `" \ALT_INV_BranchAD[7]~input_o\ $end
+$var wire 1 a" \ALT_INV_JumpAD[7]~input_o\ $end
+$var wire 1 b" \ALT_INV_PCP2AD[7]~input_o\ $end
+$var wire 1 c" \ALT_INV_BranchAD[6]~input_o\ $end
+$var wire 1 d" \ALT_INV_JumpAD[6]~input_o\ $end
+$var wire 1 e" \ALT_INV_PCP2AD[6]~input_o\ $end
+$var wire 1 f" \ALT_INV_BranchAD[5]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0c
+1d
+xe
+1f
+1g
+1h
+1i
+1j
+1k
+xP!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+1e!
+0f!
+0g!
+1h!
+0i!
+0j!
+0k!
+0l!
+1m!
+0n!
+1o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+1&"
+0'"
+0("
+0)"
+1*"
+0+"
+0,"
+0-"
+0."
+1/"
+00"
+01"
+02"
+13"
+04"
+05"
+16"
+17"
+08"
+19"
+1:"
+1;"
+1<"
+1="
+1>"
+1?"
+1@"
+1A"
+1B"
+1C"
+1D"
+1E"
+1F"
+1G"
+0H"
+1I"
+1J"
+0K"
+1L"
+1M"
+0N"
+1O"
+1P"
+0Q"
+1R"
+1S"
+1T"
+1U"
+1V"
+1W"
+1X"
+1Y"
+1Z"
+1["
+1\"
+1]"
+1^"
+1_"
+1`"
+0a"
+1b"
+1c"
+0d"
+1e"
+1f"
+1!
+1"
+1#
+1$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+1;
+1<
+1=
+1>
+0?
+0@
+0A
+0B
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+1(!
+1)!
+1*!
+1+!
+0,!
+0-!
+0.!
+0/!
+10!
+11!
+12!
+13!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+$end
+#468
+1a
+1|
+1X!
+0B"
+1Z!
+1N!
+1Q
+#159588
+12
+1m
+1S!
+0F"
+0Z!
+1f!
+1j!
+1n!
+1r!
+1H!
+1I!
+1J!
+1K!
+0N!
+0Q
+1N
+1M
+1L
+1K
+#319644
+02
+11
+0m
+1l
+1U!
+0S!
+1F"
+0E"
+0f!
+0j!
+0n!
+0r!
+1("
+1,"
+10"
+14"
+1@!
+1A!
+1B!
+1C!
+0H!
+0I!
+0J!
+0K!
+0N
+0M
+0L
+0K
+1F
+1E
+1D
+1C
+#479700
+12
+1m
+1S!
+0F"
+1Z!
+0("
+0,"
+00"
+04"
+0@!
+0A!
+0B!
+0C!
+1N!
+1Q
+0F
+0E
+0D
+0C
+#640000

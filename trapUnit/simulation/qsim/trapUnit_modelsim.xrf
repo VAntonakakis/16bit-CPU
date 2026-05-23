@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/trapUnit.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/db/trapUnit.cbx.xml
+design_name = trapUnit
+instance = comp, \endOfRunning~output\, endOfRunning~output, trapUnit, 1
+instance = comp, \OpCode[1]~input\, OpCode[1]~input, trapUnit, 1
+instance = comp, \OpCode[2]~input\, OpCode[2]~input, trapUnit, 1
+instance = comp, \OpCode[3]~input\, OpCode[3]~input, trapUnit, 1
+instance = comp, \OpCode[0]~input\, OpCode[0]~input, trapUnit, 1
+instance = comp, \Equal0~0\, Equal0~0, trapUnit, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, trapUnit, 1

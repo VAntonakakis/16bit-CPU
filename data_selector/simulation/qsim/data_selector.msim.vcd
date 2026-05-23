@@ -1,0 +1,702 @@
+$comment
+	File created using the following command:
+		vcd file data_selector.msim.vcd -direction
+$end
+$date
+	Tue May 19 19:39:01 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module data_selector_vhd_vec_tst $end
+$var wire 1 ! ALUResult [15] $end
+$var wire 1 " ALUResult [14] $end
+$var wire 1 # ALUResult [13] $end
+$var wire 1 $ ALUResult [12] $end
+$var wire 1 % ALUResult [11] $end
+$var wire 1 & ALUResult [10] $end
+$var wire 1 ' ALUResult [9] $end
+$var wire 1 ( ALUResult [8] $end
+$var wire 1 ) ALUResult [7] $end
+$var wire 1 * ALUResult [6] $end
+$var wire 1 + ALUResult [5] $end
+$var wire 1 , ALUResult [4] $end
+$var wire 1 - ALUResult [3] $end
+$var wire 1 . ALUResult [2] $end
+$var wire 1 / ALUResult [1] $end
+$var wire 1 0 ALUResult [0] $end
+$var wire 1 1 Data [15] $end
+$var wire 1 2 Data [14] $end
+$var wire 1 3 Data [13] $end
+$var wire 1 4 Data [12] $end
+$var wire 1 5 Data [11] $end
+$var wire 1 6 Data [10] $end
+$var wire 1 7 Data [9] $end
+$var wire 1 8 Data [8] $end
+$var wire 1 9 Data [7] $end
+$var wire 1 : Data [6] $end
+$var wire 1 ; Data [5] $end
+$var wire 1 < Data [4] $end
+$var wire 1 = Data [3] $end
+$var wire 1 > Data [2] $end
+$var wire 1 ? Data [1] $end
+$var wire 1 @ Data [0] $end
+$var wire 1 A out2 [15] $end
+$var wire 1 B out2 [14] $end
+$var wire 1 C out2 [13] $end
+$var wire 1 D out2 [12] $end
+$var wire 1 E out2 [11] $end
+$var wire 1 F out2 [10] $end
+$var wire 1 G out2 [9] $end
+$var wire 1 H out2 [8] $end
+$var wire 1 I out2 [7] $end
+$var wire 1 J out2 [6] $end
+$var wire 1 K out2 [5] $end
+$var wire 1 L out2 [4] $end
+$var wire 1 M out2 [3] $end
+$var wire 1 N out2 [2] $end
+$var wire 1 O out2 [1] $end
+$var wire 1 P out2 [0] $end
+$var wire 1 Q regaddressout [2] $end
+$var wire 1 R regaddressout [1] $end
+$var wire 1 S regaddressout [0] $end
+$var wire 1 T RegRD [2] $end
+$var wire 1 U RegRD [1] $end
+$var wire 1 V RegRD [0] $end
+$var wire 1 W RegRS [2] $end
+$var wire 1 X RegRS [1] $end
+$var wire 1 Y RegRS [0] $end
+$var wire 1 Z WriteExternal $end
+
+$scope module i1 $end
+$var wire 1 [ gnd $end
+$var wire 1 \ vcc $end
+$var wire 1 ] unknown $end
+$var wire 1 ^ devoe $end
+$var wire 1 _ devclrn $end
+$var wire 1 ` devpor $end
+$var wire 1 a ww_devoe $end
+$var wire 1 b ww_devclrn $end
+$var wire 1 c ww_devpor $end
+$var wire 1 d ww_WriteExternal $end
+$var wire 1 e ww_RegRD [2] $end
+$var wire 1 f ww_RegRD [1] $end
+$var wire 1 g ww_RegRD [0] $end
+$var wire 1 h ww_RegRS [2] $end
+$var wire 1 i ww_RegRS [1] $end
+$var wire 1 j ww_RegRS [0] $end
+$var wire 1 k ww_ALUResult [15] $end
+$var wire 1 l ww_ALUResult [14] $end
+$var wire 1 m ww_ALUResult [13] $end
+$var wire 1 n ww_ALUResult [12] $end
+$var wire 1 o ww_ALUResult [11] $end
+$var wire 1 p ww_ALUResult [10] $end
+$var wire 1 q ww_ALUResult [9] $end
+$var wire 1 r ww_ALUResult [8] $end
+$var wire 1 s ww_ALUResult [7] $end
+$var wire 1 t ww_ALUResult [6] $end
+$var wire 1 u ww_ALUResult [5] $end
+$var wire 1 v ww_ALUResult [4] $end
+$var wire 1 w ww_ALUResult [3] $end
+$var wire 1 x ww_ALUResult [2] $end
+$var wire 1 y ww_ALUResult [1] $end
+$var wire 1 z ww_ALUResult [0] $end
+$var wire 1 { ww_Data [15] $end
+$var wire 1 | ww_Data [14] $end
+$var wire 1 } ww_Data [13] $end
+$var wire 1 ~ ww_Data [12] $end
+$var wire 1 !! ww_Data [11] $end
+$var wire 1 "! ww_Data [10] $end
+$var wire 1 #! ww_Data [9] $end
+$var wire 1 $! ww_Data [8] $end
+$var wire 1 %! ww_Data [7] $end
+$var wire 1 &! ww_Data [6] $end
+$var wire 1 '! ww_Data [5] $end
+$var wire 1 (! ww_Data [4] $end
+$var wire 1 )! ww_Data [3] $end
+$var wire 1 *! ww_Data [2] $end
+$var wire 1 +! ww_Data [1] $end
+$var wire 1 ,! ww_Data [0] $end
+$var wire 1 -! ww_regaddressout [2] $end
+$var wire 1 .! ww_regaddressout [1] $end
+$var wire 1 /! ww_regaddressout [0] $end
+$var wire 1 0! ww_out2 [15] $end
+$var wire 1 1! ww_out2 [14] $end
+$var wire 1 2! ww_out2 [13] $end
+$var wire 1 3! ww_out2 [12] $end
+$var wire 1 4! ww_out2 [11] $end
+$var wire 1 5! ww_out2 [10] $end
+$var wire 1 6! ww_out2 [9] $end
+$var wire 1 7! ww_out2 [8] $end
+$var wire 1 8! ww_out2 [7] $end
+$var wire 1 9! ww_out2 [6] $end
+$var wire 1 :! ww_out2 [5] $end
+$var wire 1 ;! ww_out2 [4] $end
+$var wire 1 <! ww_out2 [3] $end
+$var wire 1 =! ww_out2 [2] $end
+$var wire 1 >! ww_out2 [1] $end
+$var wire 1 ?! ww_out2 [0] $end
+$var wire 1 @! \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 A! \RegRD[0]~input_o\ $end
+$var wire 1 B! \RegRS[0]~input_o\ $end
+$var wire 1 C! \WriteExternal~input_o\ $end
+$var wire 1 D! \regaddressout~0_combout\ $end
+$var wire 1 E! \RegRS[1]~input_o\ $end
+$var wire 1 F! \RegRD[1]~input_o\ $end
+$var wire 1 G! \regaddressout~1_combout\ $end
+$var wire 1 H! \RegRS[2]~input_o\ $end
+$var wire 1 I! \RegRD[2]~input_o\ $end
+$var wire 1 J! \regaddressout~2_combout\ $end
+$var wire 1 K! \ALUResult[0]~input_o\ $end
+$var wire 1 L! \Data[0]~input_o\ $end
+$var wire 1 M! \out2~0_combout\ $end
+$var wire 1 N! \ALUResult[1]~input_o\ $end
+$var wire 1 O! \Data[1]~input_o\ $end
+$var wire 1 P! \out2~1_combout\ $end
+$var wire 1 Q! \Data[2]~input_o\ $end
+$var wire 1 R! \ALUResult[2]~input_o\ $end
+$var wire 1 S! \out2~2_combout\ $end
+$var wire 1 T! \Data[3]~input_o\ $end
+$var wire 1 U! \ALUResult[3]~input_o\ $end
+$var wire 1 V! \out2~3_combout\ $end
+$var wire 1 W! \Data[4]~input_o\ $end
+$var wire 1 X! \ALUResult[4]~input_o\ $end
+$var wire 1 Y! \out2~4_combout\ $end
+$var wire 1 Z! \Data[5]~input_o\ $end
+$var wire 1 [! \ALUResult[5]~input_o\ $end
+$var wire 1 \! \out2~5_combout\ $end
+$var wire 1 ]! \Data[6]~input_o\ $end
+$var wire 1 ^! \ALUResult[6]~input_o\ $end
+$var wire 1 _! \out2~6_combout\ $end
+$var wire 1 `! \ALUResult[7]~input_o\ $end
+$var wire 1 a! \Data[7]~input_o\ $end
+$var wire 1 b! \out2~7_combout\ $end
+$var wire 1 c! \ALUResult[8]~input_o\ $end
+$var wire 1 d! \Data[8]~input_o\ $end
+$var wire 1 e! \out2~8_combout\ $end
+$var wire 1 f! \ALUResult[9]~input_o\ $end
+$var wire 1 g! \Data[9]~input_o\ $end
+$var wire 1 h! \out2~9_combout\ $end
+$var wire 1 i! \Data[10]~input_o\ $end
+$var wire 1 j! \ALUResult[10]~input_o\ $end
+$var wire 1 k! \out2~10_combout\ $end
+$var wire 1 l! \Data[11]~input_o\ $end
+$var wire 1 m! \ALUResult[11]~input_o\ $end
+$var wire 1 n! \out2~11_combout\ $end
+$var wire 1 o! \Data[12]~input_o\ $end
+$var wire 1 p! \ALUResult[12]~input_o\ $end
+$var wire 1 q! \out2~12_combout\ $end
+$var wire 1 r! \ALUResult[13]~input_o\ $end
+$var wire 1 s! \Data[13]~input_o\ $end
+$var wire 1 t! \out2~13_combout\ $end
+$var wire 1 u! \Data[14]~input_o\ $end
+$var wire 1 v! \ALUResult[14]~input_o\ $end
+$var wire 1 w! \out2~14_combout\ $end
+$var wire 1 x! \Data[15]~input_o\ $end
+$var wire 1 y! \ALUResult[15]~input_o\ $end
+$var wire 1 z! \out2~15_combout\ $end
+$var wire 1 {! \ALT_INV_ALUResult[15]~input_o\ $end
+$var wire 1 |! \ALT_INV_Data[15]~input_o\ $end
+$var wire 1 }! \ALT_INV_ALUResult[14]~input_o\ $end
+$var wire 1 ~! \ALT_INV_Data[14]~input_o\ $end
+$var wire 1 !" \ALT_INV_ALUResult[13]~input_o\ $end
+$var wire 1 "" \ALT_INV_Data[13]~input_o\ $end
+$var wire 1 #" \ALT_INV_ALUResult[12]~input_o\ $end
+$var wire 1 $" \ALT_INV_Data[12]~input_o\ $end
+$var wire 1 %" \ALT_INV_ALUResult[11]~input_o\ $end
+$var wire 1 &" \ALT_INV_Data[11]~input_o\ $end
+$var wire 1 '" \ALT_INV_ALUResult[10]~input_o\ $end
+$var wire 1 (" \ALT_INV_Data[10]~input_o\ $end
+$var wire 1 )" \ALT_INV_ALUResult[9]~input_o\ $end
+$var wire 1 *" \ALT_INV_Data[9]~input_o\ $end
+$var wire 1 +" \ALT_INV_ALUResult[8]~input_o\ $end
+$var wire 1 ," \ALT_INV_Data[8]~input_o\ $end
+$var wire 1 -" \ALT_INV_ALUResult[7]~input_o\ $end
+$var wire 1 ." \ALT_INV_Data[7]~input_o\ $end
+$var wire 1 /" \ALT_INV_ALUResult[6]~input_o\ $end
+$var wire 1 0" \ALT_INV_Data[6]~input_o\ $end
+$var wire 1 1" \ALT_INV_ALUResult[5]~input_o\ $end
+$var wire 1 2" \ALT_INV_Data[5]~input_o\ $end
+$var wire 1 3" \ALT_INV_ALUResult[4]~input_o\ $end
+$var wire 1 4" \ALT_INV_Data[4]~input_o\ $end
+$var wire 1 5" \ALT_INV_ALUResult[3]~input_o\ $end
+$var wire 1 6" \ALT_INV_Data[3]~input_o\ $end
+$var wire 1 7" \ALT_INV_ALUResult[2]~input_o\ $end
+$var wire 1 8" \ALT_INV_Data[2]~input_o\ $end
+$var wire 1 9" \ALT_INV_ALUResult[1]~input_o\ $end
+$var wire 1 :" \ALT_INV_Data[1]~input_o\ $end
+$var wire 1 ;" \ALT_INV_ALUResult[0]~input_o\ $end
+$var wire 1 <" \ALT_INV_Data[0]~input_o\ $end
+$var wire 1 =" \ALT_INV_RegRD[2]~input_o\ $end
+$var wire 1 >" \ALT_INV_RegRS[2]~input_o\ $end
+$var wire 1 ?" \ALT_INV_RegRD[1]~input_o\ $end
+$var wire 1 @" \ALT_INV_RegRS[1]~input_o\ $end
+$var wire 1 A" \ALT_INV_RegRD[0]~input_o\ $end
+$var wire 1 B" \ALT_INV_RegRS[0]~input_o\ $end
+$var wire 1 C" \ALT_INV_WriteExternal~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0Z
+0[
+1\
+x]
+1^
+1_
+1`
+1a
+1b
+1c
+0d
+x@!
+1A!
+0B!
+0C!
+1D!
+1E!
+0F!
+0G!
+0H!
+1I!
+1J!
+0K!
+1L!
+0M!
+0N!
+1O!
+0P!
+1Q!
+0R!
+0S!
+1T!
+0U!
+0V!
+0W!
+1X!
+1Y!
+0Z!
+1[!
+1\!
+0]!
+1^!
+1_!
+1`!
+0a!
+1b!
+0c!
+1d!
+0e!
+0f!
+1g!
+0h!
+1i!
+0j!
+0k!
+1l!
+0m!
+0n!
+0o!
+1p!
+1q!
+1r!
+0s!
+1t!
+0u!
+1v!
+1w!
+0x!
+1y!
+1z!
+0{!
+1|!
+0}!
+1~!
+0!"
+1""
+0#"
+1$"
+1%"
+0&"
+1'"
+0("
+1)"
+0*"
+1+"
+0,"
+0-"
+1."
+0/"
+10"
+01"
+12"
+03"
+14"
+15"
+06"
+17"
+08"
+19"
+0:"
+1;"
+0<"
+0="
+1>"
+1?"
+0@"
+0A"
+1B"
+1C"
+1!
+1"
+1#
+1$
+0%
+0&
+0'
+0(
+1)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+15
+16
+17
+18
+09
+0:
+0;
+0<
+1=
+1>
+1?
+1@
+1T
+0U
+1V
+0W
+1X
+0Y
+1e
+0f
+1g
+0h
+1i
+0j
+1k
+1l
+1m
+1n
+0o
+0p
+0q
+0r
+1s
+1t
+1u
+1v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+1!!
+1"!
+1#!
+1$!
+0%!
+0&!
+0'!
+0(!
+1)!
+1*!
+1+!
+1,!
+1-!
+0.!
+1/!
+10!
+11!
+12!
+13!
+04!
+05!
+06!
+07!
+18!
+19!
+1:!
+1;!
+0<!
+0=!
+0>!
+0?!
+1A
+1B
+1C
+1D
+0E
+0F
+0G
+0H
+1I
+1J
+1K
+1L
+0M
+0N
+0O
+0P
+1Q
+0R
+1S
+$end
+#160000
+1Z
+1d
+1C!
+0C"
+0D!
+1G!
+0J!
+1M!
+1P!
+1S!
+1V!
+0Y!
+0\!
+0_!
+0b!
+1e!
+1h!
+1k!
+1n!
+0q!
+0t!
+0w!
+0z!
+00!
+01!
+02!
+03!
+14!
+15!
+16!
+17!
+08!
+09!
+0:!
+0;!
+1<!
+1=!
+1>!
+1?!
+0-!
+1.!
+0/!
+1P
+1O
+1N
+1M
+0L
+0K
+0J
+0I
+1H
+1G
+1F
+1E
+0D
+0C
+0B
+0A
+0S
+1R
+0Q
+#320000
+0Z
+1U
+0X
+1Y
+0"
+0$
+1%
+1'
+0*
+0,
+1-
+1/
+12
+14
+05
+07
+1:
+1<
+0=
+0?
+0d
+1f
+1j
+0i
+1y
+1w
+0v
+0t
+1q
+1o
+0n
+0l
+0+!
+0)!
+1(!
+1&!
+0#!
+0!!
+1~
+1|
+1u!
+1o!
+0l!
+0g!
+1]!
+1W!
+0T!
+0O!
+0v!
+0p!
+1m!
+1f!
+0^!
+0X!
+1U!
+1N!
+0E!
+1B!
+1F!
+0C!
+1C"
+0?"
+0B"
+1@"
+09"
+05"
+13"
+1/"
+0)"
+0%"
+1#"
+1}!
+1:"
+16"
+04"
+00"
+1*"
+1&"
+0$"
+0~!
+1D!
+1J!
+0M!
+0S!
+1\!
+1b!
+0e!
+0k!
+1t!
+1z!
+10!
+12!
+05!
+07!
+18!
+1:!
+0=!
+0?!
+1-!
+1/!
+0P
+0N
+1K
+1I
+0H
+0F
+1C
+1A
+1S
+1Q
+#480000
+1Z
+1d
+1C!
+0C"
+0G!
+0J!
+1M!
+0P!
+1S!
+0V!
+1Y!
+0\!
+1_!
+0b!
+1e!
+0h!
+1k!
+0n!
+1q!
+0t!
+1w!
+0z!
+00!
+11!
+02!
+13!
+04!
+15!
+06!
+17!
+08!
+19!
+0:!
+1;!
+0<!
+1=!
+0>!
+1?!
+0-!
+0.!
+1P
+0O
+1N
+0M
+1L
+0K
+1J
+0I
+1H
+0G
+1F
+0E
+1D
+0C
+1B
+0A
+0R
+0Q
+#640000

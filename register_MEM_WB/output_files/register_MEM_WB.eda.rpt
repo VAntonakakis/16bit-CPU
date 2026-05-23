@@ -1,5 +1,5 @@
 EDA Netlist Writer report for register_MEM_WB
-Thu May 07 13:55:13 2026
+Fri May 08 17:10:00 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu May 07 13:55:13 2026 ;
+; EDA Netlist Writer Status ; Successful - Fri May 08 17:10:00 2026 ;
 ; Revision Name             ; register_MEM_WB                       ;
 ; Top-level Entity Name     ; register_MEM_WB                       ;
 ; Family                    ; Cyclone V                             ;
@@ -95,14 +95,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu May 07 13:55:13 2026
+    Info: Processing started: Fri May 08 17:09:58 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/simulation/qsim/ register_MEM_WB -c register_MEM_WB
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file register_MEM_WB.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Thu May 07 13:55:14 2026
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri May 08 17:10:00 2026
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

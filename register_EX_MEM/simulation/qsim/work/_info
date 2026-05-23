@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/simulation/qsim
 Eregister_ex_mem
-Z1 w1778143932
+Z1 w1778249348
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -28,9 +28,9 @@ VSzDY5`MeYCa[NAjz6AdK<0
 !s100 VjR_3Ih0_mXhQclNjO<hD1
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1778143934
+Z14 !s110 1778249350
 !i10b 1
-Z15 !s108 1778143934.000000
+Z15 !s108 1778249350.000000
 Z16 !s90 -work|work|register_EX_MEM.vho|
 Z17 !s107 register_EX_MEM.vho|
 !i113 1
@@ -62,7 +62,7 @@ R17
 R18
 R19
 Eregister_ex_mem_vhd_vec_tst
-Z20 w1778143931
+Z20 w1778249346
 R8
 R9
 R0
