@@ -1,13 +1,13 @@
-Fitter Status : Successful - Wed May 20 16:54:29 2026
+Fitter Status : Successful - Sat May 23 10:10:23 2026
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : MyRegisterControl
 Top-level Entity Name : MyRegisterControl
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 6 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 5 / 56,480 ( < 1 % )
 Total registers : 0
-Total pins : 15 / 268 ( 6 % )
+Total pins : 17 / 268 ( 6 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

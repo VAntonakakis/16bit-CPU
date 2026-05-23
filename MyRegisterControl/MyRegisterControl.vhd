@@ -3,19 +3,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity MyRegisterControl is
     Port (
-        opcode          : in  STD_LOGIC_VECTOR(3 downto 0);
-        flush           : in  STD_LOGIC;
+        OpCode         : in  STD_LOGIC_VECTOR(3 downto 0);
+        Funct          : in  STD_LOGIC_VECTOR(2 downto 0);
+        IF_ID_Flush    : in  STD_LOGIC;
 
-        isMFPC          : out STD_LOGIC;
-        isJump          : out STD_LOGIC;
-        isReadDigit     : out STD_LOGIC;
-        isPrintDigit    : out STD_LOGIC;
-        regWrite        : out STD_LOGIC;
-        isRtype         : out STD_LOGIC;
-        isSW            : out STD_LOGIC;
-        isLW            : out STD_LOGIC;
-        isBranch        : out STD_LOGIC;
-        isJR            : out STD_LOGIC
+        isBranch       : out STD_LOGIC;
+        isJReg         : out STD_LOGIC;
+        isJType        : out STD_LOGIC;
+        isLdWord       : out STD_LOGIC;
+        isMFPC         : out STD_LOGIC;
+        idRType        : out STD_LOGIC;
+        isReadDig      : out STD_LOGIC;
+        isStWord       : out STD_LOGIC;
+        isWriteDig     : out STD_LOGIC
     );
 end MyRegisterControl;
 
@@ -23,79 +23,74 @@ architecture Behavioral of MyRegisterControl is
 
 begin
 
-    process(opcode, flush)
+    process(OpCode, Funct, IF_ID_Flush)
 
     begin
 
-        -- Default values
-        isMFPC       <= '0';
-        isJump       <= '0';
-        isReadDigit  <= '0';
-        isPrintDigit <= '0';
-        regWrite     <= '0';
-        isRtype      <= '0';
-        isSW         <= '0';
-        isLW         <= '0';
-        isBranch     <= '0';
-        isJR         <= '0';
+        -- default values
+        isBranch   <= '0';
+        isJReg     <= '0';
+        isJType    <= '0';
+        isLdWord   <= '0';
+        isMFPC     <= '0';
+        idRType    <= '0';
+        isReadDig  <= '0';
+        isStWord   <= '0';
+        isWriteDig <= '0';
 
-        -- Flush case
-        if flush = '1' then
+        -- flush => όλα 0
+        if IF_ID_Flush = '1' then
 
-            isMFPC       <= '0';
-            isJump       <= '0';
-            isReadDigit  <= '0';
-            isPrintDigit <= '0';
-            regWrite     <= '0';
-            isRtype      <= '0';
-            isSW         <= '0';
-            isLW         <= '0';
-            isBranch     <= '0';
-            isJR         <= '0';
+            isBranch   <= '0';
+            isJReg     <= '0';
+            isJType    <= '0';
+            isLdWord   <= '0';
+            isMFPC     <= '0';
+            idRType    <= '0';
+            isReadDig  <= '0';
+            isStWord   <= '0';
+            isWriteDig <= '0';
 
         else
 
-            case opcode is
+            case OpCode is
 
                 -- R TYPE
                 when "0000" =>
-                    regWrite <= '1';
-                    isRtype  <= '1';
+                    idRType <= '1';
+						  
+						  --  MFPC
+						  if Funct = "111" then
+								isMFPC <= '1';
+						  end if;
 
-                -- LW
+                -- LOAD WORD
                 when "0001" =>
-                    regWrite <= '1';
-                    isLW     <= '1';
+                    isLdWord <= '1';
 
-                -- SW
+                -- STORE WORD
                 when "0010" =>
-                    isSW <= '1';
+                    isStWord <= '1';
 
                 -- BRANCH
-                when "0011" =>
-                    isBranch <= '1';
-
-                -- JUMP
                 when "0100" =>
-                    isJump <= '1';
-
-                -- JR
-                when "0101" =>
-                    isJR <= '1';
-
-                -- MFPC
+                    isBranch <= '1';
+						  
+					 -- READ DIGIT
                 when "0110" =>
-                    isMFPC   <= '1';
-                    regWrite <= '1';
+                    isReadDig <= '1';
 
-                -- READ DIGIT
+                -- WRITE DIGIT
                 when "0111" =>
-                    isReadDigit <= '1';
-                    regWrite    <= '1';
+                    isWriteDig <= '1';
 
-                -- PRINT DIGIT
-                when "1000" =>
-                    isPrintDigit <= '1';
+					 -- J REGISTER
+                when "1101" =>
+                    isJReg <= '1';
+						  
+                -- J TYPE
+                when "1111" =>
+                    isJType <= '1';
 
                 when others =>
                     null;

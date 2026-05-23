@@ -1,0 +1,302 @@
+$comment
+	File created using the following command:
+		vcd file MyRegisterControl.msim.vcd -direction
+$end
+$date
+	Sat May 23 10:10:46 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module myregistercontrol_vhd_vec_tst $end
+$var wire 1 ! Funct [2] $end
+$var wire 1 " Funct [1] $end
+$var wire 1 # Funct [0] $end
+$var wire 1 $ idRType $end
+$var wire 1 % IF_ID_Flush $end
+$var wire 1 & isBranch $end
+$var wire 1 ' isJReg $end
+$var wire 1 ( isJType $end
+$var wire 1 ) isLdWord $end
+$var wire 1 * isMFPC $end
+$var wire 1 + isReadDig $end
+$var wire 1 , isStWord $end
+$var wire 1 - isWriteDig $end
+$var wire 1 . OpCode [3] $end
+$var wire 1 / OpCode [2] $end
+$var wire 1 0 OpCode [1] $end
+$var wire 1 1 OpCode [0] $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var wire 1 5 devoe $end
+$var wire 1 6 devclrn $end
+$var wire 1 7 devpor $end
+$var wire 1 8 ww_devoe $end
+$var wire 1 9 ww_devclrn $end
+$var wire 1 : ww_devpor $end
+$var wire 1 ; ww_OpCode [3] $end
+$var wire 1 < ww_OpCode [2] $end
+$var wire 1 = ww_OpCode [1] $end
+$var wire 1 > ww_OpCode [0] $end
+$var wire 1 ? ww_Funct [2] $end
+$var wire 1 @ ww_Funct [1] $end
+$var wire 1 A ww_Funct [0] $end
+$var wire 1 B ww_IF_ID_Flush $end
+$var wire 1 C ww_isBranch $end
+$var wire 1 D ww_isJReg $end
+$var wire 1 E ww_isJType $end
+$var wire 1 F ww_isLdWord $end
+$var wire 1 G ww_isMFPC $end
+$var wire 1 H ww_idRType $end
+$var wire 1 I ww_isReadDig $end
+$var wire 1 J ww_isStWord $end
+$var wire 1 K ww_isWriteDig $end
+$var wire 1 L \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 M \OpCode[3]~input_o\ $end
+$var wire 1 N \IF_ID_Flush~input_o\ $end
+$var wire 1 O \OpCode[2]~input_o\ $end
+$var wire 1 P \OpCode[0]~input_o\ $end
+$var wire 1 Q \OpCode[1]~input_o\ $end
+$var wire 1 R \isBranch~0_combout\ $end
+$var wire 1 S \isJReg~0_combout\ $end
+$var wire 1 T \isJType~0_combout\ $end
+$var wire 1 U \isLdWord~0_combout\ $end
+$var wire 1 V \Funct[1]~input_o\ $end
+$var wire 1 W \idRType~0_combout\ $end
+$var wire 1 X \Funct[0]~input_o\ $end
+$var wire 1 Y \Funct[2]~input_o\ $end
+$var wire 1 Z \isMFPC~0_combout\ $end
+$var wire 1 [ \isReadDig~0_combout\ $end
+$var wire 1 \ \isStWord~0_combout\ $end
+$var wire 1 ] \isWriteDig~0_combout\ $end
+$var wire 1 ^ \ALT_INV_Funct[2]~input_o\ $end
+$var wire 1 _ \ALT_INV_Funct[1]~input_o\ $end
+$var wire 1 ` \ALT_INV_Funct[0]~input_o\ $end
+$var wire 1 a \ALT_INV_IF_ID_Flush~input_o\ $end
+$var wire 1 b \ALT_INV_OpCode[3]~input_o\ $end
+$var wire 1 c \ALT_INV_OpCode[0]~input_o\ $end
+$var wire 1 d \ALT_INV_OpCode[2]~input_o\ $end
+$var wire 1 e \ALT_INV_OpCode[1]~input_o\ $end
+$var wire 1 f \ALT_INV_idRType~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+02
+13
+x4
+15
+16
+17
+18
+19
+1:
+0B
+0C
+0D
+0E
+0F
+0G
+1H
+0I
+0J
+0K
+xL
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+1W
+0X
+0Y
+0Z
+0[
+0\
+0]
+1^
+1_
+1`
+1a
+1b
+1c
+1d
+1e
+0f
+0!
+0"
+0#
+0.
+0/
+00
+01
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+$end
+#80000
+1!
+1?
+1Y
+0^
+#160000
+1"
+1#
+1A
+1@
+1V
+1X
+0`
+0_
+1Z
+1G
+1*
+#240000
+0"
+0#
+0!
+11
+0A
+0@
+0?
+1>
+1P
+0Y
+0V
+0X
+1`
+1_
+1^
+0c
+1U
+0W
+0Z
+1f
+0G
+0H
+1F
+0*
+0$
+1)
+#320000
+01
+10
+0>
+1=
+1Q
+0P
+1c
+0e
+0U
+1\
+1J
+0F
+1,
+0)
+#400000
+00
+1/
+0=
+1<
+1O
+0Q
+1e
+0d
+1R
+0\
+0J
+1C
+0,
+1&
+#480000
+10
+1=
+1Q
+0e
+0R
+1[
+1I
+0C
+1+
+0&
+#560000
+11
+1>
+1P
+0c
+0[
+1]
+1K
+0I
+1-
+0+
+#640000
+00
+1.
+0=
+1;
+1M
+0Q
+1e
+0b
+1S
+0]
+0K
+1D
+0-
+1'
+#720000
+10
+1=
+1Q
+0e
+0S
+1T
+1E
+0D
+1(
+0'
+#800000
+1%
+1B
+1N
+0a
+0T
+0E
+0(
+#880000
+0%
+0B
+0N
+1a
+1T
+1E
+1(
+#1000000

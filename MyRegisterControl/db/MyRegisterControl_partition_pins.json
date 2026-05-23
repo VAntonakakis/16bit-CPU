@@ -4,63 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "isMFPC",
-					"strict" : false
-				},
-				{
-					"name" : "isJump",
-					"strict" : false
-				},
-				{
-					"name" : "isReadDigit",
-					"strict" : false
-				},
-				{
-					"name" : "isPrintDigit",
-					"strict" : false
-				},
-				{
-					"name" : "regWrite",
-					"strict" : false
-				},
-				{
-					"name" : "isRtype",
-					"strict" : false
-				},
-				{
-					"name" : "isSW",
-					"strict" : false
-				},
-				{
-					"name" : "isLW",
-					"strict" : false
-				},
-				{
 					"name" : "isBranch",
 					"strict" : false
 				},
 				{
-					"name" : "isJR",
+					"name" : "isJReg",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[0]",
+					"name" : "isJType",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[3]",
+					"name" : "isLdWord",
 					"strict" : false
 				},
 				{
-					"name" : "flush",
+					"name" : "isMFPC",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[1]",
+					"name" : "idRType",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[2]",
+					"name" : "isReadDig",
+					"strict" : false
+				},
+				{
+					"name" : "isStWord",
+					"strict" : false
+				},
+				{
+					"name" : "isWriteDig",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OpCode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IF_ID_Flush",
+					"strict" : false
+				},
+				{
+					"name" : "Funct[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Funct[2]",
 					"strict" : false
 				}
 			]
