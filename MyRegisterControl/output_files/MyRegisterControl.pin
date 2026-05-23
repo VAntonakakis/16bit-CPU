@@ -465,7 +465,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4A        :                
 isBranch                     : T15       : output : 2.5 V             :         : 5A        : N              
 GND                          : T16       : gnd    :                   :         :           :                
-idRType                      : T17       : output : 2.5 V             :         : 5A        : N              
+isRType                      : T17       : output : 2.5 V             :         : 5A        : N              
 OpCode[0]                    : T18       : input  : 2.5 V             :         : 5A        : N              
 IF_ID_Flush                  : T19       : input  : 2.5 V             :         : 5A        : N              
 isWriteDig                   : T20       : output : 2.5 V             :         : 5A        : N              

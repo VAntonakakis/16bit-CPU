@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/23/2026 10:10:42"
+-- Generated on "05/22/2026 13:33:15"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyRegisterControl
 -- 
@@ -35,7 +35,6 @@ ARCHITECTURE MyRegisterControl_arch OF MyRegisterControl_vhd_vec_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL Funct : STD_LOGIC_VECTOR(2 DOWNTO 0);
-SIGNAL idRType : STD_LOGIC;
 SIGNAL IF_ID_Flush : STD_LOGIC;
 SIGNAL isBranch : STD_LOGIC;
 SIGNAL isJReg : STD_LOGIC;
@@ -43,13 +42,13 @@ SIGNAL isJType : STD_LOGIC;
 SIGNAL isLdWord : STD_LOGIC;
 SIGNAL isMFPC : STD_LOGIC;
 SIGNAL isReadDig : STD_LOGIC;
+SIGNAL isRType : STD_LOGIC;
 SIGNAL isStWord : STD_LOGIC;
 SIGNAL isWriteDig : STD_LOGIC;
 SIGNAL OpCode : STD_LOGIC_VECTOR(3 DOWNTO 0);
 COMPONENT MyRegisterControl
 	PORT (
 	Funct : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-	idRType : OUT STD_LOGIC;
 	IF_ID_Flush : IN STD_LOGIC;
 	isBranch : OUT STD_LOGIC;
 	isJReg : OUT STD_LOGIC;
@@ -57,6 +56,7 @@ COMPONENT MyRegisterControl
 	isLdWord : OUT STD_LOGIC;
 	isMFPC : OUT STD_LOGIC;
 	isReadDig : OUT STD_LOGIC;
+	isRType : OUT STD_LOGIC;
 	isStWord : OUT STD_LOGIC;
 	isWriteDig : OUT STD_LOGIC;
 	OpCode : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
@@ -67,7 +67,6 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	Funct => Funct,
-	idRType => idRType,
 	IF_ID_Flush => IF_ID_Flush,
 	isBranch => isBranch,
 	isJReg => isJReg,
@@ -75,6 +74,7 @@ BEGIN
 	isLdWord => isLdWord,
 	isMFPC => isMFPC,
 	isReadDig => isReadDig,
+	isRType => isRType,
 	isStWord => isStWord,
 	isWriteDig => isWriteDig,
 	OpCode => OpCode

@@ -1,0 +1,123 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity Processor is
+    port (
+        clock         : in  std_logic;
+        reset         : in  std_logic;
+        Command       : in  std_logic_vector(15 downto 0);
+
+        instructionAD : out std_logic_vector(15 downto 0)
+    );
+end Processor;
+
+architecture structural of Processor is
+
+    -- PC path signals
+    signal pc_current      : std_logic_vector(15 downto 0);
+    signal pc_next         : std_logic_vector(15 downto 0);
+
+    signal ifid_pc_out     : std_logic_vector(15 downto 0);
+    signal ifid_instr_out  : std_logic_vector(15 downto 0);
+
+    signal jumpAD          : std_logic_vector(15 downto 0);
+    signal branchAD        : std_logic_vector(15 downto 0);
+
+    signal JRopcode_sig    : std_logic_vector(1 downto 0);
+
+    signal IF_ID_Flush_sig : std_logic;
+    signal IF_ID_Enable_sig: std_logic;
+
+    signal endOfRunning_sig: std_logic;
+    signal pc_enable_sig   : std_logic;
+
+begin
+
+    --------------------------------------------------------------------
+    -- Temporary/default control values
+    -- Αυτά αργότερα θα έρθουν από Hazard Unit / Branch logic
+    --------------------------------------------------------------------
+
+    JRopcode_sig     <= "00";
+    branchAD         <= (others => '0');
+
+    -- Jump address from instruction bits 11 downto 0
+    -- J-type format: opcode(15..12) + jumpAddr(11..0)
+    jumpAD <= "0000" & ifid_instr_out(11 downto 0);
+
+    -- Το IF_ID enable το κρατάμε ενεργό όσο δεν έχει τελειώσει το πρόγραμμα
+    IF_ID_Enable_sig <= not endOfRunning_sig;
+
+    -- Το PC παγώνει όταν το Trap Unit δει End Of Running
+    pc_enable_sig <= not endOfRunning_sig;
+
+    -- Για αρχή δεν κάνουμε flush από hazard.
+    -- Αργότερα εδώ θα μπει το flush από Hazard Unit ή Trap logic.
+    IF_ID_Flush_sig <= '0';
+
+    --------------------------------------------------------------------
+    -- Trap Unit
+    -- Ελέγχει το opcode της τρέχουσας instruction.
+    --------------------------------------------------------------------
+
+    U_Trap: entity work.trapUnit
+        port map (
+            OpCode       => Command(15 downto 12),
+            endOfRunning => endOfRunning_sig
+        );
+
+    --------------------------------------------------------------------
+    -- JRSelector
+    -- Επιλέγει ποια τιμή θα φορτωθεί στο PC.
+    --------------------------------------------------------------------
+
+    U_JRSelector: entity work.JRSelector
+        generic map (
+            n => 16
+        )
+        port map (
+            JROpcode => JRopcode_sig,
+            PCP2AD   => ifid_pc_out,
+            JumpAD   => jumpAD,
+            BranchAD => branchAD,
+            PCout    => pc_next
+        );
+
+    --------------------------------------------------------------------
+    -- Program Counter
+    -- Κρατάει την τρέχουσα διεύθυνση εντολής.
+    --------------------------------------------------------------------
+
+    U_PC: entity work.MyProgramCounter
+        port map (
+            clk           => clock,
+            reset         => reset,
+            enable        => pc_enable_sig,
+            nextPC        => pc_next,
+            instructionAD => pc_current
+        );
+
+    -- Output του Processor
+    instructionAD <= pc_current;
+
+    --------------------------------------------------------------------
+    -- IF_ID Register
+    -- Παίρνει PC και Command και τα περνάει στο επόμενο στάδιο.
+    --------------------------------------------------------------------
+
+    U_IF_ID: entity work.register_IF_ID
+        generic map (
+            n => 16
+        )
+        port map (
+            inPC          => pc_current,
+            inInstruction => Command,
+            clock         => clock,
+            IF_Flush      => IF_ID_Flush_sig,
+            IF_ID_ENABLE  => IF_ID_Enable_sig,
+            outPC         => ifid_pc_out,
+            outInstruction=> ifid_instr_out
+        );
+
+end structural;

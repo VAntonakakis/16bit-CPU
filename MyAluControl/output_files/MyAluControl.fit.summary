@@ -1,4 +1,4 @@
-Fitter Status : Successful - Wed May 20 16:48:15 2026
+Fitter Status : Successful - Wed May 20 20:31:28 2026
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : MyAluControl
 Top-level Entity Name : MyAluControl
@@ -7,7 +7,7 @@ Device : 5CGXFC7C7F23C8
 Timing Models : Final
 Logic utilization (in ALMs) : 3 / 56,480 ( < 1 % )
 Total registers : 0
-Total pins : 10 / 268 ( 4 % )
+Total pins : 11 / 268 ( 4 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

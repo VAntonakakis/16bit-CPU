@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegisterControl -c MyRegisterControl --vector_source="C:/Quartus projects/ergasia 1/MyRegisterControl/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyRegisterControl/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegisterControl -c MyRegisterControl --vector_source="C:/Quartus projects/ergasia 1/MyRegisterControl/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyRegisterControl/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyRegisterControl/simulation/qsim/" MyRegisterControl -c MyRegisterControl</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyRegisterControl/simulation/qsim/" MyRegisterControl -c MyRegisterControl</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegisterControl -c MyRegisterControl --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyRegisterControl -c MyRegisterControl --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim/" MyRegisterControl -c MyRegisterControl</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim/" MyRegisterControl -c MyRegisterControl</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work MyRegisterControl.vho
@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>vhdl</hdl_lang>
 </simulation_settings>*/
@@ -69,7 +71,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 1000.0;
+	DATA_DURATION = 960.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -126,16 +128,6 @@ SIGNAL("IF_ID_Flush")
 	PARENT = "";
 }
 
-SIGNAL("idRType")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
 SIGNAL("isBranch")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -156,7 +148,7 @@ SIGNAL("isJReg")
 	PARENT = "";
 }
 
-SIGNAL("isLdWord")
+SIGNAL("isJType")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -166,7 +158,7 @@ SIGNAL("isLdWord")
 	PARENT = "";
 }
 
-SIGNAL("isJType")
+SIGNAL("isLdWord")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -187,6 +179,16 @@ SIGNAL("isMFPC")
 }
 
 SIGNAL("isReadDig")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("isRType")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -273,7 +275,7 @@ TRANSITION_LIST("Funct[2]")
 		REPEAT = 1;
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 720.0;
 	}
 }
 
@@ -284,7 +286,7 @@ TRANSITION_LIST("Funct[1]")
 		REPEAT = 1;
 		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 720.0;
 	}
 }
 
@@ -295,7 +297,7 @@ TRANSITION_LIST("Funct[0]")
 		REPEAT = 1;
 		LEVEL 0 FOR 160.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 760.0;
+		LEVEL 0 FOR 720.0;
 	}
 }
 
@@ -306,16 +308,7 @@ TRANSITION_LIST("IF_ID_Flush")
 		REPEAT = 1;
 		LEVEL 0 FOR 800.0;
 		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 120.0;
-	}
-}
-
-TRANSITION_LIST("idRType")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 80.0;
 	}
 }
 
@@ -324,7 +317,7 @@ TRANSITION_LIST("isBranch")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -333,16 +326,7 @@ TRANSITION_LIST("isJReg")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("isLdWord")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -351,7 +335,16 @@ TRANSITION_LIST("isJType")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
+	}
+}
+
+TRANSITION_LIST("isLdWord")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -360,7 +353,7 @@ TRANSITION_LIST("isMFPC")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -369,7 +362,16 @@ TRANSITION_LIST("isReadDig")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
+	}
+}
+
+TRANSITION_LIST("isRType")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -378,7 +380,7 @@ TRANSITION_LIST("isStWord")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -387,7 +389,7 @@ TRANSITION_LIST("isWriteDig")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL X FOR 960.0;
 	}
 }
 
@@ -397,7 +399,7 @@ TRANSITION_LIST("OpCode[3]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 640.0;
-		LEVEL 1 FOR 360.0;
+		LEVEL 1 FOR 320.0;
 	}
 }
 
@@ -407,7 +409,7 @@ TRANSITION_LIST("OpCode[2]")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 400.0;
-		LEVEL 1 FOR 600.0;
+		LEVEL 1 FOR 560.0;
 	}
 }
 
@@ -421,7 +423,7 @@ TRANSITION_LIST("OpCode[1]")
 		LEVEL 0 FOR 80.0;
 		LEVEL 1 FOR 160.0;
 		LEVEL 0 FOR 80.0;
-		LEVEL 1 FOR 280.0;
+		LEVEL 1 FOR 240.0;
 	}
 }
 
@@ -433,7 +435,7 @@ TRANSITION_LIST("OpCode[0]")
 		LEVEL 0 FOR 240.0;
 		LEVEL 1 FOR 80.0;
 		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 440.0;
+		LEVEL 1 FOR 400.0;
 	}
 }
 
@@ -583,7 +585,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "idRType";
+	CHANNEL = "isRType";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;

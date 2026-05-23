@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/23/2026 10:10:43"
+-- DATE "05/22/2026 13:33:16"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -44,7 +44,7 @@ ENTITY 	MyRegisterControl IS
 	isJType : OUT std_logic;
 	isLdWord : OUT std_logic;
 	isMFPC : OUT std_logic;
-	idRType : OUT std_logic;
+	isRType : OUT std_logic;
 	isReadDig : OUT std_logic;
 	isStWord : OUT std_logic;
 	isWriteDig : OUT std_logic
@@ -57,7 +57,7 @@ END MyRegisterControl;
 -- isJType	=>  Location: PIN_T22,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- isLdWord	=>  Location: PIN_P18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- isMFPC	=>  Location: PIN_P17,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- idRType	=>  Location: PIN_T17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- isRType	=>  Location: PIN_T17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- isReadDig	=>  Location: PIN_R22,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- isStWord	=>  Location: PIN_P16,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- isWriteDig	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -89,7 +89,7 @@ SIGNAL ww_isJReg : std_logic;
 SIGNAL ww_isJType : std_logic;
 SIGNAL ww_isLdWord : std_logic;
 SIGNAL ww_isMFPC : std_logic;
-SIGNAL ww_idRType : std_logic;
+SIGNAL ww_isRType : std_logic;
 SIGNAL ww_isReadDig : std_logic;
 SIGNAL ww_isStWord : std_logic;
 SIGNAL ww_isWriteDig : std_logic;
@@ -104,7 +104,7 @@ SIGNAL \isJReg~0_combout\ : std_logic;
 SIGNAL \isJType~0_combout\ : std_logic;
 SIGNAL \isLdWord~0_combout\ : std_logic;
 SIGNAL \Funct[1]~input_o\ : std_logic;
-SIGNAL \idRType~0_combout\ : std_logic;
+SIGNAL \isRType~0_combout\ : std_logic;
 SIGNAL \Funct[0]~input_o\ : std_logic;
 SIGNAL \Funct[2]~input_o\ : std_logic;
 SIGNAL \isMFPC~0_combout\ : std_logic;
@@ -119,7 +119,7 @@ SIGNAL \ALT_INV_OpCode[3]~input_o\ : std_logic;
 SIGNAL \ALT_INV_OpCode[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_OpCode[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_OpCode[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_idRType~0_combout\ : std_logic;
+SIGNAL \ALT_INV_isRType~0_combout\ : std_logic;
 
 BEGIN
 
@@ -131,7 +131,7 @@ isJReg <= ww_isJReg;
 isJType <= ww_isJType;
 isLdWord <= ww_isLdWord;
 isMFPC <= ww_isMFPC;
-idRType <= ww_idRType;
+isRType <= ww_isRType;
 isReadDig <= ww_isReadDig;
 isStWord <= ww_isStWord;
 isWriteDig <= ww_isWriteDig;
@@ -146,7 +146,7 @@ ww_devpor <= devpor;
 \ALT_INV_OpCode[0]~input_o\ <= NOT \OpCode[0]~input_o\;
 \ALT_INV_OpCode[2]~input_o\ <= NOT \OpCode[2]~input_o\;
 \ALT_INV_OpCode[1]~input_o\ <= NOT \OpCode[1]~input_o\;
-\ALT_INV_idRType~0_combout\ <= NOT \idRType~0_combout\;
+\ALT_INV_isRType~0_combout\ <= NOT \isRType~0_combout\;
 
 -- Location: IOOBUF_X89_Y6_N5
 \isBranch~output\ : cyclonev_io_obuf
@@ -214,7 +214,7 @@ PORT MAP (
 	o => ww_isMFPC);
 
 -- Location: IOOBUF_X89_Y4_N62
-\idRType~output\ : cyclonev_io_obuf
+\isRType~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -222,9 +222,9 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \idRType~0_combout\,
+	i => \isRType~0_combout\,
 	devoe => ww_devoe,
-	o => ww_idRType);
+	o => ww_isRType);
 
 -- Location: IOOBUF_X89_Y6_N56
 \isReadDig~output\ : cyclonev_io_obuf
@@ -408,9 +408,9 @@ PORT MAP (
 	o => \Funct[1]~input_o\);
 
 -- Location: LABCELL_X88_Y8_N24
-\idRType~0\ : cyclonev_lcell_comb
+\isRType~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \idRType~0_combout\ = ( !\OpCode[1]~input_o\ & ( (!\OpCode[3]~input_o\ & (!\IF_ID_Flush~input_o\ & (!\OpCode[2]~input_o\ & !\OpCode[0]~input_o\))) ) )
+-- \isRType~0_combout\ = ( !\OpCode[1]~input_o\ & ( (!\OpCode[3]~input_o\ & (!\IF_ID_Flush~input_o\ & (!\OpCode[2]~input_o\ & !\OpCode[0]~input_o\))) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -424,7 +424,7 @@ PORT MAP (
 	datac => \ALT_INV_OpCode[2]~input_o\,
 	datad => \ALT_INV_OpCode[0]~input_o\,
 	datae => \ALT_INV_OpCode[1]~input_o\,
-	combout => \idRType~0_combout\);
+	combout => \isRType~0_combout\);
 
 -- Location: IOIBUF_X72_Y0_N35
 \Funct[0]~input\ : cyclonev_io_ibuf
@@ -451,7 +451,7 @@ PORT MAP (
 -- Location: LABCELL_X88_Y8_N30
 \isMFPC~0\ : cyclonev_lcell_comb
 -- Equation(s):
--- \isMFPC~0_combout\ = ( \Funct[0]~input_o\ & ( \Funct[2]~input_o\ & ( (\Funct[1]~input_o\ & \idRType~0_combout\) ) ) )
+-- \isMFPC~0_combout\ = ( \Funct[0]~input_o\ & ( \Funct[2]~input_o\ & ( (\Funct[1]~input_o\ & \isRType~0_combout\) ) ) )
 
 -- pragma translate_off
 GENERIC MAP (
@@ -461,7 +461,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	dataa => \ALT_INV_Funct[1]~input_o\,
-	datac => \ALT_INV_idRType~0_combout\,
+	datac => \ALT_INV_isRType~0_combout\,
 	datae => \ALT_INV_Funct[0]~input_o\,
 	dataf => \ALT_INV_Funct[2]~input_o\,
 	combout => \isMFPC~0_combout\);

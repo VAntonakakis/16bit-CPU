@@ -1,0 +1,592 @@
+$comment
+	File created using the following command:
+		vcd file MyProgramCounter.msim.vcd -direction
+$end
+$date
+	Wed May 20 19:57:04 2026
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module myprogramcounter_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " enable $end
+$var wire 1 # instructionAD [15] $end
+$var wire 1 $ instructionAD [14] $end
+$var wire 1 % instructionAD [13] $end
+$var wire 1 & instructionAD [12] $end
+$var wire 1 ' instructionAD [11] $end
+$var wire 1 ( instructionAD [10] $end
+$var wire 1 ) instructionAD [9] $end
+$var wire 1 * instructionAD [8] $end
+$var wire 1 + instructionAD [7] $end
+$var wire 1 , instructionAD [6] $end
+$var wire 1 - instructionAD [5] $end
+$var wire 1 . instructionAD [4] $end
+$var wire 1 / instructionAD [3] $end
+$var wire 1 0 instructionAD [2] $end
+$var wire 1 1 instructionAD [1] $end
+$var wire 1 2 instructionAD [0] $end
+$var wire 1 3 nextPC [15] $end
+$var wire 1 4 nextPC [14] $end
+$var wire 1 5 nextPC [13] $end
+$var wire 1 6 nextPC [12] $end
+$var wire 1 7 nextPC [11] $end
+$var wire 1 8 nextPC [10] $end
+$var wire 1 9 nextPC [9] $end
+$var wire 1 : nextPC [8] $end
+$var wire 1 ; nextPC [7] $end
+$var wire 1 < nextPC [6] $end
+$var wire 1 = nextPC [5] $end
+$var wire 1 > nextPC [4] $end
+$var wire 1 ? nextPC [3] $end
+$var wire 1 @ nextPC [2] $end
+$var wire 1 A nextPC [1] $end
+$var wire 1 B nextPC [0] $end
+$var wire 1 C reset $end
+
+$scope module i1 $end
+$var wire 1 D gnd $end
+$var wire 1 E vcc $end
+$var wire 1 F unknown $end
+$var wire 1 G devoe $end
+$var wire 1 H devclrn $end
+$var wire 1 I devpor $end
+$var wire 1 J ww_devoe $end
+$var wire 1 K ww_devclrn $end
+$var wire 1 L ww_devpor $end
+$var wire 1 M ww_clk $end
+$var wire 1 N ww_reset $end
+$var wire 1 O ww_enable $end
+$var wire 1 P ww_nextPC [15] $end
+$var wire 1 Q ww_nextPC [14] $end
+$var wire 1 R ww_nextPC [13] $end
+$var wire 1 S ww_nextPC [12] $end
+$var wire 1 T ww_nextPC [11] $end
+$var wire 1 U ww_nextPC [10] $end
+$var wire 1 V ww_nextPC [9] $end
+$var wire 1 W ww_nextPC [8] $end
+$var wire 1 X ww_nextPC [7] $end
+$var wire 1 Y ww_nextPC [6] $end
+$var wire 1 Z ww_nextPC [5] $end
+$var wire 1 [ ww_nextPC [4] $end
+$var wire 1 \ ww_nextPC [3] $end
+$var wire 1 ] ww_nextPC [2] $end
+$var wire 1 ^ ww_nextPC [1] $end
+$var wire 1 _ ww_nextPC [0] $end
+$var wire 1 ` ww_instructionAD [15] $end
+$var wire 1 a ww_instructionAD [14] $end
+$var wire 1 b ww_instructionAD [13] $end
+$var wire 1 c ww_instructionAD [12] $end
+$var wire 1 d ww_instructionAD [11] $end
+$var wire 1 e ww_instructionAD [10] $end
+$var wire 1 f ww_instructionAD [9] $end
+$var wire 1 g ww_instructionAD [8] $end
+$var wire 1 h ww_instructionAD [7] $end
+$var wire 1 i ww_instructionAD [6] $end
+$var wire 1 j ww_instructionAD [5] $end
+$var wire 1 k ww_instructionAD [4] $end
+$var wire 1 l ww_instructionAD [3] $end
+$var wire 1 m ww_instructionAD [2] $end
+$var wire 1 n ww_instructionAD [1] $end
+$var wire 1 o ww_instructionAD [0] $end
+$var wire 1 p \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 q \clk~input_o\ $end
+$var wire 1 r \clk~inputCLKENA0_outclk\ $end
+$var wire 1 s \nextPC[0]~input_o\ $end
+$var wire 1 t \pc_reg[0]~feeder_combout\ $end
+$var wire 1 u \reset~input_o\ $end
+$var wire 1 v \enable~input_o\ $end
+$var wire 1 w \nextPC[1]~input_o\ $end
+$var wire 1 x \nextPC[2]~input_o\ $end
+$var wire 1 y \pc_reg[2]~feeder_combout\ $end
+$var wire 1 z \nextPC[3]~input_o\ $end
+$var wire 1 { \nextPC[4]~input_o\ $end
+$var wire 1 | \pc_reg[4]~feeder_combout\ $end
+$var wire 1 } \nextPC[5]~input_o\ $end
+$var wire 1 ~ \pc_reg[5]~feeder_combout\ $end
+$var wire 1 !! \nextPC[6]~input_o\ $end
+$var wire 1 "! \pc_reg[6]~feeder_combout\ $end
+$var wire 1 #! \nextPC[7]~input_o\ $end
+$var wire 1 $! \nextPC[8]~input_o\ $end
+$var wire 1 %! \pc_reg[8]~feeder_combout\ $end
+$var wire 1 &! \nextPC[9]~input_o\ $end
+$var wire 1 '! \pc_reg[9]~feeder_combout\ $end
+$var wire 1 (! \nextPC[10]~input_o\ $end
+$var wire 1 )! \pc_reg[10]~feeder_combout\ $end
+$var wire 1 *! \nextPC[11]~input_o\ $end
+$var wire 1 +! \pc_reg[11]~feeder_combout\ $end
+$var wire 1 ,! \nextPC[12]~input_o\ $end
+$var wire 1 -! \pc_reg[12]~feeder_combout\ $end
+$var wire 1 .! \nextPC[13]~input_o\ $end
+$var wire 1 /! \nextPC[14]~input_o\ $end
+$var wire 1 0! \pc_reg[14]~feeder_combout\ $end
+$var wire 1 1! \nextPC[15]~input_o\ $end
+$var wire 1 2! \pc_reg[15]~feeder_combout\ $end
+$var wire 1 3! pc_reg [15] $end
+$var wire 1 4! pc_reg [14] $end
+$var wire 1 5! pc_reg [13] $end
+$var wire 1 6! pc_reg [12] $end
+$var wire 1 7! pc_reg [11] $end
+$var wire 1 8! pc_reg [10] $end
+$var wire 1 9! pc_reg [9] $end
+$var wire 1 :! pc_reg [8] $end
+$var wire 1 ;! pc_reg [7] $end
+$var wire 1 <! pc_reg [6] $end
+$var wire 1 =! pc_reg [5] $end
+$var wire 1 >! pc_reg [4] $end
+$var wire 1 ?! pc_reg [3] $end
+$var wire 1 @! pc_reg [2] $end
+$var wire 1 A! pc_reg [1] $end
+$var wire 1 B! pc_reg [0] $end
+$var wire 1 C! \ALT_INV_nextPC[15]~input_o\ $end
+$var wire 1 D! \ALT_INV_nextPC[14]~input_o\ $end
+$var wire 1 E! \ALT_INV_nextPC[12]~input_o\ $end
+$var wire 1 F! \ALT_INV_nextPC[11]~input_o\ $end
+$var wire 1 G! \ALT_INV_nextPC[10]~input_o\ $end
+$var wire 1 H! \ALT_INV_nextPC[9]~input_o\ $end
+$var wire 1 I! \ALT_INV_nextPC[8]~input_o\ $end
+$var wire 1 J! \ALT_INV_nextPC[6]~input_o\ $end
+$var wire 1 K! \ALT_INV_nextPC[5]~input_o\ $end
+$var wire 1 L! \ALT_INV_nextPC[4]~input_o\ $end
+$var wire 1 M! \ALT_INV_nextPC[2]~input_o\ $end
+$var wire 1 N! \ALT_INV_reset~input_o\ $end
+$var wire 1 O! \ALT_INV_nextPC[0]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1C
+0D
+1E
+xF
+1G
+1H
+1I
+1J
+1K
+1L
+0M
+1N
+0O
+xp
+0q
+0r
+0s
+0t
+1u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+1C!
+1D!
+1E!
+1F!
+1G!
+1H!
+1I!
+1J!
+1K!
+1L!
+1M!
+0N!
+1O!
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+$end
+#40000
+1!
+1M
+1q
+1r
+#80000
+0!
+0M
+0q
+0r
+#90000
+0C
+1"
+1A
+0N
+1O
+1^
+1w
+1v
+0u
+1N!
+#120000
+1!
+1M
+1q
+1r
+1A!
+1n
+11
+#160000
+0!
+0M
+0q
+0r
+#170000
+0A
+1@
+0^
+1]
+1x
+0w
+0M!
+1y
+#200000
+1!
+1M
+1q
+1r
+0A!
+1@!
+1m
+0n
+01
+10
+#240000
+0!
+0M
+0q
+0r
+#250000
+1A
+0"
+1^
+0O
+0v
+1w
+#280000
+1!
+1M
+1q
+1r
+#320000
+0!
+0M
+0q
+0r
+#330000
+0A
+1"
+0@
+1?
+0^
+0]
+1\
+1O
+1v
+1z
+0x
+0w
+1M!
+0y
+#360000
+1!
+1M
+1q
+1r
+0@!
+1?!
+1l
+0m
+00
+1/
+#400000
+0!
+0M
+0q
+0r
+#410000
+1A
+1@
+1C
+13
+14
+15
+16
+17
+18
+19
+1:
+1;
+1<
+1=
+1>
+1B
+1_
+1^
+1]
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+1N
+1u
+11!
+1/!
+1.!
+1,!
+1*!
+1(!
+1&!
+1$!
+1#!
+1!!
+1}
+1{
+1x
+1w
+1s
+0O!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0N!
+0?!
+12!
+10!
+1-!
+1+!
+1)!
+1'!
+1%!
+1"!
+1~
+1|
+1y
+1t
+0l
+0/
+#440000
+1!
+1M
+1q
+1r
+#480000
+0!
+0M
+0q
+0r
+#490000
+0@
+0C
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0B
+0_
+0]
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
+0P
+0N
+0u
+01!
+0/!
+0.!
+0,!
+0*!
+0(!
+0&!
+0$!
+0#!
+0!!
+0}
+0{
+0x
+0s
+1O!
+1M!
+1L!
+1K!
+1J!
+1I!
+1H!
+1G!
+1F!
+1E!
+1D!
+1C!
+1N!
+02!
+00!
+0-!
+0+!
+0)!
+0'!
+0%!
+0"!
+0~
+0|
+0y
+0t
+#520000
+1!
+1M
+1q
+1r
+1A!
+1?!
+1l
+1n
+11
+1/
+#560000
+0!
+0M
+0q
+0r
+#600000
+1!
+1M
+1q
+1r
+#640000

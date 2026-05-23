@@ -24,7 +24,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "idRType",
+					"name" : "isRType",
 					"strict" : false
 				},
 				{

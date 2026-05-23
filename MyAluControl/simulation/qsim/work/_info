@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAluControl/simulation/qsim
+Emyalucontrol
+Z1 w1779298590
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
+R0
+Z9 8MyAluControl.vho
+Z10 FMyAluControl.vho
+l0
+L37
+VXZP]>_dh8G;N_oFfmz4f21
+!s100 VQFb>Q:kjVT=]zQc2Gg9i2
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1779298591
+!i10b 1
+Z13 !s108 1779298591.000000
+Z14 !s90 -work|work|MyAluControl.vho|
+Z15 !s107 MyAluControl.vho|
+!i113 1
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 12 myalucontrol 0 22 XZP]>_dh8G;N_oFfmz4f21
+l91
+L59
+VQC>`L@ZkU8aL^l4HV56T<1
+!s100 0H`@F8;NVd>MXRAWb22Z]3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Emyalucontrol_vhd_vec_tst
+Z18 w1779298589
+R6
+R7
+R0
+Z19 8Waveform1.vwf.vht
+Z20 FWaveform1.vwf.vht
+l0
+L32
+Vo^Knd9mhnKO6_LX=Ik>`f1
+!s100 G5bfnnZ^BOZ]ai?BGODz_1
+R11
+32
+R12
+!i10b 1
+R13
+Z21 !s90 -work|work|Waveform1.vwf.vht|
+Z22 !s107 Waveform1.vwf.vht|
+!i113 1
+R16
+R17
+Amyalucontrol_arch
+R6
+R7
+DEx4 work 24 myalucontrol_vhd_vec_tst 0 22 o^Knd9mhnKO6_LX=Ik>`f1
+l47
+L34
+VDO[B=;:W0jRIHVEXG6cKl1
+!s100 IB7mm5@z7_AoBd8EMEVIV3
+R11
+32
+R12
+!i10b 1
+R13
+R21
+R22
+!i113 1
+R16
+R17

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyRegisterControl
-Sat May 23 10:09:48 2026
+Fri May 22 13:32:00 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat May 23 10:09:48 2026       ;
+; Analysis & Synthesis Status     ; Successful - Fri May 22 13:32:00 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyRegisterControl                           ;
 ; Top-level Entity Name           ; MyRegisterControl                           ;
@@ -155,8 +155,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
-; MyRegisterControl.vhd            ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; MyRegisterControl.vhd            ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -258,13 +258,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat May 23 10:09:42 2026
+    Info: Processing started: Fri May 22 13:31:51 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyRegisterControl -c MyRegisterControl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file myregistercontrol.vhd
-    Info (12022): Found design unit 1: MyRegisterControl-Behavioral File: C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd Line: 22
-    Info (12023): Found entity 1: MyRegisterControl File: C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd Line: 4
+    Info (12022): Found design unit 1: MyRegisterControl-Behavioral File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd Line: 22
+    Info (12023): Found entity 1: MyRegisterControl File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd Line: 4
 Info (12127): Elaborating entity "MyRegisterControl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -274,9 +274,9 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Sat May 23 10:09:48 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4878 megabytes
+    Info: Processing ended: Fri May 22 13:32:00 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 

@@ -1,0 +1,273 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Output[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Output[15]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[0]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[12]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[12]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[13]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[13]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[14]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[14]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_MEM[15]",
+					"strict" : false
+				},
+				{
+					"name" : "regAddress[15]",
+					"strict" : false
+				},
+				{
+					"name" : "regAD_WB[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

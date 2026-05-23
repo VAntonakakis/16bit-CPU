@@ -63,21 +63,21 @@ nextPC[12] => pc_reg[12].DATAIN
 nextPC[13] => pc_reg[13].DATAIN
 nextPC[14] => pc_reg[14].DATAIN
 nextPC[15] => pc_reg[15].DATAIN
-currentPC[0] <= pc_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[1] <= pc_reg[1].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[2] <= pc_reg[2].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[3] <= pc_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[4] <= pc_reg[4].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[5] <= pc_reg[5].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[6] <= pc_reg[6].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[7] <= pc_reg[7].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[8] <= pc_reg[8].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[9] <= pc_reg[9].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[10] <= pc_reg[10].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[11] <= pc_reg[11].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[12] <= pc_reg[12].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[13] <= pc_reg[13].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[14] <= pc_reg[14].DB_MAX_OUTPUT_PORT_TYPE
-currentPC[15] <= pc_reg[15].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[0] << pc_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[1] << pc_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[2] << pc_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[3] << pc_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[4] << pc_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[5] << pc_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[6] << pc_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[7] << pc_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[8] << pc_reg[8].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[9] << pc_reg[9].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[10] << pc_reg[10].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[11] << pc_reg[11].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[12] << pc_reg[12].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[13] << pc_reg[13].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[14] << pc_reg[14].DB_MAX_OUTPUT_PORT_TYPE
+instructionAD[15] << pc_reg[15].DB_MAX_OUTPUT_PORT_TYPE
 
 

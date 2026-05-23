@@ -1,5 +1,5 @@
 Flow report for hazardUnit
-Wed May 20 14:15:45 2026
+Wed May 20 18:35:32 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 20 14:15:45 2026       ;
+; Flow Status                     ; Successful - Wed May 20 18:35:32 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; hazardUnit                                  ;
 ; Top-level Entity Name           ; hazardUnit                                  ;
@@ -100,7 +100,9 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5166 MB             ; 00:00:05                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
-; Total                ; 00:01:34     ; --                      ; --                  ; 00:01:49                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4744 MB             ; 00:00:01                           ;
+; Total                ; 00:01:39     ; --                      ; --                  ; 00:01:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +117,8 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-KTODDQBN  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -125,6 +129,8 @@ quartus_map --read_settings_files=on --write_settings_files=off hazardUnit -c ha
 quartus_fit --read_settings_files=off --write_settings_files=off hazardUnit -c hazardUnit
 quartus_asm --read_settings_files=off --write_settings_files=off hazardUnit -c hazardUnit
 quartus_sta hazardUnit -c hazardUnit
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/ hazardUnit -c hazardUnit
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/ hazardUnit -c hazardUnit
 

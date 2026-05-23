@@ -4,67 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "currentPC[0]",
+					"name" : "instructionAD[0]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[1]",
+					"name" : "instructionAD[1]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[2]",
+					"name" : "instructionAD[2]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[3]",
+					"name" : "instructionAD[3]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[4]",
+					"name" : "instructionAD[4]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[5]",
+					"name" : "instructionAD[5]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[6]",
+					"name" : "instructionAD[6]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[7]",
+					"name" : "instructionAD[7]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[8]",
+					"name" : "instructionAD[8]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[9]",
+					"name" : "instructionAD[9]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[10]",
+					"name" : "instructionAD[10]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[11]",
+					"name" : "instructionAD[11]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[12]",
+					"name" : "instructionAD[12]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[13]",
+					"name" : "instructionAD[13]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[14]",
+					"name" : "instructionAD[14]",
 					"strict" : false
 				},
 				{
-					"name" : "currentPC[15]",
+					"name" : "instructionAD[15]",
 					"strict" : false
 				},
 				{

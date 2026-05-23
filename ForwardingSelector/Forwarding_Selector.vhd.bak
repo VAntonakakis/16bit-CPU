@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Forwarding_Selector is
+    generic (
+        n : INTEGER := 16
+    );
+    port (
+        Forward : in std_logic_vector(1 downto 0);
+
+        RegData   : in std_logic_vector(n-1 downto 0);
+        EXMEMData : in std_logic_vector(n-1 downto 0);
+        MEMWBData : in std_logic_vector(n-1 downto 0);
+
+        ALUInput  : out std_logic_vector(n-1 downto 0)
+    );
+end entity Forwarding_Selector;
+
+architecture behavior of Forwarding_Selector is
+begin
+
+    process(Forward, RegData, EXMEMData, MEMWBData)
+    begin
+        if Forward = "00" then
+            -- Default case: take the value from the Register File
+            ALUInput <= RegData;
+
+        elsif Forward = "10" then
+            -- Forward from the EX_MEM register
+            ALUInput <= EXMEMData;
+
+        elsif Forward = "01" then
+            -- Forward from the MEM_WB register
+            ALUInput <= MEMWBData;
+
+        else
+            -- Safe default case
+            ALUInput <= RegData;
+        end if;
+    end process;
+
+end architecture behavior;

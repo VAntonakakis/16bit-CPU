@@ -7,9 +7,9 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Quartus projects/ergasia 1/MyRegisterControl/simulation/qsim
+Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim
 Emyregistercontrol
-Z1 w1779520243
+Z1 w1779445996
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -22,13 +22,13 @@ Z9 8MyRegisterControl.vho
 Z10 FMyRegisterControl.vho
 l0
 L37
-VHNz`5AlYCI]YB=@eb]IRQ0
-!s100 Qo5K:^UY43ANk:eT1^<fF0
+VV>=AD=<^=Tef@5iPiYW240
+!s100 V52hfihQ^DC0zLMme5ZWS0
 Z11 OV;C;10.5b;63
 32
-Z12 !s110 1779520245
+Z12 !s110 1779445997
 !i10b 1
-Z13 !s108 1779520245.000000
+Z13 !s108 1779445997.000000
 Z14 !s90 -work|work|MyRegisterControl.vho|
 Z15 !s107 MyRegisterControl.vho|
 !i113 1
@@ -42,11 +42,11 @@ R5
 R6
 R7
 R8
-DEx4 work 17 myregistercontrol 0 22 HNz`5AlYCI]YB=@eb]IRQ0
+DEx4 work 17 myregistercontrol 0 22 V>=AD=<^=Tef@5iPiYW240
 l124
 L74
-VV<Ag989I5nC`[hneoFVcd0
-!s100 MD_PcX=4j^^9j^HcF83Qd2
+V?@n];oQOEHFDajYBT8gQo1
+!s100 JBNTN[4M?OE[a[zINk7D62
 R11
 32
 R12
@@ -58,7 +58,7 @@ R15
 R16
 R17
 Emyregistercontrol_vhd_vec_tst
-Z18 w1779520242
+Z18 w1779445995
 R6
 R7
 R0
@@ -84,8 +84,8 @@ R7
 Z23 DEx4 work 29 myregistercontrol_vhd_vec_tst 0 22 @[99D[bQ6FbLSUbXKFL^d3
 l65
 L34
-Z24 VolD@X690`=LOV^_[KeJNa3
-Z25 !s100 IUhAK4_o@J]A8fPfO@SFO2
+Z24 V@kf;^^cGio=K>bY@0gW2l0
+Z25 !s100 [MheA`emPYnddzOE`gI`b1
 R11
 32
 R12

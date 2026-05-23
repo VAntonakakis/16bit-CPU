@@ -4,11 +4,11 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity MyProgramCounter is
     Port (
-        clk         : in  STD_LOGIC;
-        reset       : in  STD_LOGIC;
-        enable      : in  STD_LOGIC;
-        nextPC      : in  STD_LOGIC_VECTOR(15 downto 0);
-        currentPC   : out STD_LOGIC_VECTOR(15 downto 0)
+        clk           : in  STD_LOGIC;
+        reset         : in  STD_LOGIC;
+        enable        : in  STD_LOGIC;
+        nextPC        : in  STD_LOGIC_VECTOR(15 downto 0);
+        instructionAD : out STD_LOGIC_VECTOR(15 downto 0)
     );
 end MyProgramCounter;
 
@@ -28,6 +28,6 @@ begin
         end if;
     end process;
 
-    currentPC <= pc_reg;
+    instructionAD <= pc_reg;
 
 end Behavioral;
