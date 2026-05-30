@@ -4,6 +4,18 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "printEnable",
+					"strict" : false
+				},
+				{
+					"name" : "keyEnable",
+					"strict" : false
+				},
+				{
+					"name" : "DataWriteFlag",
+					"strict" : false
+				},
+				{
 					"name" : "instructionAD[0]",
 					"strict" : false
 				},
