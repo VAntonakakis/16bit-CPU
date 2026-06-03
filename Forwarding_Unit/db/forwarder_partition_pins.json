@@ -28,15 +28,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "R1AD[0]",
-					"strict" : false
-				},
-				{
 					"name" : "RegAD_EXMEM[0]",
-					"strict" : false
-				},
-				{
-					"name" : "R1AD[1]",
 					"strict" : false
 				},
 				{
@@ -45,6 +37,14 @@
 				},
 				{
 					"name" : "RegAD_EXMEM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1AD[1]",
 					"strict" : false
 				},
 				{

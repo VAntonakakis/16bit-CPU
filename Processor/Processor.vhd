@@ -9,14 +9,17 @@ entity Processor is
         fromData       : in  std_logic_vector(15 downto 0);
         instr          : in  std_logic_vector(15 downto 0);
         clock2         : in  std_logic;
-          
+
         printEnable    : out std_logic;
         keyEnable      : out std_logic;
         DataWriteFlag  : out std_logic;
+
         dataAD         : out std_logic_vector(15 downto 0);
         toData         : out std_logic_vector(15 downto 0);
         printCode      : out std_logic_vector(15 downto 0);
         printData      : out std_logic_vector(15 downto 0);
+
+		  Result         : out std_logic_vector(15 downto 0);
         regOUT         : out std_logic_vector(143 downto 0);
         instructionAD  : out std_logic_vector(15 downto 0)
     );
@@ -24,9 +27,12 @@ end Processor;
 
 architecture structural of Processor is
 
+    signal useImmediate_sig : std_logic;
+
     --------------------------------------------------------------------
     -- PC / IF stage signals
     --------------------------------------------------------------------
+
     signal pc_current        : std_logic_vector(15 downto 0);
     signal pc_next           : std_logic_vector(15 downto 0);
 
@@ -43,10 +49,11 @@ architecture structural of Processor is
 
     signal endOfRunning_sig  : std_logic;
     signal pc_enable_sig     : std_logic;
-     
-    --------------------------------------------------------------------
+	 
+	 --------------------------------------------------------------------
     -- Control / Decode signals
     --------------------------------------------------------------------
+
     signal isBranch_sig      : std_logic;
     signal isJR_sig          : std_logic;
     signal isJump_sig        : std_logic;
@@ -63,7 +70,6 @@ architecture structural of Processor is
 
     signal read1AD_sig       : std_logic_vector(2 downto 0);
     signal read2AD_sig       : std_logic_vector(2 downto 0);
-    signal writeAD_id_mux    : std_logic_vector(2 downto 0);
     signal writeAD_sig       : std_logic_vector(2 downto 0);
     signal writeData_sig     : std_logic_vector(15 downto 0);
 
@@ -72,90 +78,156 @@ architecture structural of Processor is
     signal regOUT128_sig     : std_logic_vector(127 downto 0);
 
     signal immediate16_sig   : std_logic_vector(15 downto 0);
+	 
+	 --------------------------------------------------------------------
+    -- ID/EX pipeline signals
+    --------------------------------------------------------------------
 
-    --------------------------------------------------------------------
-    -- ID/EX Pipeline Register Signals
-    --------------------------------------------------------------------
-    signal idex_pc_out           : std_logic_vector(15 downto 0);
-    signal idex_reg1_out         : std_logic_vector(15 downto 0);
-    signal idex_reg2_out         : std_logic_vector(15 downto 0);
-    signal idex_imm_out          : std_logic_vector(15 downto 0);
-    signal idex_instr_out        : std_logic_vector(15 downto 0);
-    
-    signal idex_isR_out          : std_logic;
-    signal idex_isLW_out         : std_logic;
-    signal idex_isSW_out         : std_logic;
-    signal idex_isBranch_out     : std_logic;
-    signal idex_isMFPC_out       : std_logic;
-    signal idex_isReadDig_out    : std_logic;
-    signal idex_isWriteDig_out   : std_logic;
-    signal idex_writeAD_out      : std_logic_vector(2 downto 0);
+    signal isEOR_sig             : std_logic;
 
-    --------------------------------------------------------------------
-    -- EX Stage / ALU / Forwarding Signals
-    --------------------------------------------------------------------
-    signal alu_inA               : std_logic_vector(15 downto 0);
-    signal alu_inB               : std_logic_vector(15 downto 0);
-    signal alu_out               : std_logic_vector(15 downto 0);
-    
-    signal forwardA_sig          : std_logic_vector(1 downto 0);
-    signal forwardB_sig          : std_logic_vector(1 downto 0);
-    
-    signal rs_ex_sig             : std_logic_vector(2 downto 0);
-    signal rt_ex_sig             : std_logic_vector(2 downto 0);
+    signal ALUFunc_sig           : std_logic_vector(3 downto 0);
 
-    --------------------------------------------------------------------
-    -- EX/MEM Pipeline Register Signals
-    --------------------------------------------------------------------
-    signal exmem_alu_out         : std_logic_vector(15 downto 0);
-    signal exmem_reg2_out        : std_logic_vector(15 downto 0);
-    signal exmem_writeAD_out     : std_logic_vector(2 downto 0);
-    signal exmem_isLW_out        : std_logic;
-    signal exmem_isSW_out        : std_logic;
-    signal exmem_isReadDig_out   : std_logic;
-    signal exmem_isWriteDig_out  : std_logic;
+    signal isEOR_IDEX_sig        : std_logic;
+    signal wasJumpOut_IDEX_sig   : std_logic;
+    signal isJump_IDEX_sig       : std_logic;
+    signal isJR_IDEX_sig         : std_logic;
+    signal isBranch_IDEX_sig     : std_logic;
+    signal isR_IDEX_sig          : std_logic;
+    signal isMFPC_IDEX_sig       : std_logic;
+    signal isLW_IDEX_sig         : std_logic;
+    signal isSW_IDEX_sig         : std_logic;
+    signal isReadDigit_IDEX_sig  : std_logic;
+    signal isPrintDigit_IDEX_sig : std_logic;
 
+    signal ALUFunc_IDEX_sig      : std_logic_vector(3 downto 0);
+
+    signal R1Reg_IDEX_sig        : std_logic_vector(15 downto 0);
+    signal R2Reg_IDEX_sig        : std_logic_vector(15 downto 0);
+    signal immediate16_IDEX_sig  : std_logic_vector(15 downto 0);
+
+    signal R1AD_IDEX_sig         : std_logic_vector(2 downto 0);
+    signal R2AD_IDEX_sig         : std_logic_vector(2 downto 0);
+
+    signal jumpShortAddr_IDEX_sig : std_logic_vector(11 downto 0);
+	 
+	 --------------------------------------------------------------------
+    -- Forwarding / ALU path signals
     --------------------------------------------------------------------
-    -- MEM/WB Pipeline Register Signals
+
+    signal ForwardA_sig          : std_logic_vector(1 downto 0);
+    signal ForwardB_sig          : std_logic_vector(1 downto 0);
+
+
+    signal selector1_out_sig     : std_logic_vector(15 downto 0);
+    signal selector2_out_sig     : std_logic_vector(15 downto 0);
+
+    signal ALUInput1_sig         : std_logic_vector(15 downto 0);
+    signal ALUInput2_sig         : std_logic_vector(15 downto 0);
+
+    signal ALUResult_sig         : std_logic_vector(15 downto 0);
+    signal ALUOverflow_sig       : std_logic;
+	 
+	 --------------------------------------------------------------------
+    -- EX/MEM pipeline signals
     --------------------------------------------------------------------
-    signal mem_stage_mux_out     : std_logic_vector(15 downto 0);
+
+    signal WriteEnable_IDEX_sig        : std_logic;
+
+    signal isLW_EXMEM_sig              : std_logic;
+    signal WriteEnable_EXMEM_sig       : std_logic;
+    signal ReadDigit_EXMEM_sig         : std_logic;
+    signal PrintDigit_EXMEM_sig        : std_logic;
+
+    signal R2Reg_EXMEM_sig             : std_logic_vector(15 downto 0);
+    signal Result_EXMEM_sig            : std_logic_vector(15 downto 0);
+    signal RegAD_EXMEM_sig             : std_logic_vector(2 downto 0);
+	 signal isSW_EXMEM_sig : std_logic;
+	 
+	  --------------------------------------------------------------------
+    -- MEM/WB signals
+    --------------------------------------------------------------------
+
+    signal MEMWB_inputData_sig   : std_logic_vector(15 downto 0);
+    signal writeData_MEMWB_sig   : std_logic_vector(15 downto 0);
+    signal writeAD_MEMWB_sig     : std_logic_vector(2 downto 0);
 
 begin
 
     --------------------------------------------------------------------
-    -- Combinational Assignments (IF & ID Stages)
+    -- Temporary / basic connections
     --------------------------------------------------------------------
+	 
+	 useImmediate_sig <= isLW_IDEX_sig or isSW_IDEX_sig or isBranch_IDEX_sig;
 
-    -- Jump Address: opcode(15..12) + jumpAddr(11..0)
+    -- Jump address from J-type instruction:
+    -- instr format: opcode(15..12) + jumpAddr(11..0)
     jumpAD <= "0000" & ifid_instr_out(11 downto 0);
 
-    -- Ενημέρωση της μονάδας Hazard αν έχουμε Jump εντολή στο ID stage
-    wasJump_sig <= isJump_sig or isJR_sig;
+    -- Branch address προσωρινά μηδέν.
+    -- Αργότερα θα το συνδέσουμε με ALU / branch calculation.
+    branchAD <= (others => '0');
 
-    -- Παγίδευση (Freeze) του PC και του IF/ID όταν το Trap Unit ανιχνεύσει τερματισμό
-    pc_enable_sig    <= not endOfRunning_sig;
+    -- Προσωρινά κανονική ροή PC.
+    -- Αργότερα θα έρθει από Hazard Unit.
+    --JROpcode_sig <= "00";
+
+    -- Το Trap Unit παγώνει το PC όταν βρει end of running.
+    pc_enable_sig <= not endOfRunning_sig;
+
+    -- Το IF_ID register επίσης σταματάει όταν έχουμε end of running.
     IF_ID_Enable_sig <= not endOfRunning_sig;
 
-    -- Καθορισμός διευθύνσεων ανάγνωσης βάσει του Σχήματος:
-    read1AD_sig <= ifid_instr_out(11 downto 9); -- RS (bits 11..9)
-    read2AD_sig <= ifid_instr_out(8 downto 6);  -- RT (bits 8..6)
+    -- Προσωρινά δεν κάνουμε flush.
+    -- Αργότερα θα συνδεθεί με Hazard Unit + Trap Unit.
+    --IF_ID_Flush_sig <= '0';
+	 
+	  -- Προσωρινά μέχρι να συνδεθεί το ID_EX / ALU branch result
+    mustBranch_sig <= '0';
+    wasJump_sig    <= '0';
 
-    -- MUX για την επιλογή του Write Register στο ID stage:
-    writeAD_id_mux <= ifid_instr_out(5 downto 3) when isR_sig = '1' else 
-                      ifid_instr_out(2 downto 0);
+    -- Register addresses από το ISA
+    -- R-type: rd = 11..9, rs = 8..6, rt = 5..3
+    read1AD_sig <= ifid_instr_out(8 downto 6);
+    read2AD_sig <= ifid_instr_out(5 downto 3);
+
+	 -- End Of Running από Trap Unit
+    isEOR_sig <= endOfRunning_sig;
+
+    -- Για την ώρα το ALUFunc το παίρνουμε από το ALU Control.
+    -- Αν έχεις ήδη instance του MyAluControl αργότερα, αυτό θα οδηγεί το ALUFunc_sig.
+	 
+    --------------------------------------------------------------------
+    -- MEM/WB input data selection
+    --------------------------------------------------------------------
+
+    MEMWB_inputData_sig <= keyData when ReadDigit_EXMEM_sig = '1' else
+                           fromData when isLW_EXMEM_sig = '1' else
+                           Result_EXMEM_sig;
+	 
+	 -------------------------------------------------------------------
+    -- Write Enable logic
+    -- These instructions write a value back to the Register File
+    --------------------------------------------------------------------
+
+    WriteEnable_IDEX_sig <= isR_IDEX_sig or isLW_IDEX_sig or isMFPC_IDEX_sig or isReadDigit_IDEX_sig;
+	 
+	 
 
     --------------------------------------------------------------------
-    -- Component Instantiations
-    --------------------------------------------------------------------
-
     -- Trap Unit
+    --------------------------------------------------------------------
+
     Trap: entity work.trapUnit
         port map (
             OpCode       => instr(15 downto 12),
             endOfRunning => endOfRunning_sig
         );
 
+    --------------------------------------------------------------------
     -- JR Selector
+    -- Επιλέγει ποια τιμή θα πάει στο PC.
+    --------------------------------------------------------------------
+
     JR: entity work.JRSelector
         generic map (
             n => 16
@@ -168,8 +240,13 @@ begin
             PCout    => pc_next
         );
 
-    -- Program Counter Register
-    PC_Reg: entity work.MyRegister16bit
+    --------------------------------------------------------------------
+    -- Program Counter
+    -- Στο RTL του καθηγητή φαίνεται ως reg16b:PC,
+    -- άρα χρησιμοποιούμε το MyRegister16bit ως PC.
+    --------------------------------------------------------------------
+
+    PC: entity work.MyRegister16bit
         generic map (
             N => 16
         )
@@ -181,9 +258,11 @@ begin
             Output  => pc_current
         );
 
-    instructionAD <= pc_current;
 
-    -- IF/ID Pipeline Register
+    --------------------------------------------------------------------
+    -- IF/ID Register
+    --------------------------------------------------------------------
+
     IFIDREG: entity work.register_IF_ID
         generic map (
             n => 16
@@ -197,8 +276,11 @@ begin
             outPC          => ifid_pc_out,
             outInstruction => ifid_instr_out
         );
-          
-    -- Control Unit / Register Control
+		  
+	 --------------------------------------------------------------------
+    -- Register Control / Controller
+    --------------------------------------------------------------------
+
     Controller: entity work.MyRegisterControl
         port map (
             OpCode      => ifid_instr_out(15 downto 12),
@@ -215,8 +297,11 @@ begin
             isStWord    => isSW_sig,
             isWriteDig  => isPrintDigit_sig
         );
+		  
+	 --------------------------------------------------------------------
+    -- Hazard Unit
+    --------------------------------------------------------------------
 
-    -- Hazard Detection Unit
     Hazard: entity work.hazardUnit
         port map (
             isJR       => isJR_sig,
@@ -227,205 +312,267 @@ begin
             flush      => IF_ID_Flush_sig,
             wasJumpOut => wasJumpOut_sig,
             JRopcode   => JROpcode_sig
-        );
-          
+        );	
+		
+    --------------------------------------------------------------------
     -- Register File
+    --------------------------------------------------------------------
+
     RegisterFile: entity work.MyRegisterFile
         port map (
             Clock    => clock2,
             Read1AD  => read1AD_sig,
             Read2AD  => read2AD_sig,
-            Write1AD => writeAD_sig,
-            Write1   => writeData_sig,
+            Write1AD => writeAD_MEMWB_sig,
+            Write1   => writeData_MEMWB_sig,
             Read1    => regRead1_sig,
             Read2    => regRead2_sig,
             OUTall   => regOUT128_sig
         );
-          
-    -- Sign Extension Unit (6-bit to 16-bit)
+		  
+	 --------------------------------------------------------------------
+    -- Immediate Extension
+    --------------------------------------------------------------------
+
     SignExtend: entity work.MyImmExtension
         port map (
-            I => ifid_instr_out(8 downto 3), 
+            I => ifid_instr_out(5 downto 0),
             O => immediate16_sig
         );
+		  
+	 --------------------------------------------------------------------
+    -- ALU Control
+    --------------------------------------------------------------------
 
+    ALUController: entity work.MyAluControl
+        port map (
+            opcode  => ifid_instr_out(15 downto 12),
+            func    => ifid_instr_out(2 downto 0),
+            alu_sel => ALUFunc_sig
+        );
+		 
+	 --------------------------------------------------------------------
+    -- ID/EX Register
     --------------------------------------------------------------------
-    -- ID/EX Pipeline Register
-    --------------------------------------------------------------------
+
     IDEXREG: entity work.register_ID_EX
         generic map (
-            n           => 16,
+            n => 16,
             addressSize => 3
         )
         port map (
-            clock              => clock,
-            isEOR              => endOfRunning_sig,   
-            wasJumpOut         => wasJumpOut_sig,     
-            isJump             => isJump_sig,
-            isJR               => isJR_sig,
-            isBranch           => isBranch_sig,
-            isR                => isR_sig,
-            isMFPC             => isMFPC_sig,
-            isLW               => isLW_sig,
-            isSW               => isSW_sig,
-            isReadDigit        => isReadDigit_sig,
-            isPrintDigit       => isPrintDigit_sig,
+            clock        => clock,
 
-            ALUFunc            => "0" & ifid_instr_out(2 downto 0),
+            isEOR        => isEOR_sig,
+            wasJumpOut   => wasJumpOut_sig,
+            isJump       => isJump_sig,
+            isJR         => isJR_sig,
+            isBranch     => isBranch_sig,
+            isR          => isR_sig,
+            isMFPC       => isMFPC_sig,
+            isLW         => isLW_sig,
+            isSW         => isSW_sig,
+            isReadDigit  => isReadDigit_sig,
+            isPrintDigit => isPrintDigit_sig,
 
-            R1Reg              => regRead1_sig,
-            R2Reg              => regRead2_sig,
-            immediate16        => immediate16_sig,
+            ALUFunc      => ALUFunc_sig,
 
-            R1AD               => read1AD_sig,        
-            R2AD               => read2AD_sig,        
+            R1Reg        => regRead1_sig,
+            R2Reg        => regRead2_sig,
+            immediate16  => immediate16_sig,
 
-            jumpShortAddr      => ifid_instr_out(11 downto 0),
+            R2AD         => read2AD_sig,
+            R1AD         => read1AD_sig,
 
-            isEOR_IDEX         => open, 
-            wasJumpOut_IDEX    => open, 
-            isJump_IDEX        => open,
-            isJR_IDEX          => open,
-            isBranch_IDEX      => idex_isBranch_out,
-            isR_IDEX           => idex_isR_out,
-            isMFPC_IDEX        => idex_isMFPC_out,
-            isLW_IDEX          => idex_isLW_out,
-            isSW_IDEX          => idex_isSW_out,
-            isReadDigit_IDEX   => idex_isReadDig_out,
-            isPrintDigit_IDEX  => idex_isWriteDig_out,
+            jumpShortAddr => ifid_instr_out(11 downto 0),
 
-            ALUFunc_IDEX       => open, 
+            isEOR_IDEX        => isEOR_IDEX_sig,
+            wasJumpOut_IDEX   => wasJumpOut_IDEX_sig,
+            isJump_IDEX       => isJump_IDEX_sig,
+            isJR_IDEX         => isJR_IDEX_sig,
+            isBranch_IDEX     => isBranch_IDEX_sig,
+            isR_IDEX          => isR_IDEX_sig,
+            isMFPC_IDEX       => isMFPC_IDEX_sig,
+            isLW_IDEX         => isLW_IDEX_sig,
+            isSW_IDEX         => isSW_IDEX_sig,
+            isReadDigit_IDEX  => isReadDigit_IDEX_sig,
+            isPrintDigit_IDEX => isPrintDigit_IDEX_sig,
 
-            R1Reg_IDEX         => idex_reg1_out,
-            R2Reg_IDEX         => idex_reg2_out,
-            immediate16_IDEX   => idex_imm_out,
+            ALUFunc_IDEX      => ALUFunc_IDEX_sig,
 
-            R1AD_IDEX          => rs_ex_sig,          -- Γράφει αυτόματα στο σήμα rs_ex_sig
-            R2AD_IDEX          => rt_ex_sig,          -- Γράφει αυτόματα στο σήμα rt_ex_sig
+            R1Reg_IDEX        => R1Reg_IDEX_sig,
+            R2Reg_IDEX        => R2Reg_IDEX_sig,
+            immediate16_IDEX  => immediate16_IDEX_sig,
 
-            jumpShortAddr_IDEX => open
+            R2AD_IDEX         => R2AD_IDEX_sig,
+            R1AD_IDEX         => R1AD_IDEX_sig,
+
+            jumpShortAddr_IDEX => jumpShortAddr_IDEX_sig
         );
-
-    -- ΠΡΟΣΟΧΗ: Αφαιρέθηκαν οι χειροκίνητες αναθέσεις των rs_ex_sig/rt_ex_sig από εδώ καθώς προκαλούσαν Multiple Drivers!
-
-    --------------------------------------------------------------------
+		  
+	 --------------------------------------------------------------------
     -- Forwarding Unit
     --------------------------------------------------------------------
-    Forwarding: entity work.forwarder
+
+    ForwardUnit: entity work.forwarder
         generic map (
             addr_size => 3
         )
         port map (
-            R1AD          => rs_ex_sig,          
-            R2AD          => rt_ex_sig,          
-            RegAD_EXMEM   => exmem_writeAD_out,  
-            RegAD_MEMWB   => writeAD_sig,        -- Η τρέχουσα διεύθυνση εγγραφής στο WB στάδιο
-            ForwardA      => forwardA_sig,       
-            ForwardB      => forwardB_sig        
+            R1AD        => R1AD_IDEX_sig,
+            R2AD        => R2AD_IDEX_sig,
+            RegAD_EXMEM => RegAD_EXMEM_sig,
+            RegAD_MEMWB => writeAD_MEMWB_sig,
+            ForwardA    => ForwardA_sig,
+            ForwardB    => ForwardB_sig
         );
-
-    -- ALU Input A MUX
-    alu_inA <= idex_reg1_out when forwardA_sig = "00" else
-               exmem_alu_out when forwardA_sig = "10" else
-               writeData_sig;
-
-    -- ALU Input B MUX
-    alu_inB <= idex_reg2_out when (forwardB_sig = "00" and idex_isR_out = '1') else
-               exmem_alu_out when (forwardB_sig = "10" and idex_isR_out = '1') else
-               writeData_sig when (forwardB_sig = "01" and idex_isR_out = '1') else
-               idex_imm_out;
-
+	    --------------------------------------------------------------------
+    -- Forwarding Selector 1
+    -- Selects first ALU operand before MFPC mux
     --------------------------------------------------------------------
-    -- Execution (EX) Stage Components
-    --------------------------------------------------------------------
-    
-    -- Υπολογισμός διεύθυνσης Branch στο EX Stage (PC + SignExtendedOffset)
-    branchAD <= std_logic_vector(unsigned(idex_pc_out) + unsigned(idex_imm_out));
 
-    -- Arithmetic Logic Unit (ALU)
-    ALU_Comp: entity work.MyALU16bit
-        port map (
-            S        => idex_instr_out(2 downto 0), 
-            A        => alu_inA,                    
-            B        => alu_inB,                    
-            Q        => alu_out,                    
-            Overflow => open                        
-        );
-
-    -- Έλεγχος συνθήκης Branch
-    mustBranch_sig <= idex_isBranch_out when (alu_out = x"0001") else '0';
-
-    --------------------------------------------------------------------
-    -- EX/MEM Pipeline Register
-    --------------------------------------------------------------------
-    EXMEMREG: entity work.register_EX_MEM
+    Selector1: entity work.Forwarding_Selector
         generic map (
-            n           => 16,
-            addressSize => 3
+            n => 16
         )
         port map (
-            clock             => clock,
-            isLW              => idex_isLW_out,
-            WriteEnable       => idex_isSW_out,       
-            ReadDigit         => idex_isReadDig_out,  
-            PrintDigit        => idex_isWriteDig_out, 
-
-            R2Reg             => idex_reg2_out,       
-            Result            => alu_out,             
-
-            RegAD             => idex_writeAD_out,    
-
-            isLW_EXMEM        => exmem_isLW_out,
-            WriteEnable_EXMEM => exmem_isSW_out,
-            ReadDigit_EXMEM   => exmem_isReadDig_out,
-            PrintDigit_EXMEM  => exmem_isWriteDig_out,
-
-            R2Reg_EXMEM       => exmem_reg2_out,
-            Result_EXMEM      => exmem_alu_out,
-
-            RegAD_EXMEM       => exmem_writeAD_out
+            operation  => ForwardA_sig,
+            regAddress => R1Reg_IDEX_sig,
+            regAD_MEM  => Result_EXMEM_sig,
+            regAD_WB   => writeData_MEMWB_sig,
+            Output     => selector1_out_sig
         );
 
     --------------------------------------------------------------------
-    -- MEM Stage MUX
+    -- Forwarding Selector 2
+    -- Selects second ALU operand before immediate mux
     --------------------------------------------------------------------
-    mem_stage_mux_out <= fromData when (exmem_isLW_out = '1' or exmem_isReadDig_out = '1') else 
-                         exmem_alu_out;
 
+    Selector2: entity work.Forwarding_Selector
+        generic map (
+            n => 16
+        )
+        port map (
+            operation  => ForwardB_sig,
+            regAddress => R2Reg_IDEX_sig,
+            regAD_MEM  => Result_EXMEM_sig,
+            regAD_WB   => writeData_MEMWB_sig,
+            Output     => selector2_out_sig
+        );
+	 --------------------------------------------------------------------
+    -- ALU Input 1 Mux
+    -- If MFPC, ALU input 1 gets PC, otherwise forwarded R1 value
     --------------------------------------------------------------------
-    -- MEM/WB Pipeline Register
+
+    ALUInput1Mux: entity work.MyMux2to1_16bit
+        port map (
+            A => selector1_out_sig,
+            B => ifid_pc_out,
+            S => isMFPC_IDEX_sig,
+            Q => ALUInput1_sig
+        );
+		  
+	 --------------------------------------------------------------------
+    -- ALU Input 2 Mux
+    -- For LW/SW/Branch use immediate, otherwise forwarded R2 value
     --------------------------------------------------------------------
+
+    ALUInput2Mux: entity work.MyMux2to1_16bit
+        port map (
+            A => selector2_out_sig,
+            B => immediate16_IDEX_sig,
+            S => useImmediate_sig,
+            Q => ALUInput2_sig
+        );
+		  
+	 --------------------------------------------------------------------
+    -- ALU
+    --------------------------------------------------------------------
+
+    ALU16: entity work.MyALU16bit
+        port map (
+            S        => ALUFunc_IDEX_sig(2 downto 0),
+            A        => ALUInput1_sig,
+            B        => ALUInput2_sig,
+            Q        => ALUResult_sig,
+            Overflow => ALUOverflow_sig
+        );
+		  
+	 --------------------------------------------------------------------
+    -- EX/MEM Register
+    --------------------------------------------------------------------
+
+    EXMEMREG: entity work.register_EX_MEM
+    generic map (
+        n => 16,
+        addressSize => 3
+    )
+    port map (
+        clock       => clock,
+
+        isLW        => isLW_IDEX_sig,
+        isSW        => isSW_IDEX_sig,
+        WriteEnable => WriteEnable_IDEX_sig,
+        ReadDigit   => isReadDigit_IDEX_sig,
+        PrintDigit  => isPrintDigit_IDEX_sig,
+
+        R2Reg       => R2Reg_IDEX_sig,
+        Result      => ALUResult_sig,
+        RegAD       => jumpShortAddr_IDEX_sig(11 downto 9),
+
+        isLW_EXMEM        => isLW_EXMEM_sig,
+        isSW_EXMEM        => isSW_EXMEM_sig,
+        WriteEnable_EXMEM => WriteEnable_EXMEM_sig,
+        ReadDigit_EXMEM   => ReadDigit_EXMEM_sig,
+        PrintDigit_EXMEM  => PrintDigit_EXMEM_sig,
+
+        R2Reg_EXMEM       => R2Reg_EXMEM_sig,
+        Result_EXMEM      => Result_EXMEM_sig,
+        RegAD_EXMEM       => RegAD_EXMEM_sig
+    );
+	 --------------------------------------------------------------------
+    -- MEM/WB Register
+    --------------------------------------------------------------------
+
     MEMWBREG: entity work.register_MEM_WB
         generic map (
-            n           => 16,
+            n => 16,
             addressSize => 3
         )
         port map (
             clock     => clock,
-            Result    => mem_stage_mux_out,   
-            RegAD     => exmem_writeAD_out,   
 
-            writeData => writeData_sig,       -- Συνδέεται απευθείας στα σήματα του Register File
-            writeAD   => writeAD_sig          -- Συνδέεται απευθείας στα σήματα του Register File
+            Result    => MEMWB_inputData_sig,
+            RegAD     => RegAD_EXMEM_sig,
+
+            writeData => writeData_MEMWB_sig,
+            writeAD   => writeAD_MEMWB_sig
         );
 
-    --------------------------------------------------------------------
-    -- Processor External Outputs
-    --------------------------------------------------------------------
-    
-    -- Έλεγχος διεπαφής εξωτερικής μνήμης δεδομένων RAM (από EX/MEM Stage)
-    DataWriteFlag <= exmem_isSW_out;
-    dataAD        <= exmem_alu_out;   
-    toData        <= exmem_reg2_out;  
 
-    -- Σήματα I/O (Read / Print Ψηφίων)
-    keyEnable     <= exmem_isReadDig_out;
-    printEnable   <= exmem_isWriteDig_out;
-    
-    printCode     <= (others => '0'); -- Επειδή ο EX/MEM δεν κρατάει πλέον την instruction, μπορείς να το γειώσεις ή να το βγάλεις open
-    printData     <= exmem_reg2_out;
 
-    -- Κατασκευή του τελικού διανύσματος κατάστασης καταχωρητών (16 bits μηδενικά + 128 bits δεδομένων)
+    --------------------------------------------------------------------
+    -- Top-level outputs
+    --------------------------------------------------------------------
+
+    -- Store Word προς Data Memory
+    DataWriteFlag <= isSW_EXMEM_sig;
+    dataAD        <= Result_EXMEM_sig;
+    toData        <= R2Reg_EXMEM_sig;
+
+    -- Print Digit προς output/screen
+    printEnable   <= PrintDigit_EXMEM_sig;
+    printData     <= R2Reg_EXMEM_sig;
+    printCode     <= Result_EXMEM_sig;
+
+    -- Read Digit / Keyboard enable
+    keyEnable     <= ReadDigit_EXMEM_sig;
+
+    -- Register dump
     regOUT <= "0000000000000000" & regOUT128_sig;
-
+	 
+	 Result <= writeData_MEMWB_sig;
+	 
+	 instructionAD <= pc_current;
+	 
 end structural;

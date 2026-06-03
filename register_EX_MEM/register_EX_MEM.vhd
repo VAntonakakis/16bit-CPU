@@ -8,7 +8,7 @@ entity register_EX_MEM is
         addressSize : INTEGER := 3
     );
     port (
-        clock, isLW, WriteEnable, ReadDigit, PrintDigit : IN std_logic;
+        clock, isLW, isSW, WriteEnable, ReadDigit, PrintDigit : IN std_logic;
 
         R2Reg, Result : IN std_logic_vector(n-1 downto 0);
 
@@ -16,7 +16,7 @@ entity register_EX_MEM is
 
         ---------------------------------------------------------
 
-        isLW_EXMEM, WriteEnable_EXMEM, ReadDigit_EXMEM, PrintDigit_EXMEM : OUT std_logic;
+        isLW_EXMEM, isSW_EXMEM, WriteEnable_EXMEM, ReadDigit_EXMEM, PrintDigit_EXMEM : OUT std_logic;
 
         R2Reg_EXMEM, Result_EXMEM : OUT std_logic_vector(n-1 downto 0);
 
@@ -32,6 +32,7 @@ begin
     if clock = '1' then
         -- Map the inputs with the corresponding outputs
 
+		  isSW_EXMEM <= isSW;
         isLW_EXMEM <= isLW;
 		  WriteEnable_EXMEM <= WriteEnable;
         ReadDigit_EXMEM <= ReadDigit;

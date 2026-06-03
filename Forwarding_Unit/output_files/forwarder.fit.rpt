@@ -1,5 +1,5 @@
 Fitter report for forwarder
-Thu May 07 14:11:47 2026
+Sun May 31 13:28:24 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu May 07 14:11:47 2026       ;
+; Fitter Status                   ; Successful - Sun May 31 13:28:24 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; forwarder                                   ;
 ; Top-level Entity Name           ; forwarder                                   ;
@@ -153,7 +153,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -227,8 +227,8 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; Combinational ALUT usage for logic                          ; 7                  ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 2                  ;       ;
-;     -- 5 input functions                                    ; 0                  ;       ;
-;     -- 4 input functions                                    ; 4                  ;       ;
+;     -- 5 input functions                                    ; 2                  ;       ;
+;     -- 4 input functions                                    ; 2                  ;       ;
 ;     -- <=3 input functions                                  ; 1                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
@@ -274,10 +274,10 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
 ; Peak interconnect usage (total/H/V)                         ; 0.1% / 0.1% / 0.2% ;       ;
-; Maximum fan-out                                             ; 2                  ;       ;
-; Highest non-global fan-out                                  ; 2                  ;       ;
-; Total fan-out                                               ; 48                 ;       ;
-; Average fan-out                                             ; 1.23               ;       ;
+; Maximum fan-out                                             ; 4                  ;       ;
+; Highest non-global fan-out                                  ; 4                  ;       ;
+; Total fan-out                                               ; 50                 ;       ;
+; Average fan-out                                             ; 1.28               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -309,8 +309,8 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; Combinational ALUT usage for logic                          ; 7                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                   ; 0                              ;
 ;     -- 6 input functions                                    ; 2                   ; 0                              ;
-;     -- 5 input functions                                    ; 0                   ; 0                              ;
-;     -- 4 input functions                                    ; 4                   ; 0                              ;
+;     -- 5 input functions                                    ; 2                   ; 0                              ;
+;     -- 4 input functions                                    ; 2                   ; 0                              ;
 ;     -- <=3 input functions                                  ; 1                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                   ; 0                              ;
 ; Memory ALUT usage                                           ; 0                   ; 0                              ;
@@ -339,7 +339,7 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ;     -- Registered Output Connections                        ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; Internal Connections                                        ;                     ;                                ;
-;     -- Total Connections                                    ; 48                  ; 0                              ;
+;     -- Total Connections                                    ; 50                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                   ; 0                              ;
 ;                                                             ;                     ;                                ;
 ; External Connections                                        ;                     ;                                ;
@@ -372,18 +372,18 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; R1AD[0]        ; M21   ; 5B       ; 89           ; 37           ; 54           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; R1AD[1]        ; M20   ; 5B       ; 89           ; 37           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; R1AD[2]        ; L17   ; 5B       ; 89           ; 37           ; 20           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; R1AD[0]        ; L18   ; 5B       ; 89           ; 38           ; 20           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; R1AD[1]        ; N19   ; 5B       ; 89           ; 36           ; 3            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; R1AD[2]        ; N16   ; 5B       ; 89           ; 35           ; 43           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; R2AD[0]        ; L22   ; 5B       ; 89           ; 36           ; 54           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; R2AD[1]        ; M16   ; 5B       ; 89           ; 35           ; 60           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 ; R2AD[2]        ; M18   ; 5B       ; 89           ; 36           ; 20           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_EXMEM[0] ; N21   ; 5B       ; 89           ; 35           ; 94           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_EXMEM[1] ; N20   ; 5B       ; 89           ; 35           ; 77           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_EXMEM[2] ; N19   ; 5B       ; 89           ; 36           ; 3            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_MEMWB[0] ; K17   ; 5B       ; 89           ; 37           ; 3            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_MEMWB[1] ; M22   ; 5B       ; 89           ; 36           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; RegAD_MEMWB[2] ; K21   ; 5B       ; 89           ; 38           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_EXMEM[0] ; K21   ; 5B       ; 89           ; 38           ; 37           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_EXMEM[1] ; N21   ; 5B       ; 89           ; 35           ; 94           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_EXMEM[2] ; K22   ; 5B       ; 89           ; 38           ; 54           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_MEMWB[0] ; L19   ; 5B       ; 89           ; 38           ; 3            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_MEMWB[1] ; N20   ; 5B       ; 89           ; 35           ; 77           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; RegAD_MEMWB[2] ; M22   ; 5B       ; 89           ; 36           ; 37           ; 4                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -392,29 +392,29 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; ForwardA[0] ; L19   ; 5B       ; 89           ; 38           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; ForwardA[1] ; N16   ; 5B       ; 89           ; 35           ; 43           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; ForwardB[0] ; K22   ; 5B       ; 89           ; 38           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; ForwardB[1] ; L18   ; 5B       ; 89           ; 38           ; 20           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; ForwardA[0] ; M21   ; 5B       ; 89           ; 37           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; ForwardA[1] ; M20   ; 5B       ; 89           ; 37           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; ForwardB[0] ; P19   ; 5A       ; 89           ; 9            ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; ForwardB[1] ; K17   ; 5B       ; 89           ; 37           ; 3            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------+
-; I/O Bank Usage                                                              ;
-+----------+-------------------+---------------+--------------+---------------+
-; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
-+----------+-------------------+---------------+--------------+---------------+
-; B2L      ; 0 / 0 ( -- )      ; --            ; --           ; --            ;
-; B1L      ; 0 / 14 ( 0 % )    ; --            ; --           ; --            ;
-; B0L      ; 0 / 14 ( 0 % )    ; --            ; --           ; --            ;
-; 3A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 32 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 0 / 48 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 5A       ; 0 / 16 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 5B       ; 16 / 16 ( 100 % ) ; 2.5V          ; --           ; 2.5V          ;
-; 7A       ; 0 / 80 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-; 8A       ; 0 / 32 ( 0 % )    ; 2.5V          ; --           ; 2.5V          ;
-+----------+-------------------+---------------+--------------+---------------+
++----------------------------------------------------------------------------+
+; I/O Bank Usage                                                             ;
++----------+------------------+---------------+--------------+---------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
++----------+------------------+---------------+--------------+---------------+
+; B2L      ; 0 / 0 ( -- )     ; --            ; --           ; --            ;
+; B1L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
+; B0L      ; 0 / 14 ( 0 % )   ; --            ; --           ; --            ;
+; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 5A       ; 1 / 16 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 5B       ; 15 / 16 ( 94 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 7A       ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 8A       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
++----------+------------------+---------------+--------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -680,12 +680,12 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; K14      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; K15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; K16      ; 424        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; K17      ; 284        ; 5B       ; RegAD_MEMWB[0]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K17      ; 284        ; 5B       ; ForwardB[1]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; K18      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; K19      ; 407        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; K20      ; 405        ; 7A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; K21      ; 289        ; 5B       ; RegAD_MEMWB[2]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; K22      ; 291        ; 5B       ; ForwardB[0]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K21      ; 289        ; 5B       ; RegAD_EXMEM[0]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; K22      ; 291        ; 5B       ; RegAD_EXMEM[2]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; L1       ; 27         ; B1L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L2       ; 26         ; B1L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -702,9 +702,9 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; L14      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; L15      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L16      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; L17      ; 286        ; 5B       ; R1AD[2]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; L18      ; 290        ; 5B       ; ForwardB[1]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; L19      ; 288        ; 5B       ; ForwardA[0]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; L17      ; 286        ; 5B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; L18      ; 290        ; 5B       ; R1AD[0]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; L19      ; 288        ; 5B       ; RegAD_MEMWB[0]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; L20      ;            ; 5B       ; VREFB5BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L21      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; L22      ; 283        ; 5B       ; R2AD[0]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
@@ -727,9 +727,9 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; M17      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; M18      ; 282        ; 5B       ; R2AD[2]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; M19      ;            ; 5B       ; VCCIO5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; M20      ; 285        ; 5B       ; R1AD[1]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; M21      ; 287        ; 5B       ; R1AD[0]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; M22      ; 281        ; 5B       ; RegAD_MEMWB[1]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M20      ; 285        ; 5B       ; ForwardA[1]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M21      ; 287        ; 5B       ; ForwardA[0]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; M22      ; 281        ; 5B       ; RegAD_MEMWB[2]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; N1       ; 28         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N2       ; 29         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -745,12 +745,12 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; N13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N14      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N15      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; N16      ; 276        ; 5B       ; ForwardA[1]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N16      ; 276        ; 5B       ; R1AD[2]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; N17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N18      ;            ; 5B       ; VCCPD5B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; N19      ; 280        ; 5B       ; RegAD_EXMEM[2]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; N20      ; 277        ; 5B       ; RegAD_EXMEM[1]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
-; N21      ; 279        ; 5B       ; RegAD_EXMEM[0]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N19      ; 280        ; 5B       ; R1AD[1]                         ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N20      ; 277        ; 5B       ; RegAD_MEMWB[1]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
+; N21      ; 279        ; 5B       ; RegAD_EXMEM[1]                  ; input  ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; N22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; P2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -770,7 +770,7 @@ The pin-out file can be found in C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit
 ; P16      ; 225        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 227        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P18      ; 226        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; P19      ; 224        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; P19      ; 224        ; 5A       ; ForwardB[0]                     ; output ; 2.5 V        ;                     ; Row I/O      ; N               ; no       ; Off          ;
 ; P20      ;            ; 5A       ; VCCIO5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P21      ;            ; 5A       ; VCCPD5A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; P22      ; 222        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -921,11 +921,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; ForwardB[1]    ; Incomplete set of assignments ;
 ; R1AD[2]        ; Incomplete set of assignments ;
 ; RegAD_MEMWB[2] ; Incomplete set of assignments ;
-; R1AD[0]        ; Incomplete set of assignments ;
 ; RegAD_EXMEM[0] ; Incomplete set of assignments ;
-; R1AD[1]        ; Incomplete set of assignments ;
 ; RegAD_EXMEM[1] ; Incomplete set of assignments ;
 ; RegAD_EXMEM[2] ; Incomplete set of assignments ;
+; R1AD[0]        ; Incomplete set of assignments ;
+; R1AD[1]        ; Incomplete set of assignments ;
 ; RegAD_MEMWB[0] ; Incomplete set of assignments ;
 ; RegAD_MEMWB[1] ; Incomplete set of assignments ;
 ; R2AD[2]        ; Incomplete set of assignments ;
@@ -937,11 +937,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; ForwardB[1]    ; Missing location assignment   ;
 ; R1AD[2]        ; Missing location assignment   ;
 ; RegAD_MEMWB[2] ; Missing location assignment   ;
-; R1AD[0]        ; Missing location assignment   ;
 ; RegAD_EXMEM[0] ; Missing location assignment   ;
-; R1AD[1]        ; Missing location assignment   ;
 ; RegAD_EXMEM[1] ; Missing location assignment   ;
 ; RegAD_EXMEM[2] ; Missing location assignment   ;
+; R1AD[0]        ; Missing location assignment   ;
+; R1AD[1]        ; Missing location assignment   ;
 ; RegAD_MEMWB[0] ; Missing location assignment   ;
 ; RegAD_MEMWB[1] ; Missing location assignment   ;
 ; R2AD[2]        ; Missing location assignment   ;
@@ -971,14 +971,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ForwardB[1]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; R1AD[2]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; RegAD_MEMWB[2] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; R1AD[0]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; RegAD_EXMEM[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; R1AD[1]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; RegAD_EXMEM[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; RegAD_EXMEM[2] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; RegAD_MEMWB[0] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; RegAD_EXMEM[2] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; R1AD[0]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; R1AD[1]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; RegAD_MEMWB[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; RegAD_MEMWB[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; R2AD[2]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; R2AD[2]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; R2AD[0]        ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; R2AD[1]        ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +----------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -990,40 +990,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; R1AD[2]             ;                   ;         ;
-;      - Equal0~0     ; 1                 ; 0       ;
+;      - process_0~0  ; 1                 ; 0       ;
 ;      - ForwardA~1   ; 1                 ; 0       ;
 ; RegAD_MEMWB[2]      ;                   ;         ;
+;      - ForwardA~0   ; 1                 ; 0       ;
 ;      - ForwardA~1   ; 1                 ; 0       ;
+;      - ForwardB~0   ; 1                 ; 0       ;
 ;      - ForwardB~1   ; 1                 ; 0       ;
-; R1AD[0]             ;                   ;         ;
-;      - Equal0~0     ; 1                 ; 0       ;
-;      - ForwardA~0   ; 1                 ; 0       ;
 ; RegAD_EXMEM[0]      ;                   ;         ;
-;      - Equal0~0     ; 1                 ; 0       ;
-;      - Equal2~0     ; 1                 ; 0       ;
-; R1AD[1]             ;                   ;         ;
-;      - Equal0~0     ; 1                 ; 0       ;
-;      - ForwardA~0   ; 1                 ; 0       ;
+;      - process_0~0  ; 1                 ; 0       ;
+;      - process_0~1  ; 1                 ; 0       ;
 ; RegAD_EXMEM[1]      ;                   ;         ;
-;      - Equal0~0     ; 1                 ; 0       ;
-;      - Equal2~0     ; 1                 ; 0       ;
+;      - process_0~0  ; 1                 ; 0       ;
+;      - process_0~1  ; 1                 ; 0       ;
 ; RegAD_EXMEM[2]      ;                   ;         ;
-;      - Equal0~0     ; 0                 ; 0       ;
-;      - Equal2~0     ; 0                 ; 0       ;
-; RegAD_MEMWB[0]      ;                   ;         ;
+;      - process_0~0  ; 1                 ; 0       ;
+;      - process_0~1  ; 1                 ; 0       ;
+; R1AD[0]             ;                   ;         ;
+;      - process_0~0  ; 1                 ; 0       ;
+;      - ForwardA~0   ; 1                 ; 0       ;
+; R1AD[1]             ;                   ;         ;
+;      - process_0~0  ; 0                 ; 0       ;
 ;      - ForwardA~0   ; 0                 ; 0       ;
-;      - ForwardB~0   ; 0                 ; 0       ;
+; RegAD_MEMWB[0]      ;                   ;         ;
+;      - ForwardA~0   ; 1                 ; 0       ;
+;      - ForwardB~0   ; 1                 ; 0       ;
 ; RegAD_MEMWB[1]      ;                   ;         ;
 ;      - ForwardA~0   ; 1                 ; 0       ;
 ;      - ForwardB~0   ; 1                 ; 0       ;
 ; R2AD[2]             ;                   ;         ;
-;      - Equal2~0     ; 0                 ; 0       ;
-;      - ForwardB~1   ; 0                 ; 0       ;
+;      - process_0~1  ; 1                 ; 0       ;
+;      - ForwardB~1   ; 1                 ; 0       ;
 ; R2AD[0]             ;                   ;         ;
-;      - Equal2~0     ; 1                 ; 0       ;
+;      - process_0~1  ; 1                 ; 0       ;
 ;      - ForwardB~0   ; 1                 ; 0       ;
 ; R2AD[1]             ;                   ;         ;
-;      - Equal2~0     ; 0                 ; 0       ;
+;      - process_0~1  ; 0                 ; 0       ;
 ;      - ForwardB~0   ; 0                 ; 0       ;
 +---------------------+-------------------+---------+
 
@@ -1035,20 +1037,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Block interconnects          ; 18 / 374,484 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 16,664 ( 0 % )     ;
-; C2 interconnects             ; 8 / 155,012 ( < 1 % )  ;
-; C4 interconnects             ; 5 / 72,600 ( < 1 % )   ;
+; C2 interconnects             ; 7 / 155,012 ( < 1 % )  ;
+; C4 interconnects             ; 12 / 72,600 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )         ;
-; Direct links                 ; 1 / 374,484 ( < 1 % )  ;
+; Direct links                 ; 2 / 374,484 ( < 1 % )  ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )         ;
-; Local interconnects          ; 3 / 112,960 ( < 1 % )  ;
+; Local interconnects          ; 2 / 112,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 1 / 15,868 ( < 1 % )   ;
+; R14 interconnects            ; 2 / 15,868 ( < 1 % )   ;
 ; R14/C12 interconnect drivers ; 0 / 27,256 ( 0 % )     ;
-; R3 interconnects             ; 5 / 169,296 ( < 1 % )  ;
-; R6 interconnects             ; 8 / 330,800 ( < 1 % )  ;
+; R3 interconnects             ; 3 / 169,296 ( < 1 % )  ;
+; R6 interconnects             ; 7 / 330,800 ( < 1 % )  ;
 ; Spine clocks                 ; 0 / 480 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 20,834 ( 0 % )     ;
 +------------------------------+------------------------+
@@ -1119,11 +1121,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ForwardB[1]        ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; R1AD[2]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_MEMWB[2]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; R1AD[0]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_EXMEM[0]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; R1AD[1]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_EXMEM[1]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_EXMEM[2]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; R1AD[0]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; R1AD[1]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_MEMWB[0]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; RegAD_MEMWB[1]     ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; R2AD[2]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1213,7 +1215,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.21 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1221,10 +1223,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/output_files/forwarder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6729 megabytes
-    Info: Processing ended: Thu May 07 14:11:48 2026
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 6744 megabytes
+    Info: Processing ended: Sun May 31 13:28:24 2026
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:47
 
 
 +----------------------------+
