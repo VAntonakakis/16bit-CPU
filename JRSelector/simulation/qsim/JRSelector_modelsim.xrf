@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/JRSelector/JRSelector.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/JRSelector/db/JRSelector.cbx.xml
+source_file = 1, C:/Quartus projects/ergasia 1/JRSelector/JRSelector.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/JRSelector/Waveform.vwf
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/JRSelector/db/JRSelector.cbx.xml
 design_name = JRSelector
 instance = comp, \PCout[0]~output\, PCout[0]~output, JRSelector, 1
 instance = comp, \PCout[1]~output\, PCout[1]~output, JRSelector, 1

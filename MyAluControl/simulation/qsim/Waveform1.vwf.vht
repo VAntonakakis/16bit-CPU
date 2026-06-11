@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/20/2026 20:36:29"
+-- Generated on "06/11/2026 12:34:27"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyAluControl
 -- 
@@ -39,7 +39,7 @@ SIGNAL func : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL opcode : STD_LOGIC_VECTOR(3 DOWNTO 0);
 COMPONENT MyAluControl
 	PORT (
-	alu_sel : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	alu_sel : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
 	func : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	opcode : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);

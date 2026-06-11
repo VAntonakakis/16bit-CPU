@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/22/2026 13:33:16"
+-- DATE "06/11/2026 12:33:25"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -39,15 +39,15 @@ ENTITY 	MyRegisterControl IS
 	OpCode : IN std_logic_vector(3 DOWNTO 0);
 	Funct : IN std_logic_vector(2 DOWNTO 0);
 	IF_ID_Flush : IN std_logic;
-	isBranch : OUT std_logic;
-	isJReg : OUT std_logic;
-	isJType : OUT std_logic;
-	isLdWord : OUT std_logic;
-	isMFPC : OUT std_logic;
-	isRType : OUT std_logic;
-	isReadDig : OUT std_logic;
-	isStWord : OUT std_logic;
-	isWriteDig : OUT std_logic
+	isBranch : BUFFER std_logic;
+	isJReg : BUFFER std_logic;
+	isJType : BUFFER std_logic;
+	isLdWord : BUFFER std_logic;
+	isMFPC : BUFFER std_logic;
+	isRType : BUFFER std_logic;
+	isReadDig : BUFFER std_logic;
+	isStWord : BUFFER std_logic;
+	isWriteDig : BUFFER std_logic
 	);
 END MyRegisterControl;
 

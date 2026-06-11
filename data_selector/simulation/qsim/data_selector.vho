@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/19/2026 19:38:46"
+-- DATE "06/11/2026 12:21:57"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -41,8 +41,8 @@ ENTITY 	data_selector IS
 	RegRS : IN std_logic_vector(2 DOWNTO 0);
 	ALUResult : IN std_logic_vector(15 DOWNTO 0);
 	Data : IN std_logic_vector(15 DOWNTO 0);
-	regaddressout : OUT std_logic_vector(2 DOWNTO 0);
-	out2 : OUT std_logic_vector(15 DOWNTO 0)
+	regaddressout : BUFFER std_logic_vector(2 DOWNTO 0);
+	out2 : BUFFER std_logic_vector(15 DOWNTO 0)
 	);
 END data_selector;
 

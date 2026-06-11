@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/19/2026 19:38:44"
+-- Generated on "06/11/2026 12:21:55"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          data_selector
 -- 
@@ -45,8 +45,8 @@ COMPONENT data_selector
 	PORT (
 	ALUResult : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	Data : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	out2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	regaddressout : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	out2 : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	regaddressout : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	RegRD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	RegRS : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	WriteExternal : IN STD_LOGIC

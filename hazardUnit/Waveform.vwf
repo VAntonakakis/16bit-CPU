@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/" hazardUnit -c hazardUnit</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/simulation/qsim/" hazardUnit -c hazardUnit</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source="C:/Quartus projects/ergasia 1/hazardUnit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/hazardUnit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off hazardUnit -c hazardUnit --vector_source="C:/Quartus projects/ergasia 1/hazardUnit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/hazardUnit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/hazardUnit/simulation/qsim/" hazardUnit -c hazardUnit</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/hazardUnit/simulation/qsim/" hazardUnit -c hazardUnit</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work hazardUnit.vho

@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/trapUnit.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/db/trapUnit.cbx.xml
+source_file = 1, C:/Quartus projects/ergasia 1/trapUnit/trapUnit.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/trapUnit/Waveform.vwf
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/trapUnit/db/trapUnit.cbx.xml
 design_name = trapUnit
 instance = comp, \endOfRunning~output\, endOfRunning~output, trapUnit, 1
 instance = comp, \OpCode[1]~input\, OpCode[1]~input, trapUnit, 1

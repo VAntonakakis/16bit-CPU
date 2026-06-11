@@ -1,13 +1,13 @@
 Determining the location of the ModelSim executable...
 
-Using: c:/intelfpga_lite/19.1/modelsim_ase/win32aloem/
+Using: d:/quartus/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyProgramCounter -c MyProgramCounter --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyProgramCounter -c MyProgramCounter --vector_source="C:/Quartus projects/ergasia 1/MyProgramCounter/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/Waveform.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -26,15 +26,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed May 20 19:57:01 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyProgramCounter -c MyProgramCounter --vector_source=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/Waveform.vwf --testbench_file=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/Waveform.vwf.vht
+    Info: Processing started: Thu Jun 11 12:24:26 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MyProgramCounter -c MyProgramCounter --vector_source="C:/Quartus projects/ergasia 1/MyProgramCounter/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/Waveform.vwf.vht"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/" MyProgramCounter -c MyProgramCounter
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/" MyProgramCounter -c MyProgramCounter
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,40 +53,40 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed May 20 19:57:02 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/ MyProgramCounter -c MyProgramCounter
+    Info: Processing started: Thu Jun 11 12:24:27 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/" MyProgramCounter -c MyProgramCounter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file MyProgramCounter.vho in folder "C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MyProgramCounter.vho in folder "C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4748 megabytes
-    Info: Processing ended: Wed May 20 19:57:02 2026
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4733 megabytes
+    Info: Processing ended: Thu Jun 11 12:24:28 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/MyProgramCounter.do generated.
+C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/MyProgramCounter.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/19.1/modelsim_ase/win32aloem//vsim -c -do MyProgramCounter.do
+d:/quartus/modelsim_ase/win32aloem//vsim -c -do MyProgramCounter.do
 
-Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
 
 # do MyProgramCounter.do
-
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:57:04 on May 20,2026
+# Start time: 12:24:28 on Jun 11,2026
 # vcom -work work MyProgramCounter.vho 
 # -- Loading package STANDARD
+
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
@@ -98,22 +98,21 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package cyclonev_components
 # -- Compiling entity MyProgramCounter
 # -- Compiling architecture structure of MyProgramCounter
-
-# End time: 19:57:04 on May 20,2026, Elapsed time: 0:00:00
+# End time: 12:24:29 on Jun 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:57:04 on May 20,2026
+# Start time: 12:24:29 on Jun 11,2026
 # vcom -work work Waveform.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity MyProgramCounter_vhd_vec_tst
 # -- Compiling architecture MyProgramCounter_arch of MyProgramCounter_vhd_vec_tst
-# End time: 19:57:04 on May 20,2026, Elapsed time: 0:00:00
+# End time: 12:24:29 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.MyProgramCounter_vhd_vec_tst 
-# Start time: 19:57:04 on May 20,2026
+# Start time: 12:24:29 on Jun 11,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -134,20 +133,20 @@ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera.dffeas(vital_dffeas)
 # after#34
 
-# End time: 19:57:04 on May 20,2026, Elapsed time: 0:00:00
+# End time: 12:24:29 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/Waveform.vwf...
+Reading C:/Quartus projects/ergasia 1/MyProgramCounter/Waveform.vwf...
 
-Reading C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/MyProgramCounter.msim.vcd...
+Reading C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/MyProgramCounter.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyProgramCounter/simulation/qsim/MyProgramCounter_20260520195705.sim.vwf
+Writing the resulting VWF to C:/Quartus projects/ergasia 1/MyProgramCounter/simulation/qsim/MyProgramCounter_20260611122429.sim.vwf
 
 Finished VCD to VWF conversion.
 

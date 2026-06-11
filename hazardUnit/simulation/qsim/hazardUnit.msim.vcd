@@ -3,7 +3,7 @@ $comment
 		vcd file hazardUnit.msim.vcd -direction
 $end
 $date
-	Wed May 20 18:35:41 2026
+	Thu Jun 11 12:30:37 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -49,8 +49,8 @@ $var wire 1 ? \process_0~0_combout\ $end
 $var wire 1 @ \JRopcode~0_combout\ $end
 $var wire 1 A \ALT_INV_isJR~input_o\ $end
 $var wire 1 B \ALT_INV_isJump~input_o\ $end
-$var wire 1 C \ALT_INV_mustBranch~input_o\ $end
-$var wire 1 D \ALT_INV_wasJump~input_o\ $end
+$var wire 1 C \ALT_INV_wasJump~input_o\ $end
+$var wire 1 D \ALT_INV_mustBranch~input_o\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -86,12 +86,12 @@ x:
 0@
 1A
 0B
-1C
-0D
-08
-19
+0C
+1D
 0$
 1%
+08
+19
 $end
 #80000
 0#
@@ -101,7 +101,7 @@ $end
 1>
 0=
 1B
-0C
+0D
 1@
 07
 09
@@ -116,7 +116,7 @@ $end
 12
 1;
 0>
-1C
+1D
 0A
 0@
 08
@@ -130,7 +130,7 @@ $end
 0'
 04
 0<
-1D
+1C
 0?
 06
 0!

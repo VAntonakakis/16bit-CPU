@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/20/2026 18:35:31"
+-- Generated on "06/11/2026 12:30:36"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          hazardUnit
 -- 
@@ -43,13 +43,13 @@ SIGNAL wasJump : STD_LOGIC;
 SIGNAL wasJumpOut : STD_LOGIC;
 COMPONENT hazardUnit
 	PORT (
-	flush : OUT STD_LOGIC;
+	flush : BUFFER STD_LOGIC;
 	isJR : IN STD_LOGIC;
 	isJump : IN STD_LOGIC;
-	JRopcode : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	JRopcode : BUFFER STD_LOGIC_VECTOR(1 DOWNTO 0);
 	mustBranch : IN STD_LOGIC;
 	wasJump : IN STD_LOGIC;
-	wasJumpOut : OUT STD_LOGIC
+	wasJumpOut : BUFFER STD_LOGIC
 	);
 END COMPONENT;
 BEGIN

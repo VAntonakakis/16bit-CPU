@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/20/2026 20:36:30"
+-- DATE "06/11/2026 12:34:28"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -38,7 +38,7 @@ ENTITY 	MyAluControl IS
     PORT (
 	opcode : IN std_logic_vector(3 DOWNTO 0);
 	func : IN std_logic_vector(2 DOWNTO 0);
-	alu_sel : OUT std_logic_vector(3 DOWNTO 0)
+	alu_sel : BUFFER std_logic_vector(3 DOWNTO 0)
 	);
 END MyAluControl;
 
@@ -81,10 +81,10 @@ SIGNAL \Mux2~0_combout\ : std_logic;
 SIGNAL \func[2]~input_o\ : std_logic;
 SIGNAL \Mux1~0_combout\ : std_logic;
 SIGNAL \ALT_INV_opcode[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_opcode[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_opcode[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_func[0]~input_o\ : std_logic;
+SIGNAL \ALT_INV_opcode[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_opcode[3]~input_o\ : std_logic;
+SIGNAL \ALT_INV_func[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_func[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_func[2]~input_o\ : std_logic;
 
@@ -97,10 +97,10 @@ ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 \ALT_INV_opcode[0]~input_o\ <= NOT \opcode[0]~input_o\;
-\ALT_INV_opcode[2]~input_o\ <= NOT \opcode[2]~input_o\;
 \ALT_INV_opcode[1]~input_o\ <= NOT \opcode[1]~input_o\;
-\ALT_INV_func[0]~input_o\ <= NOT \func[0]~input_o\;
+\ALT_INV_opcode[2]~input_o\ <= NOT \opcode[2]~input_o\;
 \ALT_INV_opcode[3]~input_o\ <= NOT \opcode[3]~input_o\;
+\ALT_INV_func[0]~input_o\ <= NOT \func[0]~input_o\;
 \ALT_INV_func[1]~input_o\ <= NOT \func[1]~input_o\;
 \ALT_INV_func[2]~input_o\ <= NOT \func[2]~input_o\;
 

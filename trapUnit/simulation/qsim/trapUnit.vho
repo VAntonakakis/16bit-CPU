@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/19/2026 20:05:16"
+-- DATE "06/11/2026 12:27:51"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -37,7 +37,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	trapUnit IS
     PORT (
 	OpCode : IN std_logic_vector(3 DOWNTO 0);
-	endOfRunning : OUT std_logic
+	endOfRunning : BUFFER std_logic
 	);
 END trapUnit;
 

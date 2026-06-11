@@ -3,7 +3,7 @@ $comment
 		vcd file MyRegisterControl.msim.vcd -direction
 $end
 $date
-	Fri May 22 13:33:18 2026
+	Thu Jun 11 12:33:26 2026
 $end
 $version
 	ModelSim Version 10.5b

@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/22/2026 13:33:15"
+-- Generated on "06/11/2026 12:33:24"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MyRegisterControl
 -- 
@@ -50,15 +50,15 @@ COMPONENT MyRegisterControl
 	PORT (
 	Funct : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	IF_ID_Flush : IN STD_LOGIC;
-	isBranch : OUT STD_LOGIC;
-	isJReg : OUT STD_LOGIC;
-	isJType : OUT STD_LOGIC;
-	isLdWord : OUT STD_LOGIC;
-	isMFPC : OUT STD_LOGIC;
-	isReadDig : OUT STD_LOGIC;
-	isRType : OUT STD_LOGIC;
-	isStWord : OUT STD_LOGIC;
-	isWriteDig : OUT STD_LOGIC;
+	isBranch : BUFFER STD_LOGIC;
+	isJReg : BUFFER STD_LOGIC;
+	isJType : BUFFER STD_LOGIC;
+	isLdWord : BUFFER STD_LOGIC;
+	isMFPC : BUFFER STD_LOGIC;
+	isReadDig : BUFFER STD_LOGIC;
+	isRType : BUFFER STD_LOGIC;
+	isStWord : BUFFER STD_LOGIC;
+	isWriteDig : BUFFER STD_LOGIC;
 	OpCode : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 END COMPONENT;

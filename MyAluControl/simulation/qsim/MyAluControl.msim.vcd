@@ -3,7 +3,7 @@ $comment
 		vcd file MyAluControl.msim.vcd -direction
 $end
 $date
-	Wed May 20 20:36:32 2026
+	Thu Jun 11 12:34:29 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -58,10 +58,10 @@ $var wire 1 H \Mux2~0_combout\ $end
 $var wire 1 I \func[2]~input_o\ $end
 $var wire 1 J \Mux1~0_combout\ $end
 $var wire 1 K \ALT_INV_opcode[0]~input_o\ $end
-$var wire 1 L \ALT_INV_opcode[2]~input_o\ $end
-$var wire 1 M \ALT_INV_opcode[1]~input_o\ $end
-$var wire 1 N \ALT_INV_func[0]~input_o\ $end
-$var wire 1 O \ALT_INV_opcode[3]~input_o\ $end
+$var wire 1 L \ALT_INV_opcode[1]~input_o\ $end
+$var wire 1 M \ALT_INV_opcode[2]~input_o\ $end
+$var wire 1 N \ALT_INV_opcode[3]~input_o\ $end
+$var wire 1 O \ALT_INV_func[0]~input_o\ $end
 $var wire 1 P \ALT_INV_func[1]~input_o\ $end
 $var wire 1 Q \ALT_INV_func[2]~input_o\ $end
 $upscope $end
@@ -103,6 +103,10 @@ x@
 0)
 0*
 0+
+0!
+0"
+0#
+0$
 05
 06
 07
@@ -114,16 +118,12 @@ x@
 0=
 0>
 0?
-0!
-0"
-0#
-0$
 $end
 #80000
 1'
 1;
 1D
-0N
+0O
 1F
 1?
 1$
@@ -134,7 +134,7 @@ $end
 1:
 1G
 0D
-1N
+1O
 0P
 1H
 0F
@@ -146,7 +146,7 @@ $end
 1'
 1;
 1D
-0N
+0O
 1F
 1?
 1$
@@ -160,7 +160,7 @@ $end
 1I
 0G
 0D
-1N
+1O
 1P
 0Q
 1J
@@ -176,7 +176,7 @@ $end
 1'
 1;
 1D
-0N
+0O
 1F
 1?
 1$
@@ -187,7 +187,7 @@ $end
 1:
 1G
 0D
-1N
+1O
 0P
 1H
 0F
@@ -199,7 +199,7 @@ $end
 1'
 1;
 1D
-0N
+0O
 1F
 1?
 1$
@@ -219,11 +219,11 @@ $end
 0I
 0G
 0D
-1N
+1O
 1P
 1Q
 0K
-0O
+0N
 0J
 0H
 1<
@@ -248,11 +248,11 @@ $end
 1I
 1G
 1D
-0N
+0O
 0P
 0Q
 1K
-0L
+0M
 1J
 0F
 0?
