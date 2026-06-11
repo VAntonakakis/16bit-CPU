@@ -1,10 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/data_selector/data_selector.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
-source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/data_selector/db/data_selector.cbx.xml
+source_file = 1, C:/Quartus projects/ergasia 1/data_selector/data_selector.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/data_selector/Waveform.vwf
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/quartus/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Quartus projects/ergasia 1/data_selector/db/data_selector.cbx.xml
 design_name = data_selector
 instance = comp, \regaddressout[0]~output\, regaddressout[0]~output, data_selector, 1
 instance = comp, \regaddressout[1]~output\, regaddressout[1]~output, data_selector, 1

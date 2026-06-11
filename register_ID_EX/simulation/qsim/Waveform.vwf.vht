@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/08/2026 17:11:50"
+-- Generated on "06/11/2026 12:28:30"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          register_ID_EX
 -- 
@@ -74,42 +74,42 @@ SIGNAL wasJumpOut_IDEX : STD_LOGIC;
 COMPONENT register_ID_EX
 	PORT (
 	ALUFunc : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	ALUFunc_IDEX : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	ALUFunc_IDEX : BUFFER STD_LOGIC_VECTOR(3 DOWNTO 0);
 	clock : IN STD_LOGIC;
 	immediate16 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	immediate16_IDEX : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	immediate16_IDEX : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	isBranch : IN STD_LOGIC;
-	isBranch_IDEX : OUT STD_LOGIC;
+	isBranch_IDEX : BUFFER STD_LOGIC;
 	isEOR : IN STD_LOGIC;
-	isEOR_IDEX : OUT STD_LOGIC;
+	isEOR_IDEX : BUFFER STD_LOGIC;
 	isJR : IN STD_LOGIC;
-	isJR_IDEX : OUT STD_LOGIC;
+	isJR_IDEX : BUFFER STD_LOGIC;
 	isJump : IN STD_LOGIC;
-	isJump_IDEX : OUT STD_LOGIC;
+	isJump_IDEX : BUFFER STD_LOGIC;
 	isLW : IN STD_LOGIC;
-	isLW_IDEX : OUT STD_LOGIC;
+	isLW_IDEX : BUFFER STD_LOGIC;
 	isMFPC : IN STD_LOGIC;
-	isMFPC_IDEX : OUT STD_LOGIC;
+	isMFPC_IDEX : BUFFER STD_LOGIC;
 	isPrintDigit : IN STD_LOGIC;
-	isPrintDigit_IDEX : OUT STD_LOGIC;
+	isPrintDigit_IDEX : BUFFER STD_LOGIC;
 	isR : IN STD_LOGIC;
-	isR_IDEX : OUT STD_LOGIC;
+	isR_IDEX : BUFFER STD_LOGIC;
 	isReadDigit : IN STD_LOGIC;
-	isReadDigit_IDEX : OUT STD_LOGIC;
+	isReadDigit_IDEX : BUFFER STD_LOGIC;
 	isSW : IN STD_LOGIC;
-	isSW_IDEX : OUT STD_LOGIC;
+	isSW_IDEX : BUFFER STD_LOGIC;
 	jumpShortAddr : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-	jumpShortAddr_IDEX : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+	jumpShortAddr_IDEX : BUFFER STD_LOGIC_VECTOR(11 DOWNTO 0);
 	R1AD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-	R1AD_IDEX : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	R1AD_IDEX : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	R1Reg : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	R1Reg_IDEX : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	R1Reg_IDEX : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	R2AD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-	R2AD_IDEX : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+	R2AD_IDEX : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
 	R2Reg : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	R2Reg_IDEX : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	R2Reg_IDEX : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 	wasJumpOut : IN STD_LOGIC;
-	wasJumpOut_IDEX : OUT STD_LOGIC
+	wasJumpOut_IDEX : BUFFER STD_LOGIC
 	);
 END COMPONENT;
 BEGIN

@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/08/2026 17:09:06"
+-- Generated on "06/11/2026 12:32:17"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          register_EX_MEM
 -- 
@@ -37,6 +37,8 @@ ARCHITECTURE register_EX_MEM_arch OF register_EX_MEM_vhd_vec_tst IS
 SIGNAL clock : STD_LOGIC;
 SIGNAL isLW : STD_LOGIC;
 SIGNAL isLW_EXMEM : STD_LOGIC;
+SIGNAL isSW : STD_LOGIC;
+SIGNAL isSW_EXMEM : STD_LOGIC;
 SIGNAL PrintDigit : STD_LOGIC;
 SIGNAL PrintDigit_EXMEM : STD_LOGIC;
 SIGNAL R2Reg : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -54,6 +56,8 @@ COMPONENT register_EX_MEM
 	clock : IN STD_LOGIC;
 	isLW : IN STD_LOGIC;
 	isLW_EXMEM : OUT STD_LOGIC;
+	isSW : IN STD_LOGIC;
+	isSW_EXMEM : OUT STD_LOGIC;
 	PrintDigit : IN STD_LOGIC;
 	PrintDigit_EXMEM : OUT STD_LOGIC;
 	R2Reg : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -75,6 +79,8 @@ BEGIN
 	clock => clock,
 	isLW => isLW,
 	isLW_EXMEM => isLW_EXMEM,
+	isSW => isSW,
+	isSW_EXMEM => isSW_EXMEM,
 	PrintDigit => PrintDigit,
 	PrintDigit_EXMEM => PrintDigit_EXMEM,
 	R2Reg => R2Reg,

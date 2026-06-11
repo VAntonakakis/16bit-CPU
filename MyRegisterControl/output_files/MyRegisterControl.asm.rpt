@@ -1,5 +1,9 @@
 Assembler report for MyRegisterControl
+<<<<<<< HEAD
 Thu Jun 11 11:26:48 2026
+=======
+Thu Jun 11 12:33:01 2026
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +14,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/output_files/MyRegisterControl.sof
+  5. Assembler Device Options: C:/Quartus projects/ergasia 1/MyRegisterControl/output_files/MyRegisterControl.sof
   6. Assembler Messages
 
 
@@ -38,7 +42,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Thu Jun 11 11:26:48 2026 ;
+=======
+; Assembler Status      ; Successful - Thu Jun 11 12:33:01 2026 ;
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 ; Revision Name         ; MyRegisterControl                     ;
 ; Top-level Entity Name ; MyRegisterControl                     ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +61,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                            ;
-+--------------------------------------------------------------------------------------+
-; File Name                                                                            ;
-+--------------------------------------------------------------------------------------+
-; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/output_files/MyRegisterControl.sof ;
-+--------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                          ;
++------------------------------------------------------------------------------------+
+; File Name                                                                          ;
++------------------------------------------------------------------------------------+
+; C:/Quartus projects/ergasia 1/MyRegisterControl/output_files/MyRegisterControl.sof ;
++------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/output_files/MyRegisterControl.sof ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                       ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00EC7805                                                                                    ;
-; Checksum       ; 0x00EC7805                                                                                    ;
-+----------------+-----------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Quartus projects/ergasia 1/MyRegisterControl/output_files/MyRegisterControl.sof ;
++----------------+---------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                     ;
++----------------+---------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00EC7805                                                                                  ;
+; Checksum       ; 0x00EC7805                                                                                  ;
++----------------+---------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +86,25 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Jun 11 11:26:42 2026
+=======
+    Info: Processing started: Thu Jun 11 12:32:56 2026
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MyRegisterControl -c MyRegisterControl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< HEAD
     Info: Peak virtual memory: 4855 megabytes
     Info: Processing ended: Thu Jun 11 11:26:48 2026
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
+=======
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Thu Jun 11 12:33:01 2026
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 
 

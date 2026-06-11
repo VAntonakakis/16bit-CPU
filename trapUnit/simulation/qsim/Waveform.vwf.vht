@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/19/2026 20:05:15"
+-- Generated on "06/11/2026 12:27:50"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          trapUnit
 -- 
@@ -38,7 +38,7 @@ SIGNAL endOfRunning : STD_LOGIC;
 SIGNAL OpCode : STD_LOGIC_VECTOR(3 DOWNTO 0);
 COMPONENT trapUnit
 	PORT (
-	endOfRunning : OUT STD_LOGIC;
+	endOfRunning : BUFFER STD_LOGIC;
 	OpCode : IN STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 END COMPONENT;

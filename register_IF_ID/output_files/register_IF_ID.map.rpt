@@ -1,5 +1,5 @@
 Analysis & Synthesis report for register_IF_ID
-Wed May 06 10:18:00 2026
+Thu Jun 11 12:17:36 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 06 10:18:00 2026       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 11 12:17:36 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; register_IF_ID                              ;
 ; Top-level Entity Name           ; register_IF_ID                              ;
@@ -168,13 +168,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; register_IF_ID.vhd               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; register_IF_ID.vhd               ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -313,116 +313,116 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed May 06 10:17:44 2026
+    Info: Processing started: Thu Jun 11 12:17:21 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off register_IF_ID -c register_IF_ID
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file register_if_id.vhd
-    Info (12022): Found design unit 1: register_IF_ID-behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 17
-    Info (12023): Found entity 1: register_IF_ID File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 5
+    Info (12022): Found design unit 1: register_IF_ID-behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 17
+    Info (12023): Found entity 1: register_IF_ID File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 5
 Info (12127): Elaborating entity "register_IF_ID" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(22): signal "IF_ID_ENABLE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(24): signal "inPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(27): signal "inInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(29): signal "IF_Flush" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 29
-Warning (10631): VHDL Process Statement warning at register_IF_ID.vhd(20): inferring latch(es) for signal or variable "outPC", which holds its previous value in one or more paths through the process File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Warning (10631): VHDL Process Statement warning at register_IF_ID.vhd(20): inferring latch(es) for signal or variable "outInstruction", which holds its previous value in one or more paths through the process File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[0]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[1]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[2]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[3]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[4]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[5]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[6]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[7]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[8]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[9]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[10]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[11]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[12]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[13]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[14]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outInstruction[15]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[0]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[1]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[2]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[3]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[4]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[5]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[6]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[7]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[8]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[9]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[10]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[11]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[12]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[13]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[14]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (10041): Inferred latch for "outPC[15]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Warning (13012): Latch outPC[0]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[1]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[2]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[3]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[4]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[5]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[6]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[7]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[8]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[9]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[10]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[11]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[12]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[13]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[14]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outPC[15]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[0]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[1]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[2]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[3]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[4]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[5]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[6]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[7]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[8]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[9]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[10]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[11]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[12]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[13]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[14]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
-Warning (13012): Latch outInstruction[15]$latch has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(22): signal "IF_ID_ENABLE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 22
+Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(24): signal "inPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(27): signal "inInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(29): signal "IF_Flush" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 29
+Warning (10631): VHDL Process Statement warning at register_IF_ID.vhd(20): inferring latch(es) for signal or variable "outPC", which holds its previous value in one or more paths through the process File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Warning (10631): VHDL Process Statement warning at register_IF_ID.vhd(20): inferring latch(es) for signal or variable "outInstruction", which holds its previous value in one or more paths through the process File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[0]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[1]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[2]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[3]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[4]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[5]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[6]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[7]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[8]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[9]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[10]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[11]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[12]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[13]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[14]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outInstruction[15]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[0]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[1]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[2]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[3]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[4]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[5]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[6]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[7]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[8]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[9]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[10]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[11]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[12]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[13]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[14]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Info (10041): Inferred latch for "outPC[15]" at register_IF_ID.vhd(20) File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Warning (13012): Latch outPC[0]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[1]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[2]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[3]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[4]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[5]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[6]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[7]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[8]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[9]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[10]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[11]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[12]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[13]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[14]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outPC[15]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[0]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[1]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[2]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[3]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[4]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[5]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[6]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[7]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[8]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[9]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[10]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[11]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[12]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[13]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[14]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
+Warning (13012): Latch outInstruction[15]$latch has unsafe behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -431,9 +431,9 @@ Info (21057): Implemented 147 device resources after synthesis - the final resou
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 80 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
-    Info: Peak virtual memory: 4881 megabytes
-    Info: Processing ended: Wed May 06 10:18:00 2026
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Thu Jun 11 12:17:36 2026
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 

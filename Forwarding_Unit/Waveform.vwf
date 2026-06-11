@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off forwarder -c forwarder --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off forwarder -c forwarder --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/" forwarder -c forwarder</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/simulation/qsim/" forwarder -c forwarder</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off forwarder -c forwarder --vector_source="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off forwarder -c forwarder --vector_source="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/Waveform.vwf" --testbench_file="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/simulation/qsim/" forwarder -c forwarder</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/simulation/qsim/" forwarder -c forwarder</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work forwarder.vho

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/08/2026 17:10:00"
+-- DATE "06/11/2026 12:35:18"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -41,8 +41,8 @@ ENTITY 	register_MEM_WB IS
 	clock : IN std_logic;
 	Result : IN std_logic_vector(15 DOWNTO 0);
 	RegAD : IN std_logic_vector(2 DOWNTO 0);
-	writeData : OUT std_logic_vector(15 DOWNTO 0);
-	writeAD : OUT std_logic_vector(2 DOWNTO 0)
+	writeData : BUFFER std_logic_vector(15 DOWNTO 0);
+	writeAD : BUFFER std_logic_vector(2 DOWNTO 0)
 	);
 END register_MEM_WB;
 

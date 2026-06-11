@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "06/11/2026 10:18:24"
+-- Generated on "06/11/2026 12:36:41"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          forwarder
 -- 
@@ -42,8 +42,8 @@ SIGNAL RegAD_EXMEM : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL RegAD_MEMWB : STD_LOGIC_VECTOR(2 DOWNTO 0);
 COMPONENT forwarder
 	PORT (
-	ForwardA : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-	ForwardB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+	ForwardA : BUFFER STD_LOGIC_VECTOR(1 DOWNTO 0);
+	ForwardB : BUFFER STD_LOGIC_VECTOR(1 DOWNTO 0);
 	R1AD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	R2AD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	RegAD_EXMEM : IN STD_LOGIC_VECTOR(2 DOWNTO 0);

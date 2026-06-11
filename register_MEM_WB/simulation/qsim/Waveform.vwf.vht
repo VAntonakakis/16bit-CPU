@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/08/2026 17:09:58"
+-- Generated on "06/11/2026 12:35:17"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          register_MEM_WB
 -- 
@@ -44,8 +44,8 @@ COMPONENT register_MEM_WB
 	clock : IN STD_LOGIC;
 	RegAD : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
 	Result : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	writeAD : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-	writeData : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	writeAD : BUFFER STD_LOGIC_VECTOR(2 DOWNTO 0);
+	writeData : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN

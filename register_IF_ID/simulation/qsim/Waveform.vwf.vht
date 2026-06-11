@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/08/2026 17:07:58"
+-- Generated on "06/11/2026 12:24:39"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          register_IF_ID
 -- 
@@ -48,8 +48,8 @@ COMPONENT register_IF_ID
 	IF_ID_ENABLE : IN STD_LOGIC;
 	inInstruction : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	inPC : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	outInstruction : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	outPC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	outInstruction : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
+	outPC : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END COMPONENT;
 BEGIN

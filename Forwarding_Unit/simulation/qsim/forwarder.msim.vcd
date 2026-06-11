@@ -3,7 +3,7 @@ $comment
 		vcd file forwarder.msim.vcd -direction
 $end
 $date
-	Thu Jun 11 10:18:28 2026
+	Thu Jun 11 12:36:43 2026
 $end
 $version
 	ModelSim Version 10.5b
@@ -75,22 +75,22 @@ $var wire 1 Y \R2AD[0]~input_o\ $end
 $var wire 1 Z \Equal2~0_combout\ $end
 $var wire 1 [ \ForwardB~0_combout\ $end
 $var wire 1 \ \ForwardB~1_combout\ $end
-$var wire 1 ] \ALT_INV_RegAD_EXMEM[1]~input_o\ $end
-$var wire 1 ^ \ALT_INV_RegAD_EXMEM[2]~input_o\ $end
+$var wire 1 ] \ALT_INV_R1AD[1]~input_o\ $end
+$var wire 1 ^ \ALT_INV_RegAD_EXMEM[1]~input_o\ $end
 $var wire 1 _ \ALT_INV_Equal0~0_combout\ $end
 $var wire 1 ` \ALT_INV_ForwardA~0_combout\ $end
 $var wire 1 a \ALT_INV_Equal2~0_combout\ $end
-$var wire 1 b \ALT_INV_ForwardB~0_combout\ $end
+$var wire 1 b \ALT_INV_RegAD_EXMEM[2]~input_o\ $end
 $var wire 1 c \ALT_INV_RegAD_MEMWB[0]~input_o\ $end
-$var wire 1 d \ALT_INV_RegAD_MEMWB[1]~input_o\ $end
+$var wire 1 d \ALT_INV_ForwardB~0_combout\ $end
 $var wire 1 e \ALT_INV_R1AD[2]~input_o\ $end
 $var wire 1 f \ALT_INV_RegAD_MEMWB[2]~input_o\ $end
 $var wire 1 g \ALT_INV_R1AD[0]~input_o\ $end
 $var wire 1 h \ALT_INV_RegAD_EXMEM[0]~input_o\ $end
-$var wire 1 i \ALT_INV_R1AD[1]~input_o\ $end
-$var wire 1 j \ALT_INV_R2AD[1]~input_o\ $end
-$var wire 1 k \ALT_INV_R2AD[0]~input_o\ $end
-$var wire 1 l \ALT_INV_R2AD[2]~input_o\ $end
+$var wire 1 i \ALT_INV_R2AD[1]~input_o\ $end
+$var wire 1 j \ALT_INV_R2AD[0]~input_o\ $end
+$var wire 1 k \ALT_INV_R2AD[2]~input_o\ $end
+$var wire 1 l \ALT_INV_RegAD_MEMWB[1]~input_o\ $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -124,7 +124,7 @@ xJ
 0Z
 0[
 0\
-1]
+0]
 1^
 1_
 1`
@@ -136,10 +136,10 @@ xJ
 1f
 1g
 1h
-0i
+1i
 1j
-1k
-0l
+0k
+1l
 0%
 1&
 0'
@@ -152,6 +152,10 @@ xJ
 0.
 0/
 10
+0!
+0"
+0#
+0$
 0:
 1;
 0<
@@ -168,16 +172,12 @@ xJ
 0G
 0H
 0I
-0!
-0"
-0#
-0$
 $end
 #80000
 0&
 0;
 0M
-1i
+1]
 1T
 0_
 1F
@@ -207,8 +207,8 @@ $end
 1M
 0N
 1g
-0i
-1l
+0]
+1k
 1Z
 0O
 1`
@@ -222,10 +222,10 @@ $end
 1*
 1?
 1Y
-0k
+0j
 0Z
 1[
-0b
+0d
 1a
 1\
 0H
@@ -236,7 +236,7 @@ $end
 0&
 0;
 0M
-1i
+1]
 1T
 0_
 1F
@@ -248,13 +248,13 @@ $end
 1<
 1N
 0Y
-1k
+1j
 0g
 1O
 0T
 1Z
 0[
-1b
+1d
 0a
 1_
 0`
@@ -290,14 +290,14 @@ $end
 1Y
 1N
 0g
-0k
+0j
 0Z
 1[
 1O
 0T
 1_
 0`
-0b
+0d
 1a
 1\
 1V

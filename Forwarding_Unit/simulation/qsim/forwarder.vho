@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "06/11/2026 10:18:26"
+-- DATE "06/11/2026 12:36:42"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -40,8 +40,8 @@ ENTITY 	forwarder IS
 	R2AD : IN std_logic_vector(2 DOWNTO 0);
 	RegAD_EXMEM : IN std_logic_vector(2 DOWNTO 0);
 	RegAD_MEMWB : IN std_logic_vector(2 DOWNTO 0);
-	ForwardA : OUT std_logic_vector(1 DOWNTO 0);
-	ForwardB : OUT std_logic_vector(1 DOWNTO 0)
+	ForwardA : BUFFER std_logic_vector(1 DOWNTO 0);
+	ForwardB : BUFFER std_logic_vector(1 DOWNTO 0)
 	);
 END forwarder;
 
@@ -99,22 +99,22 @@ SIGNAL \R2AD[0]~input_o\ : std_logic;
 SIGNAL \Equal2~0_combout\ : std_logic;
 SIGNAL \ForwardB~0_combout\ : std_logic;
 SIGNAL \ForwardB~1_combout\ : std_logic;
+SIGNAL \ALT_INV_R1AD[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_RegAD_EXMEM[1]~input_o\ : std_logic;
-SIGNAL \ALT_INV_RegAD_EXMEM[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_Equal0~0_combout\ : std_logic;
 SIGNAL \ALT_INV_ForwardA~0_combout\ : std_logic;
 SIGNAL \ALT_INV_Equal2~0_combout\ : std_logic;
-SIGNAL \ALT_INV_ForwardB~0_combout\ : std_logic;
+SIGNAL \ALT_INV_RegAD_EXMEM[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_RegAD_MEMWB[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_RegAD_MEMWB[1]~input_o\ : std_logic;
+SIGNAL \ALT_INV_ForwardB~0_combout\ : std_logic;
 SIGNAL \ALT_INV_R1AD[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_RegAD_MEMWB[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_R1AD[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_RegAD_EXMEM[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_R1AD[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_R2AD[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_R2AD[0]~input_o\ : std_logic;
 SIGNAL \ALT_INV_R2AD[2]~input_o\ : std_logic;
+SIGNAL \ALT_INV_RegAD_MEMWB[1]~input_o\ : std_logic;
 
 BEGIN
 
@@ -127,22 +127,22 @@ ForwardB <= ww_ForwardB;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
+\ALT_INV_R1AD[1]~input_o\ <= NOT \R1AD[1]~input_o\;
 \ALT_INV_RegAD_EXMEM[1]~input_o\ <= NOT \RegAD_EXMEM[1]~input_o\;
-\ALT_INV_RegAD_EXMEM[2]~input_o\ <= NOT \RegAD_EXMEM[2]~input_o\;
 \ALT_INV_Equal0~0_combout\ <= NOT \Equal0~0_combout\;
 \ALT_INV_ForwardA~0_combout\ <= NOT \ForwardA~0_combout\;
 \ALT_INV_Equal2~0_combout\ <= NOT \Equal2~0_combout\;
-\ALT_INV_ForwardB~0_combout\ <= NOT \ForwardB~0_combout\;
+\ALT_INV_RegAD_EXMEM[2]~input_o\ <= NOT \RegAD_EXMEM[2]~input_o\;
 \ALT_INV_RegAD_MEMWB[0]~input_o\ <= NOT \RegAD_MEMWB[0]~input_o\;
-\ALT_INV_RegAD_MEMWB[1]~input_o\ <= NOT \RegAD_MEMWB[1]~input_o\;
+\ALT_INV_ForwardB~0_combout\ <= NOT \ForwardB~0_combout\;
 \ALT_INV_R1AD[2]~input_o\ <= NOT \R1AD[2]~input_o\;
 \ALT_INV_RegAD_MEMWB[2]~input_o\ <= NOT \RegAD_MEMWB[2]~input_o\;
 \ALT_INV_R1AD[0]~input_o\ <= NOT \R1AD[0]~input_o\;
 \ALT_INV_RegAD_EXMEM[0]~input_o\ <= NOT \RegAD_EXMEM[0]~input_o\;
-\ALT_INV_R1AD[1]~input_o\ <= NOT \R1AD[1]~input_o\;
 \ALT_INV_R2AD[1]~input_o\ <= NOT \R2AD[1]~input_o\;
 \ALT_INV_R2AD[0]~input_o\ <= NOT \R2AD[0]~input_o\;
 \ALT_INV_R2AD[2]~input_o\ <= NOT \R2AD[2]~input_o\;
+\ALT_INV_RegAD_MEMWB[1]~input_o\ <= NOT \RegAD_MEMWB[1]~input_o\;
 
 -- Location: IOOBUF_X89_Y38_N5
 \ForwardA[0]~output\ : cyclonev_io_obuf

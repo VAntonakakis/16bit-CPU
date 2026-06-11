@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/simulation/qsim
 Eregister_ex_mem
-Z1 w1778249348
+Z1 w1781170338
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 NZ_cKj>1HW_D7i1UeTO[31
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6`GHcm:DR>=X_840X1FV;0
@@ -19,23 +19,23 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z10 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
-R0
-Z11 8register_EX_MEM.vho
-Z12 Fregister_EX_MEM.vho
+Z11 dC:/Users/Aimilios/Documents/repos/16bit-CPU/register_EX_MEM/simulation/qsim
+Z12 8register_EX_MEM.vho
+Z13 Fregister_EX_MEM.vho
 l0
 L39
-VSzDY5`MeYCa[NAjz6AdK<0
-!s100 VjR_3Ih0_mXhQclNjO<hD1
-Z13 OV;C;10.5b;63
+V3Oj3?dELSiD9i:U1<FhCQ2
+!s100 UgRc8B_C`E^0]BAeR8@@n1
+Z14 OV;C;10.5b;63
 32
-Z14 !s110 1778249350
+Z15 !s110 1781170339
 !i10b 1
-Z15 !s108 1778249350.000000
-Z16 !s90 -work|work|register_EX_MEM.vho|
-Z17 !s107 register_EX_MEM.vho|
+Z16 !s108 1781170339.000000
+Z17 !s90 -work|work|register_EX_MEM.vho|
+Z18 !s107 register_EX_MEM.vho|
 !i113 1
-Z18 o-work work
-Z19 tExplicit 1 CvgOpt 0
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -46,57 +46,57 @@ R7
 R8
 R9
 R10
-DEx4 work 15 register_ex_mem 0 22 SzDY5`MeYCa[NAjz6AdK<0
-l298
-L141
-VaPnRdFMQbMOlfS=D?lIIz1
-!s100 MEd>gSh<=CMl6KM<<znic3
-R13
-32
+DEx4 work 15 register_ex_mem 0 22 3Oj3?dELSiD9i:U1<FhCQ2
+l308
+L145
+V3^[92gPeUV4cC^P8GYbo>1
+!s100 cUGEZ68Chgb][j?[TRga^2
 R14
-!i10b 1
+32
 R15
+!i10b 1
 R16
 R17
-!i113 1
 R18
+!i113 1
 R19
+R20
 Eregister_ex_mem_vhd_vec_tst
-Z20 w1778249346
+Z21 w1781170337
 R8
 R9
-R0
-Z21 8Waveform.vwf.vht
-Z22 FWaveform.vwf.vht
+R11
+Z22 8Waveform.vwf.vht
+Z23 FWaveform.vwf.vht
 l0
 L32
 V8iNm2W>cY_5WBE:jm97061
 !s100 nlJKbG]^FMe[2On?7iEYm2
-R13
-32
 R14
-!i10b 1
+32
 R15
-Z23 !s90 -work|work|Waveform.vwf.vht|
-Z24 !s107 Waveform.vwf.vht|
+!i10b 1
+R16
+Z24 !s90 -work|work|Waveform.vwf.vht|
+Z25 !s107 Waveform.vwf.vht|
 !i113 1
-R18
 R19
+R20
 Aregister_ex_mem_arch
 R8
 R9
-Z25 DEx4 work 27 register_ex_mem_vhd_vec_tst 0 22 8iNm2W>cY_5WBE:jm97061
-l71
+Z26 DEx4 work 27 register_ex_mem_vhd_vec_tst 0 22 8iNm2W>cY_5WBE:jm97061
+l75
 L34
-Z26 VULY;a7FKaR@eI<>[5:NDY2
-Z27 !s100 I9iSazdUXjoVA3coPKS:L1
-R13
-32
+Vn2Xnl:IBAM[XMgXj2aheQ1
+!s100 i:BJlEC9JzF^@>K_E1V`?3
 R14
-!i10b 1
+32
 R15
-R23
+!i10b 1
+R16
 R24
+R25
 !i113 1
-R18
 R19
+R20

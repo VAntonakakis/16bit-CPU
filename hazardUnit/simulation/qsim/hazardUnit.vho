@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/20/2026 18:35:32"
+-- DATE "06/11/2026 12:30:37"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -40,9 +40,9 @@ ENTITY 	hazardUnit IS
 	isJump : IN std_logic;
 	wasJump : IN std_logic;
 	mustBranch : IN std_logic;
-	flush : OUT std_logic;
-	wasJumpOut : OUT std_logic;
-	JRopcode : OUT std_logic_vector(1 DOWNTO 0)
+	flush : BUFFER std_logic;
+	wasJumpOut : BUFFER std_logic;
+	JRopcode : BUFFER std_logic_vector(1 DOWNTO 0)
 	);
 END hazardUnit;
 
@@ -83,8 +83,8 @@ SIGNAL \process_0~0_combout\ : std_logic;
 SIGNAL \JRopcode~0_combout\ : std_logic;
 SIGNAL \ALT_INV_isJR~input_o\ : std_logic;
 SIGNAL \ALT_INV_isJump~input_o\ : std_logic;
-SIGNAL \ALT_INV_mustBranch~input_o\ : std_logic;
 SIGNAL \ALT_INV_wasJump~input_o\ : std_logic;
+SIGNAL \ALT_INV_mustBranch~input_o\ : std_logic;
 
 BEGIN
 
@@ -100,8 +100,8 @@ ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 \ALT_INV_isJR~input_o\ <= NOT \isJR~input_o\;
 \ALT_INV_isJump~input_o\ <= NOT \isJump~input_o\;
-\ALT_INV_mustBranch~input_o\ <= NOT \mustBranch~input_o\;
 \ALT_INV_wasJump~input_o\ <= NOT \wasJump~input_o\;
+\ALT_INV_mustBranch~input_o\ <= NOT \mustBranch~input_o\;
 
 -- Location: IOOBUF_X89_Y36_N5
 \flush~output\ : cyclonev_io_obuf

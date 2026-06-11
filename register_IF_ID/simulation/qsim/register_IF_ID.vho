@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/08/2026 17:08:00"
+-- DATE "06/11/2026 12:24:40"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -41,8 +41,8 @@ ENTITY 	register_IF_ID IS
 	clock : IN std_logic;
 	IF_Flush : IN std_logic;
 	IF_ID_ENABLE : IN std_logic;
-	outPC : OUT std_logic_vector(15 DOWNTO 0);
-	outInstruction : OUT std_logic_vector(15 DOWNTO 0)
+	outPC : BUFFER std_logic_vector(15 DOWNTO 0);
+	outInstruction : BUFFER std_logic_vector(15 DOWNTO 0)
 	);
 END register_IF_ID;
 
@@ -263,31 +263,6 @@ SIGNAL \outInstruction[14]$latch~combout\ : std_logic;
 SIGNAL \inInstruction[15]~input_o\ : std_logic;
 SIGNAL \outInstruction[15]~15_combout\ : std_logic;
 SIGNAL \outInstruction[15]$latch~combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[8]~9_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[7]~8_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[6]~7_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[5]~6_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[4]~5_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[3]~4_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[2]~3_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[1]~2_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[15]~1_combout\ : std_logic;
-SIGNAL \ALT_INV_outPC[0]~0_combout\ : std_logic;
-SIGNAL \ALT_INV_Add0~57_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~53_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~49_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~45_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~41_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~37_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~33_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~29_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~25_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~21_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~17_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~13_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~9_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~5_sumout\ : std_logic;
-SIGNAL \ALT_INV_Add0~1_sumout\ : std_logic;
 SIGNAL \ALT_INV_inPC[15]~input_o\ : std_logic;
 SIGNAL \ALT_INV_inPC[14]~input_o\ : std_logic;
 SIGNAL \ALT_INV_inPC[13]~input_o\ : std_logic;
@@ -378,6 +353,31 @@ SIGNAL \ALT_INV_outPC[12]~13_combout\ : std_logic;
 SIGNAL \ALT_INV_outPC[11]~12_combout\ : std_logic;
 SIGNAL \ALT_INV_outPC[10]~11_combout\ : std_logic;
 SIGNAL \ALT_INV_outPC[9]~10_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[8]~9_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[7]~8_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[6]~7_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[5]~6_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[4]~5_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[3]~4_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[2]~3_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[1]~2_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[15]~1_combout\ : std_logic;
+SIGNAL \ALT_INV_outPC[0]~0_combout\ : std_logic;
+SIGNAL \ALT_INV_Add0~57_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~53_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~49_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~45_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~41_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~37_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~33_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~29_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~25_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~21_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~17_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~13_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~9_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~5_sumout\ : std_logic;
+SIGNAL \ALT_INV_Add0~1_sumout\ : std_logic;
 
 BEGIN
 
@@ -391,31 +391,6 @@ outInstruction <= ww_outInstruction;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_outPC[8]~9_combout\ <= NOT \outPC[8]~9_combout\;
-\ALT_INV_outPC[7]~8_combout\ <= NOT \outPC[7]~8_combout\;
-\ALT_INV_outPC[6]~7_combout\ <= NOT \outPC[6]~7_combout\;
-\ALT_INV_outPC[5]~6_combout\ <= NOT \outPC[5]~6_combout\;
-\ALT_INV_outPC[4]~5_combout\ <= NOT \outPC[4]~5_combout\;
-\ALT_INV_outPC[3]~4_combout\ <= NOT \outPC[3]~4_combout\;
-\ALT_INV_outPC[2]~3_combout\ <= NOT \outPC[2]~3_combout\;
-\ALT_INV_outPC[1]~2_combout\ <= NOT \outPC[1]~2_combout\;
-\ALT_INV_outPC[15]~1_combout\ <= NOT \outPC[15]~1_combout\;
-\ALT_INV_outPC[0]~0_combout\ <= NOT \outPC[0]~0_combout\;
-\ALT_INV_Add0~57_sumout\ <= NOT \Add0~57_sumout\;
-\ALT_INV_Add0~53_sumout\ <= NOT \Add0~53_sumout\;
-\ALT_INV_Add0~49_sumout\ <= NOT \Add0~49_sumout\;
-\ALT_INV_Add0~45_sumout\ <= NOT \Add0~45_sumout\;
-\ALT_INV_Add0~41_sumout\ <= NOT \Add0~41_sumout\;
-\ALT_INV_Add0~37_sumout\ <= NOT \Add0~37_sumout\;
-\ALT_INV_Add0~33_sumout\ <= NOT \Add0~33_sumout\;
-\ALT_INV_Add0~29_sumout\ <= NOT \Add0~29_sumout\;
-\ALT_INV_Add0~25_sumout\ <= NOT \Add0~25_sumout\;
-\ALT_INV_Add0~21_sumout\ <= NOT \Add0~21_sumout\;
-\ALT_INV_Add0~17_sumout\ <= NOT \Add0~17_sumout\;
-\ALT_INV_Add0~13_sumout\ <= NOT \Add0~13_sumout\;
-\ALT_INV_Add0~9_sumout\ <= NOT \Add0~9_sumout\;
-\ALT_INV_Add0~5_sumout\ <= NOT \Add0~5_sumout\;
-\ALT_INV_Add0~1_sumout\ <= NOT \Add0~1_sumout\;
 \ALT_INV_inPC[15]~input_o\ <= NOT \inPC[15]~input_o\;
 \ALT_INV_inPC[14]~input_o\ <= NOT \inPC[14]~input_o\;
 \ALT_INV_inPC[13]~input_o\ <= NOT \inPC[13]~input_o\;
@@ -506,6 +481,31 @@ ww_devpor <= devpor;
 \ALT_INV_outPC[11]~12_combout\ <= NOT \outPC[11]~12_combout\;
 \ALT_INV_outPC[10]~11_combout\ <= NOT \outPC[10]~11_combout\;
 \ALT_INV_outPC[9]~10_combout\ <= NOT \outPC[9]~10_combout\;
+\ALT_INV_outPC[8]~9_combout\ <= NOT \outPC[8]~9_combout\;
+\ALT_INV_outPC[7]~8_combout\ <= NOT \outPC[7]~8_combout\;
+\ALT_INV_outPC[6]~7_combout\ <= NOT \outPC[6]~7_combout\;
+\ALT_INV_outPC[5]~6_combout\ <= NOT \outPC[5]~6_combout\;
+\ALT_INV_outPC[4]~5_combout\ <= NOT \outPC[4]~5_combout\;
+\ALT_INV_outPC[3]~4_combout\ <= NOT \outPC[3]~4_combout\;
+\ALT_INV_outPC[2]~3_combout\ <= NOT \outPC[2]~3_combout\;
+\ALT_INV_outPC[1]~2_combout\ <= NOT \outPC[1]~2_combout\;
+\ALT_INV_outPC[15]~1_combout\ <= NOT \outPC[15]~1_combout\;
+\ALT_INV_outPC[0]~0_combout\ <= NOT \outPC[0]~0_combout\;
+\ALT_INV_Add0~57_sumout\ <= NOT \Add0~57_sumout\;
+\ALT_INV_Add0~53_sumout\ <= NOT \Add0~53_sumout\;
+\ALT_INV_Add0~49_sumout\ <= NOT \Add0~49_sumout\;
+\ALT_INV_Add0~45_sumout\ <= NOT \Add0~45_sumout\;
+\ALT_INV_Add0~41_sumout\ <= NOT \Add0~41_sumout\;
+\ALT_INV_Add0~37_sumout\ <= NOT \Add0~37_sumout\;
+\ALT_INV_Add0~33_sumout\ <= NOT \Add0~33_sumout\;
+\ALT_INV_Add0~29_sumout\ <= NOT \Add0~29_sumout\;
+\ALT_INV_Add0~25_sumout\ <= NOT \Add0~25_sumout\;
+\ALT_INV_Add0~21_sumout\ <= NOT \Add0~21_sumout\;
+\ALT_INV_Add0~17_sumout\ <= NOT \Add0~17_sumout\;
+\ALT_INV_Add0~13_sumout\ <= NOT \Add0~13_sumout\;
+\ALT_INV_Add0~9_sumout\ <= NOT \Add0~9_sumout\;
+\ALT_INV_Add0~5_sumout\ <= NOT \Add0~5_sumout\;
+\ALT_INV_Add0~1_sumout\ <= NOT \Add0~1_sumout\;
 
 -- Location: IOOBUF_X36_Y0_N36
 \outPC[0]~output\ : cyclonev_io_obuf

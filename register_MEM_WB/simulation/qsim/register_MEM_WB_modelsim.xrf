@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/register_MEM_WB.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/Waveform.vwf
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_MEM_WB/register_MEM_WB.vhd
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_MEM_WB/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_MEM_WB/db/register_MEM_WB.cbx.xml
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_MEM_WB/db/register_MEM_WB.cbx.xml
 design_name = register_MEM_WB
 instance = comp, \writeData[0]~output\, writeData[0]~output, register_MEM_WB, 1
 instance = comp, \writeData[1]~output\, writeData[1]~output, register_MEM_WB, 1

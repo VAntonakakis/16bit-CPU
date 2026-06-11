@@ -23,9 +23,9 @@ RegAD_MEMWB[1] => Equal1.IN4
 RegAD_MEMWB[1] => Equal3.IN4
 RegAD_MEMWB[2] => Equal1.IN3
 RegAD_MEMWB[2] => Equal3.IN3
-ForwardA[0] <= ForwardA.DB_MAX_OUTPUT_PORT_TYPE
-ForwardA[1] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-ForwardB[0] <= ForwardB.DB_MAX_OUTPUT_PORT_TYPE
-ForwardB[1] <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+ForwardA[0] << ForwardA.DB_MAX_OUTPUT_PORT_TYPE
+ForwardA[1] << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+ForwardB[0] << ForwardB.DB_MAX_OUTPUT_PORT_TYPE
+ForwardB[1] << Equal2.DB_MAX_OUTPUT_PORT_TYPE
 
 

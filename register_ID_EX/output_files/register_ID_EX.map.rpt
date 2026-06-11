@@ -1,5 +1,5 @@
 Analysis & Synthesis report for register_ID_EX
-Wed May 06 18:58:26 2026
+Thu Jun 11 12:16:53 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 06 18:58:26 2026       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 11 12:16:53 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; register_ID_EX                              ;
 ; Top-level Entity Name           ; register_ID_EX                              ;
@@ -167,13 +167,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                             ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; register_ID_EX.vhd               ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/register_ID_EX.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
+; register_ID_EX.vhd               ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/register_ID_EX/register_ID_EX.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -258,7 +258,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -268,13 +268,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed May 06 18:58:11 2026
+    Info: Processing started: Thu Jun 11 12:16:35 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off register_ID_EX -c register_ID_EX
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file register_id_ex.vhd
-    Info (12022): Found design unit 1: register_ID_EX-behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/register_ID_EX.vhd Line: 38
-    Info (12023): Found entity 1: register_ID_EX File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_ID_EX/register_ID_EX.vhd Line: 5
+    Info (12022): Found design unit 1: register_ID_EX-behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_ID_EX/register_ID_EX.vhd Line: 38
+    Info (12023): Found entity 1: register_ID_EX File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_ID_EX/register_ID_EX.vhd Line: 5
 Info (12127): Elaborating entity "register_ID_EX" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -284,9 +284,9 @@ Info (21057): Implemented 244 device resources after synthesis - the final resou
     Info (21059): Implemented 81 output pins
     Info (21061): Implemented 81 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Wed May 06 18:58:26 2026
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Thu Jun 11 12:16:53 2026
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:37
 
 

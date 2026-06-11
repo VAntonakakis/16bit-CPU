@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/forwarder.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/Waveform.vwf
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/forwarder.vhd
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/Forwarding_Unit/db/forwarder.cbx.xml
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/Forwarding_Unit/db/forwarder.cbx.xml
 design_name = forwarder
 instance = comp, \ForwardA[0]~output\, ForwardA[0]~output, forwarder, 1
 instance = comp, \ForwardA[1]~output\, ForwardA[1]~output, forwarder, 1

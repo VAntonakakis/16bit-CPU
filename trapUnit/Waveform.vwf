@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off trapUnit -c trapUnit --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off trapUnit -c trapUnit --vector_source="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/Waveform.vwf" --testbench_file="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/simulation/qsim/" trapUnit -c trapUnit</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/ERGASIA1_COMP_ARCH/16bit-CPU/trapUnit/simulation/qsim/" trapUnit -c trapUnit</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off trapUnit -c trapUnit --vector_source="C:/Quartus projects/ergasia 1/trapUnit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/trapUnit/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off trapUnit -c trapUnit --vector_source="C:/Quartus projects/ergasia 1/trapUnit/Waveform.vwf" --testbench_file="C:/Quartus projects/ergasia 1/trapUnit/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/trapUnit/simulation/qsim/" trapUnit -c trapUnit</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Quartus projects/ergasia 1/trapUnit/simulation/qsim/" trapUnit -c trapUnit</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work trapUnit.vho

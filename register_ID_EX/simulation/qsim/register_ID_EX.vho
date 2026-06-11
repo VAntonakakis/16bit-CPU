@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
--- DATE "05/08/2026 17:11:52"
+-- DATE "06/11/2026 12:28:32"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -57,24 +57,24 @@ ENTITY 	register_ID_EX IS
 	R2AD : IN std_logic_vector(2 DOWNTO 0);
 	R1AD : IN std_logic_vector(2 DOWNTO 0);
 	jumpShortAddr : IN std_logic_vector(11 DOWNTO 0);
-	isEOR_IDEX : OUT std_logic;
-	wasJumpOut_IDEX : OUT std_logic;
-	isJump_IDEX : OUT std_logic;
-	isJR_IDEX : OUT std_logic;
-	isBranch_IDEX : OUT std_logic;
-	isR_IDEX : OUT std_logic;
-	isMFPC_IDEX : OUT std_logic;
-	isLW_IDEX : OUT std_logic;
-	isSW_IDEX : OUT std_logic;
-	isReadDigit_IDEX : OUT std_logic;
-	isPrintDigit_IDEX : OUT std_logic;
-	ALUFunc_IDEX : OUT std_logic_vector(3 DOWNTO 0);
-	R1Reg_IDEX : OUT std_logic_vector(15 DOWNTO 0);
-	R2Reg_IDEX : OUT std_logic_vector(15 DOWNTO 0);
-	immediate16_IDEX : OUT std_logic_vector(15 DOWNTO 0);
-	R2AD_IDEX : OUT std_logic_vector(2 DOWNTO 0);
-	R1AD_IDEX : OUT std_logic_vector(2 DOWNTO 0);
-	jumpShortAddr_IDEX : OUT std_logic_vector(11 DOWNTO 0)
+	isEOR_IDEX : BUFFER std_logic;
+	wasJumpOut_IDEX : BUFFER std_logic;
+	isJump_IDEX : BUFFER std_logic;
+	isJR_IDEX : BUFFER std_logic;
+	isBranch_IDEX : BUFFER std_logic;
+	isR_IDEX : BUFFER std_logic;
+	isMFPC_IDEX : BUFFER std_logic;
+	isLW_IDEX : BUFFER std_logic;
+	isSW_IDEX : BUFFER std_logic;
+	isReadDigit_IDEX : BUFFER std_logic;
+	isPrintDigit_IDEX : BUFFER std_logic;
+	ALUFunc_IDEX : BUFFER std_logic_vector(3 DOWNTO 0);
+	R1Reg_IDEX : BUFFER std_logic_vector(15 DOWNTO 0);
+	R2Reg_IDEX : BUFFER std_logic_vector(15 DOWNTO 0);
+	immediate16_IDEX : BUFFER std_logic_vector(15 DOWNTO 0);
+	R2AD_IDEX : BUFFER std_logic_vector(2 DOWNTO 0);
+	R1AD_IDEX : BUFFER std_logic_vector(2 DOWNTO 0);
+	jumpShortAddr_IDEX : BUFFER std_logic_vector(11 DOWNTO 0)
 	);
 END register_ID_EX;
 

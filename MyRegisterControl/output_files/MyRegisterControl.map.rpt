@@ -1,5 +1,9 @@
 Analysis & Synthesis report for MyRegisterControl
+<<<<<<< HEAD
 Thu Jun 11 11:26:14 2026
+=======
+Thu Jun 11 12:32:20 2026
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -43,7 +47,11 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status     ; Successful - Thu Jun 11 11:26:14 2026       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Thu Jun 11 12:32:20 2026       ;
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyRegisterControl                           ;
 ; Top-level Entity Name           ; MyRegisterControl                           ;
@@ -155,8 +163,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 24          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -166,13 +174,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; MyRegisterControl.vhd            ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; MyRegisterControl.vhd            ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -258,13 +266,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Jun 11 11:26:06 2026
+=======
+    Info: Processing started: Thu Jun 11 12:32:14 2026
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyRegisterControl -c MyRegisterControl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file myregistercontrol.vhd
-    Info (12022): Found design unit 1: MyRegisterControl-Behavioral File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd Line: 22
-    Info (12023): Found entity 1: MyRegisterControl File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/MyRegisterControl.vhd Line: 4
+    Info (12022): Found design unit 1: MyRegisterControl-Behavioral File: C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd Line: 22
+    Info (12023): Found entity 1: MyRegisterControl File: C:/Quartus projects/ergasia 1/MyRegisterControl/MyRegisterControl.vhd Line: 4
 Info (12127): Elaborating entity "MyRegisterControl" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -274,9 +286,16 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 9 output pins
     Info (21061): Implemented 9 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+<<<<<<< HEAD
     Info: Peak virtual memory: 4864 megabytes
     Info: Processing ended: Thu Jun 11 11:26:14 2026
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:17
+=======
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Thu Jun 11 12:32:20 2026
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:15
+>>>>>>> 0c2271a1f88df4ae766f497a8a7bfa560a306b6b
 
 

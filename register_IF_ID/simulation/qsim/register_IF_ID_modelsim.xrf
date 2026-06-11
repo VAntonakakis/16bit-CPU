@@ -1,11 +1,11 @@
 vendor_name = ModelSim
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/Waveform.vwf
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/register_IF_ID.vhd
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/Waveform.vwf
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/19.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/db/register_IF_ID.cbx.xml
+source_file = 1, C:/Users/Aimilios/Documents/repos/16bit-CPU/register_IF_ID/db/register_IF_ID.cbx.xml
 design_name = register_IF_ID
 instance = comp, \outPC[0]~output\, outPC[0]~output, register_IF_ID, 1
 instance = comp, \outPC[1]~output\, outPC[1]~output, register_IF_ID, 1

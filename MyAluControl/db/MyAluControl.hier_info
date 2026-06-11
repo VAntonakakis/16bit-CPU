@@ -78,9 +78,9 @@ opcode[3] => Mux3.IN0
 func[0] => Mux3.IN19
 func[1] => Mux2.IN19
 func[2] => Mux1.IN19
-alu_sel[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-alu_sel[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-alu_sel[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-alu_sel[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[0] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[1] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[2] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+alu_sel[3] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for register_EX_MEM
-Thu May 07 11:30:01 2026
+Thu Jun 11 12:20:26 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -44,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu May 07 11:30:01 2026       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 11 12:20:26 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; register_EX_MEM                             ;
 ; Top-level Entity Name           ; register_EX_MEM                             ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 39                                          ;
-; Total pins                      ; 79                                          ;
+; Total registers                 ; 40                                          ;
+; Total pins                      ; 81                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -167,13 +167,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
-; register_EX_MEM.vhd              ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; register_EX_MEM.vhd              ; yes             ; User VHDL File  ; C:/Users/Aimilios/Documents/repos/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -190,16 +190,16 @@ https://fpgasoftware.intel.com/eula.
 ;     -- 4 input functions                    ; 0           ;
 ;     -- <=3 input functions                  ; 0           ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 39          ;
+; Dedicated logic registers                   ; 40          ;
 ;                                             ;             ;
-; I/O pins                                    ; 79          ;
+; I/O pins                                    ; 81          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 39          ;
-; Total fan-out                               ; 196         ;
-; Average fan-out                             ; 0.99        ;
+; Maximum fan-out                             ; 40          ;
+; Total fan-out                               ; 201         ;
+; Average fan-out                             ; 1.00        ;
 +---------------------------------------------+-------------+
 
 
@@ -208,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
-; |register_EX_MEM           ; 0 (0)               ; 39 (39)                   ; 0                 ; 0          ; 79   ; 0            ; |register_EX_MEM    ; register_EX_MEM ; work         ;
+; |register_EX_MEM           ; 0 (0)               ; 40 (40)                   ; 0                 ; 0          ; 81   ; 0            ; |register_EX_MEM    ; register_EX_MEM ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -218,7 +218,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
+; Total registers                              ; 40    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -244,9 +244,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; arriav_ff         ; 39                              ;
-;     plain         ; 39                              ;
-; boundary_port     ; 79                              ;
+; arriav_ff         ; 40                              ;
+;     plain         ; 40                              ;
+; boundary_port     ; 81                              ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -268,25 +268,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu May 07 11:29:50 2026
+    Info: Processing started: Thu Jun 11 12:20:17 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off register_EX_MEM -c register_EX_MEM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file register_ex_mem.vhd
-    Info (12022): Found design unit 1: register_EX_MEM-behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd Line: 27
-    Info (12023): Found entity 1: register_EX_MEM File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd Line: 5
+    Info (12022): Found design unit 1: register_EX_MEM-behavior File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd Line: 27
+    Info (12023): Found entity 1: register_EX_MEM File: C:/Users/Aimilios/Documents/repos/16bit-CPU/register_EX_MEM/register_EX_MEM.vhd Line: 5
 Info (12127): Elaborating entity "register_EX_MEM" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 40 input pins
-    Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 39 logic cells
+Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 41 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 40 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4882 megabytes
-    Info: Processing ended: Thu May 07 11:30:01 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Thu Jun 11 12:20:26 2026
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:19
 
 
