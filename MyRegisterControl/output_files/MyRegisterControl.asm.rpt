@@ -1,5 +1,5 @@
 Assembler report for MyRegisterControl
-Fri May 22 13:32:43 2026
+Thu Jun 11 11:26:48 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri May 22 13:32:43 2026 ;
+; Assembler Status      ; Successful - Thu Jun 11 11:26:48 2026 ;
 ; Revision Name         ; MyRegisterControl                     ;
 ; Top-level Entity Name ; MyRegisterControl                     ;
 ; Family                ; Cyclone V                             ;
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri May 22 13:32:31 2026
+    Info: Processing started: Thu Jun 11 11:26:42 2026
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off MyRegisterControl -c MyRegisterControl
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4863 megabytes
-    Info: Processing ended: Fri May 22 13:32:43 2026
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Thu Jun 11 11:26:48 2026
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 
 

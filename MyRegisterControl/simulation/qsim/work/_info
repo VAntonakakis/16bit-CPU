@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterControl/simulation/qsim
 Emyregistercontrol
-Z1 w1779445996
+Z1 w1781163742
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 CX9c^[CNfbzHb3XCH3hoa1
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -26,9 +26,9 @@ VV>=AD=<^=Tef@5iPiYW240
 !s100 V52hfihQ^DC0zLMme5ZWS0
 Z11 OV;C;10.5b;63
 32
-Z12 !s110 1779445997
+Z12 !s110 1781163744
 !i10b 1
-Z13 !s108 1779445997.000000
+Z13 !s108 1781163744.000000
 Z14 !s90 -work|work|MyRegisterControl.vho|
 Z15 !s107 MyRegisterControl.vho|
 !i113 1
@@ -58,7 +58,7 @@ R15
 R16
 R17
 Emyregistercontrol_vhd_vec_tst
-Z18 w1779445995
+Z18 w1781163740
 R6
 R7
 R0

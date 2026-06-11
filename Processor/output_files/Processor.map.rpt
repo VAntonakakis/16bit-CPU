@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Sun May 31 14:10:26 2026
+Thu Jun 11 11:14:16 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 31 14:10:26 2026       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 11 11:14:16 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; Processor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 239                                         ;
+; Total registers                 ; 240                                         ;
 ; Total pins                      ; 293                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -201,7 +201,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -251,25 +252,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 254         ;
+; Estimate of Logic utilization (ALMs needed) ; 272         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 318         ;
-;     -- 7 input functions                    ; 51          ;
-;     -- 6 input functions                    ; 122         ;
-;     -- 5 input functions                    ; 17          ;
-;     -- 4 input functions                    ; 18          ;
-;     -- <=3 input functions                  ; 110         ;
+; Combinational ALUT usage for logic          ; 347         ;
+;     -- 7 input functions                    ; 38          ;
+;     -- 6 input functions                    ; 141         ;
+;     -- 5 input functions                    ; 27          ;
+;     -- 4 input functions                    ; 20          ;
+;     -- <=3 input functions                  ; 121         ;
 ;                                             ;             ;
-; Dedicated logic registers                   ; 239         ;
+; Dedicated logic registers                   ; 240         ;
 ;                                             ;             ;
 ; I/O pins                                    ; 293         ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 160         ;
-; Total fan-out                               ; 2699        ;
-; Average fan-out                             ; 2.36        ;
+; Maximum fan-out                             ; 273         ;
+; Total fan-out                               ; 2811        ;
+; Average fan-out                             ; 2.40        ;
 +---------------------------------------------+-------------+
 
 
@@ -278,47 +279,54 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Entity Name       ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |Processor                                  ; 318 (16)            ; 239 (0)                   ; 0                 ; 0          ; 293  ; 0            ; |Processor                                                                                                 ; Processor         ; work         ;
+; |Processor                                  ; 347 (19)            ; 240 (0)                   ; 0                 ; 0          ; 293  ; 0            ; |Processor                                                                                                 ; Processor         ; work         ;
 ;    |JRSelector:JR|                          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|JRSelector:JR                                                                                   ; JRSelector        ; work         ;
-;    |MyALU16bit:ALU16|                       ; 63 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16                                                                                ; MyALU16bit        ; work         ;
+;    |MyALU16bit:ALU16|                       ; 74 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16                                                                                ; MyALU16bit        ; work         ;
 ;       |MyALU1bit:V0|                        ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V0                                                                   ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V0|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyALU1bit:V10|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V10                                                                  ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V10|MyOr2:v12                                                        ; MyOr2             ; work         ;
+;       |MyALU1bit:V10|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V10                                                                  ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V10|MyOr2:v12                                                        ; MyOr2             ; work         ;
 ;       |MyALU1bit:V11|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V11                                                                  ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V11|MyOr2:v12                                                        ; MyOr2             ; work         ;
 ;       |MyALU1bit:V12|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V12                                                                  ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V12|MyOr2:v12                                                        ; MyOr2             ; work         ;
 ;       |MyALU1bit:V13|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V13                                                                  ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V13|MyOr2:v12                                                        ; MyOr2             ; work         ;
-;       |MyALU1bit:V14|                       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V14                                                                  ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V14|MyOr2:v12                                                        ; MyOr2             ; work         ;
-;       |MyALU1bit:V1|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V1                                                                   ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V1|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyALU1bit:V2|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V2                                                                   ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V2|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyALU1bit:V3|                        ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V3                                                                   ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V3|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyALU1bit:V4|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V4                                                                   ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V4|MyOr2:v12                                                         ; MyOr2             ; work         ;
+;       |MyALU1bit:V14|                       ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V14                                                                  ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V14|MyOr2:v12                                                        ; MyOr2             ; work         ;
+;       |MyALU1bit:V15|                       ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15                                                                  ; MyALU1bit         ; work         ;
+;          |MyFullAdder1bit:v0|               ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyFullAdder1bit:v0                                               ; MyFullAdder1bit   ; work         ;
+;             |MyXor2:v1|                     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyFullAdder1bit:v0|MyXor2:v1                                     ; MyXor2            ; work         ;
+;                |MyAnd2:v3|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyFullAdder1bit:v0|MyXor2:v1|MyAnd2:v3                           ; MyAnd2            ; work         ;
+;          |MyMux8to1:v9|                     ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyMux8to1:v9                                                     ; MyMux8to1         ; work         ;
+;             |MyMux2to1:V4|                  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyMux8to1:v9|MyMux2to1:V4                                        ; MyMux2to1         ; work         ;
+;                |MyOr2:v3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V15|MyMux8to1:v9|MyMux2to1:V4|MyOr2:v3                               ; MyOr2             ; work         ;
+;       |MyALU1bit:V1|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V1                                                                   ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V1|MyOr2:v12                                                         ; MyOr2             ; work         ;
+;       |MyALU1bit:V2|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V2                                                                   ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V2|MyOr2:v12                                                         ; MyOr2             ; work         ;
+;       |MyALU1bit:V3|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V3                                                                   ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V3|MyOr2:v12                                                         ; MyOr2             ; work         ;
+;       |MyALU1bit:V4|                        ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V4                                                                   ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V4|MyOr2:v12                                                         ; MyOr2             ; work         ;
 ;       |MyALU1bit:V5|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V5                                                                   ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V5|MyOr2:v12                                                         ; MyOr2             ; work         ;
 ;       |MyALU1bit:V6|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V6                                                                   ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V6|MyOr2:v12                                                         ; MyOr2             ; work         ;
 ;       |MyALU1bit:V7|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V7                                                                   ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V7|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyALU1bit:V8|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V8                                                                   ; MyALU1bit         ; work         ;
-;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V8|MyOr2:v12                                                         ; MyOr2             ; work         ;
+;       |MyALU1bit:V8|                        ; 4 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V8                                                                   ; MyALU1bit         ; work         ;
+;          |MyOr2:v12|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V8|MyOr2:v12                                                         ; MyOr2             ; work         ;
 ;       |MyALU1bit:V9|                        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V9                                                                   ; MyALU1bit         ; work         ;
 ;          |MyOr2:v12|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyALU1bit:V9|MyOr2:v12                                                         ; MyOr2             ; work         ;
-;       |MyMux2to1_16bit:V21|                 ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21                                                            ; MyMux2to1_16bit   ; work         ;
+;       |MyMux2to1_16bit:V21|                 ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21                                                            ; MyMux2to1_16bit   ; work         ;
 ;          |MyAnd16bit:v1|                    ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1                                              ; MyAnd16bit        ; work         ;
+;             |MyAnd2:v0|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v0                                    ; MyAnd2            ; work         ;
 ;             |MyAnd2:v10|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v10                                   ; MyAnd2            ; work         ;
 ;             |MyAnd2:v11|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v11                                   ; MyAnd2            ; work         ;
 ;             |MyAnd2:v12|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v12                                   ; MyAnd2            ; work         ;
 ;             |MyAnd2:v13|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v13                                   ; MyAnd2            ; work         ;
 ;             |MyAnd2:v14|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v14                                   ; MyAnd2            ; work         ;
-;             |MyAnd2:v15|                    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v15                                   ; MyAnd2            ; work         ;
 ;             |MyAnd2:v1|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v1                                    ; MyAnd2            ; work         ;
 ;             |MyAnd2:v2|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v2                                    ; MyAnd2            ; work         ;
 ;             |MyAnd2:v3|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v3                                    ; MyAnd2            ; work         ;
@@ -328,36 +336,34 @@ https://fpgasoftware.intel.com/eula.
 ;             |MyAnd2:v7|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v7                                    ; MyAnd2            ; work         ;
 ;             |MyAnd2:v8|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v8                                    ; MyAnd2            ; work         ;
 ;             |MyAnd2:v9|                     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v9                                    ; MyAnd2            ; work         ;
-;          |MyOr16bit:v3|                     ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyOr16bit:v3                                               ; MyOr16bit         ; work         ;
-;             |MyOr2:v0|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyALU16bit:ALU16|MyMux2to1_16bit:V21|MyOr16bit:v3|MyOr2:v0                                      ; MyOr2             ; work         ;
-;    |MyAluControl:ALUController|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyAluControl:ALUController                                                                      ; MyAluControl      ; work         ;
-;    |MyMux2to1_16bit:ALUInput1Mux|           ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux                                                                    ; MyMux2to1_16bit   ; work         ;
-;       |MyOr16bit:v3|                        ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3                                                       ; MyOr16bit         ; work         ;
-;          |MyOr2:v0|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v0                                              ; MyOr2             ; work         ;
-;          |MyOr2:v10|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v10                                             ; MyOr2             ; work         ;
-;          |MyOr2:v11|                        ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v11                                             ; MyOr2             ; work         ;
+;    |MyAluControl:ALUController|             ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyAluControl:ALUController                                                                      ; MyAluControl      ; work         ;
+;    |MyMux2to1_16bit:ALUInput1Mux|           ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux                                                                    ; MyMux2to1_16bit   ; work         ;
+;       |MyOr16bit:v3|                        ; 43 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3                                                       ; MyOr16bit         ; work         ;
+;          |MyOr2:v0|                         ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v0                                              ; MyOr2             ; work         ;
+;          |MyOr2:v10|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v10                                             ; MyOr2             ; work         ;
+;          |MyOr2:v11|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v11                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v12|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v12                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v13|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v13                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v14|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v14                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v15|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v15                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v1|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v1                                              ; MyOr2             ; work         ;
-;          |MyOr2:v2|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v2                                              ; MyOr2             ; work         ;
+;          |MyOr2:v2|                         ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v2                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v3|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v3                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v4|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v4                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v5|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v5                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v6|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v6                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v7|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v7                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v8|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v8                                              ; MyOr2             ; work         ;
-;          |MyOr2:v9|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v9                                              ; MyOr2             ; work         ;
-;    |MyMux2to1_16bit:ALUInput2Mux|           ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux                                                                    ; MyMux2to1_16bit   ; work         ;
-;       |MyOr16bit:v3|                        ; 35 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3                                                       ; MyOr16bit         ; work         ;
-;          |MyOr2:v0|                         ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v0                                              ; MyOr2             ; work         ;
-;          |MyOr2:v10|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v10                                             ; MyOr2             ; work         ;
-;          |MyOr2:v11|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v11                                             ; MyOr2             ; work         ;
-;          |MyOr2:v12|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v12                                             ; MyOr2             ; work         ;
-;          |MyOr2:v13|                        ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v13                                             ; MyOr2             ; work         ;
-;          |MyOr2:v14|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v14                                             ; MyOr2             ; work         ;
-;          |MyOr2:v15|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v15                                             ; MyOr2             ; work         ;
+;          |MyOr2:v9|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v9                                              ; MyOr2             ; work         ;
+;    |MyMux2to1_16bit:ALUInput2Mux|           ; 42 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux                                                                    ; MyMux2to1_16bit   ; work         ;
+;       |MyOr16bit:v3|                        ; 42 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3                                                       ; MyOr16bit         ; work         ;
+;          |MyOr2:v0|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v0                                              ; MyOr2             ; work         ;
+;          |MyOr2:v10|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v10                                             ; MyOr2             ; work         ;
+;          |MyOr2:v11|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v11                                             ; MyOr2             ; work         ;
+;          |MyOr2:v12|                        ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v12                                             ; MyOr2             ; work         ;
+;          |MyOr2:v13|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v13                                             ; MyOr2             ; work         ;
+;          |MyOr2:v14|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v14                                             ; MyOr2             ; work         ;
+;          |MyOr2:v15|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v15                                             ; MyOr2             ; work         ;
 ;          |MyOr2:v1|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v1                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v2|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v2                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v3|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v3                                              ; MyOr2             ; work         ;
@@ -366,7 +372,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |MyOr2:v6|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v6                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v7|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v7                                              ; MyOr2             ; work         ;
 ;          |MyOr2:v8|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v8                                              ; MyOr2             ; work         ;
-;          |MyOr2:v9|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v9                                              ; MyOr2             ; work         ;
+;          |MyOr2:v9|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v9                                              ; MyOr2             ; work         ;
 ;    |MyRegister16bit:PC|                     ; 0 (0)               ; 16 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC                                                                              ; MyRegister16bit   ; work         ;
 ;       |flipflopR_1:\gen_register:0:vff|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC|flipflopR_1:\gen_register:0:vff                                              ; flipflopR_1       ; work         ;
 ;       |flipflopR_1:\gen_register:10:vff|    ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC|flipflopR_1:\gen_register:10:vff                                             ; flipflopR_1       ; work         ;
@@ -384,7 +390,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |flipflopR_1:\gen_register:7:vff|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC|flipflopR_1:\gen_register:7:vff                                              ; flipflopR_1       ; work         ;
 ;       |flipflopR_1:\gen_register:8:vff|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC|flipflopR_1:\gen_register:8:vff                                              ; flipflopR_1       ; work         ;
 ;       |flipflopR_1:\gen_register:9:vff|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegister16bit:PC|flipflopR_1:\gen_register:9:vff                                              ; flipflopR_1       ; work         ;
-;    |MyRegisterControl:Controller|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegisterControl:Controller                                                                    ; MyRegisterControl ; work         ;
+;    |MyRegisterControl:Controller|           ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegisterControl:Controller                                                                    ; MyRegisterControl ; work         ;
 ;    |MyRegisterFile:RegisterFile|            ; 71 (0)              ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegisterFile:RegisterFile                                                                     ; MyRegisterFile    ; work         ;
 ;       |MyDecoder3to8:v0|                    ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegisterFile:RegisterFile|MyDecoder3to8:v0                                                    ; MyDecoder3to8     ; work         ;
 ;          |MyAnd2:v10|                       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|MyRegisterFile:RegisterFile|MyDecoder3to8:v0|MyAnd2:v10                                         ; MyAnd2            ; work         ;
@@ -554,7 +560,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |forwarder:ForwardUnit|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|forwarder:ForwardUnit                                                                           ; forwarder         ; work         ;
 ;    |hazardUnit:Hazard|                      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|hazardUnit:Hazard                                                                               ; hazardUnit        ; work         ;
 ;    |register_EX_MEM:EXMEMREG|               ; 0 (0)               ; 39 (39)                   ; 0                 ; 0          ; 0    ; 0            ; |Processor|register_EX_MEM:EXMEMREG                                                                        ; register_EX_MEM   ; work         ;
-;    |register_ID_EX:IDEXREG|                 ; 0 (0)               ; 53 (53)                   ; 0                 ; 0          ; 0    ; 0            ; |Processor|register_ID_EX:IDEXREG                                                                          ; register_ID_EX    ; work         ;
+;    |register_ID_EX:IDEXREG|                 ; 0 (0)               ; 54 (54)                   ; 0                 ; 0          ; 0    ; 0            ; |Processor|register_ID_EX:IDEXREG                                                                          ; register_ID_EX    ; work         ;
 ;    |register_IF_ID:IFIDREG|                 ; 80 (80)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|register_IF_ID:IFIDREG                                                                          ; register_IF_ID    ; work         ;
 ;    |register_MEM_WB:MEMWBREG|               ; 0 (0)               ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Processor|register_MEM_WB:MEMWBREG                                                                        ; register_MEM_WB   ; work         ;
 ;    |trapUnit:Trap|                          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Processor|trapUnit:Trap                                                                                   ; trapUnit          ; work         ;
@@ -568,7 +574,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Latch Name                                          ; Latch Enable Signal              ; Free of Timing Hazards ;
 +-----------------------------------------------------+----------------------------------+------------------------+
 ; register_IF_ID:IFIDREG|outPC[0]                     ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
-; register_IF_ID:IFIDREG|outPC[15]                    ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outPC[1]                     ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outPC[2]                     ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outPC[3]                     ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
@@ -583,22 +588,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register_IF_ID:IFIDREG|outPC[12]                    ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outPC[13]                    ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outPC[14]                    ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
-; register_IF_ID:IFIDREG|outInstruction[0]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
+; register_IF_ID:IFIDREG|outPC[15]                    ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[12]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
+; register_IF_ID:IFIDREG|outInstruction[0]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[13]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[14]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[15]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[1]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[2]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
-; register_IF_ID:IFIDREG|outInstruction[3]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
-; register_IF_ID:IFIDREG|outInstruction[4]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
-; register_IF_ID:IFIDREG|outInstruction[5]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[6]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[7]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[8]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[9]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[10]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; register_IF_ID:IFIDREG|outInstruction[11]           ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
+; register_IF_ID:IFIDREG|outInstruction[3]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
+; register_IF_ID:IFIDREG|outInstruction[4]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
+; register_IF_ID:IFIDREG|outInstruction[5]            ; register_IF_ID:IFIDREG|outPC[15] ; yes                    ;
 ; Number of user-specified and inferred latches = 32  ;                                  ;                        ;
 +-----------------------------------------------------+----------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -615,16 +621,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                               ;
-+------------------------------------------------+-------------------------------------------------+
-; Register name                                  ; Reason for Removal                              ;
-+------------------------------------------------+-------------------------------------------------+
-; register_ID_EX:IDEXREG|immediate16_IDEX[3]     ; Merged with register_ID_EX:IDEXREG|R2AD_IDEX[0] ;
-; register_ID_EX:IDEXREG|immediate16_IDEX[4]     ; Merged with register_ID_EX:IDEXREG|R2AD_IDEX[1] ;
-; register_ID_EX:IDEXREG|immediate16_IDEX[5..15] ; Merged with register_ID_EX:IDEXREG|R2AD_IDEX[2] ;
-; Total Number of Removed Registers = 13         ;                                                 ;
-+------------------------------------------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                        ;
++------------------------------------------------+----------------------------------------------------------+
+; Register name                                  ; Reason for Removal                                       ;
++------------------------------------------------+----------------------------------------------------------+
+; register_ID_EX:IDEXREG|immediate16_IDEX[0]     ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[0] ;
+; register_ID_EX:IDEXREG|immediate16_IDEX[1]     ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[1] ;
+; register_ID_EX:IDEXREG|immediate16_IDEX[2]     ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[2] ;
+; register_ID_EX:IDEXREG|immediate16_IDEX[3]     ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[3] ;
+; register_ID_EX:IDEXREG|immediate16_IDEX[4]     ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[4] ;
+; register_ID_EX:IDEXREG|immediate16_IDEX[5..15] ; Merged with register_ID_EX:IDEXREG|jumpShortAddr_IDEX[5] ;
+; Total Number of Removed Registers = 16         ;                                                          ;
++------------------------------------------------+----------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -632,7 +641,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 239   ;
+; Total registers                              ; 240   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 28    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -647,11 +656,11 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Processor|register_MEM_WB:MEMWBREG|writeData[7]                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Processor|register_MEM_WB:MEMWBREG|writeData[11]                ;
 ; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Processor|register_ID_EX:IDEXREG|R2Reg_IDEX[4]                  ;
-; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Processor|register_ID_EX:IDEXREG|R1Reg_IDEX[11]                 ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v13|Q ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v11|Q ;
+; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |Processor|register_ID_EX:IDEXREG|R1Reg_IDEX[4]                  ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Processor|MyMux2to1_16bit:ALUInput2Mux|MyOr16bit:v3|MyOr2:v12|Q ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |Processor|MyMux2to1_16bit:ALUInput1Mux|MyOr16bit:v3|MyOr2:v2|Q  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 
 
@@ -832,7 +841,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------+
 ; Port     ; Type  ; Severity ; Details                            ;
 +----------+-------+----------+------------------------------------+
-; b[15..1] ; Input ; Info     ; Stuck at GND                       ;
+; b[14..0] ; Input ; Info     ; Stuck at GND                       ;
 +----------+-------+----------+------------------------------------+
 
 
@@ -864,18 +873,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "register_ID_EX:IDEXREG"                                                                                 ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                     ; Type   ; Severity ; Details                                                                             ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; iseor_idex               ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; wasjumpout_idex          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; isjump_idex              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; isjr_idex                ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; alufunc_idex[3]          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; jumpshortaddr_idex[8..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register_ID_EX:IDEXREG"                                                                                  ;
++---------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                      ; Type   ; Severity ; Details                                                                             ;
++---------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; iseor_idex                ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wasjumpout_idex           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isjump_idex               ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isjr_idex                 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; alufunc_idex[3]           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; jumpshortaddr_idex[11..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -993,27 +1002,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 239                         ;
+; arriav_ff             ; 240                         ;
 ;     ENA               ; 116                         ;
 ;     ENA SLD           ; 12                          ;
 ;     SLD               ; 16                          ;
-;     plain             ; 95                          ;
-; arriav_lcell_comb     ; 319                         ;
+;     plain             ; 96                          ;
+; arriav_lcell_comb     ; 348                         ;
 ;     arith             ; 15                          ;
 ;         1 data inputs ; 15                          ;
-;     extend            ; 51                          ;
-;         7 data inputs ; 51                          ;
-;     normal            ; 253                         ;
+;     extend            ; 38                          ;
+;         7 data inputs ; 38                          ;
+;     normal            ; 295                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 27                          ;
-;         3 data inputs ; 68                          ;
-;         4 data inputs ; 18                          ;
-;         5 data inputs ; 17                          ;
-;         6 data inputs ; 122                         ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 75                          ;
+;         4 data inputs ; 20                          ;
+;         5 data inputs ; 27                          ;
+;         6 data inputs ; 141                         ;
 ; boundary_port         ; 293                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 3.99                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 4.16                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1032,7 +1041,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sun May 31 14:10:16 2026
+    Info: Processing started: Thu Jun 11 11:14:03 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1190,17 +1199,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file process
     Info (12022): Found design unit 1: Processor-structural File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 28
     Info (12023): Found entity 1: Processor File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 5
 Info (12127): Elaborating entity "Processor" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(90): object "isEOR_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 90
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(91): object "wasJumpOut_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(92): object "isJump_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 92
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(93): object "isJR_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 93
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(128): object "ALUOverflow_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 128
-Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(137): object "WriteEnable_EXMEM_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 137
-Info (12128): Elaborating entity "trapUnit" for hierarchy "trapUnit:Trap" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 220
-Info (12128): Elaborating entity "JRSelector" for hierarchy "JRSelector:JR" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 231
-Info (12128): Elaborating entity "MyRegister16bit" for hierarchy "MyRegister16bit:PC" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 249
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(86): object "isEOR_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 86
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(87): object "wasJumpOut_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 87
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(88): object "isJump_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 88
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(89): object "isJR_IDEX_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 89
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(129): object "ALUOverflow_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 129
+Warning (10036): Verilog HDL or VHDL warning at Processor.vhd(136): object "WriteEnable_EXMEM_sig" assigned a value but never read File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 136
+Info (12128): Elaborating entity "trapUnit" for hierarchy "trapUnit:Trap" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 204
+Info (12128): Elaborating entity "JRSelector" for hierarchy "JRSelector:JR" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 211
+Info (12128): Elaborating entity "MyRegister16bit" for hierarchy "MyRegister16bit:PC" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 229
 Info (12128): Elaborating entity "flipflopR_1" for hierarchy "MyRegister16bit:PC|flipflopR_1:\gen_register:0:vff" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegister16bit/MyRegister16bit.vhd Line: 23
-Info (12128): Elaborating entity "register_IF_ID" for hierarchy "register_IF_ID:IFIDREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 266
+Info (12128): Elaborating entity "register_IF_ID" for hierarchy "register_IF_ID:IFIDREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 244
 Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(22): signal "IF_ID_ENABLE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 22
 Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(24): signal "inPC" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at register_IF_ID.vhd(27): signal "inInstruction" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 27
@@ -1239,11 +1248,11 @@ Info (10041): Inferred latch for "outPC[12]" at register_IF_ID.vhd(20) File: C:/
 Info (10041): Inferred latch for "outPC[13]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
 Info (10041): Inferred latch for "outPC[14]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
 Info (10041): Inferred latch for "outPC[15]" at register_IF_ID.vhd(20) File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-Info (12128): Elaborating entity "MyRegisterControl" for hierarchy "MyRegisterControl:Controller" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 284
-Info (12128): Elaborating entity "hazardUnit" for hierarchy "hazardUnit:Hazard" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 305
+Info (12128): Elaborating entity "MyRegisterControl" for hierarchy "MyRegisterControl:Controller" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 261
+Info (12128): Elaborating entity "hazardUnit" for hierarchy "hazardUnit:Hazard" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 281
 Warning (10492): VHDL Process Statement warning at hazardUnit.vhd(19): signal "mustBranch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/hazardUnit.vhd Line: 19
 Warning (10492): VHDL Process Statement warning at hazardUnit.vhd(26): signal "mustBranch" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/hazardUnit/hazardUnit.vhd Line: 26
-Info (12128): Elaborating entity "MyRegisterFile" for hierarchy "MyRegisterFile:RegisterFile" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 321
+Info (12128): Elaborating entity "MyRegisterFile" for hierarchy "MyRegisterFile:RegisterFile" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 296
 Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyRegisterFile:RegisterFile|MyDecoder3to8:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyRegisterFile/MyRegisterFile.vhd Line: 58
 Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyRegisterFile:RegisterFile|MyDecoder3to8:v0|MyDecoder1to2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
 Info (12128): Elaborating entity "MyNot" for hierarchy "MyRegisterFile:RegisterFile|MyDecoder3to8:v0|MyDecoder1to2:v0|MyNot:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 21
@@ -1254,23 +1263,21 @@ Info (12128): Elaborating entity "MyMux8to1_16bit" for hierarchy "MyRegisterFile
 Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyRegisterFile:RegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1_16bit/MyMux8to1_16bit.vhd Line: 29
 Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyRegisterFile:RegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
 Info (12128): Elaborating entity "MyOr2" for hierarchy "MyRegisterFile:RegisterFile|MyMux8to1_16bit:read_mux1|MyMux2to1_16bit:V0|MyOr16bit:v3|MyOr2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 18
-Info (12128): Elaborating entity "MyImmExtension" for hierarchy "MyImmExtension:SignExtend" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 337
-Info (12128): Elaborating entity "MyAluControl" for hierarchy "MyAluControl:ALUController" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 347
-Info (12128): Elaborating entity "register_ID_EX" for hierarchy "register_ID_EX:IDEXREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 358
-Info (12128): Elaborating entity "forwarder" for hierarchy "forwarder:ForwardUnit" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 417
-Info (12128): Elaborating entity "Forwarding_Selector" for hierarchy "Forwarding_Selector:Selector1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 434
-Info (12128): Elaborating entity "MyALU16bit" for hierarchy "MyALU16bit:ALU16" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 492
+Info (12128): Elaborating entity "MyImmExtension" for hierarchy "MyImmExtension:SignExtend" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 311
+Info (12128): Elaborating entity "MyAluControl" for hierarchy "MyAluControl:ALUController" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 320
+Info (12128): Elaborating entity "register_ID_EX" for hierarchy "register_ID_EX:IDEXREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 330
+Info (12128): Elaborating entity "forwarder" for hierarchy "forwarder:ForwardUnit" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 388
+Info (12128): Elaborating entity "Forwarding_Selector" for hierarchy "Forwarding_Selector:Selector1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 408
+Info (12128): Elaborating entity "MyALU16bit" for hierarchy "MyALU16bit:ALU16" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 465
 Info (12128): Elaborating entity "MyMux2to1" for hierarchy "MyALU16bit:ALU16|MyMux2to1:V05" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 78
 Info (12128): Elaborating entity "MyALU1bit" for hierarchy "MyALU16bit:ALU16|MyALU1bit:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 80
 Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyALU16bit:ALU16|MyALU1bit:V0|MyFullAdder1bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 81
 Info (12128): Elaborating entity "MyXor2" for hierarchy "MyALU16bit:ALU16|MyALU1bit:V0|MyFullAdder1bit:v0|MyXor2:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
 Info (12128): Elaborating entity "MyNor2" for hierarchy "MyALU16bit:ALU16|MyALU1bit:V0|MyNor2:v8" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 114
 Info (12128): Elaborating entity "MyMux8to1" for hierarchy "MyALU16bit:ALU16|MyALU1bit:V0|MyMux8to1:v9" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 117
-Info (12128): Elaborating entity "register_EX_MEM" for hierarchy "register_EX_MEM:EXMEMREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 505
-Info (12128): Elaborating entity "register_MEM_WB" for hierarchy "register_MEM_WB:MEMWBREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 537
+Info (12128): Elaborating entity "register_EX_MEM" for hierarchy "register_EX_MEM:EXMEMREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 477
+Info (12128): Elaborating entity "register_MEM_WB" for hierarchy "register_MEM_WB:MEMWBREG" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 509
 Warning (13012): Latch register_IF_ID:IFIDREG|outPC[0] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
-Warning (13012): Latch register_IF_ID:IFIDREG|outPC[15] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outPC[1] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
@@ -1300,10 +1307,12 @@ Warning (13012): Latch register_IF_ID:IFIDREG|outPC[13] has unsafe behavior File
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outPC[14] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
-Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[0] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+Warning (13012): Latch register_IF_ID:IFIDREG|outPC[15] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[12] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal instr[12] File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 10
+Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[0] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[13] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal instr[13] File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 10
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[14] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
@@ -1313,12 +1322,6 @@ Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[15] has unsafe beha
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[1] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[2] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
-Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[3] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
-Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[4] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
-Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[5] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[6] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
@@ -1331,6 +1334,12 @@ Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[9] has unsafe behav
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[10] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[11] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
+Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[3] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
+Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[4] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
+Warning (13012): Latch register_IF_ID:IFIDREG|outInstruction[5] has unsafe behavior File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/register_IF_ID/register_IF_ID.vhd Line: 20
     Warning (13013): Ports D and ENA on the latch are fed by the same signal clock File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "regOUT[0]" is stuck at GND File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 23
@@ -1368,14 +1377,16 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 773 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock2" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/Processor/Processor.vhd Line: 11
+Info (21057): Implemented 816 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 50 input pins
     Info (21059): Implemented 243 output pins
-    Info (21061): Implemented 480 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 112 warnings
-    Info: Peak virtual memory: 4915 megabytes
-    Info: Processing ended: Sun May 31 14:10:26 2026
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 523 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 114 warnings
+    Info: Peak virtual memory: 4906 megabytes
+    Info: Processing ended: Thu Jun 11 11:14:16 2026
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:23
 
 

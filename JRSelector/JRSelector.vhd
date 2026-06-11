@@ -20,7 +20,7 @@ begin
     process(JROpcode, PCP2AD, JumpAD, BranchAD)
     begin
         if JROpcode = "00" then
-            -- Normal execution: go to next instruction
+            -- go to next instruction
             PCout <= PCP2AD;
 
         elsif JROpcode = "01" then
@@ -32,7 +32,7 @@ begin
             PCout <= BranchAD;
 
         else
-            -- Default case: continue normally
+            -- Default case:
             PCout <= PCP2AD;
         end if;
     end process;

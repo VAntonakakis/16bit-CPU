@@ -22,7 +22,7 @@ begin
     process(operation, regAddress, regAD_MEM, regAD_WB)
     begin
         if operation = "00" then
-            -- Normal case: take value from Register File
+            -- take value from Register File
             Output <= regAddress;
 
         elsif operation = "10" then

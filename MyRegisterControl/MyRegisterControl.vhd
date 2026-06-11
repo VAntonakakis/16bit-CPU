@@ -53,8 +53,8 @@ begin
                 -- R-type instruction
                 when "0000" =>
                     isRType <= '1';
-
-                    -- MFPC instruction seems to be encoded as R-type with funct = 100
+						  
+				        -- MFPC instruction
                     if Funct = "111" then
                         isMFPC <= '1';
                     end if;

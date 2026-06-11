@@ -17,9 +17,9 @@ begin
         ForwardA <= "00";
         ForwardB <= "00";
 
-        ----------------------------------------------------------------
+        
         -- Forwarding for first ALU operand
-        ----------------------------------------------------------------
+        
         if (R1AD = RegAD_EXMEM) then
             -- Pick value from EX/MEM stage
             ForwardA <= "10";
@@ -29,9 +29,9 @@ begin
             ForwardA <= "01";
         end if;
 
-        ----------------------------------------------------------------
+        
         -- Forwarding for second ALU operand
-        ----------------------------------------------------------------
+        
         if (R2AD = RegAD_EXMEM) then
             -- Pick value from EX/MEM stage
             ForwardB <= "10";

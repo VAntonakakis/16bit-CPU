@@ -100,7 +100,7 @@ v17 : MyNot port map(s(0), s0Not);
 v18 : MyNot port map(s(1), s1Not);
 v19 : MyAnd2 port map(s0Not, s1Not, SAndNot);
 v20 : MyAnd2 port map(SAndNot, s(2), geqSignal);
-Q2 <= (15 downto 1 => '0') & geq;
+Q2 <= (15 => geq, others => '0');   -- GEQ flag στο MSB (bit15) -> 0x8000 όταν A>=0
 Q1 <= qi;
 V21 : Mymux2to1_16bit port map(Q1, Q2, geqSignal, Q);
 

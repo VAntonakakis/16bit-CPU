@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MyALU16bit
-Mon Apr 06 13:40:25 2026
+Mon Jun 08 16:16:29 2026
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 06 13:40:25 2026       ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 08 16:16:29 2026       ;
 ; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                   ; MyALU16bit                                  ;
 ; Top-level Entity Name           ; MyALU16bit                                  ;
@@ -158,8 +158,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 24          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -169,27 +169,27 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; ../MyOr16bit/MyOr16bit.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd             ;         ;
-; ../MyAnd16bit/MyAnd16bit.vhd           ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd           ;         ;
-; ../MyMux2to1_16bit/MyMux2to1_16bit.vhd ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd ;         ;
-; ../MyMux2to1/MyMux2to1.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd             ;         ;
-; ../MyMux8to1/MyMux8to1.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd             ;         ;
-; ../MyFullAdder1bit/MyFullAdder1bit.vhd ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd ;         ;
-; ../MyNor2/MyNor2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd                   ;         ;
-; ../MyXor2/MyXor2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd                   ;         ;
-; ../MyDecoder1to2/MyDecoder1to2.vhd     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd     ;         ;
-; ../MyNot/MyNot.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd                     ;         ;
-; ../MyOr2/MyOr2.vhd                     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd                     ;         ;
-; ../MyDecoder3to8/MyDecoder3to8.vhd     ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd     ;         ;
-; ../MyAnd2/MyAnd2.vhd                   ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd                   ;         ;
-; ../MyALU1bit/MyALU1bit.vhd             ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd             ;         ;
-; MyALU16bit.vhd                         ; yes             ; User VHDL File  ; C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd           ;         ;
-+----------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; File Name with User-Entered Path       ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ; Library ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
+; ../MyOr16bit/MyOr16bit.vhd             ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd             ;         ;
+; ../MyAnd16bit/MyAnd16bit.vhd           ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd           ;         ;
+; ../MyMux2to1_16bit/MyMux2to1_16bit.vhd ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd ;         ;
+; ../MyMux2to1/MyMux2to1.vhd             ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1/MyMux2to1.vhd             ;         ;
+; ../MyMux8to1/MyMux8to1.vhd             ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1/MyMux8to1.vhd             ;         ;
+; ../MyFullAdder1bit/MyFullAdder1bit.vhd ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd ;         ;
+; ../MyNor2/MyNor2.vhd                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNor2/MyNor2.vhd                   ;         ;
+; ../MyXor2/MyXor2.vhd                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyXor2/MyXor2.vhd                   ;         ;
+; ../MyDecoder1to2/MyDecoder1to2.vhd     ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd     ;         ;
+; ../MyNot/MyNot.vhd                     ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd                     ;         ;
+; ../MyOr2/MyOr2.vhd                     ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd                     ;         ;
+; ../MyDecoder3to8/MyDecoder3to8.vhd     ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd     ;         ;
+; ../MyAnd2/MyAnd2.vhd                   ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd                   ;         ;
+; ../MyALU1bit/MyALU1bit.vhd             ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd             ;         ;
+; MyALU16bit.vhd                         ; yes             ; User VHDL File  ; C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd           ;         ;
++----------------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -197,12 +197,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 43         ;
+; Estimate of Logic utilization (ALMs needed) ; 42         ;
 ;                                             ;            ;
 ; Combinational ALUT usage for logic          ; 62         ;
 ;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 23         ;
-;     -- 5 input functions                    ; 10         ;
+;     -- 6 input functions                    ; 22         ;
+;     -- 5 input functions                    ; 11         ;
 ;     -- 4 input functions                    ; 3          ;
 ;     -- <=3 input functions                  ; 26         ;
 ;                                             ;            ;
@@ -214,8 +214,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; S[0]~input ;
 ; Maximum fan-out                             ; 45         ;
-; Total fan-out                               ; 345        ;
-; Average fan-out                             ; 2.08       ;
+; Total fan-out                               ; 344        ;
+; Average fan-out                             ; 2.07       ;
 +---------------------------------------------+------------+
 
 
@@ -244,6 +244,10 @@ https://fpgasoftware.intel.com/eula.
 ;          |MyMux2to1:V4|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyMux8to1:v9|MyMux2to1:V4          ; MyMux2to1       ; work         ;
 ;             |MyOr2:v3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyMux8to1:v9|MyMux2to1:V4|MyOr2:v3 ; MyOr2           ; work         ;
 ;       |MyOr2:v12|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V14|MyOr2:v12                          ; MyOr2           ; work         ;
+;    |MyALU1bit:V15|         ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V15                                    ; MyALU1bit       ; work         ;
+;       |MyMux8to1:v9|       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V15|MyMux8to1:v9                       ; MyMux8to1       ; work         ;
+;          |MyMux2to1:V4|    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V15|MyMux8to1:v9|MyMux2to1:V4          ; MyMux2to1       ; work         ;
+;             |MyOr2:v3|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V15|MyMux8to1:v9|MyMux2to1:V4|MyOr2:v3 ; MyOr2           ; work         ;
 ;    |MyALU1bit:V1|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V1                                     ; MyALU1bit       ; work         ;
 ;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V1|MyOr2:v12                           ; MyOr2           ; work         ;
 ;    |MyALU1bit:V2|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V2                                     ; MyALU1bit       ; work         ;
@@ -262,14 +266,14 @@ https://fpgasoftware.intel.com/eula.
 ;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V8|MyOr2:v12                           ; MyOr2           ; work         ;
 ;    |MyALU1bit:V9|          ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V9                                     ; MyALU1bit       ; work         ;
 ;       |MyOr2:v12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyALU1bit:V9|MyOr2:v12                           ; MyOr2           ; work         ;
-;    |MyMux2to1_16bit:V21|   ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21                              ; MyMux2to1_16bit ; work         ;
+;    |MyMux2to1_16bit:V21|   ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21                              ; MyMux2to1_16bit ; work         ;
 ;       |MyAnd16bit:v1|      ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1                ; MyAnd16bit      ; work         ;
+;          |MyAnd2:v0|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v0      ; MyAnd2          ; work         ;
 ;          |MyAnd2:v10|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v10     ; MyAnd2          ; work         ;
 ;          |MyAnd2:v11|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v11     ; MyAnd2          ; work         ;
 ;          |MyAnd2:v12|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v12     ; MyAnd2          ; work         ;
 ;          |MyAnd2:v13|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v13     ; MyAnd2          ; work         ;
 ;          |MyAnd2:v14|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v14     ; MyAnd2          ; work         ;
-;          |MyAnd2:v15|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v15     ; MyAnd2          ; work         ;
 ;          |MyAnd2:v1|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v1      ; MyAnd2          ; work         ;
 ;          |MyAnd2:v2|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v2      ; MyAnd2          ; work         ;
 ;          |MyAnd2:v3|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v3      ; MyAnd2          ; work         ;
@@ -279,8 +283,6 @@ https://fpgasoftware.intel.com/eula.
 ;          |MyAnd2:v7|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v7      ; MyAnd2          ; work         ;
 ;          |MyAnd2:v8|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v8      ; MyAnd2          ; work         ;
 ;          |MyAnd2:v9|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyAnd16bit:v1|MyAnd2:v9      ; MyAnd2          ; work         ;
-;       |MyOr16bit:v3|       ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyOr16bit:v3                 ; MyOr16bit       ; work         ;
-;          |MyOr2:v0|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyMux2to1_16bit:V21|MyOr16bit:v3|MyOr2:v0        ; MyOr2           ; work         ;
 ;    |MyXor2:v22|            ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor2:v22                                       ; MyXor2          ; work         ;
 ;       |MyAnd2:v3|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MyALU16bit|MyXor2:v22|MyAnd2:v3                             ; MyAnd2          ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------+--------------+
@@ -307,7 +309,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+-------+----------+-------------------+
 ; Port     ; Type  ; Severity ; Details           ;
 +----------+-------+----------+-------------------+
-; b[15..1] ; Input ; Info     ; Stuck at GND      ;
+; b[14..0] ; Input ; Info     ; Stuck at GND      ;
 +----------+-------+----------+-------------------+
 
 
@@ -341,8 +343,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 24                          ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 10                          ;
-;         6 data inputs ; 23                          ;
+;         5 data inputs ; 11                          ;
+;         6 data inputs ; 22                          ;
 ; boundary_port         ; 52                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
@@ -365,71 +367,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Mon Apr 06 13:40:18 2026
+    Info: Processing started: Mon Jun 08 16:16:14 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MyALU16bit -c MyALU16bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor16bit/myor16bit.vhd
-    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyOr16bit File: C:/Quartus projects/ergasia 1/MyOr16bit/MyOr16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand16bit/myand16bit.vhd
-    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 10
-    Info (12023): Found entity 1: MyAnd16bit File: C:/Quartus projects/ergasia 1/MyAnd16bit/MyAnd16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux2to1_16bit/mymux2to1_16bit.vhd
-    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
-    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux2to1/mymux2to1.vhd
-    Info (12022): Found design unit 1: MyMux2to1-StructuralMyMux2to1 File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 11
-    Info (12023): Found entity 1: MyMux2to1 File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myor16bit/myor16bit.vhd
+    Info (12022): Found design unit 1: MyOr16bit-StructMyOr16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyOr16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr16bit/MyOr16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myand16bit/myand16bit.vhd
+    Info (12022): Found design unit 1: MyAnd16bit-StructMyAnd16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd16bit/MyAnd16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mymux2to1_16bit/mymux2to1_16bit.vhd
+    Info (12022): Found design unit 1: MyMux2to1_16bit-StructuralMyMux2to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1_16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mymux2to1/mymux2to1.vhd
+    Info (12022): Found design unit 1: MyMux2to1-StructuralMyMux2to1 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1/MyMux2to1.vhd Line: 11
+    Info (12023): Found entity 1: MyMux2to1 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1/MyMux2to1.vhd Line: 4
 Warning (12019): Can't analyze file -- file ../MyGreaterEqual1bit/MyGreaterEqual1bit.vhd is missing
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mymux8to1/mymux8to1.vhd
-    Info (12022): Found design unit 1: MyMux8to1-StructuralMyMux8to1 File: C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd Line: 17
-    Info (12023): Found entity 1: MyMux8to1 File: C:/Quartus projects/ergasia 1/MyMux8to1/MyMux8to1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myfulladder1bit/myfulladder1bit.vhd
-    Info (12022): Found design unit 1: MyFullAdder1bit-StructuralOfMyFullAdder1bit File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 12
-    Info (12023): Found entity 1: MyFullAdder1bit File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynor2/mynor2.vhd
-    Info (12022): Found design unit 1: MyNor2-StructuralMyNor2 File: C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd Line: 10
-    Info (12023): Found entity 1: MyNor2 File: C:/Quartus projects/ergasia 1/MyNor2/MyNor2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myxor2/myxor2.vhd
-    Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 10
-    Info (12023): Found entity 1: MyXor2 File: C:/Quartus projects/ergasia 1/MyXor2/MyXor2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder1to2/mydecoder1to2.vhd
-    Info (12022): Found design unit 1: MyDecoder1to2-StructuralMyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 10
-    Info (12023): Found entity 1: MyDecoder1to2 File: C:/Quartus projects/ergasia 1/MyDecoder1to2/MyDecoder1to2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mynot/mynot.vhd
-    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 9
-    Info (12023): Found entity 1: MyNot File: C:/Quartus projects/ergasia 1/MyNot/MyNot.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myor2/myor2.vhd
-    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 10
-    Info (12023): Found entity 1: MyOr2 File: C:/Quartus projects/ergasia 1/MyOr2/MyOr2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/mydecoder3to8/mydecoder3to8.vhd
-    Info (12022): Found design unit 1: MyDecoder3to8-StructuralMyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 9
-    Info (12023): Found entity 1: MyDecoder3to8 File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myand2/myand2.vhd
-    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 10
-    Info (12023): Found entity 1: MyAnd2 File: C:/Quartus projects/ergasia 1/MyAnd2/MyAnd2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /quartus projects/ergasia 1/myalu1bit/myalu1bit.vhd
-    Info (12022): Found design unit 1: MyALU1bit-StructuralMyALU1bit File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 13
-    Info (12023): Found entity 1: MyALU1bit File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mymux8to1/mymux8to1.vhd
+    Info (12022): Found design unit 1: MyMux8to1-StructuralMyMux8to1 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1/MyMux8to1.vhd Line: 17
+    Info (12023): Found entity 1: MyMux8to1 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux8to1/MyMux8to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myfulladder1bit/myfulladder1bit.vhd
+    Info (12022): Found design unit 1: MyFullAdder1bit-StructuralOfMyFullAdder1bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 12
+    Info (12023): Found entity 1: MyFullAdder1bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mynor2/mynor2.vhd
+    Info (12022): Found design unit 1: MyNor2-StructuralMyNor2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNor2/MyNor2.vhd Line: 10
+    Info (12023): Found entity 1: MyNor2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNor2/MyNor2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myxor2/myxor2.vhd
+    Info (12022): Found design unit 1: MyXor2-StructuralMyXor2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyXor2/MyXor2.vhd Line: 10
+    Info (12023): Found entity 1: MyXor2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyXor2/MyXor2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mydecoder1to2/mydecoder1to2.vhd
+    Info (12022): Found design unit 1: MyDecoder1to2-StructuralMyDecoder1to2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 10
+    Info (12023): Found entity 1: MyDecoder1to2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder1to2/MyDecoder1to2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mynot/mynot.vhd
+    Info (12022): Found design unit 1: MyNot-BehavioralMyNot File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd Line: 9
+    Info (12023): Found entity 1: MyNot File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyNot/MyNot.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myor2/myor2.vhd
+    Info (12022): Found design unit 1: MyOr2-BehavioralMyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 10
+    Info (12023): Found entity 1: MyOr2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyOr2/MyOr2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/mydecoder3to8/mydecoder3to8.vhd
+    Info (12022): Found design unit 1: MyDecoder3to8-StructuralMyDecoder3to8 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 9
+    Info (12023): Found entity 1: MyDecoder3to8 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myand2/myand2.vhd
+    Info (12022): Found design unit 1: MyAnd2-behavioralOfMyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 10
+    Info (12023): Found entity 1: MyAnd2 File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyAnd2/MyAnd2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /ergasia1_comp_arch/16bit-cpu/myalu1bit/myalu1bit.vhd
+    Info (12022): Found design unit 1: MyALU1bit-StructuralMyALU1bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 13
+    Info (12023): Found entity 1: MyALU1bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file myalu16bit.vhd
-    Info (12022): Found design unit 1: MyALU16bit-StructuralMyALU16bit File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 12
-    Info (12023): Found entity 1: MyALU16bit File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 4
+    Info (12022): Found design unit 1: MyALU16bit-StructuralMyALU16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 12
+    Info (12023): Found entity 1: MyALU16bit File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 4
 Info (12127): Elaborating entity "MyALU16bit" for the top level hierarchy
-Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v01" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 72
-Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd2:v03" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 74
-Info (12128): Elaborating entity "MyMux2to1" for hierarchy "MyMux2to1:V05" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 78
-Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux2to1:V05|MyOr2:v3" File: C:/Quartus projects/ergasia 1/MyMux2to1/MyMux2to1.vhd Line: 36
-Info (12128): Elaborating entity "MyALU1bit" for hierarchy "MyALU1bit:V0" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 80
-Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 81
-Info (12128): Elaborating entity "MyXor2" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0|MyXor2:v1" File: C:/Quartus projects/ergasia 1/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
-Info (12128): Elaborating entity "MyNor2" for hierarchy "MyALU1bit:V0|MyNor2:v8" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 114
-Info (12128): Elaborating entity "MyMux8to1" for hierarchy "MyALU1bit:V0|MyMux8to1:v9" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 117
-Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec" File: C:/Quartus projects/ergasia 1/MyALU1bit/MyALU1bit.vhd Line: 120
-Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec|MyDecoder1to2:v0" File: C:/Quartus projects/ergasia 1/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
-Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux2to1_16bit:V21" File: C:/Quartus projects/ergasia 1/MyALU16bit/MyALU16bit.vhd Line: 105
-Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyMux2to1_16bit:V21|MyAnd16bit:v1" File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 38
-Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux2to1_16bit:V21|MyOr16bit:v3" File: C:/Quartus projects/ergasia 1/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
+Info (12128): Elaborating entity "MyNot" for hierarchy "MyNot:v01" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 72
+Info (12128): Elaborating entity "MyAnd2" for hierarchy "MyAnd2:v03" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 74
+Info (12128): Elaborating entity "MyMux2to1" for hierarchy "MyMux2to1:V05" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 78
+Info (12128): Elaborating entity "MyOr2" for hierarchy "MyMux2to1:V05|MyOr2:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1/MyMux2to1.vhd Line: 36
+Info (12128): Elaborating entity "MyALU1bit" for hierarchy "MyALU1bit:V0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 80
+Info (12128): Elaborating entity "MyFullAdder1bit" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 81
+Info (12128): Elaborating entity "MyXor2" for hierarchy "MyALU1bit:V0|MyFullAdder1bit:v0|MyXor2:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyFullAdder1bit/MyFullAdder1bit.vhd Line: 35
+Info (12128): Elaborating entity "MyNor2" for hierarchy "MyALU1bit:V0|MyNor2:v8" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 114
+Info (12128): Elaborating entity "MyMux8to1" for hierarchy "MyALU1bit:V0|MyMux8to1:v9" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 117
+Info (12128): Elaborating entity "MyDecoder3to8" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU1bit/MyALU1bit.vhd Line: 120
+Info (12128): Elaborating entity "MyDecoder1to2" for hierarchy "MyALU1bit:V0|MyDecoder3to8:dec|MyDecoder1to2:v0" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyDecoder3to8/MyDecoder3to8.vhd Line: 34
+Info (12128): Elaborating entity "MyMux2to1_16bit" for hierarchy "MyMux2to1_16bit:V21" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyALU16bit/MyALU16bit.vhd Line: 105
+Info (12128): Elaborating entity "MyAnd16bit" for hierarchy "MyMux2to1_16bit:V21|MyAnd16bit:v1" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 38
+Info (12128): Elaborating entity "MyOr16bit" for hierarchy "MyMux2to1_16bit:V21|MyOr16bit:v3" File: C:/ERGASIA1_COMP_ARCH/16bit-CPU/MyMux2to1_16bit/MyMux2to1_16bit.vhd Line: 40
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -438,9 +440,9 @@ Info (21057): Implemented 114 device resources after synthesis - the final resou
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 62 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4878 megabytes
-    Info: Processing ended: Mon Apr 06 13:40:25 2026
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4890 megabytes
+    Info: Processing ended: Mon Jun 08 16:16:29 2026
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:25
 
 

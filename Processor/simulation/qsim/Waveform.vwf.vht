@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "05/31/2026 14:12:29"
+-- Generated on "06/11/2026 11:14:33"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Processor
 -- 
@@ -102,20 +102,6 @@ BEGIN
 	clock <= '0';
 WAIT;
 END PROCESS t_prcs_clock;
-
--- clock2
-t_prcs_clock2: PROCESS
-BEGIN
-	FOR i IN 1 TO 7
-	LOOP
-		clock2 <= '0';
-		WAIT FOR 80000 ps;
-		clock2 <= '1';
-		WAIT FOR 80000 ps;
-	END LOOP;
-	clock2 <= '0';
-WAIT;
-END PROCESS t_prcs_clock2;
 -- fromData[15]
 t_prcs_fromData_15: PROCESS
 BEGIN
@@ -240,9 +226,9 @@ END PROCESS t_prcs_instr_12;
 t_prcs_instr_11: PROCESS
 BEGIN
 	instr(11) <= '0';
-	WAIT FOR 480000 ps;
+	WAIT FOR 640000 ps;
 	instr(11) <= '1';
-	WAIT FOR 480000 ps;
+	WAIT FOR 320000 ps;
 	instr(11) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_11;
@@ -250,11 +236,7 @@ END PROCESS t_prcs_instr_11;
 t_prcs_instr_10: PROCESS
 BEGIN
 	instr(10) <= '0';
-	WAIT FOR 160000 ps;
-	instr(10) <= '1';
-	WAIT FOR 320000 ps;
-	instr(10) <= '0';
-	WAIT FOR 320000 ps;
+	WAIT FOR 480000 ps;
 	instr(10) <= '1';
 	WAIT FOR 160000 ps;
 	instr(10) <= '0';
@@ -268,19 +250,11 @@ BEGIN
 	instr(9) <= '1';
 	WAIT FOR 160000 ps;
 	instr(9) <= '0';
-	WAIT FOR 160000 ps;
-	instr(9) <= '1';
-	WAIT FOR 160000 ps;
-	instr(9) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_9;
 -- instr[8]
 t_prcs_instr_8: PROCESS
 BEGIN
-	instr(8) <= '0';
-	WAIT FOR 640000 ps;
-	instr(8) <= '1';
-	WAIT FOR 320000 ps;
 	instr(8) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_8;
@@ -288,9 +262,9 @@ END PROCESS t_prcs_instr_8;
 t_prcs_instr_7: PROCESS
 BEGIN
 	instr(7) <= '0';
-	WAIT FOR 480000 ps;
+	WAIT FOR 320000 ps;
 	instr(7) <= '1';
-	WAIT FOR 160000 ps;
+	WAIT FOR 640000 ps;
 	instr(7) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_7;
@@ -298,9 +272,9 @@ END PROCESS t_prcs_instr_7;
 t_prcs_instr_6: PROCESS
 BEGIN
 	instr(6) <= '0';
-	WAIT FOR 320000 ps;
+	WAIT FOR 480000 ps;
 	instr(6) <= '1';
-	WAIT FOR 160000 ps;
+	WAIT FOR 480000 ps;
 	instr(6) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_6;
@@ -308,25 +282,39 @@ END PROCESS t_prcs_instr_6;
 t_prcs_instr_5: PROCESS
 BEGIN
 	instr(5) <= '0';
+	WAIT FOR 480000 ps;
+	instr(5) <= '1';
+	WAIT FOR 480000 ps;
+	instr(5) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_5;
 -- instr[4]
 t_prcs_instr_4: PROCESS
 BEGIN
 	instr(4) <= '0';
+	WAIT FOR 160000 ps;
+	instr(4) <= '1';
+	WAIT FOR 320000 ps;
+	instr(4) <= '0';
 	WAIT FOR 320000 ps;
 	instr(4) <= '1';
-	WAIT FOR 640000 ps;
+	WAIT FOR 160000 ps;
 	instr(4) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_4;
 -- instr[3]
 t_prcs_instr_3: PROCESS
 BEGIN
-	instr(3) <= '0';
-	WAIT FOR 480000 ps;
 	instr(3) <= '1';
-	WAIT FOR 480000 ps;
+	WAIT FOR 160000 ps;
+	instr(3) <= '0';
+	WAIT FOR 160000 ps;
+	instr(3) <= '1';
+	WAIT FOR 160000 ps;
+	instr(3) <= '0';
+	WAIT FOR 160000 ps;
+	instr(3) <= '1';
+	WAIT FOR 160000 ps;
 	instr(3) <= '0';
 WAIT;
 END PROCESS t_prcs_instr_3;
